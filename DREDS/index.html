@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <meta name="description" content="NeuralRecon-W reconstructs 3D scene geometry from a monocular video with known camera poses in real-time. Accepted in CVPR 2021 as oral."/> -->
     <title>Domain Randomization-Enhanced Depth Simulation and Restoration for Perceiving and Grasping Specular and Transparent Objects</title>
     <!-- Bootstrap -->
     <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
@@ -38,7 +37,6 @@
                  <br>
                  <br>
             <p> <sup>1</sup> Peking University &nbsp;
-                <!-- <a href="https://idr.ai" style="color:#212529">Image Derivative Inc.</a>&nbsp;  -->
                 <sup>2</sup> Xi’an Jiaotong University &nbsp;
                 <sup>3</sup> Alibaba AI Labs &nbsp;
                 <sup>4</sup> Simon Fraser University &nbsp;
@@ -55,7 +53,7 @@
             <div class="row justify-content-center">
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org" role="button" target="_blank">
-                    <i class="fa fa-file"></i> Paper </a> </p>
+                    <i class="fa fa-file"></i> Paper(Coming soon) </a> </p>
               </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/PKU-EPIC/DREDS" role="button" target="_blank" disabled=1>
@@ -68,7 +66,7 @@
               </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="files/" role="button"  target="_blank">
-                    <i class="fa fa-file"></i> Supplementary</a> </p>
+                    <i class="fa fa-file"></i> Supplementary(Coming soon)</a> </p>
               </div>
             </div>
             
@@ -86,20 +84,7 @@
           <h3>Abstract</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!-- <div class="col-md-4">  -->
                <img src="images/teaser.png" alt="input" class="img-responsive" width="85%"/>
-                <!-- </div> -->
-                <!-- <div class="col-md-8"> 
-                  <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                        <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-                  </video>
-                </div> -->
-              </div>
-            <!-- <div class="col-md-6 img-responsive">
-              <video width="70%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                    <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-              </video>
-            </div> -->
             <br>
         </div>
           <p class="text-justify">
@@ -120,31 +105,36 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Abstract</h3>
+          <h3>Domain Randomization-Enhanced Depth Simulation</h3>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+              <source src="videos/dreds.mp4" type="video/mp4">
+            </video>
+        </div>
+          <p class="text-justify">
+            we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
+            To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- Data -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>The proposed DREDS and STD Datasets</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!-- <div class="col-md-4">  -->
                 <img src="images/teaser.png" alt="input" class="img-responsive" width="85%"/>
-                <!-- </div> -->
-                <!-- <div class="col-md-8"> 
-                  <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                        <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-                  </video>
-                </div> -->
-              </div>
-            <!-- <div class="col-md-6 img-responsive">
-              <video width="70%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                    <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-              </video>
-            </div> -->
             <br>
         </div>
           <p class="text-justify">
-            Commercial depth sensors usually generate noisy and missing depths, especially on specular and transparent objects,  which poses critical issues to downstream depth or point cloud-based tasks.
-            To mitigate this problem, we propose a powerful RGBD fusion network, SwinDRNet, for depth restoration.
-            We further propose Domain Randomization-Enhanced Depth Simulation (DREDS) approach to simulate an active stereo depth system using physics-based rendering and generate a large-scale synthetic dataset that contains 130K photorealistic RGB images along with their simulated depths carrying realistic sensor noises. 
-            To evaluate depth restoration methods, we also curate a real-world dataset, namely STD, that captures 30 cluttered scenes composed of 50 objects with different materials from specular, transparent, to diffuse. 
-            Experiments demonstrate that the proposed DREDS dataset bridges the sim-to-real domain gap such that, trained on DREDS, our SwinDRNet can seamlessly generalize to other real depth datasets, e.g. ClearGrasp, and outperform the competing methods on depth restoration. We further show that our depth restoration effectively boosts the performance of downstream tasks, including category-level pose estimation and grasping tasks.
+            we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
+            To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
           </p>
         </div>
       </div>
@@ -157,7 +147,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Abstract</h3>
+          <h3>SwinDRNet</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
                 <!-- <div class="col-md-4">  -->
@@ -194,7 +184,7 @@
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Abstract</h3>
+          <h3>Results</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
                 <!-- <div class="col-md-4">  -->

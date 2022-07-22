@@ -172,8 +172,36 @@
   </section>
   <br>
 
+    <!-- Method -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12 text-center">
+            <h3>Method</h3>
+              <hr style="margin-top:0px">
+              <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Domain Randomization-Enhanced Depth Simulation</h4>
+              <p class="text-justify">
+                we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
+                To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
+              </p>
+              <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">SwinDRNet for Depth Restoration</h4>
+              <p class="text-justify">
+                Figure 4. To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
+                SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.
+                We, for the first time, devise a homogeneous and mirrored architecture that only leverages SwinT to extract and hierarchically fuse the RGB and depth features.
+                We first extract the multi-scale features of RGB and depth image in the phase 1, respectively. 
+                Next, in the phase 2, our network fuse features of different modalities.
+                Finally, generate the initial depth map and confidence maps by two decoders, and fuse the raw depth and initial depth using the predicted confidence map.
+              </p>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
   <!-- DREDS -->
-  <section>
+  <!-- <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -191,11 +219,11 @@
       </div>
     </div>
   </section>
-  <br>
+  <br> -->
 
 
   <!-- Method -->
-  <section>
+  <!-- <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -218,7 +246,7 @@
       </div>
     </div>
   </section>
-  <br>
+  <br> -->
 
   
 

@@ -112,26 +112,29 @@
             <hr style="margin-top:0px">
             <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Depth Restoration</h4>
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/depth_restoration.png" alt="input" class="img-responsive" width="75%"/>
+                <img src="images/depth_restoration.png" alt="input" class="img-responsive" width="85%"/>
               </div>
               <p class="text-justify">
-                Figure 2. We compare our method with several state-of-the-art methods, LIDF and NLSPN. 
+                <b>Figure 2. Qualitative comparison to state-of-the-art methods.</b> We compare the proposed SwinDRNet with the state-of-the-art methods, LIDF and NLSPN. 
                 The figure shows the qualitative comparison of STD dataset, 
                 demonstrating that our method can predict a more accurate depth on the area with missing or incorrect values while preserving the depth value of the correct area of the raw depth map.
               </p>
             <br>
             <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Category-level Pose Estimation</h4>
             <div class="row justify-content-center" style="align-items:center; display:flex;">
-              <img src="images/pose_estimation.png" alt="input" class="img-responsive" width="70%"/>
+              <img src="images/pose_estimation.png" alt="input" class="img-responsive" width="85%"/>
             </div>
             <p class="text-justify">
-              Figure 3. The Figure shows the qualitative results of different experiments on DREDS and STD datasets. 
-              We can see that the qualities of our predictions are generally better than others. 
-              The figure also shows that NOCS [9], SGPA [5] and our method all perform better with the help of restoration depth, 
+              <b>Figure 3. Qualitative results of pose estimations on DREDS and STD datasets.</b>
+              Here we shows the qualitative results of different experiments on DREDS and STD datasets. 
+              We observe that the qualities of our predictions are generally better than others. 
+              The figure also shows that NOCS, SGPA and our method all perform better with the help of restoration depth, 
               especially for specular and transparent objects like the mug, bottle and bowl, which indicates that depth restoration does help category-level pose estimation task.
             </p>
             <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Robotic Grasping</h4>
-
+            <video width="60%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+              <source src="videos/grasping.mp4" type="video/mp4">
+            </video>
         </div>
           
         </div>
@@ -192,7 +195,7 @@
                 <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="85%"/>
               </div>
               <p class="text-justify">
-                Figure 4. To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
+                <b>Figure 4. Overview of SwinDRNet.</b> To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
                 SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.
                 We, for the first time, devise a homogeneous and mirrored architecture that only leverages SwinT to extract and hierarchically fuse the RGB and depth features.
                 We first extract the multi-scale features of RGB and depth image in the phase 1, respectively. 

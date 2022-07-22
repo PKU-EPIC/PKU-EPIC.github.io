@@ -180,11 +180,17 @@
             <h3>Method</h3>
               <hr style="margin-top:0px">
               <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Domain Randomization-Enhanced Depth Simulation</h4>
+              <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+                <source src="videos/dreds.mp4" type="video/mp4">
+              </video>
               <p class="text-justify">
                 we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
                 To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
               </p>
               <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">SwinDRNet for Depth Restoration</h4>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="85%"/>
+              </div>
               <p class="text-justify">
                 Figure 4. To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
                 SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.

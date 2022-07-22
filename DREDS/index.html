@@ -87,10 +87,12 @@
                <img src="images/teaser.png" alt="input" class="img-responsive" width="85%"/>
               <br>
             </div>
-            <div class="text-justify" style="display:flex;"></div>
-              <h6 style="color:#8899a5"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
-            </div>
+            <!-- <div class="row justify-content-center" style="display:flex;"></div> -->
           <p class="text-justify">
+              <h6 style="color:#8899a5"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
+            <!-- </div> -->
+          </p>
+            <p class="text-justify">
             Commercial depth sensors usually generate noisy and missing depths, especially on specular and transparent objects,  which poses critical issues to downstream depth or point cloud-based tasks.
             To mitigate this problem, we propose a powerful RGBD fusion network, SwinDRNet, for depth restoration.
             We further propose Domain Randomization-Enhanced Depth Simulation (DREDS) approach to simulate an active stereo depth system using physics-based rendering and generate a large-scale synthetic dataset that contains 130K photorealistic RGB images along with their simulated depths carrying realistic sensor noises. 

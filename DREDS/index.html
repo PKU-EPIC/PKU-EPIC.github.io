@@ -88,7 +88,7 @@
               <br>
             </div>
             <div class="row justify-content-center" style="display:flex;"></div>
-              <h6 style="color:#8899a5"> Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be feeded to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
+              <h6 style="color:#8899a5"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be feeded to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
             </div>
           <p class="text-justify">
             Commercial depth sensors usually generate noisy and missing depths, especially on specular and transparent objects,  which poses critical issues to downstream depth or point cloud-based tasks.
@@ -103,29 +103,45 @@
   </section>
   <br>
 
-  <!-- DREDS -->
+  <!-- Results -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Domain Randomization-Enhanced Depth Simulation</h3>
+          <h3>Tasks and Results</h3>
             <hr style="margin-top:0px">
-            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
-              <source src="videos/dreds.mp4" type="video/mp4">
-            </video>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Depth Restoration</h4>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/depth_restoration.png" alt="input" class="img-responsive" width="85%"/>
+              </div>
+              <p class="text-justify">
+                Figure 2. We compare our method with several state-of-the-art methods, LIDF and NLSPN. 
+                The figure shows the qualitative comparison of STD dataset, 
+                demonstrating that our method can predict a more accurate depth on the area with missing or incorrect values while preserving the depth value of the correct area of the raw depth map.
+              </p>
+            <br>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Category-level Pose Estimation</h4>
+            <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <img src="images/pose_estimation.png" alt="input" class="img-responsive" width="85%"/>
+            </div>
+            <p class="text-justify">
+              Figure 3. The Figure shows the qualitative results of different experiments on DREDS and STD datasets. 
+              We can see that the qualities of our predictions are generally better than others. 
+              The figure also shows that NOCS [9], SGPA [5] and our method all perform better with the help of restoration depth, 
+              especially for specular and transparent objects like the mug, bottle and bowl, which indicates that depth restoration does help category-level pose estimation task.
+            </p>
+            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Robotic Grasping</h4>
+
         </div>
-          <p class="text-justify">
-            we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
-            To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
-          </p>
+          
         </div>
       </div>
     </div>
   </section>
   <br>
 
-  <!-- Data -->
-  <section>
+   <!-- Data -->
+   <section>
     <div class="container">
       <div class="row">
         <div class="col-12 text-center">
@@ -156,6 +172,28 @@
   </section>
   <br>
 
+  <!-- DREDS -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+          <h3>Domain Randomization-Enhanced Depth Simulation</h3>
+            <hr style="margin-top:0px">
+            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+              <source src="videos/dreds.mp4" type="video/mp4">
+            </video>
+        </div>
+          <p class="text-justify">
+            we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
+            To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+
   <!-- Method -->
   <section>
     <div class="container">
@@ -164,24 +202,12 @@
           <h3>SwinDRNet for Depth Restoration</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!-- <div class="col-md-4">  -->
                 <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="85%"/>
-                <!-- </div> -->
-                <!-- <div class="col-md-8"> 
-                  <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                        <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-                  </video>
-                </div> -->
               </div>
-            <!-- <div class="col-md-6 img-responsive">
-              <video width="70%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                    <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-              </video>
-            </div> -->
             <br>
         </div>
           <p class="text-justify">
-            To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
+            Figure 4. To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
             SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.
             We, for the first time, devise a homogeneous and mirrored architecture that only leverages SwinT to extract and hierarchically fuse the RGB and depth features.
             We first extract the multi-scale features of RGB and depth image in the phase 1, respectively. 
@@ -194,42 +220,7 @@
   </section>
   <br>
 
-  <!-- Results -->
-  <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>Results</h3>
-            <hr style="margin-top:0px">
-              <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <!-- <div class="col-md-4">  -->
-                <img src="images/teaser.png" alt="input" class="img-responsive" width="85%"/>
-                <!-- </div> -->
-                <!-- <div class="col-md-8"> 
-                  <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                        <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-                  </video>
-                </div> -->
-              </div>
-            <!-- <div class="col-md-6 img-responsive">
-              <video width="70%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" id="header_vid">
-                    <source src="videos/neuconw-teaser-bg.m4v" type="video/mp4">
-              </video>
-            </div> -->
-            <br>
-        </div>
-          <p class="text-justify">
-            Commercial depth sensors usually generate noisy and missing depths, especially on specular and transparent objects,  which poses critical issues to downstream depth or point cloud-based tasks.
-            To mitigate this problem, we propose a powerful RGBD fusion network, SwinDRNet, for depth restoration.
-            We further propose Domain Randomization-Enhanced Depth Simulation (DREDS) approach to simulate an active stereo depth system using physics-based rendering and generate a large-scale synthetic dataset that contains 130K photorealistic RGB images along with their simulated depths carrying realistic sensor noises. 
-            To evaluate depth restoration methods, we also curate a real-world dataset, namely STD, that captures 30 cluttered scenes composed of 50 objects with different materials from specular, transparent, to diffuse. 
-            Experiments demonstrate that the proposed DREDS dataset bridges the sim-to-real domain gap such that, trained on DREDS, our SwinDRNet can seamlessly generalize to other real depth datasets, e.g. ClearGrasp, and outperform the competing methods on depth restoration. We further show that our depth restoration effectively boosts the performance of downstream tasks, including category-level pose estimation and grasping tasks.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br>
+  
 
   <!-- citing -->
   <div class="container">
@@ -247,6 +238,19 @@
       </div>
     </div>
   </div>
+
+
+    <!-- Contact -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h3>Contact</h3>
+            <hr style="margin-top:0px">
+            <p>If you have any questions, please feel free to contact Qiyu Dai at qiyudai_at_pku_edu_cn, Jiyao Zhang at zhangjiyao_at_stu_xjtu_edu_cn, and He Wang at hewang_at_pku_edu_cn </p>
+        </pre>
+        </div>
+      </div>
+    </div>
 
 
 

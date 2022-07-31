@@ -27,8 +27,8 @@
             <h4 style="color:#6e6e6e;"> ECCV 2022 </h4>
             <hr>
             <h6> <a href="https://daiqy.github.io/" target="_blank">Qiyu Dai</a><sup>1*</sup>, 
-                 <a href="" target="_blank">Jiyao Zhang</a><sup>2*</sup>, 
-                 <a href="" target="_blank">Qiwei Li</a><sup>1</sup>, 
+                 <a href="https://github.com/Jiyao06" target="_blank">Jiyao Zhang</a><sup>2*</sup>, 
+                 <a href="https://github.com/qiweili00" target="_blank">Qiwei Li</a><sup>1</sup>, 
                  <a href="https://tianhaowuhz.github.io/" target="_blank">Tianhao Wu</a><sup>1</sup>, 
                  <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><sup>1</sup>, 
                  <a href="https://scholar.google.de/citations?hl=en&user=pOQmTy0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank">Ziyuan Liu</a><sup>3</sup>,
@@ -53,7 +53,7 @@
             <div class="row justify-content-center">
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org" role="button" target="_blank">
-                    <i class="fa fa-file"></i> Paper(Coming soon) </a> </p>
+                    <i class="fa fa-file"></i> Paper </a> </p>
               </div>
               <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/PKU-EPIC/DREDS" role="button" target="_blank" disabled=1>
@@ -64,10 +64,10 @@
                     target="_blank" disabled=1>
                 <i class="fa fa-github-alt"></i> Dataset </a> </p>
               </div>
-              <div class="column">
+              <!-- <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="files/" role="button"  target="_blank">
                     <i class="fa fa-file"></i> Supplementary(Coming soon)</a> </p>
-              </div>
+              </div> -->
             </div>
             
           </div>
@@ -76,22 +76,40 @@
     </div>
   </section>
 
-  <!-- abstract -->
   <section>
-    <div class="container">
+    <div class="container" style="width:58%">
       <div class="row">
         <div class="col-12 text-center">
-          <h3>Abstract</h3>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-               <img src="images/teaser.png" alt="input" class="img-responsive" width="85%"/>
+               <img src="images/teaser.png" alt="input" class="img-responsive" width="95%"/>
               <br>
             </div>
             <!-- <div class="row justify-content-center" style="display:flex;"></div> -->
-          <p class="text-justify">
+            <p class="text-justify">
+              <strong>Figure 1. Framework overview</strong>: From the left to right: we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.
+            </p>
+              <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- abstract -->
+  <section>
+    <div class="container" style="width:58%">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Abstract</strong></h2>
+            <hr style="margin-top:0px">
+              <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
+               <img src="images/teaser.png" alt="input" class="img-responsive" width="95%"/>
+              <br>
+            </div> -->
+          <!-- <p class="text-justify">
               <h6 style="color:#8899a5;text-align:left"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
-            <!-- </div> -->
-          </p>
+          </p> -->
             <p class="text-justify">
             Commercial depth sensors usually generate noisy and missing depths, especially on specular and transparent objects,  which poses critical issues to downstream depth or point cloud-based tasks.
             To mitigate this problem, we propose a powerful RGBD fusion network, SwinDRNet, for depth restoration.
@@ -107,22 +125,22 @@
 
   <!-- Results -->
   <section>
-    <div class="container">
+    <div class="container" style="width:58%">
       <div class="row">
-        <div class="col-12 text-center">
-          <h3>Tasks and Results</h3>
+        <div class="col-12">
+          <h2><strong>Tasks and Results</strong></h2>
             <hr style="margin-top:0px">
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Depth Restoration</h4>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Depth Restoration</b></h3>
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/depth_restoration.png" alt="input" class="img-responsive" width="85%"/>
+                <img src="images/depth_restoration.png" alt="input" class="img-responsive" width="95%"/>
               </div>
               <p class="text-justify">
-                <b>Figure 2. Qualitative comparison to state-of-the-art methods.</b> We compare the proposed SwinDRNet with the state-of-the-art methods, LIDF and NLSPN. 
+                <strong>Figure 2. Qualitative comparison to state-of-the-art methods.</strong> We compare the proposed SwinDRNet with the state-of-the-art methods, LIDF and NLSPN. 
                 The figure shows the qualitative comparison of STD dataset, 
                 demonstrating that our method can predict a more accurate depth on the area with missing or incorrect values while preserving the depth value of the correct area of the raw depth map.
               </p>
             <br>
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Category-level Pose Estimation</h4>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Category-level Pose Estimation</b></h3>
             <div class="row justify-content-center" style="align-items:center; display:flex;">
               <img src="images/pose_estimation.png" alt="input" class="img-responsive" width="85%"/>
             </div>
@@ -133,43 +151,47 @@
               The figure also shows that NOCS, SGPA and our method all perform better with the help of restoration depth, 
               especially for specular and transparent objects like the mug, bottle and bowl, which indicates that depth restoration does help category-level pose estimation task.
             </p>
-            <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Robotic Grasping</h4>
-            <video width="60%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
-              <source src="videos/grasping.mp4" type="video/mp4">
-            </video>
+            <br>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Robotic Grasping</b></h3>
+            <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+                <source src="videos/grasping.mp4" type="video/mp4">
+              </video>
+            </div>  
         </div>
-          
         </div>
       </div>
     </div>
   </section>
   <br>
+  <br>
 
    <!-- Data -->
    <section>
-    <div class="container">
+    <div class="container" style="width:58%">
       <div class="row">
-        <div class="col-12 text-center">
-          <h3>The Proposed Datasets</h3>
+        <div class="col-12">
+          <h2><strong>The Proposed Datasets</strong></h2>
           <hr style="margin-top:0px">
           <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <video width="60%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+            <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
               <source src="videos/dataset.mp4" type="video/mp4">
             </video>
           </div>
-          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">DREDS (simulated)</h4>
+          <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>DREDS Dataset(simulated)</b></h3>
           <p class="text-justify">
             Making use of domain randomization and depth simulation, we construct the large-scale simulated dataset, DREDS.
             In total, DREDS dataset consists of two subsets: 
-            1) DREDS-CatKnown: 100,200 training and 19,380 testing RGBD images made of 1,801 objects spanning 7 categories from ShapeNetCore, with randomized specular, transparent, and diffuse materials, 
-            2) DREDS-CatNovel: 11,520 images of 60 category-novel objects, which is transformed from GraspNet-1Billion that contains CAD models and annotates poses, by changing their object materials to specular or transparent, to verify the ability of our method to generalize to new object categories.
+            1) <strong>DREDS-CatKnown</strong>: 100,200 training and 19,380 testing RGBD images made of 1,801 objects spanning 7 categories from ShapeNetCore, with randomized specular, transparent, and diffuse materials, 
+            2) <strong>DREDS-CatNovel</strong>: 11,520 images of 60 category-novel objects, which is transformed from GraspNet-1Billion that contains CAD models and annotates poses, by changing their object materials to specular or transparent, to verify the ability of our method to generalize to new object categories.
           </p>
-          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">STD (real)</h4>
+          <br>
+          <h4 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>STD Dataset (real)</b></h4>
           <p class="text-justify">
             To further examine the proposed method in real scenes, we curate a real-world dataset, STD, composing of Specular, Transparent, and Diffuse objects.
             Similar to DREDS dataset, STD dataset contains: 
-            1) STD-CatKnown: 27000 RGBD images of 42 category-level objects spanning 7 categories, captured from 25 different scenes with various backgrounds and illumination.
-            2) STD-CatNovel: 11000 data of 8 category-novel objects from 5 scenes, for evaluating the generalization ability of the proposed method.
+            1) <strong>STD-CatKnown</strong>: 27000 RGBD images of 42 category-level objects spanning 7 categories, captured from 25 different scenes with various backgrounds and illumination.
+            2) <strong>STD-CatNovel</strong>: 11000 data of 8 category-novel objects from 5 scenes, for evaluating the generalization ability of the proposed method.
           </p>
         </div>
       </div>
@@ -179,23 +201,26 @@
 
     <!-- Method -->
     <section>
-      <div class="container">
+      <div class="container" style="width:58%">
         <div class="row">
-          <div class="col-12 text-center">
-            <h3>Method</h3>
+          <div class="col-12">
+            <h2><strong>Methods</strong></h2>
               <hr style="margin-top:0px">
-              <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">Domain Randomization-Enhanced Depth Simulation</h4>
-              <video width="60%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
-                <source src="videos/dreds.mp4" type="video/mp4">
-              </video>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Domain Randomization-Enhanced Depth Simulation</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+                  <source src="videos/dreds.mp4" type="video/mp4">
+                </video>
+              </div>
               <p class="text-justify">
                 we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
                 To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
               </p>
-              <h4 style="margin-top:20px; margin-bottom:20px; color:#717980">SwinDRNet for Depth Restoration</h4>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>SwinDRNet for Depth Restoration</b></h3>
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="85%"/>
+                <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="98%"/>
               </div>
+              <br>
               <p class="text-justify">
                 <b>Figure 4. Overview of SwinDRNet.</b> To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
                 SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.
@@ -211,61 +236,61 @@
     </section>
     <br>
 
-  <!-- DREDS -->
-  <!-- <section>
-    <div class="container">
+  <!-- Team -->
+  <section>
+    <div class="container" style="width:58%">
       <div class="row">
-        <div class="col-12 text-center">
-          <h3>Domain Randomization-Enhanced Depth Simulation</h3>
+        <div class="col-12">
+          <h2><strong>Team</strong></h2>
             <hr style="margin-top:0px">
-            <video width="100%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
-              <source src="videos/dreds.mp4" type="video/mp4">
-            </video>
-        </div>
-          <p class="text-justify">
-            we propose to synthesize depths with realistic sensor noise patterns by simulating an active stereo depth camera. Our simulator is built on Blender and leverages raytracing to mimic the IR stereo patterns and compute the depths from them. 
-            To facilitate generalization, we further adopt domain randomization techniques that randomize the object textures, object materials (from specular, transparent, to diffuse), object layout, floor textures, illuminations along camera poses.
-          </p>
-        </div>
-      </div>
-    </div>
-  </section>
-  <br> -->
-
-
-  <!-- Method -->
-  <!-- <section>
-    <div class="container">
-      <div class="row">
-        <div class="col-12 text-center">
-          <h3>SwinDRNet for Depth Restoration</h3>
-            <hr style="margin-top:0px">
-              <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/SwinDRNet.png" alt="input" class="img-responsive" width="85%"/>
+          <table style="width:100%">
+            <p>
+            <tr>
+              <td> <center> <a href="https://daiqy.github.io/" target="_blank"> <img alt src="images/team_qiyudai.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://github.com/Jiyao06" target="_blank"> <img alt src="images/team_jiyaozhang.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://github.com/qiweili00" target="_blank"> <img alt src="images/team_qiweili.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://tianhaowuhz.github.io/" target="_blank"> <img alt src="images/team_tianhaowu.png" height="100"/> </a></center> </td>
+              <td> <center> <a href="https://zsdonghao.github.io/" target="_blank"> <img alt src="images/team_haodong.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://scholar.google.de/citations?hl=en&user=pOQmTy0AAAAJ&view_op=list_works&sortby=pubdate" target="_blank"> <img alt src="images/team_ziyuanliu.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://www.cs.sfu.ca/~pingtan/" target="_blank"> <img alt src="images/team_pingtan.png" height="100"/> </a> </center></td>
+              <td> <center> <a href="https://hughw19.github.io/" target="_blank"> <img alt src="images/team_hewang.png" height="100"/> </a> </center></td>
+            </tr>
+            <tr>
+              <td>  <center>  <font size= "2">Qiyu Dai<sup>1*</sup></font> </center></td>
+              <td>  <center>  <font size= "2">Jiyao Zhang<sup>2*</sup></font></center> </td>
+              <td>  <center>  <font size= "2">Qiwei Li<sup>1</sup></font></center> </td>
+              <td>  <center>  <font size= "2">Tianhao Wu<sup>1</sup></font> </center></td>
+              <td>  <center>  <font size= "2">Hao Dong<sup>1</sup></font> </center></td>
+              <td>  <center>  <font size= "2">Ziyuan Liu<sup>3</sup></font> </center></td>
+              <td>  <center>  <font size= "2">Ping Tan<sup>3,4</sup></font> </center></td>
+              <td> <center>   <font size= "2">He Wang<sup>1</sup></font> </center></td>
+            </tr>
+            </p>
+            </table>
+            </div>
+              <div class="row justify-content-center" style="align-items:center; display:flex;"></div>
+              <p> <font size= "2"><sup>1</sup> Peking University</font> &nbsp;
+                <font size= "2"><sup>2</sup> Xi’an Jiaotong University</font> &nbsp;
+                <font size= "2"><sup>3</sup> Alibaba XR Lab</font> &nbsp;
+                <font size= "2"><sup>4</sup> Simon Fraser University</font> &nbsp;
+                <br>
+               <font size= "2"><sup>*</sup> equal contributions</font> &nbsp;
+                <font size= "2"><sup>†</sup> corresponding author</font> &nbsp;
+              </p>
               </div>
-            <br>
-        </div>
-          <p class="text-justify">
-            Figure 4. To restore the noisy and incomplete depth, we propose a SwinTransformer based depth restoration network, namely SwinDRNet.
-            SwinDRNet takes as input a RGB image Ic along with its aligned depth image Id and outputs a refined depth ˆId that restores the error area of the depth image and completes the invalid area.
-            We, for the first time, devise a homogeneous and mirrored architecture that only leverages SwinT to extract and hierarchically fuse the RGB and depth features.
-            We first extract the multi-scale features of RGB and depth image in the phase 1, respectively. 
-            Next, in the phase 2, our network fuse features of different modalities.
-            Finally, generate the initial depth map and confidence maps by two decoders, and fuse the raw depth and initial depth using the predicted confidence map.
-          </p>
+            
+
         </div>
       </div>
     </div>
   </section>
-  <br> -->
-
-  
-
+  <br>
+            
   <!-- citing -->
-  <div class="container">
+  <div class="container" style="width:58%">
     <div class="row ">
       <div class="col-12">
-          <h3>Citation</h3>
+          <h2><strong>Citation</strong></h2>
           <hr style="margin-top:0px">
               <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
 <code>@inproceedings{dai2022dreds,
@@ -277,15 +302,15 @@
       </div>
     </div>
   </div>
-
+  <br>
 
     <!-- Contact -->
-    <div class="container">
+    <div class="container" style="width:58%">
       <div class="row ">
         <div class="col-12">
-            <h3>Contact</h3>
+            <h2><strong>Contact</strong></h2>
             <hr style="margin-top:0px">
-            <p>If you have any questions, please feel free to contact Qiyu Dai at qiyudai_at_pku_edu_cn, Jiyao Zhang at zhangjiyao_at_stu_xjtu_edu_cn, and He Wang at hewang_at_pku_edu_cn </p>
+            <p>If you have any questions, please feel free to contact <b>Qiyu Dai</b> at qiyudai_at_pku_edu_cn, <b>Jiyao Zhang</b> at zhangjiyao_at_stu_xjtu_edu_cn, and <b>He Wang</b> at hewang_at_pku_edu_cn </p>
         </pre>
         </div>
       </div>

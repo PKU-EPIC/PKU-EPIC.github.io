@@ -87,7 +87,7 @@
             </div>
             <!-- <div class="row justify-content-center" style="display:flex;"></div> -->
             <p class="text-justify">
-              <strong>Figure 1. Framework overview</strong>: From the left to right: we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.
+              <strong>Figure 1. Framework overview</strong>. From the left to right: we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.
             </p>
               <!-- </div> -->
         </div>
@@ -147,6 +147,7 @@
             <p class="text-justify">
               <b>Figure 3. Qualitative results of pose estimations on DREDS and STD datasets.</b>
               Here we shows the qualitative results of different experiments on DREDS and STD datasets. 
+              The ground truths are shown in green while the estimations are shown in red.
               We observe that the qualities of our predictions are generally better than others. 
               The figure also shows that NOCS, SGPA and our method all perform better with the help of restoration depth, 
               especially for specular and transparent objects like the mug, bottle and bowl, which indicates that depth restoration does help category-level pose estimation task.
@@ -178,7 +179,7 @@
               <source src="videos/dataset.mp4" type="video/mp4">
             </video>
           </div>
-          <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>DREDS Dataset(simulated)</b></h3>
+          <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>DREDS Dataset (simulated)</b></h3>
           <p class="text-justify">
             Making use of domain randomization and depth simulation, we construct the large-scale simulated dataset, DREDS.
             In total, DREDS dataset consists of two subsets: 

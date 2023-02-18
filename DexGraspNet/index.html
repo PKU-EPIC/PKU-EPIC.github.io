@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation</title>
+  <!-- Bootstrap -->
+  <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css">
+  <style>
+    body {
+      background: rgb(255, 255, 255) no-repeat fixed top left;
+      font-family: 'Open Sans', sans-serif;
+    }
+  </style>
+
+</head>
+
+<!-- cover -->
+<section>
+  <div class="jumbotron text-center mt-0">
+    <div class="container-fluid">
+      <div class="row">
+        <div class="col">
+          <h2 style="font-size:30px;">DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General
+            Objects Based on Simulation</h2>
+          <h4 style="color:#6e6e6e;"> ICRA 2023 </h4>
+          <hr>
+          <h6>
+            Ruicheng Wang<sup>1*</sup>&nbsp; &nbsp;
+            Jialiang Zhang<sup>1*</sup>&nbsp; &nbsp;
+            <a href="https://jychen18.github.io/">Jiayi Chen</a><sup>1,2</sup>&nbsp; &nbsp;
+            <a href="https://xyz-99.github.io/">Yinzhen Xu</a><sup>1,2</sup>&nbsp; &nbsp;
+            <a href="https://xiaoyao-li.github.io/">Puhao Li</a><sup>2,3</sup>&nbsp; &nbsp;
+            <a href="https://tengyu.ai/">Tengyu Liu</a><sup>2</sup>&nbsp; &nbsp;
+            <a href="https://hughw19.github.io/">He Wang</a><sup>1†</sup>
+            <br>
+            <br>
+            <p> <sup>1</sup>Peking University&nbsp; &nbsp;
+              <sup>2</sup>Beijing Institute for General Artificial Intelligence&nbsp; &nbsp;
+              <sup>3</sup>Tsinghua University&nbsp; &nbsp;
+              <br>
+            </p>
+            <p> <sup>*</sup> equal contributions &nbsp;
+              <sup>†</sup> corresponding author &nbsp;
+              <br>
+            </p>
+
+            <div class="row justify-content-center">
+              <div class="column">
+                <p class="mb-5"><a class="btn btn-large btn-light" href="https://arxiv.org/abs/2210.02697" role="button"
+                    target="_blank">
+                    <i class="fa fa-file"></i> Paper </a> </p>
+              </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://github.com/PKU-EPIC/HOTrack" role="button" target="_blank" disabled=1>
+                <i class="fa fa-github-alt"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" id="code_soon" href="https://mirrors.pku.edu.cn/dl-release/HOTrack_AAAI2023/" role="button" 
+                    target="_blank" disabled=1>
+                <i class="fa fa-github-alt"></i> Dataset </a> </p>
+              </div> -->
+            </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12 text-center">
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/teaser.png" alt="input" class="img-responsive" width="95%" />
+          <br>
+        </div>
+        <p class="text-justify">
+          <strong>Figure 1. </strong>A visualization of DexGraspNet. DexGraspNet contains 1.32M grasps of ShadowHand on
+          5355 objects, which is two orders and one order of magnitudes larger than the previous dataset from DDG. It
+          features diverse types of grasping that can't be achieved using GraspIt!.
+        </p>
+        <!-- </div> -->
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- abstract -->
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Abstract</strong></h2>
+        <hr style="margin-top:0px">
+        <p class="text-justify">
+          Object grasping using dexterous hands is a crucial yet challenging task for robotic dexterous manipulation.
+          Compared with the field of object grasping with parallel grippers, dexterous grasping is very under-explored,
+          partially owing to the lack of a large-scale dataset. In this work, we present a large-scale simulated
+          dataset, DexGraspNet, for robotic dexterous grasping, along with a highly efficient synthesis method for
+          diverse dexterous grasping synthesis. Leveraging a highly accelerated differentiable force closure estimator,
+          we, for the first time, are able to synthesize stable and diverse grasps efficiently and robustly. We choose
+          ShadowHand, a dexterous gripper commonly seen in robotics, and generated 1.32 million grasps for 5355 objects,
+          covering more than 133 object categories and containing more than 200 diverse grasps for each object instance,
+          with all grasps having been validated by the physics simulator. Compared to the previous dataset generated by
+          GraspIt!, our dataset has not only more objects and grasps, but also higher diversity and quality. Via
+          performing cross-dataset experiments, we show that training several algorithms of dexterous grasp
+          synthesis on our datasets significantly outperforms training on the previous one, demonstrating the large
+          scale and diversity of DexGraspNet.
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+<br>
+
+<!-- <section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Methods</strong></h2>
+        <hr style="margin-top:0px">
+        <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/method.png" alt="input" class="img-responsive" width="95%" />
+        </div>
+        <p class="text-justify">
+          <strong>Figure 2. At frame 0, We initialize the object shape <sub>O</sub>M<sup>obj</sup> represented
+            in signed
+            distance function (SDF) and the hand shape code β for the parametric model MANO, as shown in the
+            dotted line. In the following tracking phase, at each frame t, we first separately estimate the
+            object
+            pose {R<sub>t</sub><sup style="margin-left:-5px">obj</sup>, T<sub>t</sub><sup
+              style="margin-left:-5px">obj</sup>} and hand pose {R<sub>t</sub><sup style="margin-left:-5px">hand</sup>,
+            T<sub>t</sub><sup style="margin-left:-5px">hand</sup>,
+            θ<sub>t</sub>}, and further refine the hand pose by taking
+            hand-object interaction into consideration. We can also update object shape and hand shape every
+            10 frames, as shown in our supplementary materials.
+        </p>
+        <br>
+        <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>HandTrackNet</b></h3>
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/network.png" alt="input" class="img-responsive" width="85%" />
+        </div>
+        <p class="text-justify">
+          <b>Figure 3. HandTrackNet takes input the hand points Pt from
+            the current frame t and the estimated hand joints J<sub>t-1</sub> from the last frame, and
+            perform global
+            pose canonicalization to both of the two. Then it leverage PointNet++ to extract features from
+            canonicalized hand points P<sub>t</sub><sup style="margin-left:-5px">'</sup>
+            and use each joint J<sub>t</sub><sup style="margin-left:-5px">coarse'</sup>
+            to query and pass features, followed by a
+            MLP to regress and update joint positions.
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<br> -->
+
+
+<!-- <section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>SimGrasp Dataset</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <img src="images/simgrasp.png" alt="input" class="img-responsive" width="95%" />
+        </div>
+        <p class="text-justify">
+          <strong>Figure 4. We synthesize a large-scale dynamic dataset SimGrasp with
+            sufficient variations and realistic sensor noises.
+        </p>
+        <br>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<br> -->
+
+<section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Video</strong></h2>
+        <hr style="margin-top:0px">
+        <div class="row justify-content-center" style="align-items:center; display:flex;">
+          <video width="80%" playsinline="" preload="" muted="" controls>
+            <source src="videos/camera_ready.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<br>
+
+<!-- <section>
+  <div class="container" style="width:58%">
+    <div class="row">
+      <div class="col-12">
+        <h2><strong>Qualitative results</strong></h2>
+        <hr style="margin-top:0px">
+        <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>HO3D</b></h3>
+        <img src="videos/GPMF13_0000.gif" width="80%" style="margin-bottom:20px;">
+        <img src="videos/sm3-0000.gif" width="80%" style="margin-bottom:20px;">
+        <img src="videos/mc4-0000.gif" width="80%" style="margin-bottom:20px;">
+        <p class="text-justify">
+          From left to right: input point cloud sequences, output overlay with RGB, output, output from
+          another view.
+          The speed of the video is consistent with the real time.
+        </p>
+        <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>DexYCB</b></h3>
+        <img src="videos/20200903-113012-932122060861-000023.gif" width="80%" style="margin-bottom:20px;">
+        <img src="videos/20200928-154232-932122061900-000025.gif" width="80%" style="margin-bottom:20px;">
+        <img src="videos/20201022-110947-932122061900-000023.gif" width="80%" style="margin-bottom:20px;">
+        <p class="text-justify">
+          From left to right: input point cloud sequences, output overlay with RGB, output, output from
+          another view.
+          The speed of the video is consistent with the real time.
+        </p>
+      </div>
+    </div>
+  </div>
+  </div>
+</section>
+<br>
+<br> -->
+
+<!-- citing -->
+<div class="container" style="width:58%">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Citation</strong></h2>
+      <hr style="margin-top:0px">
+      <pre style="background-color: #e9eeef;padding: 1.25em 1.5em">
+<code>@article{wang2022dexgraspnet,
+  title={DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation},
+  author={Wang, Ruicheng and Zhang, Jialiang and Chen, Jiayi and Xu, Yinzhen and Li, Puhao and Liu, Tengyu and Wang, He},
+  journal={arXiv preprint arXiv:2210.02697},
+  year={2022}
+}</code></pre>
+    </div>
+  </div>
+</div>
+<br>
+
+<!-- Contact -->
+<!-- <div class="container" style="width:58%">
+  <div class="row ">
+    <div class="col-12">
+      <h2><strong>Contact</strong></h2>
+      <hr style="margin-top:0px">
+      <p>If you have any questions, please feel free to contact <b>Jiayi Chen</b> at jiayichen_at_pku_edu_cn,
+        <b>Mi Yan</b> at dorisyan_at_pku_edu_cn, and <b>He Wang</b> at hewang_at_pku_edu_cn
+      </p>
+      </pre>
+    </div>
+  </div>
+</div> -->
+
+
+
+<footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+  <hr>
+  Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a
+    href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+</footer>
+<script>
+  MathJax = {
+    tex: { inlineMath: [['$', '$'], ['\\(', '\\)']] }
+  };
+</script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+
+</html>

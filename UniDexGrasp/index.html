@@ -194,7 +194,7 @@
                 <b>Our main pipeline.</b> The input is an object point cloud $X$ fused from depth images, with ground truth 
                 segmentation of the table and the object. A rotation $R$ is sampled from the distribution 
                 implied by the GraspIPDF, and the point cloud will be canonicalized by $R^{-1}$ to $\tilde{X}$. 
-                The GraspGlow then samples the translation $\bm{t}_H$ and joint angles $\bm{\theta}$. 
+                The GraspGlow then samples the translation $\bm{t}$ and joint angles $\bm{q}$. 
                 Next, the ContactNet takes $\tilde{X}$ and a point cloud $X_H$ sampled from the hand 
                 to predict the ideal contact map $\bm{c}$ on the object. Then, the predicted hand pose 
                 is optimized based on the contact information. The final goal pose is transformed 

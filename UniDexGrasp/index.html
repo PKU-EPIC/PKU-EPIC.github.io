@@ -68,8 +68,8 @@
                     <i class="fa fa-file"></i> Paper </a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
-                <i class="fa fa-github-alt"></i> Code (Coming soon) </a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/PKU-EPIC/UniDexGrasp" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Code </a> </p>
               </div>
               <!-- <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
@@ -113,7 +113,7 @@
             <hr style="margin-top:0px">
             <div class="row justify-content-center" style="align-items:center; display:flex;">
               <video width="80%" playsinline="" preload="" muted="" controls>
-                <source src="videos/Video2.mp4" type="video/mp4">
+                <source src="videos/Video3.mp4" type="video/mp4">
               </video>
             </div>  
         </div>
@@ -191,15 +191,20 @@
                 <img src="images/MainPipeline.png" alt="input" class="img-responsive graph" width="95%"/>
               </div>
               <p class="text-justify">
-                <b>Our main pipeline.</b> The input is an object point cloud $X$ fused from depth images, with ground truth 
-                segmentation of the table and the object. A rotation $R$ is sampled from the distribution 
-                implied by the GraspIPDF, and the point cloud will be canonicalized by $R^{-1}$ to $\tilde{X}$. 
-                The GraspGlow then samples the translation $\bm{t}$ and joint angles $\bm{q}$. 
-                Next, the ContactNet takes $\tilde{X}$ and a point cloud $X_H$ sampled from the hand 
-                to predict the ideal contact map $\bm{c}$ on the object. Then, the predicted hand pose 
-                is optimized based on the contact information. The final goal pose is transformed 
-                by $R$ to align to the original visual observation. Finally, the RL policy takes 
-                the goal $\bm{g}$, point cloud $X$ and robot proprioception $\bm{s}_r$ to take actions accordingly.
+                <b>Our main pipeline.</b> The left part is the first stage, 
+                which generates a dexterous grasp proposal. 
+                The input is the object point cloud at time step 0, 
+                $X_0$, fused from depth images, with ground truth segmentation of the table and the object. 
+                A rotation $R$ is sampled from the distribution implied by the GraspIPDF, 
+                and the point cloud will be canonicalized by $R^{-1}$ to $\tilde{X}_0$. 
+                The GraspGlow then samples the translation $\tilde{\bm{t}}$ and joint angles $\bm{q}$. 
+                Next, the ContactNet takes $\tilde{X}_0$ and a point cloud $\tilde{X}_H$ 
+                sampled from the hand to predict the ideal contact map $\bm{c}$ on the object. 
+                Then, the predicted hand pose is optimized based on the contact information. 
+                The final goal pose is transformed by $R$ to align with the original visual observation. 
+                The right part is the second stage, the goal-conditioned dexterous grasping policy 
+                that takes the goal $\bm{g}$, point cloud $X_t$ 
+                and robot proprioception $\bm{s}^r_t$ to take actions accordingly.
               </p>
             <br>
 

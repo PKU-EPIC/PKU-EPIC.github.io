@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PartManip</title>
+    <!-- Bootstrap -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+    <style>
+      body {
+        background: rgb(255, 255, 255) no-repeat fixed top left; 
+        font-family: "Inter", 'Open Sans', sans-serif;
+      }
+    </style>
+
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 style="font-size:30px;">PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations</h2>
+            <h4 style="color:#6e6e6e;"> CVPR 2023 </h4>
+            <hr>
+            <h6>
+              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a><sup>1, 2*</sup>&nbsp; &nbsp;
+              Ziming Li<sup>1,2*</sup> &nbsp; &nbsp;
+              <a href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a><sup>1, 2</sup>&nbsp; &nbsp;
+              <a href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a><sup>1,3</sup>&nbsp; &nbsp;
+              <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><sup>1,2</sup> &nbsp; &nbsp;
+              <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1,2†</sup>&nbsp; &nbsp;
+              <br>
+              <br>
+            <p> 
+              <sup>1</sup>CFCS, Peking University&nbsp; &nbsp; 
+              <sup>2</sup>School of EECS, Peking University&nbsp; &nbsp;  
+              <sup>3</sup>Beijing Academy of Artificial Intelligence&nbsp; &nbsp; 
+              <br>
+            </p>
+            <p> <sup>*</sup> equal contributions &nbsp;
+              <sup>†</sup> corresponding author &nbsp;
+              <br>
+          </p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Code (Coming soon) </a> </p>
+              </div>
+              <!-- <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+              </div> -->
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+               <img src="images/teaser_img.png" alt="input" class="img-responsive graph" width="95%"/>
+              <br>
+            </div>
+            <p class="text-justify">
+              <b> We introduce a large-scale cross-category part manipulation benchmark <i>PartManip</i> with diverse object datasets,
+                realistic settings, and rich annotations. We propose a generalizable vision-based policy learning strategy and boost the performance of
+                part-based object manipulation by a large margin, which can generalize to unseen object categories and novel objects in the real world.
+            </p>
+              <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Video</strong></h2>
+            <hr style="margin-top:0px">
+            <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <video width="80%" playsinline="" preload="" muted="" controls>
+                <source src="videos/supp_video.mp4" type="video/mp4">
+              </video>
+            </div>  
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br> -->
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Abstract</strong></h2>
+            <hr style="margin-top:0px">
+              <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
+               <img src="images/teaser.png" alt="input" class="img-responsive" width="95%"/>
+              <br>
+            </div> -->
+          <!-- <p class="text-justify">
+              <h6 style="color:#8899a5;text-align:left"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
+          </p> -->
+            <p class="text-justify">
+              Learning a generalizable object manipulation policy is
+              vital for an embodied agent to work in complex real-world
+              scenes. Parts, as the shared components in different object
+              categories, have the potential to increase the generaliza-
+              tion ability of the manipulation policy and achieve cross-
+              category object manipulation. In this work, we build the
+              first large-scale, part-based cross-category object manip-
+              ulation benchmark, PartManip, which is composed of 11
+              object categories, 494 objects, and 1432 tasks in 6 task
+              classes. Compared to previous work, our benchmark is
+              also more diverse and realistic, i.e., having more objects
+              and using sparse-view point cloud as input without oracle
+              information like part segmentation. To tackle the difficul-
+              ties of vision-based policy learning, we first train a state-
+              based expert with our proposed part-based canonicaliza-
+              tion and part-aware rewards, and then distill the knowledge
+              to a vision-based student. We also find an expressive back-
+              bone is essential to overcome the large diversity of different
+              objects. For cross-category generalization, we introduce
+              domain adversarial learning for domain-invariant feature
+              extraction. Extensive experiments in simulation show that
+              our learned policy can outperform other methods by a large
+              margin, especially on unseen object categories. We also
+              demonstrate our method can successfully manipulate novel
+              objects in the real world.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Methods</strong></h2>
+            <hr style="margin-top:0px">
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/pipe.png" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <p class="text-justify">
+                <b>An Overview of Our Domain-generalizable Part Segmentation and Pose Estimation Method.</b>  
+                We introduce a part-oriented domain adversarial training strategy that can tackle multi-resolution 
+                features and distribution imbalance for the domain-invariant GAPart feature extraction. 
+                The training strategy tackles the challenges in our tasks and dataset, significantly improving the 
+                generalizability of our method for part segmentation and pose estimation.
+              </p>
+            <br>
+
+
+            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Grasping Policy</b></h3>
+            <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <img style="padding: 0.5em 0 1em 0;" src="images/policyPipeline.png" alt="input" class="img-responsive graph" width="85%"/>
+            </div>
+            <p class="text-justify">
+              <b>The goal-conditioned dexterous grasping policy pipeline</b>. 
+              $\widetilde{{\mathcal{S}}^{\mathcal{E}}}=(\widetilde{\bm{s}_r},\widetilde{\bm{s}_o},X_O,\widetilde{g})$ 
+              and $\widetilde{{\mathcal{S}}^{\mathcal{S}}}=(\widetilde{\bm{s}_r},\widetilde{X_S},\widetilde{g})$ denote 
+              the input state of the teacher policy and student policy after state canonicalization, respectively;
+              $\oplus$ denotes concatenation.
+            </p>
+            <br> -->
+            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Robotic Grasping</b></h3> -->
+            <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
+                <source src="videos/grasping.mp4" type="video/mp4">
+              </video>
+            </div>   -->
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+<!--   
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Language-guided Dexterous Grasping</strong></h2>
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/language.png" alt="input" class="img-responsive graph" width="60%"/>
+              </div>
+              <p class="text-justify">
+                <b>Qualitative results of language-guided grasp proposal selection</b>.
+                CLIP can select proposals complying with the language instruction, 
+                allowing goal-conditioned policy to execute potentially functional grasps.
+              </p>
+            <br>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Qualitative results</strong></h2>
+          <hr style="margin-top:0px">
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery2.png" alt="input" class="img-responsive graph" width="60%"/>
+          </div>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery.png" alt="input" class="img-responsive graph" width="100%"/>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br> -->
+
+  <!-- citing -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h2><strong>Citation</strong></h2>
+          <hr style="margin-top:0px">
+            <pre style="background-color: #e9eeef;padding: 0 1.5em">
+            <code>
+            @article{geng2022gapartnet,
+              title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
+              author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
+              journal={arXiv preprint arXiv:2211.05272},
+              year={2022}
+            }
+            </code>
+            </pre>
+      </div>
+    </div>
+  </div>
+  <br> -->
+
+    <!-- Contact -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h2><strong>Contact</strong></h2>
+            <hr style="margin-top:0px">
+            <p>If you have any questions, please feel free to contact us:
+              <ul>
+                <li><b>Haoran Geng</b>&colon; ghr<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
+                <!-- <li><b>Helin Xu</b>&colon; xuhelin1911<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>gmail.com </li>
+                <li><b>Chengyang Zhao</b>&colon; zhaochengyang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li> -->
+                <li><b>He Wang</b>&colon; hewang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
+                <!-- <li><b>Weikang Wan</b>&colon; wwk<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
+                <li><b>Jialiang Zhang</b>&colon; jackzhang0906<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>126.com </li>
+                <li><b>Haoran Liu</b>&colon; lhrrhl0419<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>163.com </li>
+                <li><b>He Wang</b>&colon; hewang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li> -->
+              </ul>
+            </p>
+        </pre>
+        </div>
+      </div>
+    </div>
+
+
+
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']],
+      macros: {
+        bm: ["{\\boldsymbol #1}",1],
+      }}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>

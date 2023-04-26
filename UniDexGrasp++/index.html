@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>PartManip</title>
+    <title>UniDexGrasp++</title>
     <!-- Bootstrap -->
     <link rel="preconnect" href="https://rsms.me/">
     <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
@@ -26,28 +26,31 @@
       <div class="container-fluid">
         <div class="row">
           <div class="col">
-            <h2 style="font-size:30px;">PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations</h2>
-            <h4 style="color:#6e6e6e;"> CVPR 2023 </h4>
+            <h2 style="font-size:30px;">UniDexGrasp++: Improving Dexterous Grasping Policy Learning via Geometry-aware Curriculum and Iterative Generalist-Specialist Learning</h2>
+            <!-- <h4 style="color:#6e6e6e;"> ICCV 2023 submission </h4> -->
             <hr>
             <h6>
-              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a><sup>1, 2*</sup>&nbsp; &nbsp;
-              Ziming Li<sup>1,2*</sup> &nbsp; &nbsp;
-              <a href="https://gengyiran.github.io/" target="_blank">Yiran Geng</a><sup>1, 2</sup>&nbsp; &nbsp;
-              <a href="https://jychen18.github.io/" target="_blank">Jiayi Chen</a><sup>1,3</sup>&nbsp; &nbsp;
-              <a href="https://zsdonghao.github.io/" target="_blank">Hao Dong</a><sup>1,2</sup> &nbsp; &nbsp;
-              <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1,2†</sup>&nbsp; &nbsp;
+              <a class="a2" href="https://wkwan7.github.io/" target="_blank">Weikang Wan</a>*&nbsp; &nbsp;
+              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a>&nbsp; &nbsp;
+              <a:focus>Yun Liu</a:focus>&nbsp; &nbsp;
+              <a:focus>Zikang Shan</a:focus>&nbsp; &nbsp;
+              <a class="a2" href="https://www.yangyaodong.com/" target="_blank">Yaodong Yang</a>&nbsp; &nbsp;
+              <a class="a2" href="https://ericyi.github.io/" target="_blank">Li Yi</a>&nbsp; &nbsp;
+              <a class="a2" href="https://hughw19.github.io/" target="_blank">He Wang</a><span>&#8224;</span>&nbsp; &nbsp;
               <br>
               <br>
-            <p> 
-              <sup>1</sup>CFCS, Peking University&nbsp; &nbsp; 
+            
+            <!-- <p>  -->
+              <!-- <sup>1</sup>CFCS, Peking University&nbsp; &nbsp; 
               <sup>2</sup>School of EECS, Peking University&nbsp; &nbsp;  
-              <sup>3</sup>Beijing Academy of Artificial Intelligence&nbsp; &nbsp; 
-              <br>
-            </p>
+              <sup>3</sup>Beijing Academy of Artificial Intelligence&nbsp; &nbsp;  -->
+              <!-- <br> -->
+            <!-- </p> -->
             <p> <sup>*</sup> equal contributions &nbsp;
               <sup>†</sup> corresponding author &nbsp;
               <br>
           </p>
+            </h6>
             <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
                 <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
                 <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
@@ -60,7 +63,7 @@
               </div>
               <div class="column">
                   <p class="mb-5">
-                    <a class="btn btn-large btn-light" href="https://github.com/PKU-EPIC/PartManip" role="button" target="_blank" style="pointer-events: none">
+                    <a class="btn btn-large btn-light" href="https://github.com/PKU-EPIC/UniDexGrasp2" role="button" target="_blank">
                 <i class="fa fa-github-alt"></i> Code </a> </p>
               </div>
               <!-- <div class="column">
@@ -86,13 +89,14 @@
         <div class="col-12 text-center">
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-               <img src="images/teaser_img.png" alt="input" class="img-responsive graph" width="95%"/>
+               <img src="images/teaser.jpg" alt="input" class="img-responsive graph" width="95%"/>
               <br>
             </div>
             <p class="text-justify">
-              <b> We introduce a large-scale cross-category part manipulation benchmark <i>PartManip</i> with diverse object datasets,
-                realistic settings, and rich annotations. We propose a generalizable vision-based policy learning strategy and boost the performance of
-                part-based object manipulation by a large margin, which can generalize to unseen object categories and novel objects in the real world.
+              In this work, we present a novel dexterous grasping policy learning pipeline, <b>UniDexGrasp++</b>. 
+              Same to UniDexGrasp, UniDexGrasp++ is trained on 3000+ different object instances with
+               random object poses under a table-top setting. It significantly outperforms the previous
+                SOTA and achieves <b>85.4%</b> and <b>78.2%</b> success rates on the train and test set.
             </p>
               <!-- </div> -->
         </div>
@@ -135,31 +139,16 @@
               <h6 style="color:#8899a5;text-align:left"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
           </p> -->
             <p class="text-justify">
-              Learning a generalizable object manipulation policy is
-              vital for an embodied agent to work in complex real-world
-              scenes. Parts, as the shared components in different object
-              categories, have the potential to increase the generaliza-
-              tion ability of the manipulation policy and achieve cross-
-              category object manipulation. In this work, we build the
-              first large-scale, part-based cross-category object manip-
-              ulation benchmark, PartManip, which is composed of 11
-              object categories, 494 objects, and 1432 tasks in 6 task
-              classes. Compared to previous work, our benchmark is
-              also more diverse and realistic, i.e., having more objects
-              and using sparse-view point cloud as input without oracle
-              information like part segmentation. To tackle the difficul-
-              ties of vision-based policy learning, we first train a state-
-              based expert with our proposed part-based canonicaliza-
-              tion and part-aware rewards, and then distill the knowledge
-              to a vision-based student. We also find an expressive back-
-              bone is essential to overcome the large diversity of different
-              objects. For cross-category generalization, we introduce
-              domain adversarial learning for domain-invariant feature
-              extraction. Extensive experiments in simulation show that
-              our learned policy can outperform other methods by a large
-              margin, especially on unseen object categories. We also
-              demonstrate our method can successfully manipulate novel
-              objects in the real world.
+              We propose a novel, object-agnostic method for learning a universal policy for dexterous 
+              object grasping from realistic point cloud observations and proprioceptive information 
+              under a table-top setting, namely UniDexGrasp++. To address the challenge of learning 
+              the vision-based policy across thousands of object instances, we propose Geometry-aware 
+              Curriculum Learning (<b>GeoCurriculum</b>) and Geometry-aware iterative Generalist-Specialist 
+              Learning (<b>GiGSL</b>) which leverage the geometry feature of the task and significantly improve 
+              the generalizability. With our proposed techniques, our final policy shows universal 
+              dexterous grasping on thousands of object instances with <b>85.4%</b> and <b>78.2%</b> success rate 
+              on the train set and test set which outperforms the state-of-the-art baseline UniDexGrasp 
+              by <b>11.7%</b> and <b>11.3%</b>, respectively.
           </p>
         </div>
       </div>
@@ -175,14 +164,21 @@
             <hr style="margin-top:0px">
             <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/pipe.png" alt="input" class="img-responsive graph" width="95%"/>
+                <img src="images/pipe.jpg" alt="input" class="img-responsive graph" width="95%"/>
               </div>
               <p class="text-justify">
-                <b>An Overview of Our Domain-generalizable Part Segmentation and Pose Estimation Method.</b>  
-                We introduce a part-oriented domain adversarial training strategy that can tackle multi-resolution 
-                features and distribution imbalance for the domain-invariant GAPart feature extraction. 
-                The training strategy tackles the challenges in our tasks and dataset, significantly improving the 
-                generalizability of our method for part segmentation and pose estimation.
+                <b>Method Overview</b>. We propose to first adopt a state-based policy learning stage 
+                followed by a vision-based policy learning stage. The state-based policy takes input
+                 robot state Rt, object state St, and the geometric feature z of the scene point cloud 
+                 of the first frame. We leverage a geometry-aware task curriculum (<b>GeoCurriculum</b>) to 
+                 learn the first state-based generalist policy. After that, this generalist policy is 
+                 further improved via iteratively performing specialist fine-tuning and distilling back
+                  to the generalist in our proposed geometry-aware iterative generalist-specialist 
+                  learning (<b>GiGSL</b>), where the task assignment to which specialist is decided by our 
+                  geometry-aware clustering (<b>GeoClustering</b>). For vision-based policy learning, 
+                  we first distill the final state-based specialists to an initial vision-based 
+                  generalist and then do GiGSL for the vision generalist, until we obtain the final 
+                  vision-based generalist with the highest performance.
               </p>
             <br>
 
@@ -286,6 +282,7 @@
             <hr style="margin-top:0px">
             <p>If you have any questions, please feel free to contact us:
               <ul>
+                <li><b>Weikang Wan</b>&colon; wwk<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
                 <li><b>Haoran Geng</b>&colon; ghr<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
                 <!-- <li><b>Helin Xu</b>&colon; xuhelin1911<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>gmail.com </li>
                 <li><b>Chengyang Zhao</b>&colon; zhaochengyang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li> -->
@@ -303,7 +300,7 @@
 
 
       
-    <a href="https://hits.seeyoufarm.com">
+    <!-- <a href="https://hits.seeyoufarm.com">
       <img id="myImage" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpku-epic.github.io%2FPartManip%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
       <script>
         function hideImage() {
@@ -311,7 +308,7 @@
         }
         window.onload = hideImage;
       </script>
-    </a>
+    </a> -->
 
   <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
       <hr>

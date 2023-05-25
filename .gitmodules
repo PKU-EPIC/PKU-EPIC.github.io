@@ -1,0 +1,3 @@
+[submodule "UniDexGrasp"]
+	path = UniDexGrasp
+	url = https://github.com/XYZ-99/UniDexGraspWebsite.git

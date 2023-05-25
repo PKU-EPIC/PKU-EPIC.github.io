@@ -31,20 +31,21 @@
             <h4 style="color:#6e6e6e;"> CVPR 2023 <font color='red'>Highlight</font> </h4>
             <hr>
             <h6> 
-              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a><sup>1, 2*</sup>&nbsp; &nbsp;
-              Helin Xu<sup>3*</sup> &nbsp; &nbsp;
+              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a><sup>1, 2, 3*</sup>&nbsp; &nbsp;
+              <a href="https://helinxu.github.io/" target="_blank">Helin Xu</a><sup>4*</sup> &nbsp; &nbsp;
               Chengyang Zhao<sup>1*</sup>&nbsp; &nbsp;
-              <a href="https://chaoxu.xyz/#bio" target="_blank">Chao Xu</a><sup>4</sup>&nbsp; &nbsp;
-              <a href="https://ericyi.github.io/" target="_blank">Li Yi</a><sup>3</sup> &nbsp; &nbsp;
-              <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a><sup>2</sup> &nbsp; &nbsp;
-              <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1†</sup>&nbsp; &nbsp;
+              <a href="https://chaoxu.xyz/#bio" target="_blank">Chao Xu</a><sup>5</sup>&nbsp; &nbsp;
+              <a href="https://ericyi.github.io/" target="_blank">Li Yi</a><sup>4</sup> &nbsp; &nbsp;
+              <a href="https://siyuanhuang.com/" target="_blank">Siyuan Huang</a><sup>3</sup> &nbsp; &nbsp;
+              <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1,2†</sup>&nbsp; &nbsp;
               <br>
               <br>
             <p> 
-              <sup>1</sup>Peking University&nbsp; &nbsp; 
-              <sup>2</sup>Beijing Institute for General Artificial Intelligence&nbsp; &nbsp;  
-              <sup>3</sup>Tsinghua University&nbsp; &nbsp; 
-              <sup>4</sup>University of California, Los Angeles&nbsp; &nbsp;
+              <sup>1</sup>CFCS, Peking University&nbsp; &nbsp; 
+              <sup>2</sup>School of EECS, Peking University&nbsp; &nbsp;  
+              <sup>3</sup>Beijing Institute for General Artificial Intelligence&nbsp; &nbsp; 
+              <sup>4</sup>Tsinghua University&nbsp; &nbsp; 
+              <sup>5</sup>University of California, Los Angeles&nbsp; &nbsp;
               <br>
             </p>
             <p> <sup>*</sup> equal contributions &nbsp;
@@ -55,6 +56,7 @@
                 <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
                 <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
 
+            
             <div class="row justify-content-center">
               <div class="column">
                   <p class="mb-5">
@@ -62,12 +64,12 @@
                     <i class="fa fa-file"></i> Paper </a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
-                <i class="fa fa-github-alt"></i> Code (Coming soon) </a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://github.com/PKU-EPIC/GAPartNet" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Code </a> </p>
               </div>
               <div class="column">
-                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
-                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="https://forms.gle/3qzv8z5vP2BT5ARN7" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Dataset </a> </p>
               </div>
               <!-- <div class="column">
                   <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
@@ -81,6 +83,7 @@
     </div>
   </section>
 
+  <!-- teaser -->
   <section>
     <div class="container">
       <div class="row">
@@ -91,9 +94,9 @@
               <br>
             </div>
             <p class="text-justify">
-              <b> We propose to learn generalizable object perception and manipulation skills via Generalizable and Actionable Parts, 
-                and present GAPartNet, a large-scale interactive dataset with rich part annotations. We propose a domain generalization 
-                method for crosscategory part segmentation and pose estimation. Our GAPart definition boosts cross-category object 
+              We propose to learn generalizable object perception and manipulation skills via <b>G</b>eneralizable and <b>A</b>ctionable <b>Parts</b>, 
+                and present <b>GAPartNet</b>, a large-scale interactive dataset with rich part annotations. We propose a domain generalization 
+                method for cross-category part segmentation and pose estimation. Our GAPart definition boosts cross-category object 
                 manipulation and can transfer to real.
             </p>
               <!-- </div> -->
@@ -103,6 +106,7 @@
   </section>
   <br>
 
+  <!-- video -->
   <section>
     <div class="container">
       <div class="row">
@@ -111,7 +115,7 @@
             <hr style="margin-top:0px">
             <div class="row justify-content-center" style="align-items:center; display:flex;">
               <video width="80%" playsinline="" preload="" muted="" controls>
-                <source src="videos/supp_video.mp4" type="video/mp4">
+                <source src="videos/video_new.mp4" type="video/mp4">
               </video>
             </div>  
         </div>
@@ -129,21 +133,14 @@
         <div class="col-12">
           <h2><strong>Abstract</strong></h2>
             <hr style="margin-top:0px">
-              <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
-               <img src="images/teaser.png" alt="input" class="img-responsive" width="95%"/>
-              <br>
-            </div> -->
-          <!-- <p class="text-justify">
-              <h6 style="color:#8899a5;text-align:left"> Figure 1. Framework overview (From the left to right): we leverage domain randomization-enhanced depth simulation to generate paired data, on which we can train our depth restoration network SwinDRNet, and the restored depths will be fed to downstream tasks and improves estimating category-level pose and grasping for specular and transparent objects.</h6>
-          </p> -->
             <p class="text-justify">
               For years, researchers have been devoted to generalizable object perception and manipulation, 
               where crosscategory generalizability is highly desired yet underexplored. In this work, 
               we propose to learn such crosscategory skills via <b>G</b>eneralizable and <b>A</b>ctionable <b>Parts</b> (<b>GAParts</b>). 
               By identifying and defining 9 GAPart classes (lids, handles, etc.) in 27 object categories, 
-              we construct a large-scale part-centric interactive dataset, GAPartNet, where we provide rich, 
+              we construct a large-scale part-centric interactive dataset, <b>GAPartNet</b>, where we provide rich, 
               part-level annotations (semantics, poses) for 8,489 part instances on 1,166 objects. Based on GAPartNet, 
-              we investigate three cross-category tasks: part segmentation, part pose estimation, 
+              we investigate three <b>cross-category</b> tasks: part segmentation, part pose estimation, 
               and part-based object manipulation. Given the significant domain gaps between seen and unseen object categories, 
               we propose a robust 3D segmentation method from the perspective of domain generalization by 
               integrating adversarial learning techniques. Our method outperforms all existing methods by 
@@ -157,6 +154,54 @@
   </section>
   <br>
 
+  <!-- dataset -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Dataset</strong></h2>
+            <hr style="margin-top:0px">
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GAPart Definition</b></h3>      
+              <p class="text-justify">
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/GAPart.jpg" alt="input" class="img-responsive graph" width="65%"/>
+                </div>
+                We give a rigorous definition to the <b>GAPart classes</b>, which not only are <b>Generalizable 
+                to visual recognition</b> but also <b>share similar Actionability</b>, corresponding to the G 
+                and A in GAPartNet. Our main purpose of such a definition is to bridge the perception
+                 and manipulation, to allow joint learning of both vision and interaction. Accordingly, 
+                 we propose two principles to follow: firstly, <b>geometric similarity within part classes</b>, 
+                 and secondly, <b>actionability alignment within part classes</b>.
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GAPartNet Dataset</b></h3>      
+              <p class="text-justify">
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/dataset.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                </div>
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/dataset_statistic.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                </div>
+                <b>Following the GAPart definition, we construct a large-scale part-centric interactive 
+                dataset, GAPartNet, with rich, part-level annotations for both perception and interaction 
+                tasks.</b> Our 3D object shapes come from two existing datasets, PartNet-Mobility and AKB-48,
+                which are cleaned and provided with new uniform annotations based on our GAPart definition.
+                The final GAPartNet has <b>9 GAPart classes</b>, providing semantic labels and pose annotations 
+                for <b>8,489 GAPart instances</b> on <b>1,166 objects</b> from <b>27 object categories</b>. On average, 
+                each object has 7.3 functional parts. Each GAPart class can be seen on objects from
+                more than 3 object categories, and each GAPart class is found in 8.8 object categories
+                on average, which lays the foundation for our benchmark on generalizable parts.
+              </p>
+            <br>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <!-- Methods -->
   <section>
     <div class="container">
       <div class="row">
@@ -202,6 +247,73 @@
   </section>
   <br>
   <br>
+
+    <!-- Results -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2><strong>Results</strong></h2>
+              <hr style="margin-top:0px">
+                <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Cross-Category Part Segmentation</b></h3>  
+                We visualize the results of the different methods on the seen and unseen categories,
+                 where the red blocks show the failures. Our method has fewer failure cases. 
+                 In particular, on the unseen category, our method still achieves the desired performance
+                  when the performance of other methods drops significantly.    
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/segmentation.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Cross-Category Part Pose Estimation</b></h3>  
+                We visualize the results of the part pose estimation. Our method has better results 
+                on seen and unseen categories with better generalization across categories.
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/pose.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                The following shows the visualization results for these two tasks. The left two figures 
+                show the results of cross-category part segmentation and pose estimation on seen and 
+                unseen categories, while the right figure shows some of the failure cases. Here we 
+                only show the revolute joint estimation results.
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/perception.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Cross-Category Part-based Object Manipulation</b></h3>      
+                The following is a visualization of our part-based object manipulatio.
+                
+                Experiments in the simulator show that our approach enables more human-like interactions,
+                while the RL algorithm from the ManiSkill benchmark often tries to open a door or drawer 
+                by prying and rubbing the edge of the door or drawer, rather than using the handle.
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/simulator.gif" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                We further tested our method in real-world experiments, showing that our method is 
+                robust to Domain Gap, which allows us to generate reliable part segmentation and 
+                part pose estimation, and ultimately to successfully manipulate parts from unseen objects.
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/real1.gif" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/real2.gif" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+              <br>
+  
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
 
 <!--   
   <section>
@@ -292,7 +404,15 @@
       </div>
     </div>
 
-
+    <a href="https://hits.seeyoufarm.com">
+      <img id="myImage" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpku-epic.github.io%2FGAPartNet%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+      <script>
+        function hideImage() {
+            document.getElementById("myImage").style.display = "none";
+        }
+        window.onload = hideImage;
+        </script>
+    </a>
 
   <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
       <hr>

@@ -1,1 +1,254 @@
-release soon
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+  <title>RotationLaplace</title>
+
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/codemirror/5.8.0/codemirror.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/clipboard.js/1.5.3/clipboard.min.js"></script>
+  <script src="js/main.js"></script>
+</head>
+
+<body>
+<div class="container" id="main">
+  <div class="row">
+    <h1 class="col-md-12 text-center">
+      A Laplace-inspired Distribution on SO(3) <br> for Probabilistic Rotation Estimation <br>
+    </h1>
+    <venue class="col-md-12 text-center">
+      ICLR 2023 (Notable Top 25%)
+    </venue>
+
+  </div>
+  <div class="row meta">
+    <div class="col-md-12 text-center">
+      <ul class="list-inline">
+        <li>
+          <a href="https://yd-yin.github.io/">Yingda Yin</a>
+        </li>
+        <li>
+          Yang Wang
+        </li>
+        <li>
+          <a href="https://hughw19.github.io/">He Wang</a><sup>&dagger;</sup>
+        </li>
+        <li>
+          <a href="https://cfcs.pku.edu.cn/baoquan/">Baoquan Chen</a><sup>&dagger;</sup>
+        </li>
+      </ul>
+      <ul style="padding-top: 2px; padding-bottom: 10px">
+        <sup>&dagger;</sup>: Corresponding author
+      </ul>
+      <ul style="padding-top: 2px; padding-bottom: 15px">
+        Peking University
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row meta">
+    <div class="col-md-4 col-md-offset-4 text-center">
+      <ul class="nav nav-pills nav-justified">
+        <li>
+          <a href="https://arxiv.org/abs/2303.01743">
+            <image src="images/pdf.png" height="50px"></image>
+            <br>
+            <strong>ArXiv</strong>
+          </a>
+        </li>
+<!--        <li>-->
+<!--          <a href="https://youtu.be/GwQhnG6krCI">-->
+<!--            <image src="images/youtube.png" height="50px"></image>-->
+<!--            <br>-->
+<!--            <strong>Video</strong>-->
+<!--          </a>-->
+<!--        </li>-->
+        <li>
+          <a href="https://github.com/yd-yin/RotationLaplace">
+            <image src="images/github.png" height="50px"></image>
+            <br>
+            <strong>Code</strong>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>
+        Abstract
+      </h2>
+      <p class="text-justify">
+        Estimating the 3DoF rotation from a single RGB image is an important yet challenging problem. Probabilistic rotation regression has raised more and more attention with the benefit of
+        expressing uncertainty information along with the prediction.
+        Though modeling noise using Gaussian-resembling Bingham distribution and matrix Fisher distribution is natural, they are shown to be sensitive to outliers for the nature of quadratic punishment to deviations.
+      </p>
+      <p>
+        In this paper, we draw inspiration from multivariate Laplace distribution and propose a novel Rotation Laplace distribution on SO(3). Rotation Laplace distribution is robust to the disturbance of outliers and enforces much gradient to the low-error region, resulting in a better convergence.
+                Our extensive experiments show that our proposed distribution achieves  state-of-the-art performance for rotation regression tasks over both probabilistic and non-probabilistic baselines.
+      </p>
+
+      <table style="margin: 20px">
+        <tr>
+          <td>
+            <image src="images/gradient.jpg" class="img-responsive center-block" style="max-width: 90%;"></image>
+          </td>
+        </tr>
+      </table>
+
+
+    </div>
+  </div>
+
+
+<!--  <div class="row">-->
+<!--    <div class="col-md-8 col-md-offset-2">-->
+<!--      <h2>-->
+<!--        Video-->
+<!--      </h2>-->
+<!--      <div class="text-center">-->
+<!--        <div style="position:relative;padding-top:56.5%;">-->
+<!--          <iframe src="https://www.youtube.com/embed/GwQhnG6krCI" allowfullscreen style="position:absolute;top:0;left:0;width:100%;height:100%;"></iframe>-->
+<!--        </div>-->
+<!--      </div>-->
+<!--    </div>-->
+<!--  </div>-->
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>
+        Method
+      </h2>
+      <h3>
+        Revisit Matrix Fisher Distribution
+      </h3>
+      <p>
+        <i>Matrix Fisher</i> distribution is a probability distribution over SO(3) for rotation matrices, whose probability density function is in the form of
+      <figure>
+        <image src="images/eq_fisher.jpg" class="img-responsive center-block" style="max-width: 35%;"></image>
+      </figure>
+      <p>
+        where parameter A is an arbitrary 3×3 matrix and F(A) is the normalizing constant. The mode and dispersion of the distribution can be computed from
+        computing singular value decomposition of the parameter A.
+      </p>
+      <p>
+        It is shown that matrix Fisher distribution is highly relevant with zero-mean Gaussian distribution near its mode.
+      </p>
+
+      <h3>
+        Rotation Laplace Distribution
+      </h3>
+      We propose <i>Rotation Laplace distribution</i> on SO(3), defined as
+      <figure>
+        <image src="images/eq_laplace.jpg" class="img-responsive center-block" style="max-width: 45%;"></image>
+      </figure>
+      <p>
+        where parameter A is an arbitrary 3×3 matrix, S is the diagonal matrix composed of the proper singular values of matrix A and F(A) is the normalizing constant.
+        The mode and dispersion of the distribution can be computed from computing singular value decomposition of the parameter A.
+      </p>
+      <p>
+        Rotation Laplace distribution is highly relevant with zero-mean multivariate Laplace distribution near its mode.
+      </p>
+      <h3>
+        Discrete Approximation of the Normalization Factor
+      </h3>
+      <p>
+        We approximate the normalization factor of  Rotation Laplace distribution through equivolumetric discretization over SO(3) manifold.
+      </p>
+      <figure>
+        <image src="images/discrete.jpg" class="img-responsive center-block" style="max-width: 70%;"></image>
+      </figure>
+      <p>
+        In experiments, we discretize SO(3) space into about 37k points.
+      </p>
+
+      <h3>
+        Quaternion Laplace Distribution
+      </h3>
+      <p>
+        We propose our extension of Laplace-inspired distribution for quaternions, namely, <i>Quaternion Laplace distribution</i>.
+      </p>
+      <figure>
+        <image src="images/eq_quat.jpg" class="img-responsive center-block" style="max-width: 40%;"></image>
+      </figure>
+      <p>
+        where M is a 4x4 orthogonal matrix, and Z is a 4x4 diagonal matrix.
+        Quaternion Laplace distribution is highly relevant with zero-mean multivariate Laplace distribution near its mode.
+      </p>
+      <p>
+        Our proposed Rotation Laplace distribution is equivalent to Quaternion Laplace distribution,
+        similar to the equivalence of matrix Fisher distribution and Bingham distribution, demonstrating the consistency of our derivations.
+      </p>
+
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+      <h2>
+        Experiment
+      </h2>
+      <p class="text-justify">
+        On common benchmark datasets of rotation estimation from RGB images (ModelNet10-SO(3) and Pascal3D+), we achieve a significant and consistent
+        performance improvement over all baselines.
+      </p>
+      <figure>
+        <image src="images/res_prob.jpg" class="img-responsive center-block" style="max-width: 80%;"></image>
+      </figure>
+      <p>
+        The predicted distributions can exhibit high uncertainty when the object has rotational symmetry, leading to near 180deg errors (a-c),
+        or the input image is with low resolution (d). Subfigure (e-f) show cases with high certainty and reasonably low errors.
+      </p>
+      <figure>
+        <image src="images/res_vis.jpg" class="img-responsive center-block" style="max-width: 90%;"></image>
+      </figure>
+    </div>
+  </div>
+
+
+  <div class="row">
+    <div class="col-md-9 col-md-offset-2">
+      <h2>
+        Citation
+      </h2>
+      <div class="form-group col-md-10 col-md-offset-0">
+        <textarea id="bibtex" class="form-control" readonly>
+@InProceedings{yin2022fishermatch,
+  author={Yin, Yingda and Wang, Yang and Wang, He and Chen, Baoquan},
+  title={A Laplace-inspired Distribution on SO(3) for Probabilistic Rotation Estimation},
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2023},
+}</textarea>
+      </div>
+    </div>
+  </div>
+
+
+
+
+  <div class="row">
+    <div class="col-md-8 col-md-offset-2">
+        The website template was borrowed from <a href="http://mgharbi.com/">Michaël Gharbi</a>.
+    </div>
+  </div>
+</div>
+<br>
+</body>
+</html>

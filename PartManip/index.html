@@ -63,6 +63,11 @@
                     <a class="btn btn-large btn-light" href="https://github.com/PKU-EPIC/PartManip" role="button" target="_blank">
                 <i class="fa fa-github-alt"></i> Code </a> </p>
               </div>
+              <div class="column">
+                <p class="mb-5">
+                  <a class="btn btn-large btn-light" href="https://forms.gle/DqdPvLE6pNWZf2XR8" role="button" target="_blank">
+              <i class="fa fa-github-alt"></i> Dataset </a> </p>
+            </div>
               <!-- <div class="column">
                   <p class="mb-5">
                     <a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
@@ -79,6 +84,8 @@
       </div>
     </div>
   </section>
+  <br>
+
 
   <section>
     <div class="container">
@@ -90,9 +97,9 @@
               <br>
             </div>
             <p class="text-justify">
-               We introduce a large-scale cross-category part manipulation benchmark <i>PartManip</i> with diverse object datasets,
-                realistic settings, and rich annotations. We propose a generalizable vision-based policy learning strategy and boost the performance of
-                part-based object manipulation by a large margin, which can generalize to unseen object categories and novel objects in the real world.
+               We introduce a <b>large-scale cross-category part manipulation benchmark <i>PartManip</i></b>  with <b>diverse object datasets</b>,
+               <b>realistic settings</b>, and <b>rich annotations</b>. We propose a <b>generalizable vision-based policy learning strategy</b> and boost the performance of
+                part-based object manipulation by a large margin, which can generalize to <b>unseen object categories</b> and novel objects in the real world.
             </p>
               <!-- </div> -->
         </div>
@@ -101,24 +108,27 @@
   </section>
   <br>
 
-  <!-- <section>
+  <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2><strong>Video</strong></h2>
             <hr style="margin-top:0px">
-            <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <iframe width="750" height="450" src="https://www.youtube.com/embed/k0LbcO1B-ac" 
+            title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; 
+            clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+            allowfullscreen></iframe>
+            <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
               <video width="80%" playsinline="" preload="" muted="" controls>
-                <source src="videos/supp_video.mp4" type="video/mp4">
+                <source src="video/PartManip_video.mp4" type="video/mp4">
               </video>
-            </div>  
+            </div>   -->
         </div>
         </div>
       </div>
     </div>
   </section>
   <br>
-  <br> -->
 
   <!-- abstract -->
   <section>
@@ -140,20 +150,20 @@
               scenes. Parts, as the shared components in different object
               categories, have the potential to increase the generaliza-
               tion ability of the manipulation policy and achieve cross-
-              category object manipulation. In this work, we build the
+              category object manipulation. In this work, we build <b>the
               first large-scale, part-based cross-category object manip-
-              ulation benchmark, PartManip, which is composed of 11
+              ulation benchmark, PartManip</b>, which is composed of 11
               object categories, 494 objects, and 1432 tasks in 6 task
               classes. Compared to previous work, our benchmark is
               also more diverse and realistic, i.e., having more objects
               and using sparse-view point cloud as input without oracle
               information like part segmentation. To tackle the difficul-
-              ties of vision-based policy learning, we first train a state-
-              based expert with our proposed part-based canonicaliza-
-              tion and part-aware rewards, and then distill the knowledge
-              to a vision-based student. We also find an expressive back-
+              ties of vision-based policy learning, we first train a <b>state-
+              based expert</b> with our proposed part-based canonicaliza-
+              tion and part-aware rewards, and then <b>distill the knowledge
+              to a vision-based student</b>. We also find an expressive back-
               bone is essential to overcome the large diversity of different
-              objects. For cross-category generalization, we introduce
+              objects. For <b>cross-category generalization</b>, we introduce
               domain adversarial learning for domain-invariant feature
               extraction. Extensive experiments in simulation show that
               our learned policy can outperform other methods by a large
@@ -167,6 +177,61 @@
   </section>
   <br>
 
+  <!-- Benchmark -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>PartManip Benchmark</strong></h2>
+            <hr style="margin-top:0px">
+            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>objects</b></h3> -->
+              <p class="text-justify">
+                By utilizing the definition of the generalizable and actionable part (<b>GAPart</b>) 
+                  presented in GAPartNet, we build a benchmark for a comprehensive evaluation of the
+                  <b>cross-category generalization</b> policy learning approaches. GAParts are some kinds
+                  of parts that have similar geometry and similar interaction strategy across 
+                  different object categories. For example, the handle on tables is often similar 
+                  to those on safes, so we can regard the handle as a GAPart. The nature of GAPart
+                  ensures a general way for manipulation <b>regardless of the object category</b>,
+                  making it possible for cross-category generalization. We thus expect the 
+                  manipulation policy trained on some object categories can generalize to other 
+                  unseen object categories, and build <b>the first benchmark for cross-category 
+                  generalizable part manipulation policy learning</b>. 
+              </p>    
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/objs.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/objs_table.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <p class="text-justify">
+                Furthermore, our benchmark 
+                  is more <b>diverse</b> and <b>realistic</b> than previous robotic manipulation benchmarks. 
+                  Diversity indicates that we have more object instances and categories. 
+                  Realism indicates that our observation space has less 
+                  oracle information (i.e., part segmentation masks)
+              </p>
+
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/tasks.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+            <br>
+            <p class="text-justify">
+              We have six classes of tasks:<b>OpenDoor</b>, <b>OpenDrawer</b>, <b>CloseDoor</b>, <b>CloseDrawer</b>, 
+              <b>PressButton</b> and <b>GraspHandle</b>. Although OpenDoor and OpenDrawer require grasping 
+                the handle first, GraspHandle differs from them because it contains another GAPart 
+                lid with more object categories.
+            </p>
+
+            
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- Methods -->
   <section>
     <div class="container">
       <div class="row">
@@ -178,64 +243,61 @@
                 <img src="images/pipe.png" alt="input" class="img-responsive graph" width="95%"/>
               </div>
               <p class="text-justify">
-                <b>An Overview of Our Domain-generalizable Part Segmentation and Pose Estimation Method.</b>  
-                We introduce a part-oriented domain adversarial training strategy that can tackle multi-resolution 
-                features and distribution imbalance for the domain-invariant GAPart feature extraction. 
-                The training strategy tackles the challenges in our tasks and dataset, significantly improving the 
-                generalizability of our method for part segmentation and pose estimation.
+                <b>An Overview of Our Pipeline.</b>  
+                We first train <b>state-based expert policy</b> using our proposed <b>canonicalization to the 
+                part coordinate frame</b> and the <b>part-aware reward</b>. We then use the learned expert to 
+                collect demonstrations for pre-training the vision-based policy by <b>behavior cloning</b>. 
+                After pre-training, we train the vision-based policy to imitate the state-based expert 
+                policy using <b>DAgger</b>. We also introduce several point cloud augmentation techniques 
+                to boost the generalization ability. For the vision backbone, we introduce <b>3D 
+                Sparse-UNet</b> which has a large expression capability. Furthermore, we introduced an 
+                extra <b>domain adversarial learning module</b> for better cross-category generalization.
               </p>
-            <br>
-
-
-            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Grasping Policy</b></h3>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Training</b></h3>
             <div class="row justify-content-center" style="align-items:center; display:flex;">
-              <img style="padding: 0.5em 0 1em 0;" src="images/policyPipeline.png" alt="input" class="img-responsive graph" width="85%"/>
-            </div>
-            <p class="text-justify">
-              <b>The goal-conditioned dexterous grasping policy pipeline</b>. 
-              $\widetilde{{\mathcal{S}}^{\mathcal{E}}}=(\widetilde{\bm{s}_r},\widetilde{\bm{s}_o},X_O,\widetilde{g})$ 
-              and $\widetilde{{\mathcal{S}}^{\mathcal{S}}}=(\widetilde{\bm{s}_r},\widetilde{X_S},\widetilde{g})$ denote 
-              the input state of the teacher policy and student policy after state canonicalization, respectively;
-              $\oplus$ denotes concatenation.
-            </p>
-            <br> -->
-            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Robotic Grasping</b></h3> -->
-            <!-- <div class="row justify-content-center" style="align-items:center; display:flex;">
-              <video width="80%" playsinline="" autoplay="autoplay" loop="loop" preload="" muted="" controls>
-                <source src="videos/grasping.mp4" type="video/mp4">
+              <video width="80%" playsinline="" preload="" muted="" controls>
+                <source src="video/PartManip_train.mp4" type="video/mp4">
               </video>
-            </div>   -->
+            </div>  
+            <br>
+            <p class="text-justify">
+              We use Isaac Gym as our simulator and most experiments are done in simulation.
+              During training, we can <b>parallelly</b> train on <b>multiple different objects</b> in our simulators.
+            </p>
+            
+
+
         </div>
         </div>
       </div>
     </div>
-  </section>
-  <br>
-  <br>
 
-<!--   
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
-          <h2><strong>Language-guided Dexterous Grasping</strong></h2>
+          <h2><strong>Quantitative results</strong></h2>
             <hr style="margin-top:0px">
               <div class="row justify-content-center" style="align-items:center; display:flex;">
-                <img src="images/language.png" alt="input" class="img-responsive graph" width="60%"/>
+                <img src="images/result1.jpg" alt="input" class="img-responsive graph" width="60%"/>
               </div>
               <p class="text-justify">
-                <b>Qualitative results of language-guided grasp proposal selection</b>.
-                CLIP can select proposals complying with the language instruction, 
-                allowing goal-conditioned policy to execute potentially functional grasps.
+                This is the quantitative result of Opening Door. Our method outperforms other 
+                baselines by a large margins, especially in <b>unseen categories</b>.
+              </p>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/result2.jpg" alt="input" class="img-responsive graph" width="60%"/>
+              </div>
+              <p class="text-justify">
+                The same goes for the opening drawer task. Our method still achieve state-of-the-art 
+                performance, especially in <b>unseen categories</b>.
               </p>
             <br>
         </div>
         </div>
       </div>
     </div>
-  </section>
-  <br>
-  <br>
+
 
   <section>
     <div class="container">
@@ -244,39 +306,53 @@
           <h2><strong>Qualitative results</strong></h2>
           <hr style="margin-top:0px">
           <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <img src="images/gallery2.png" alt="input" class="img-responsive graph" width="60%"/>
+            <img src="video/sim.gif" alt="input" class="img-responsive graph" width="60%"/>
           </div>
+          <p class="text-justify">
+          This qualitative results show our training results. Compared to previous works, our policy
+          is <b>part-aware</b> and thus more similar to <b>human behaviors</b>. For example, our policy can use 
+          handles to open doors and drawers, as shown in our video.
+          </p>
           <div class="row justify-content-center" style="align-items:center; display:flex;">
-            <img src="images/gallery.png" alt="input" class="img-responsive graph" width="100%"/>
+            <img src="video/real.gif" alt="input" class="img-responsive graph" width="100%"/>
           </div>
+          <p class="text-justify">
+            We also apply the output action of our policy to the robotic arm both in the simulator 
+            and the real world. Note that the testing object is unseen during policy learning. 
+            Experiments show that our trained model can <b>successfully transfer to the real world</b>.
+          </p>
         </div>
         </div>
       </div>
     </div>
-  </section>
-  <br>
-  <br> -->
+
 
   <!-- citing -->
-  <!-- <div class="container">
+  <div class="container">
     <div class="row ">
       <div class="col-12">
           <h2><strong>Citation</strong></h2>
           <hr style="margin-top:0px">
             <pre style="background-color: #e9eeef;padding: 0 1.5em">
-            <code>
-            @article{geng2022gapartnet,
-              title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
-              author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
-              journal={arXiv preprint arXiv:2211.05272},
-              year={2022}
-            }
-            </code>
+            <code>           
+@article{geng2023partmanip,
+  title={PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations},
+  author={Geng, Haoran and Li, Ziming and Geng, Yiran and Chen, Jiayi and Dong, Hao and Wang, He},
+  journal={arXiv preprint arXiv:2303.16958},
+  year={2023}
+}
+
+@article{geng2022gapartnet,
+  title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
+  author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
+  journal={arXiv preprint arXiv:2211.05272},
+  year={2022}
+}</code>
             </pre>
       </div>
     </div>
   </div>
-  <br> -->
+  <br>
 
     <!-- Contact -->
     <div class="container">
@@ -287,13 +363,7 @@
             <p>If you have any questions, please feel free to contact us:
               <ul>
                 <li><b>Haoran Geng</b>&colon; ghr<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
-                <!-- <li><b>Helin Xu</b>&colon; xuhelin1911<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>gmail.com </li>
-                <li><b>Chengyang Zhao</b>&colon; zhaochengyang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li> -->
                 <li><b>He Wang</b>&colon; hewang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
-                <!-- <li><b>Weikang Wan</b>&colon; wwk<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
-                <li><b>Jialiang Zhang</b>&colon; jackzhang0906<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>126.com </li>
-                <li><b>Haoran Liu</b>&colon; lhrrhl0419<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>163.com </li>
-                <li><b>He Wang</b>&colon; hewang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li> -->
               </ul>
             </p>
         </pre>

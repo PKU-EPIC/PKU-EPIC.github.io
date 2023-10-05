@@ -105,6 +105,7 @@
   </section>
   <br>
 
+
   <!-- <section>
     <div class="container">
       <div class="row">
@@ -156,13 +157,62 @@
   </section>
   <br>
 
+  <!-- Method -->
   <section>
     <div class="container">
       <div class="row">
         <div class="col-12">
           <h2><strong>Methods</strong></h2>
             <hr style="margin-top:0px">
-            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Overview</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/method_overview.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <p class="text-justify">
+                <b>Overview</b>. Our method, UniDexGrasp++ follows the convention of first learning 
+                a state-based policy and then distilling it into a vision-based policy, and our 
+                proposed method significantly boost both the state and vision learning stages.
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GeoCurriculum</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/GeoCurri.jpg" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Geometry-aware Curriculum Learning</b>. The idea is to gradually enlarge the 
+                grasping task space from a single object with a fixed pose, to similar objects with 
+                similar poses, finally to thousands objects with arbitrary poses. 
+
+                To do so, we propose to pretrain a point cloud autoencoder and use its bottleneck 
+                feature as the metric of the task space. We then can gradually enlarge the task 
+                space from one point to the whole space. 
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GeoClustering</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/GeoClustering.jpg" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Geometry-aware Clustering</b>. After this curriculum training, we obtain our 
+                first generalist policy, SG1 and need to further improve it. 
+
+                Inspired by divide-and-conquer, we use the task metric to partition the whole task 
+                space into a lot of subspaces. 
+                
+                And then we can duplicate SG1 many times and finetune each of them in a smaller task
+                subspace to obtain many specialist SS_i. 
+                SS_i will have a better performance than SG1 in its task subspace. 
+                
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GiGSL</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/GeoClustering.jpg" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Geometry-aware iterative Generalist-Specialist Learning</b>. All the specialists 
+                SS_i now can distill back to a new generalist and gain a higher overall grasping 
+                performance. We iteratively do generalist and specialist learning several times 
+                until the policy is good enough.
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
               <div class="row justify-content-center" style="align-items:center; display:flex;">
                 <img src="images/pipe.jpg" alt="input" class="img-responsive graph" width="95%"/>
               </div>
@@ -208,6 +258,77 @@
   </section>
   <br>
   <br>
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Results</strong></h2>
+            <hr style="margin-top:0px">
+            <!-- <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GiGSL</b></h3> -->
+            <div class="row justify-content-center" style="align-items:center; display:flex;">
+              <img src="images/training.gif" alt="input" class="img-responsive graph" width="85%"/>
+            </div>
+            <p class="text-justify">
+              <b>Training Environment</b>. 
+              We train our policies in IssacGym that contains more than 3000 training object instances with arbitrary initial poses.
+            </p>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/curve.jpg" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Performance during Training</b>. 
+                At the beginning of the training, geometry-aware task curriculum yields a state-based policy SG1 that achieves 82.7 success rate.
+                Then the Geometry aware iterative Generalist-Specialist Learning keeps increasing the success rate. 
+                Note that each distillation will inevitably drop some performance, especially for the state-vision distillation due to significant difference in inputs.
+                But finally, our vision-based learning iterations bring it back to an 85.4 success rate.
+              </p>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/clusters.jpg" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Visualization of Clusters</b>. 
+                Here we visualize the task clusters in the vision stage. Look, each cluster groups 
+                similar objects with similar grasping poses together.
+                Note that, usually, after distillation, finetuning using RL will only hurt performance. 
+                But, in our task cluster with high task similarity, RL finetuning can further improve the performance. This is the key and secret to our specialist learning.
+              </p>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/grasp.gif" alt="input" class="img-responsive graph" width="85%"/>
+              </div>
+              <p class="text-justify">
+                <b>Visualization of Grasping</b>. 
+                Here we show some grasping processes of different objects with different pose.  
+              </p>
+              
+        </div>
+        
+      </div>
+    </div>
+  </section>
+  <br>
+<!-- 
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+               <img src="images/UniDexGrasp++_training.gif" alt="input" class="img-responsive graph" width="95%"/>
+              <br>
+            </div>
+            <p class="text-justify">
+              In this work, we present a novel dexterous grasping policy learning pipeline, <b>UniDexGrasp++</b>. 
+              Same to UniDexGrasp, UniDexGrasp++ is trained on 3000+ different object instances with
+               random object poses under a table-top setting. It significantly outperforms the previous
+                SOTA and achieves <b>85.4%</b> and <b>78.2%</b> success rates on the train and test set.
+            </p>
+        </div>
+      </div>
+    </div>
+  </section> -->
+  <!-- <br> -->
 
 <!--   
   <section>

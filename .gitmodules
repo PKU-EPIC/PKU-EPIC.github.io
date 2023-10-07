@@ -1,3 +1,6 @@
 [submodule "UniDexGrasp"]
 	path = UniDexGrasp
 	url = https://github.com/XYZ-99/UniDexGraspWebsite.git
+[submodule "TaskDexGrasp"]
+	path = TaskDexGrasp
+	url = https://github.com/JYChen18/TaskDexGraspWeb.git

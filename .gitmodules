@@ -4,3 +4,6 @@
 [submodule "TaskDexGrasp"]
 	path = TaskDexGrasp
 	url = https://github.com/JYChen18/TaskDexGraspWeb.git
+[submodule "MaskClustering"]
+	path = MaskClustering
+	url = git@github.com:MiYanDoris/MaskClustering.git

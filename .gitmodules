@@ -7,3 +7,6 @@
 [submodule "MaskClustering"]
 	path = MaskClustering
 	url = git@github.com:MiYanDoris/MaskClustering.git
+[submodule "ICV2024"]
+	path = ICV2024
+	url = git@github.com:MiYanDoris/ICV2024.git

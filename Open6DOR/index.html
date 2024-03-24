@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Open6DOR</title>
+    <!-- Bootstrap -->
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <link href="css/bootstrap-4.4.1.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet" type="text/css"> -->
+    <style>
+      body {
+        background: rgb(255, 255, 255) no-repeat fixed top left; 
+        font-family: "Inter", 'Open Sans', sans-serif;
+      }
+    </style>
+
+  </head>
+
+  <!-- cover -->
+  <section>
+    <div class="jumbotron text-center mt-0">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col">
+            <h2 style="font-size:30px;">Open6DOR: Benchmarking Open-instruction 6-DoF
+              Object Rearrangement and A VLM-based Approach</h2>
+            <h4 style="color:#6e6e6e;"> Under Review </h4>
+            <hr>
+            <h6>
+              <a href="https://github.com/Selina2023" target="_blank">Yufei Ding</a><sup>1, 2*</sup>&nbsp; &nbsp;
+              <a href="https://geng-haoran.github.io/" target="_blank">Haoran Geng</a><sup>1, 2*</sup>&nbsp; &nbsp;
+              <a href="" target="_blank">Chaoyi Xu</a><sup>2</sup> &nbsp; &nbsp;
+              <a href="" target="_blank">Xiaomeng Fang</a><sup>2</sup> &nbsp; &nbsp;
+              <a href="https://jzhzhang.github.io/" target="_blank">Jiazhao Zhang</a><sup>1,3</sup>&nbsp; &nbsp;
+              <a href="http://wei.songl.in/" target="_blank">Songlin Wei</a><sup>1,2</sup> &nbsp; &nbsp;
+              <a href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en" target="_blank">Zhizheng Zhang</a><sup>2</sup> &nbsp; &nbsp;
+              <a href="https://hughw19.github.io/" target="_blank">He Wang</a><sup>1,2,3†</sup>&nbsp; &nbsp;
+              <br>
+              <br>
+            <p> 
+              <sup>1</sup>CFCS, School of Computer Science, Peking University&nbsp; &nbsp; 
+              <sup>2</sup>Galbot&nbsp; &nbsp;  
+              <sup>3</sup>Beijing Academy of Artificial Intelligence&nbsp; &nbsp; 
+              <br>
+            </p>
+            <p> <sup>*</sup> equal contributions &nbsp;
+              <sup>†</sup> corresponding author &nbsp;
+              <br>
+          </p>
+            <!-- <p> <a class="btn btn-secondary btn-lg" href="" role="button">Paper</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Code</a> 
+                <a class="btn btn-secondary btn-lg" href="" role="button">Data</a> </p> -->
+
+            
+            <div class="row justify-content-center">
+              <div class="column">
+                  <p class="mb-5">
+                    <a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                    <i class="fa fa-file"></i> Paper </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Code </a> </p>
+              </div>
+              <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="" role="button" target="_blank">
+                <i class="fa fa-github-alt"></i> Benchmark & Dataset </a> </p>
+              </div>
+              <!-- <div class="column">
+                  <p class="mb-5"><a class="btn btn-large btn-light" href="./index.html" role="button" target="_blank" style="pointer-events: none">
+                <i class="fa fa-github-alt"></i> Dataset (Coming soon) </a> </p>
+              </div> -->
+            </div>
+            
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- teaser -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 text-center">
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+               <img src="images/teaser.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              <br>
+            </div>
+            <p class="text-justify">
+              <b>Open6DOR Benchmark and Real-world Experiments.</b> We introduce a challenging and comprehensive benchmark for open-instruction
+6-DoF object rearrangement tasks, termed Open6DOR. Following this, we propose a zero-shot and robust method, Open6DORGPT,
+which proves effective in demanding simulation environments and real-world scenarios.
+            </p>
+              <!-- </div> -->
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- video -->
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Video</strong></h2>
+            <hr style="margin-top:0px">
+            <div style="display: flex; justify-content: center;">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/cgVFAydWpdk" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br> -->
+
+  <!-- abstract -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Abstract</strong></h2>
+            <hr style="margin-top:0px">
+            <p class="text-justify"> 
+              The integration of large-scale Vision-Language Models (VLMs) with embodied AI can greatly enhance the
+              generalizability and the capacity to follow open instructions for robots. However, existing studies on object rearrangement are
+              not up to full consideration of the 6-DoF requirements, let alone establishing a comprehensive benchmark. In this paper, we
+              propel the pioneer construction of the benchmark and approach for table-top Open-instruction 6-DoF Object Rearrangement
+              (<b>Open6DOR</b>). Specifically, we collect a synthetic dataset of 200+ objects and carefully design 2400+ Open6DOR tasks.
+              These tasks are divided into the Position-track, Rotation-track, and 6-DoF-track for evaluating different embodied agents in
+              predicting the positions and rotations of target objects. Besides, we also propose a VLM-based approach for Open6DOR, named <b>Open6DOR-GPT</b>, which empowers GPT-4V with 3Dawareness
+              and simulation-assistance and exploits its strengths in generalizability and instruction-following for this task. We
+              compare the existing embodied agents with our Open6DORGPT on the proposed Open6DOR benchmark and find that
+              Open6DOR-GPT achieves the state-of-the-art performance. We further show the impressive performance of Open6DORGPT
+              in diverse real-world experiments. Our constructed benchmark and method will be released upon paper acceptance.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+
+  <!-- dataset -->
+  <!-- <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Dataset</strong></h2>
+            <hr style="margin-top:0px">
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GAPart Definition</b></h3>      
+              <p class="text-justify">
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/GAPart.jpg" alt="input" class="img-responsive graph" width="65%"/>
+                </div>
+                We give a rigorous definition to the <b>GAPart classes</b>, which not only are <b>Generalizable 
+                to visual recognition</b> but also <b>share similar Actionability</b>, corresponding to the G 
+                and A in GAPartNet. Our main purpose of such a definition is to bridge the perception
+                 and manipulation, to allow joint learning of both vision and interaction. Accordingly, 
+                 we propose two principles to follow: firstly, <b>geometric similarity within part classes</b>, 
+                 and secondly, <b>actionability alignment within part classes</b>.
+              </p>
+              <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>GAPartNet Dataset</b></h3>      
+              <p class="text-justify">
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/dataset.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                </div>
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/dataset_statistic.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                </div>
+                <b>Following the GAPart definition, we construct a large-scale part-centric interactive 
+                dataset, GAPartNet, with rich, part-level annotations for both perception and interaction 
+                tasks.</b> Our 3D object shapes come from two existing datasets, PartNet-Mobility and AKB-48,
+                which are cleaned and provided with new uniform annotations based on our GAPart definition.
+                The final GAPartNet has <b>9 GAPart classes</b>, providing semantic labels and pose annotations 
+                for <b>8,489 GAPart instances</b> on <b>1,166 objects</b> from <b>27 object categories</b>. On average, 
+                each object has 7.3 functional parts. Each GAPart class can be seen on objects from
+                more than 3 object categories, and each GAPart class is found in 8.8 object categories
+                on average, which lays the foundation for our benchmark on generalizable parts.
+              </p>
+            <br>
+
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br> -->
+
+  <!-- Methods -->
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Methods</strong></h2>
+            <hr style="margin-top:0px">
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Full pipeline</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/pipeline.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <p class="text-justify">
+                <b>Method Overview.</b> Open6DOR-GPT takes the RGB-D image and instruction as input and outputs the corresponding robot motion
+                  trajectory. Firstly, the preprocessing module extracts the object names and masks. Then, two modules simultaneously predict the position
+                  and rotation of the target object in a decoupled way. Finally, the planning module generates a trajectory for execution.
+              </p>
+            <br>
+            <hr style="margin-top:0px">
+            <h3 style="margin-top:20px; margin-bottom:20px; color:#717980"><b>Rotation pipeline</b></h3>
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/rotation.jpg" alt="input" class="img-responsive graph" width="95%"/>
+              </div>
+              <p class="text-justify">
+                <b>Simulation-assisted Rotation Module.</b> Firstly, a textured mesh is reconstructed from the single-view image of the target object.
+Then, we employ large-scale sampling to obtain multiple rotation samples. This sample set is then narrowed down through a simulationassisted
+filtering process to derive several stable pose categories. Finally, we generate rendered images of the pose candidates, from which
+GPT-4V selects the optimal goal rotation.
+              </p>
+            <br>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+    <!-- Results -->
+    <section>
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h2><strong>Results</strong></h2>
+              <hr style="margin-top:0px">
+              <p class="text-justify">
+                <div class="row justify-content-center" style="align-items:center; display:flex;">
+                  <img src="images/real2.jpg" alt="input" class="img-responsive graph" width="95%"/>
+                </div>
+              </p>
+                <p class="text-justify">
+                  <div class="row justify-content-center" style="align-items:center; display:flex;">
+                    <img src="images/real1.gif" alt="input" class="img-responsive graph" width="95%"/>
+                  </div>
+                </p>
+                <b>Real-world Experiments.</b> We ground Open6DOR-GPT in real-world settings and conduct various tasks as well as long-horizon
+highlighting its exceptional zero-shot generalization capability across challenging tasks.
+              <br>
+          </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <br>
+
+<!--   
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Language-guided Dexterous Grasping</strong></h2>
+            <hr style="margin-top:0px">
+              <div class="row justify-content-center" style="align-items:center; display:flex;">
+                <img src="images/language.png" alt="input" class="img-responsive graph" width="60%"/>
+              </div>
+              <p class="text-justify">
+                <b>Qualitative results of language-guided grasp proposal selection</b>.
+                CLIP can select proposals complying with the language instruction, 
+                allowing goal-conditioned policy to execute potentially functional grasps.
+              </p>
+            <br>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br>
+
+  <section>
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <h2><strong>Qualitative results</strong></h2>
+          <hr style="margin-top:0px">
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery2.png" alt="input" class="img-responsive graph" width="60%"/>
+          </div>
+          <div class="row justify-content-center" style="align-items:center; display:flex;">
+            <img src="images/gallery.png" alt="input" class="img-responsive graph" width="100%"/>
+          </div>
+        </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <br>
+  <br> -->
+
+  <!-- citing -->
+  <!-- <div class="container">
+    <div class="row ">
+      <div class="col-12">
+          <h2><strong>Citation</strong></h2>
+          <hr style="margin-top:0px">
+<pre style="background-color: #e9eeef;padding: 0 1.5em">
+<code>
+@article{geng2022gapartnet,
+  title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
+  author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
+  journal={arXiv preprint arXiv:2211.05272},
+  year={2022}
+}
+</code>
+</pre>
+      </div>
+    </div>
+  </div>
+  <br> -->
+
+    <!-- Contact -->
+    <div class="container">
+      <div class="row ">
+        <div class="col-12">
+            <h2><strong>Contact</strong></h2>
+            <hr style="margin-top:0px">
+            <p>If you have any questions, please feel free to contact us:
+              <ul>
+                <li><b>Yufei Ding</b>&colon; selina<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
+                <li><b>Haoran Geng</b>&colon; ghr<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>stu.pku.edu.cn </li>
+                <li><b>He Wang</b>&colon; hewang<span style="display:none">Prevent spamming</span>@<span style="display:none">Prevent spamming</span>pku.edu.cn </li>
+              </ul>
+            </p>
+        </pre>
+        </div>
+      </div>
+    </div>
+
+    <a href="https://hits.seeyoufarm.com">
+      <img id="myImage" src="https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fpku-epic.github.io%2FGAPartNet%2F&count_bg=%2379C83D&title_bg=%23555555&icon=&icon_color=%23E7E7E7&title=hits&edge_flat=false"/>
+      <script>
+        function hideImage() {
+            document.getElementById("myImage").style.display = "none";
+        }
+        window.onload = hideImage;
+        </script>
+    </a>
+
+  <footer class="text-center" style="margin-bottom:10px; font-size: medium;">
+      <hr>
+      Thanks to <a href="https://lioryariv.github.io/" target="_blank">Lior Yariv</a> for the <a href="https://lioryariv.github.io/idr/" target="_blank">website template</a>.
+  </footer>
+  <script>
+    MathJax = {
+      tex: {inlineMath: [['$', '$'], ['\\(', '\\)']],
+      macros: {
+        bm: ["{\\boldsymbol #1}",1],
+      }}
+    };
+    </script>
+    <script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml.js"></script>
+</body>
+</html>

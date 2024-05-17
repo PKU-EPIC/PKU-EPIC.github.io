@@ -10,3 +10,6 @@
 [submodule "ICV2024"]
 	path = ICV2024
 	url = git@github.com:MiYanDoris/ICV2024.git
+[submodule "ASGrasp"]
+	path = ASGrasp
+	url = https://github.com/PKU-EPIC/ASGrasp_Webpage.git

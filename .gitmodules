@@ -13,3 +13,6 @@
 [submodule "ASGrasp"]
 	path = ASGrasp
 	url = https://github.com/PKU-EPIC/ASGrasp_Webpage.git
+[submodule "ScissorBot"]
+	path = ScissorBot
+	url = https://github.com/jiangranlv/ScissorBot_web.git

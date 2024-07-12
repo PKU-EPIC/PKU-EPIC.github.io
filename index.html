@@ -1,0 +1,2037 @@
+<html>
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <title>He Wang</title>
+    <link rel="stylesheet" type="text/css" href="./css/lab.css" />
+  </head>
+  <body>
+    <div class="main">
+      <div class="main-head">
+        <div class="name">EPIC</div>
+        <div class="list">
+          <div class="list-item"><a href="#videos">Videos</a></div>
+          <div class="list-item"><a href="#people">People</a></div>
+          <div class="list-item"><a href="#news">News</a></div>
+          <div class="list-item"><a href="#publications">Publications</a></div>
+        </div>
+        <div class="menu">
+          <div class="menu-item"><a href="https://hughw19.github.io/">Home</a></div>
+          <span>/</span>
+          <div class="menu-item active"><a href="https://PKU-EPIC.github.io">Lab</a></div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-epic">
+          <div class="title">EPIC</div>
+          <p>
+            EPIC Lab, founded and led by Dr.He Wang, specializes in 3D visual
+            perception and robotics. The lab focuses on the challenges of
+            perception and interaction for embodied robots in complex 3D
+            environments. Its research aims to develop highly generalizable and
+            scalable robotic vision and control systems.
+          </p>
+        </div>
+      </div>
+      <div class="main-content" style="padding-bottom: 38px">
+        <div class="main-swiper" id="videos">
+          <div class="swiper-content">
+            <div class="slide-source">
+              <video
+                class="video-element"
+                loop
+                muted
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech1.png"
+              >
+                <source
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech1.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="slide-source">
+              <video
+                class="video-element"
+                loop
+                muted
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech5.png"
+              >
+                <source
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech5.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="slide-source">
+              <video
+                class="video-element"
+                loop
+                muted
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
+              >
+                <source
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.mov"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+            <div class="slide-source">
+              <video
+                class="video-element"
+                muted
+                loop
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
+              >
+                <source
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.mp4"
+                  type="video/mp4"
+                />
+              </video>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+        document.addEventListener('DOMContentLoaded', function () {
+          const videosContainer = document.getElementById('videos');
+          const videos = document.querySelectorAll('.video-element');
+
+          // 检查视频是否在可见范围内
+          function checkVisibility(video) {
+            const rect = video.getBoundingClientRect();
+            const containerRect = videosContainer.getBoundingClientRect();
+            return (
+              rect.top >= containerRect.top &&
+              rect.left >= containerRect.left &&
+              rect.bottom <= containerRect.bottom &&
+              rect.right <= containerRect.right
+            );
+          }
+
+          // 控制视频的播放和暂停
+          function controlVideoPlayback() {
+            videos.forEach((video) => {
+              if (checkVisibility(video)) {
+                video.play();
+              } else {
+                video.pause();
+              }
+            });
+          }
+
+          // 初始检查
+          controlVideoPlayback();
+
+          // 滚动事件监听
+          videosContainer.addEventListener('scroll', controlVideoPlayback);
+          window.addEventListener('resize', controlVideoPlayback);
+        });
+      </script>
+      <div class="main-content" style="padding-bottom: 30px">
+        <div class="main-people">
+          <div class="title">PEOPLE</div>
+          <div class="subtitle">PRINCIPAL INVESTIGATOR</div>
+          <div class="people-list">
+            <div>
+              <img src="./assets/p1.png" alt="" />
+              <div class="list-title">He Wang</div>
+              <div class="list-decs">Principal Investigator</div>
+              <a href="https://hughw19.github.io">hughw19.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p2.png" alt="" />
+              <div class="list-title">Zhizheng Zhang</div>
+              <div class="list-decs">Research scientist at Galbot</div>
+              <a
+                href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en"
+                >scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en</a
+              >
+            </div>
+          </div>
+          <div class="subtitle">LAB MEMBERS</div>
+          <div class="people-list">
+            <div>
+              <img src="./assets/p35.png" alt="" />
+              <div class="list-title">Xiaomeng Fang</div>
+              <div class="list-decs">Master's, ME,SJTU</div>
+            </div>
+            <div>
+              <img src="./assets/p36.png" alt="" />
+              <div class="list-title">Jiazhao Zhang</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <a href="https://jzhzhang.github.io">jzhzhang.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p3.png" alt="" />
+              <div class="list-title">Jiayi Chen</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <a href="https://jychen18.github.io">jychen18.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p4.png" alt="" />
+              <div class="list-title">Mi Yan</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <a href="https://miyandoris.github.io">miyandoris.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p5.png" alt="" />
+              <div class="list-title">Songlin Wei</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <a href="https://songlin.github.io">songlin.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p6.png" alt="" />
+              <div class="list-title">Hao Shen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <a href="https://shen-hhao.github.io">shen-hhao.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p7.png" alt="" />
+              <div class="list-title">Jiangran Lyu</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <a href="https://jiangranlv.github.io">jiangranlv.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p8.png" alt="" />
+              <div class="list-title">Wenbo Cui</div>
+              <div class="list-decs">Ph.D.Student,CTCE,CASIA&BAAI</div>
+              <a href="https://cwb0106.github.io">cwb0106.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p9.png" alt="" />
+              <div class="list-title">Yuxing Chen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <a href="https://chen01yx.github.io">chen01yx.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p10.png" alt="" />
+              <div class="list-title">Weiheng Liu</div>
+              <div class="list-decs">Ph.D.Student,CS,CASIA&BAAI</div>
+              <a href="https://weiheng-liu.github.io">weiheng-liu.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p11.png" alt="" />
+              <div class="list-title">Gireesh Nandiraju</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <a href="https://user432.github.io">user432.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p12.png" alt="" />
+              <div class="list-title">Shengliang Deng</div>
+              <div class="list-decs">Ph.D.Student,CS,HKU</div>
+              <a href="https://shengliangd.github.io/about/"
+                >shengliangd.github.io</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p13.png" alt="" />
+              <div class="list-title">Yingda Yin</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <a href="https://yd-yin.github.io/">yd-yin.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p14.png" alt="" />
+              <div class="list-title">Rongtao Xu</div>
+              <div class="list-decs">Ph.D.Student,PRIS,CASIA</div>
+              <a
+                href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op"
+                >scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p15.png" alt="" />
+              <div class="list-title">Fengyi Shen</div>
+              <div class="list-decs">Ph.D.Student,CS,TUM</div>
+              <a href="https://dblp.org/pid/252/9109.html"
+                >dblp.org/pid/252/9109.html</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p16.png" alt="" />
+              <div class="list-title">Qiyu Dai</div>
+              <div class="list-decs">Master's student,CT,PKU</div>
+              <a href="https://daiqy.github.io">daiqy.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p17.png" alt="" />
+              <div class="list-title">Yan Zhu</div>
+              <div class="list-decs">Master's student,EIS,PKU</div>
+              <a href="https://github.com/fzy139">github.com/fzy139</a>
+            </div>
+            <div>
+              <img src="./assets/p18.png" alt="" />
+              <div class="list-title">Xunyong Du</div>
+              <div class="list-decs">Master's student,CS,PKU</div>
+              <a href="https://dotandung.github.io">dotandung.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p19.png" alt="" />
+              <div class="list-title">Javokhirbek Rajabov</div>
+              <div class="list-decs">Master's student,CAT,PKU</div>
+              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
+                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p20.png" alt="" />
+              <div class="list-title">Danshi Li</div>
+              <div class="list-decs">Master's student,CE,NYU</div>
+              <a href="https://danshi-li.github.io/personal-website"
+                >danshi-li.github.io/personal-website</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p21.png" alt="" />
+              <div class="list-title">Chaoyi Xu</div>
+              <div class="list-decs">Master's student,EST,BUPT</div>
+              <a href="https://o1one.github.io">o1one.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p22.png" alt="" />
+              <div class="list-title">Xinqiang Yu</div>
+              <div class="list-decs">Master's student,CAT,UCAS</div>
+            </div>
+            <div>
+              <img src="./assets/p23.png" alt="" />
+              <div class="list-title">Haoran Geng</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <a href="https://geng-haoran.github.io">geng-haoran.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p24.png" alt="" />
+              <div class="list-title">Jialiang Zhang</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
+                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p25.png" alt="" />
+              <div class="list-title">Yuxuan Kuang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <a href="https://yxkryptonite.github.io"
+                >yxkryptonite.github.io</a
+              >
+            </div>
+            <div>
+              <img src="./assets/p26.png" alt="" />
+              <div class="list-title">Haoran Liu</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+            </div>
+            <div>
+              <img src="./assets/p27.png" alt="" />
+              <div class="list-title">Weikang Wan</div>
+              <div class="list-decs">B.S,IS,PKU</div>
+              <a href="https://wkwan7.github.io">wkwan7.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p28.png" alt="" />
+              <div class="list-title">Chengyang Zhao</div>
+              <div class="list-decs">B.S,DSBDT,PKU</div>
+              <a href="https://chengyzhao.github.io">chengyzhao.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p29.png" alt="" />
+              <div class="list-title">Wang Yang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <a href="https://yangwangpku.github.io">yangwangpku.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p30.png" alt="" />
+              <div class="list-title">Yufei Ding</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <a href="https://selina2023.github.io">selina2023.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p31.png" alt="" />
+              <div class="list-title">Zhiyuan Ma</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <a href="https://matthewmzy.github.io">matthewmzy.github.io</a>
+            </div>
+            <div>
+              <img src="./assets/p32.png" alt="" />
+              <div class="list-title">Hang Lyu</div>
+              <div class="list-decs">B.S,SE,PKU</div>
+            </div>
+            <div>
+              <img src="./assets/p33.png" alt="" />
+              <div class="list-title">Yuanxing Duan</div>
+              <div class="list-decs">B.S,Phy,PKU</div>
+            </div>
+            <div>
+              <img src="./assets/p34.png" alt="" />
+              <div class="list-title">Jilong Wang</div>
+              <div class="list-decs">B.S,Phy,UCSC</div>
+              <a href="https://42jaylonw.github.io">42jaylonw.github.io</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="news" class="main-news">
+          <div class="title">NEWS</div>
+          <ul>
+            <li>Two papers get accepted to RSS 2024.</li>
+            <li>Two papers get accepted to CVPR 2024.</li>
+            <li>
+              Three papers get accepted to ICRA 2024 and one paper gets accepted
+              by RAL.
+            </li>
+            <li>
+              Our 3D dexterous grasping policy learning paper, UniDexGrasp++,
+              receives<span> ICCV 2023 best paper finalist</span>.
+            </li>
+            <li>One paper gets accepted to SIGGRAPH Asia 2023.</li>
+            <li>
+              Three papers get accepted to ICCV 2023 with UniDexGrasp++
+              receiving final reviews of <span>all strong accepts</span> (the
+              highest ratings).
+            </li>
+            <li>
+              I am invited to be a speaker in
+              <a href="https://sites.google.com/view/hands2023/home"
+                >HANDS workshop</a
+              >
+              at ICCV 2023.
+            </li>
+            <li>
+              I am invited to be a speaker in
+              <a href="https://generalist-robots.github.io/speakers/"
+                >Towards Generalist Robots: Learning Paradigms for Scalable
+                Skill Acquisition Workshop </a
+              >at CoRL 2023.
+            </li>
+            <li>
+              I am invited to be a speaker in
+              <a href="https://sites.google.com/view/rss23-sym"
+                >Workshop on Symmetries in Robot Learning</a
+              >
+              at RSS 2023.
+            </li>
+            <li>
+              Our dexterous grasping synthesis and dataset paper, DexGraspNet,
+              is selected as a
+              <span
+                >finalist of ICRA 2023 outstanding paper in manipulation</span
+              >
+              (top 1% of submissions).
+            </li>
+            <li>
+              Seven papers get accepted to CVPR 2023 with GAPartNet
+              receiving<span> highlight</span> (top 2.5% of submissions) with
+              final reviews of <span>all accepts</span> (the highest ratings).
+            </li>
+            <li>
+              I am invited to be an associate editor of
+              <a
+                href="https://www.sciencedirect.com/journal/image-and-vision-computing"
+                >Image and Vision Computing</a
+              >, which ranks top 20 in computer vision journals/conferences on
+              Google Scholar Metrics.
+            </li>
+            <li>
+              Two papers get accepted to ICLR 2023 with one as<span>
+                spotlight</span
+              >.
+            </li>
+            <li>Two papers get accepted to ICRA 2023.</li>
+            <li>
+              One paper gets accepted to AAAI 2023 as
+              <span>oral presentation</span>.
+            </li>
+            <li>
+              My first-author CVPR 2019 oral paper,
+              <a
+                href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Normalized_Object_Coordinate_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2019_paper.pdf"
+                >NOCS</a
+              >, received
+              <a href="https://www.worldaic.com.cn/activity#q1"
+                >2022 World Artificial Intelligence Conference Youth Outstanding
+                Paper Award</a
+              >. Top 10 from 155 papers published in top-tier AI conferences and
+              top journals (Science, Nature Computational Method, etc.) in the
+              past 3 years.
+            </li>
+            <li>One paper gets accepted to T-RO.</li>
+            <li>One paper gets accepted to ECCV 2022.</li>
+            <li>
+              One paper gets accepted to Robotics and Automation Letters (RA-L)
+              and IROS 2022.
+            </li>
+            <li>
+              My students and I won the <span>first place </span>in the no
+              external annotation track of
+              <a href="https://sapien.ucsd.edu/challenges/maniskill2021/"
+                >SAPIEN Manipulation Skill Challenge 2021</a
+              >
+              and will receive $3000 prize and give a winner presentation in
+              <a
+                href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/"
+                >ICLR 2022 Generalizable Policy Learning in the Physical World
+                Workshop</a
+              >.
+            </li>
+            <li>
+              Two papers are selected to <span>oral presentations</span> in CVPR
+              2022.
+            </li>
+            <li>Seven papers get accepted to CVPR 2022.</li>
+            <li>...</li>
+          </ul>
+        </div>
+      </div>
+      <div class="main-content">
+        <div id="publications" class="main-selected">
+          <div class="title">SELECTED PUBLICATIONS</div>
+          <div class="selected-item">
+            <img src="./assets/1.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                NaVid: Video-based VLM Plans the Next Step for
+                Vision-and-Language Navigation
+              </div>
+              <p>
+                Jiazhao Zhang, Kunyu Wang ,Rongtao Xu* ,Gengze Zhou ,Yicong Hong
+                ,Xiaomeng Fang ,Qi Wu ,Zhizheng Zhang<span>&#8224;</span> ,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">RSS 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2402.15852" class="arXiv"
+                  >arXiv</a
+                >
+                <a href="https://pku-epic.github.io/NaVid/" class="project"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/2.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                SAGE: Bridging Semantic and Actionable Parts for Generalizable
+                Manipulation of Articulated Objects
+              </div>
+              <p>
+                Haoran Geng*, Songlin Wei*, Congyue Deng, Bokui Shen,
+                <b>He Wang<span>&#8224;</span></b
+                >, Leonidas Guibas<span>&#8224;</span>
+              </p>
+              <p class="decs">RSS 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2312.01307">arXiv</a>
+                <a href="https://geometry.stanford.edu/projects/sage/"
+                  >Project</a
+                >
+                <a
+                  id="misc-a"
+                  href="javascript:hideshow(document.getElementById('misc-a'),document.getElementById('misc'))"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="misc" style="font-size:14px; display: none">
+            @misc{geng2023sage,
+              title={SAGE: Bridging Semantic and Actionable Parts for GEneralizable Articulated-Object Manipulation under Language Instructions},
+              author={Haoran Geng and Songlin Wei and Congyue Deng and Bokui Shen and He Wang and Leonidas Guibas},
+              year={2023},
+              eprint={2312.01307},
+              archivePrefix={arXiv},
+              primaryClass={cs.RO} 
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/3.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Enhancing Generalizable 6D Pose Tracking of an In-Hand Object
+                with Tactile Sensing
+              </div>
+              <p>
+                Yun Liu*, Xiaomeng Xu*, Weihang Chen, Haocheng Yuan,
+                <b>He Wang<span>&#8224;</span></b
+                >, Jing Xu, Rui Chen, Li Yi<span>&#8224;</span>
+              </p>
+              <p class="decs">RA-L</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2210.04026" class="arXiv"
+                  >arXiv</a
+                >
+                <a href="https://github.com/leolyliu/TEG-Track" class="project"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <a
+              href="https://oss-cn-beijing.galbot.com/online/video/maskcluster.mp4"
+              ><img src="./assets/4.png" alt=""
+            /></a>
+            <div class="item-right">
+              <div class="item-title">
+                MaskClustering: View Consensus based Mask Graph Clustering for
+                Open-Vocabulary 3D Instance Segmentation
+              </div>
+              <p>
+                Mi Yan, Jiazhao Zhang, Yan Zhu,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2401.07745" class="arXiv"
+                  >arXiv</a
+                >
+                <a
+                  href="https://pku-epic.github.io/MaskClustering/"
+                  class="project"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/5.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Category-Level Multi-Part Multi-Joint 3D Shape Assembly
+              </div>
+              <p>
+                Yichen Li<span>&#8224;</span> ,Kaichun Mo, Yueqi Duan ,
+                <b>He Wang</b>, Jiequan Zhang, Lin Shao, Wojciech Matusik,
+                Leonidas Guibas
+              </p>
+              <p class="decs">CVPR 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2303.06163" class="arXiv"
+                  >arXiv</a
+                >
+                <a
+                  href="https://people.csail.mit.edu/yichenl/projects/joint/"
+                  class="project"
+                  >Project</a
+                >
+                <a
+                  id="Category-a"
+                  href="javascript:hideshow(document.getElementById('Category-a'),document.getElementById('Category'))"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="Category" style="font-size:14px; display: none">
+            @article{li2020impartass,
+              title={Learning 3D Part Assembly from a Single Image},
+              author={Li, Yichen and Mo, Kaichun and Shao, Lin and Sung, Minghyuk and Guibas, Leonidas},
+              journal={European conference on computer vision (ECCV 2020)},
+              year={2020}
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/6.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                STOPNet: Multiview-based 6-DoF Suction Detection for Transparent
+                Objects on Production Lines
+              </div>
+              <p>
+                Yuxuan Kuang*, Qin Han*, Danshi Li, Qiyu Dai, Lian Ding, Dong
+                Sun, Hanlin Zhao,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">ICRA 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2310.05717" class="arXiv"
+                  >arXiv</a
+                >
+                <a href="https://pku-epic.github.io/STOPNet/" class="project"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/7.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning
+                based on Online Grasping Pose Fusion
+              </div>
+              <p>
+                Jiazhao Zhang*, Nandiraju Gireesh*, Jilong Wang, Xiaomeng Fang,
+                Chaoyi Xu, Weiguang Chen, Liu Dai,
+                <b>He Wang</b>
+              </p>
+              <p class="decs">ICRA 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2309.15459" class="arXiv"
+                  >arXiv</a
+                >
+                <a href="https://pku-epic.github.io/GAMMA/" class="project"
+                  >Project</a
+                >
+                <a
+                  id="GAMMA-a"
+                  href="javascript:hideshow(document.getElementById('GAMMA-a'),document.getElementById('GAMMA'))"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="GAMMA" style="font-size:14px; display: none">
+            @misc{zhang2023gamma,
+              title={GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning based on Online Grasping Pose Fusion}, 
+              author={Jiazhao Zhang and Nandiraju Gireesh and Jilong Wang and Xiaomeng Fang and Chaoyi Xu and Weiguang Chen and Liu Dai and He Wang},
+              year={2023},
+              eprint={2309.15459},
+              archivePrefix={arXiv},
+              primaryClass={cs.RO}
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/8.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                ASGrasp: Generalizable Transparent Object Reconstruction and
+                6-DoF Grasp Detection from RGB-D Active Stereo Camera
+              </div>
+              <p>
+                Jun Shi, Yong A, Yixiang Jin, Dingzhe Li, Haoyu Niu, Zhezhu Jin,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">ICRA 2024</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2405.05648" class="arXiv"
+                  >arXiv</a
+                >
+                <a href="https://pku-epic.github.io/ASGrasp/" class="project"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/9.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                UniDexGrasp++: Improving Dexterous Grasping Policy Learning via
+                Geometry-aware Curriculum and Iterative Generalist-Specialist
+                Learning
+              </div>
+              <p>
+                Weikang Wan*, Haoran Geng*, Yun Liu, Zikang Shan, Yaodong Yang,
+                Li Yi,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">
+                ICCV 2023 (<b>Oral & Best Paper Finalist,</b> final reviews of
+                all strong accepts)
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2304.00464">arXiv</a>
+                <a href="https://pku-epic.github.io/UniDexGrasp++/">Project</a>
+                <a
+                  id="UniDexGrasp1-a"
+                  href="javascript:hideshow(document.getElementById('UniDexGrasp1-a'),document.getElementById('UniDexGrasp++'))"
+                  >bibtex
+                </a>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="UniDexGrasp++" style="font-size:14px; display: none">
+            @article{wan2023unidexgrasp++,
+              title={UniDexGrasp++: Improving Dexterous Grasping Policy Learning via Geometry-aware Curriculum and Iterative Generalist-Specialist Learning},
+              author={Wan, Weikang and Geng, Haoran and Liu, Yun and Shan, Zikang and Yang, Yaodong and Yi, Li and Wang, He},
+              journal={arXiv preprint arXiv:2304.00464},
+              year={2023} 
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/10.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                GAPartNet: Cross-Category Domain-Generalizable Object Perception
+                and Manipulation via Generalizable and Actionable Parts
+              </div>
+              <p>
+                Haoran Geng*, Helin Xu*, Chengyang Zhao*, Chao Xu, Li Yi, Siyuan
+                Huang,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">
+                CVPR 2023 (<b>Highlight,</b> , final reviews of all accepts)
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2211.05272">arXiv</a>
+                <a href="https://pku-epic.github.io/GAPartNet/">Project</a>
+                <a
+                  id="GAPartNet-a"
+                  href="javascript:hideshow(document.getElementById('GAPartNet-a'), document.getElementById('GAPartNet'))"
+                  >bibtex
+                </a>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="GAPartNet" style="font-size:14px; display: none">
+              @article{geng2022gapartnet,
+                title={GAPartNet: Cross-Category Domain-Generalizable Object Perception and Manipulation via Generalizable and Actionable Parts},
+                author={Geng, Haoran and Xu, Helin and Zhao, Chengyang and Xu, Chao and Yi, Li and Huang, Siyuan and Wang, He},
+                journal={arXiv preprint arXiv:2211.05272},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/11.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                3D-Aware Object Goal Navigation via Simultaneous Exploration and
+                Identification
+              </div>
+              <p>
+                Jiazhao Zhang*, Liu Dai*, Fanpeng Meng, Qingnan Fan, Xuelin
+                Chen, Kai Xu,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2212.00338.pdf">arXiv</a>
+                <a href="https://pku-epic.github.io/3D-Aware-ObjectNav/"
+                  >Project</a
+                >
+                <a
+                  id="3DNav-a"
+                  href="javascript:hideshow(document.getElementById('3DNav-a'),document.getElementById('3DNav'))"
+                  >bibtex
+                </a>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="3DNav" style="font-size:14px; display: none">
+              @article{zhang20223d,
+                title={3D-Aware Object Goal Navigation via Simultaneous Exploration and Identification},
+                author={Zhang, Jiazhao and Dai, Liu and Meng, Fanpeng and Fan, Qingnan and Chen, Xuelin and Xu, Kai and Wang, He},
+                journal={arXiv preprint arXiv:2212.00338},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/12.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                UniDexGrasp: Universal Robotic Dexterous Grasping via Learning
+                Diverse Proposal Generation and Goal-Conditioned Policy
+              </div>
+              <p>
+                Yinzhen Xu*, Weikang Wan*, Jialiang Zhang*, Haoran Liu*, Zikang
+                Shan, Hao Shen, Ruicheng Wang, Haoran Geng, Yijia Weng, Jiayi
+                Chen, Tengyu Liu, Li Yi,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2303.00938.pdf">arXiv</a>
+                <a href="https://pku-epic.github.io/UniDexGrasp/">Project</a>
+                <a
+                  id="UniDexGrasp-a"
+                  href="javascript:hideshow(document.getElementById('UniDexGrasp-a'),document.getElementById('UniDexGrasp'))"
+                  >bibtex
+                </a>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="UniDexGrasp" style="font:18px; display: none">
+              @article{xu2023unidexgrasp,
+                title={UniDexGrasp: Universal Robotic Dexterous Grasping via Learning Diverse Proposal Generation and Goal-Conditioned Policy},
+                author={Xu, Yinzhen and Wan, Weikang and Zhang, Jialiang and Liu, Haoran and Shan, Zikang and Shen, Hao and Wang, Ruicheng and Geng, Haoran and Weng, Yijia and Chen, Jiayi and others},
+                journal={arXiv preprint arXiv:2303.00938},
+                year={2023}
+              }
+            </p >
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/13.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                PartManip: Learning Cross-Category Generalizable Part
+                Manipulation Policy from Point Cloud Observations
+              </div>
+              <p>
+                Haoran Geng*, Ziming Li*, Yiran Geng, Jiayi Chen, Hao Dong,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2303.16958">arXiv</a>
+                <a href="https://pku-epic.github.io/PartManip/">Project</a>
+                <a
+                  id="PartManip-a"
+                  href="javascript:hideshow(document.getElementById('PartManip-a'), document.getElementById('PartManip'))"
+                  >bibtex
+                </a>
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="PartManip" style="font:18px; display: none">
+              @article{geng2023partmanip,
+                title={PartManip: Learning Cross-Category Generalizable Part Manipulation Policy from Point Cloud Observations},
+                author={Geng, Haoran and Li, Ziming and Geng, Yiran and Chen, Jiayi and Dong, Hao and Wang, He},
+                journal={arXiv preprint arXiv:2303.16958},
+                year={2023}
+              }
+            </p >
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/14.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Delving into Discrete Normalizing Flows on SO(3) Manifold for
+                Probabilistic Rotation Modeling
+              </div>
+              <p>
+                Yulin Liu*, Haoran Liu*, Yingda Yin*, Yang Wang, Baoquan
+                Chen<span>&#8224;</span>,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2304.03937.pdf">arXiv</a>
+                <a
+                  id="SO3NF-a"
+                  href="javascript:hideshow(document.getElementById('SO3NF-a'), document.getElementById('SO3NF'))"
+                  >SO3NF</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="SO3NF" style="font-size:14px; display: none">
+            @article{liu2023delving,
+              title={Delving into Discrete Normalizing Flows on SO (3) Manifold for Probabilistic Rotation Modeling},
+              author={Liu, Yulin and Liu, Haoran and Yin, Yingda and Wang, Yang and Chen, Baoquan and Wang, He},
+              journal={arXiv preprint arXiv:2304.03937},
+              year={2023}
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/15.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                DiGA: Distil to Generalize and then Adapt for Domain Adaptive
+                Semantic Segmentation
+              </div>
+              <p>
+                Fengyi Shen, Akhil Gurram, Ziyuan Liu, <span>&#8224;</span>,
+                <b>He Wang<span>&#8224;</span></b
+                >, Alois Knoll<span>&#8224;</span>
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2304.02222.pdf">arXiv</a>
+                <a
+                  id="DiGA-a"
+                  href="javascript:hideshow(document.getElementById('DiGA-a'), document.getElementById('DiGA'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="DiGA" style="font-size:14px; display: none">
+              @article{shen2023diga,
+                title={DiGA: Distil to Generalize and then Adapt for Domain Adaptive Semantic Segmentation},
+                author={Shen, Fengyi and Gurram, Akhil and Liu, Ziyuan and Wang, He and Knoll, Alois},
+                journal={arXiv preprint arXiv:2304.02222},
+                year={2023}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/16.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Adaptive Zone-aware Hierarchical Planner for Vision-Language
+                Navigation
+              </div>
+              <p>
+                Chen Gao, Xingyu Peng, Mi Yan,
+                <b>He Wang</b>, Lirong Yang, Haibing Ren, Hongsheng Li, Si Liu
+              </p>
+              <p class="decs">CVPR 2023</p>
+              <div class="button">
+                <a class="disable">arXiv (soon)</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/17.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for
+                General Objects Based on Simulation
+              </div>
+              <p>
+                Ruicheng Wang*, Jialiang Zhang*, Jiayi Chen, Yinzhen Xu, Puhao
+                Li, Tengyu Liu,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">
+                ICRA 2023 (<b>Outstanding Manipulation Paper Award Finalist</b>)
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2210.02697.pdf">arXiv</a>
+                <a href="https://pku-epic.github.io/DexGraspNet/">Project</a>
+                <a
+                  id="dexgraspnet-a"
+                  href="javascript:hideshow(document.getElementById('dexgraspnet-a'),document.getElementById('dexgraspnet'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="dexgraspnet" style="font-size:14px; display: none">
+              @article{2210.02697,
+                title = {DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for General Objects Based on Simulation},
+                author = {Ruicheng Wang and Jialiang Zhang and Jiayi Chen and Yinzhen Xu and Puhao Li and Tengyu Liu and He Wang},
+                journal={arXiv preprint arXiv:2210.02697},
+                year = {2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/18.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                GraspNeRF: Multiview-based 6-DoF Grasp Detection for Transparent
+                and Specular Objects Using Generalizable NeRF
+              </div>
+              <p>
+                Qiyu Dai*, Yan Zhu*, Yiran Geng, Ciyu Ruan, Jiazhao Zhang,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">ICRA 2023</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2210.06575.pdf">arXiv</a>
+                <a href="https://pku-epic.github.io/GraspNeRF/">Project</a>
+                <a
+                  id="GraspNeRF-a"
+                  href="javascript:hideshow(document.getElementById('GraspNeRF-a'), document.getElementById('GraspNeRF'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="GraspNeRF" style="font-size:14px; display: none">
+              @article{dai2022graspnerf,
+                title={GraspNeRF: Multiview-based 6-DoF Grasp Detection for Transparent and Specular Objects Using Generalizable NeRF},
+                author={Dai, Qiyu and Zhu, Yan and Geng, Yiran and Ruan, Ciyu and Zhang, Jiazhao and Wang, He},
+                journal={arXiv preprint arXiv:2210.06575},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/19.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                A Laplace-inspired Distribution on SO(3) for Probabilistic
+                Rotation Estimation
+              </div>
+              <p>
+                Yingda Yin, Yang Wang,
+                <b>He Wang<span>&#8224;</span></b
+                >, Baoquan Chen<span>&#8224;</span>
+              </p>
+              <p class="decs">ICLR 2023 (<b>notable top 25%</b>)</p>
+              <div class="button">
+                <a href="https://openreview.net/pdf?id=Mvetq8DO05O">Paper</a>
+                <a
+                  id="RotLaplace-a"
+                  href="javascript:hideshow(document.getElementById('RotLaplace-a'),document.getElementById('RotLaplace'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="RotLaplace" style="font-size:14px; display: none">
+              @inproceedings{
+                yin2023a,
+                title={A Laplace-inspired Distribution on {SO}(3) for Probabilistic Rotation Estimation},
+                author={Yingda Yin and Yang Wang and He Wang and Baoquan Chen},
+                booktitle={The Eleventh International Conference on Learning Representations },
+                year={2023},
+                url={https://openreview.net/forum?id=Mvetq8DO05O}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/20.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Self-Supervised Category-Level Articulated Object Pose
+                Estimation with Part-Level SE(3) Equivariance
+              </div>
+              <p>
+                Xueyi Liu, Ji Zhang, Ruizhen Hu, Haibin Huang,
+                <b>He Wang</b>, Li Yi
+              </p>
+              <p class="decs">ICLR 2023</p>
+              <div class="button">
+                <a href="https://openreview.net/forum?id=20GtJ6hIaPA">Paper</a>
+                <a
+                  id="SE3Art-a"
+                  href="javascript:hideshow(document.getElementById('SE3Art-a'),document.getElementById('SE3Art'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="SE3Art" style="font-size:14px; display: none">
+              @inproceedings{
+                liu2023selfsupervised,
+                title={Self-Supervised Category-Level Articulated Object Pose Estimation with Part-Level {SE}(3) Equivariance},
+                author={Xueyi Liu and Ji Zhang and Ruizhen Hu and Haibin Huang and He Wang and Li Yi},
+                booktitle={The Eleventh International Conference on Learning Representations },
+                year={2023},
+                url={https://openreview.net/forum?id=20GtJ6hIaPA}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/21.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Tracking and Reconstructing Hand Object Interactions from Point
+                Cloud Sequences in the Wild
+              </div>
+              <p>
+                Jiayi Chen*, Mi Yan*, Jiazhao Zhang, Yenzhen Xu, Xiaolong Li,
+                Yijia Weng, Li Yi, Shuran Song,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">AAAI 2023 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2209.12009">arXiv</a>
+                <a href="https://github.com/PKU-EPIC/HOTrack">Project</a>
+                <a
+                  id="TRHOI-a"
+                  href="javascript:hideshow(document.getElementById('TRHOI-a'),document.getElementById('TRHOI'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="TRHOI" style="font-size:14px; display: none">
+              @article{chen2022tracking,
+                title={Tracking and Reconstructing Hand Object Interactions from Point Cloud Sequences in the Wild},
+                author={Chen, Jiayi and Yan, Mi and Zhang, Jiazhao and Xu, Yinzhen and Li, Xiaolong and Weng, Yijia and Yi, Li and Song, Shuran and Wang, He},
+                journal={arXiv preprint arXiv:2209.12009},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/22.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                ASRO-DIO: Active Subspace Random Optimization Based Depth
+                Inertial Odometry
+              </div>
+              <p>
+                Jiazhao Zhang, Yijie Tang,
+                <b>He Wang</b>, Kai Xu
+              </p>
+              <p class="decs">IEEE Transactions on Robotics (T-RO)</p>
+              <div class="button">
+                <a href="https://ieeexplore.ieee.org/document/9915552">Paper</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img src="./assets/23.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Domain Randomization-Enhanced Depth Simulation and Restoration
+                for Perceiving and Grasping Specular and Transparent Objects
+              </div>
+              <p>
+                Qiyu Dai*, Jiyao Zhang*, Qiwei Li, Tianhao Wu, Hao Dong, Ziyuan
+                Liu, Ping Tan,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">ECCV 2022</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2208.03792.pdf">arXiv</a>
+                <a href="https://pku-epic.github.io/DREDS/">Project</a>
+                <a href="https://github.com/PKU-EPIC/DREDS">Code</a>
+                <a
+                  id="dreds-a"
+                  href="javascript:hideshow(document.getElementById('dreds-a'),document.getElementById('dreds'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="dreds" style="font-size:14px; display: none">
+              @article{dai2022domain,
+                title={Domain Randomization-Enhanced Depth Simulation and Restoration for Perceiving and Grasping Specular and Transparent Objects},
+                author={Dai, Qiyu and Zhang, Jiyao and Li, Qiwei and Wu, Tianhao and Dong, Hao and Liu, Ziyuan and Tan, Ping and Wang, He},
+                journal={arXiv preprint arXiv:2208.03792},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/24.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Learning Category-Level Generalizable Object Manipulation Policy
+                via Generative Adversarial Self-Imitation Learning from
+                Demonstrations
+              </div>
+              <p>
+                Hao Shen*, Weikang Wan*,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div>
+                <p class="decs">
+                  Robotics and Automation Letters (RA-L) and IROS 2022
+                </p>
+                <p style="opacity: 1; position: relative; top: -10px">
+                  <b class="bold">1st prize winner</b> of
+                  <a href="https://sapien.ucsd.edu/challenges/maniskill2021/">
+                    SAPIEN ManiSkill Challenge 2021
+                  </a>
+                  (no external annotation track)
+                </p>
+              </div>
+
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2203.02107.pdf">arXiv</a>
+                <a
+                  href="https://shen-hhao.github.io/Category_Level_Manipulation/"
+                  >Project</a
+                >
+                <a
+                  href="https://shen-hhao.github.io/Category_Level_Manipulation/"
+                  >Code</a
+                >
+                <a
+                  id="maniskill-a"
+                  href="javascript:hideshow(document.getElementById('maniskill-a'),document.getElementById('maniskill'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="maniskill" style="font-size:14px; display: none">
+              @article{shen2022learning,
+                title={Learning Category-Level Generalizable Object Manipulation Policy via Generative Adversarial Self-Imitation Learning from Demonstrations},
+                author={Shen, Hao and Wan, Weikang and Wang, He},
+                journal={arXiv preprint arXiv:2203.02107},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/25.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                FisherMatch: Semi-Supervised Rotation Regression via
+                Entropy-based Filtering
+              </div>
+              <p>
+                Yingda Yin, Yingcheng Cai,
+                <b>He Wang<span>&#8224;</span></b
+                >, Baoquan Chen<span>&#8224;</span>
+              </p>
+              <p class="decs">CVPR 2022 (<b>Oral Presentation</b>)</p>
+
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2203.15765.pdf">arXiv</a>
+                <a href="https://yd-yin.github.io/FisherMatch/">Project</a>
+                <a href="https://github.com/yd-yin/FisherMatch">Code</a>
+                <a
+                  id="fishermatch-a"
+                  href="javascript:hideshow(document.getElementById('fishermatch-a'),document.getElementById('fishermatch'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="fishermatch" style="font-size:14px; display: none">
+              @article{yin2022fishermatch,
+                title={FisherMatch: Semi-Supervised Rotation Regression via Entropy-based Filtering},
+                author={Yin, Yingda and Cai, Yingcheng and Wang, He and Chen, Baoquan},
+                journal={arXiv preprint arXiv:2203.15765},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/26.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Projective Manifold Gradient Layer for Deep Rotation Regression
+              </div>
+              <p>
+                Jiayi Chen, Yingda Yin, Tolga Birdal, Baoquan Chen, Leonidas
+                Guibas,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2022</p>
+
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2110.11657.pdf">arXiv</a>
+                <a href="https://jychen18.github.io/RPMG/">Project</a>
+                <a href="https://github.com/jychen18/RPMG">Code</a>
+                <a
+                  id="rpmg-a"
+                  href="javascript:hideshow(document.getElementById('rpmg-a'),document.getElementById('rpmg'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="rpmg" style="font-size:14px; display: none">
+              @article{chen2021projective,
+                title={Projective Manifold Gradient Layer for Deep Rotation Regression},
+                author={Chen, Jiayi and Yin, Yingda and Birdal, Tolga and Chen, Baoquan and Guibas, Leonidas and Wang, He},
+                journal={arXiv preprint arXiv:2110.11657},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/27.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                ADeLA: Automatic Dense Labeling with Attention for Viewpoint
+                Adaptation in Semantic Segmentation
+              </div>
+              <p>
+                Jiayi Chen, Yingda Yin, Tolga Birdal, Baoquan Chen, Leonidas
+                Guibas,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">CVPR 2022 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2107.14285">arXiv</a>
+                <a
+                  id="adela-a"
+                  href="javascript:hideshow(document.getElementById('adela-a'),document.getElementById('adela'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="adela" style="font-size:14px; display: none">
+              @article{yang2021adela,
+                title={ADeLA: Automatic Dense Labeling with Attention for Viewpoint Adaptation in Semantic Segmentation},
+                author={Yang, Yanchao and Ren, Hanxiang and Wang, He and Shen, Bokui and Fan, Qingnan and Zheng, Youyi and Liu, C Karen and Guibas, Leonidas},
+                journal={arXiv preprint arXiv:2107.14285},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/28.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                HOI4D: A 4D Egocentric Dataset for Category-Level Human-Object
+                Interaction
+              </div>
+              <p>
+                Yunze Liu, Yun Liu, Che Jiang, Kangbo Lyu, Weikang Wan, Hao
+                Shen, Boqiang Liang, Zhoujie Fu,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi
+              </p>
+              <p class="decs">CVPR 2022</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2203.01577.pdf">arXiv</a>
+                <a
+                  id="HOI4D-a"
+                  href="javascript:hideshow(document.getElementById('HOI4D-a'),document.getElementById('HOI4D'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="HOI4D" style="font-size:14px; display: none">
+              @article{liu2022hoi4d,
+                title={HOI4D: A 4D Egocentric Dataset for Category-Level Human-Object Interaction},
+                author={Liu, Yunze and Liu, Yun and Jiang, Che and Fu, Zhoujie and Lyu, Kangbo and Wan, Weikang and Shen, Hao and Liang, Boqiang and Wang, He and Yi, Li},
+                journal={arXiv preprint arXiv:2203.01577},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/29.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Multi-Robot Active Mapping via Neural Bipartite Graph Matching
+              </div>
+              <p>
+                Kai Ye*, Siyan Dong*, Qingnan Fan,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi, Fei Xia, Jue Wang, Baoquan Chen
+              </p>
+              <p class="decs">CVPR 2022</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2203.16319.pdf">arXiv</a>
+                <a
+                  id="MultiRobotMap-a"
+                  href="javascript:hideshow(document.getElementById('MultiRobotMap-a'),document.getElementById('MultiRobotMap'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="MultiRobotMap" style="font-size:14px; display: none">
+              @article{ye2022multi,
+                title={Multi-Robot Active Mapping via Neural Bipartite Graph Matching},
+                author={Ye, Kai and Dong, Siyan and Fan, Qingnan and Wang, He and Yi, Li and Xia, Fei and Wang, Jue and Chen, Baoquan},
+                journal={arXiv preprint arXiv:2203.16319},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/30.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                CodedVTR: Codebook-based Sparse Voxel Transformer with Geometric
+                Guidance
+              </div>
+              <p>
+                Tianchen Zhao, Niansong Zhang, Xuefei Ning,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi, Yu Wang
+              </p>
+              <p class="decs">CVPR 2022</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2203.09887.pdf">arXiv</a>
+                <a
+                  id="CodedVTR-a"
+                  href="javascript:hideshow(document.getElementById('CodedVTR-a'),document.getElementById('CodedVTR'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="CodedVTR" style="font-size:14px; display: none">
+              @article{zhao2022codedvtr,
+                title={CodedVTR: Codebook-based Sparse Voxel Transformer with Geometric Guidance},
+                author={Zhao, Tianchen and Zhang, Niansong and Ning, Xuefei and Wang, He and Yi, Li and Wang, Yu},
+                journal={arXiv preprint arXiv:2203.09887},
+                year={2022}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/31.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Domain Adaptation on Point Clouds via Geometry-Aware Implicits
+              </div>
+              <p>
+                Yuefan Shen*, Yanchao Yang*, Mi Yan,
+                <b>He Wang<span>&#8224;</span></b
+                >, Youyi Zheng, Leonidas J. Guibas
+              </p>
+              <p class="decs">CVPR 2022</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2112.09343">arXiv</a>
+                <a
+                  id="DAGAI-a"
+                  href="javascript:hideshow(document.getElementById('DAGAI-a'),document.getElementById('DAGAI'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="DAGAI" style="font-size:14px; display: none">
+              @article{shen2021domain,
+                title={Domain Adaptation on Point Clouds via Geometry-Aware Implicits},
+                author={Shen, Yuefan and Yang, Yanchao and Yan, Mi and Wang, He and Zheng, Youyi and Guibas, Leonidas},
+                journal={arXiv preprint arXiv:2112.09343},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/32.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Leveraging SE(3) Equivariance for Self-supervised Category-Level
+                Object Pose Estimation from Point Clouds
+              </div>
+              <p>
+                Xiaolong Li, Yijia Weng, Li Yi, Leonidas J. Guibas, A. Lynn
+                Abbott, Shuran Song,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <p class="decs">NeurIPS 21</p>
+              <div class="button">
+                <a href="https://openreview.net/forum?id=wGRNAqVBQT2">Paper</a>
+                <a href="https://arxiv.org/pdf/2111.00190.pdf">arXiv</a>
+                <a href="https://dragonlong.github.io/equi-pose/">Project</a>
+                <a href="https://github.com/dragonlong/equi-pose">Code</a>
+                <a
+                  id="esscop-a"
+                  href="javascript:hideshow(document.getElementById('esscop-a'),document.getElementById('esscop'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="esscop" style="font-size:14px; display: none">
+              @article{li2021leveraging,
+                title={Leveraging SE (3) Equivariance for Self-supervised Category-Level Object Pose Estimation from Point Clouds},
+                author={Li, Xiaolong and Weng, Yijia and Yi, Li and Guibas, Leonidas J and Abbott, A and Song, Shuran and Wang, He},
+                journal={Advances in Neural Information Processing Systems},
+                volume={34},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/33.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                CAPTRA: CAtegory-level Pose Tracking for Rigid and Articulated
+                Objects from Point Clouds
+              </div>
+              <p>
+                Yijia Weng*,
+                <b>He Wang<span>&#8224;</span></b
+                >, Qiang Zhou, Yuzhe Qin, Yueqi Duan, Qingnan Fan, Baoquan Chen,
+                Hao Su, Leonidas J. Guibas
+              </p>
+              <p class="decs">ICCV 2021 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2104.03437">arXiv</a>
+                <a href="https://yijiaweng.github.io/CAPTRA/">Project</a>
+                <a href="https://github.com/halfsummer11/CAPTRA">Code</a>
+                <a href="https://youtu.be/JFPcOHCH2O0">Video</a>
+                <a
+                  id="captra-a"
+                  href="javascript:hideshow(document.getElementById('captra-a'),document.getElementById('captra'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="captra" style="font-size:14px; display: none">
+              @article{weng2021captra,
+                title={CAPTRA: CAtegory-level Pose Tracking for Rigid and Articulated Objects from Point Clouds},
+                author={Weng, Yijia and Wang, He and Zhou, Qiang and Qin, Yuzhe and Duan, Yueqi and Fan, Qingnan and 
+                        Chen, Baoquan and Su, Hao and Guibas, Leonidas J},
+                journal={arXiv preprint arXiv:2104.03437},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/34.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Single Image 3D Shape Retrieval via Cross-Modal Instance and
+                Category Contrastive Learning
+              </div>
+              <p>
+                Mingxian Lin, Jie Yang,
+                <b>He Wang<span>&#8224;</span></b
+                >, Yu-Kun Lai, Rongfei Jia, Binqiang Zhao, Lin Gao
+              </p>
+              <p class="decs">ICCV 2021</p>
+              <div class="button">
+                <a
+                  href="https://openaccess.thecvf.com/content/ICCV2021/papers/Lin_Single_Image_3D_Shape_Retrieval_via_Cross-Modal_Instance_and_Category_ICCV_2021_paper.pdf"
+                  >Paper</a
+                >
+                <a
+                  href="https://openaccess.thecvf.com/content/ICCV2021/supplemental/Lin_Single_Image_3D_ICCV_2021_supplemental.pdf"
+                  >Supp.</a
+                >
+                <a
+                  id="retrievel-a"
+                  href="javascript:hideshow(document.getElementById('retrievel-a'),document.getElementById('retrievel'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="retrievel" style="font-size:14px; display: none">
+              @inproceedings{lin2021single,
+                title={Single Image 3D Shape Retrieval via Cross-Modal Instance and Category Contrastive Learning},
+                author={Lin, Ming-Xian and Yang, Jie and Wang, He and Lai, Yu-Kun and Jia, Rongfei and Zhao, Binqiang and Gao, Lin},
+                booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision},
+                pages={11405--11415},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/35.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D
+                Object Detection
+              </div>
+              <p>
+                <b>He Wang<span>&#8224;</span></b
+                >, Yezhen Cong*, Or Litany, Yue Gao and Leonidas J. Guibas
+              </p>
+              <p class="decs">ICCV 2021</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2012.04355.pdf">Paper</a>
+                <a href="https://thu17cyz.github.io/3DIoUMatch/">Project</a>
+                <a href="https://github.com/THU17cyz/3DIoUMatch">Code</a>
+                <a href="https://youtu.be/nuARjhkQN2U">Video</a>
+                <a
+                  id="3dioumatch-a"
+                  href="javascript:hideshow(document.getElementById('3dioumatch-a'),document.getElementById('3dioumatch'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="3dioumatch" style="font-size:14px; display: none">
+              @inproceedings{wang20213dioumatch,
+                title={3DIoUMatch: Leveraging iou prediction for semi-supervised 3d object detection},
+                author={Wang, He and Cong, Yezhen and Litany, Or and Gao, Yue and Guibas, Leonidas J},
+                booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                pages={14615--14624},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/36.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                MultiBodySync: Multi-Body Segmentation and Motion Estimation via
+                3D Scan Synchronization
+              </div>
+              <p>
+                Jiahui Huang,
+                <b>He Wang<span>&#8224;</span></b
+                >, Tolga Birdal, Minkyuk Sung, Federica Arrigoni, Shi-Min Hu,
+                and Leonidas J. Guibas
+              </p>
+              <p class="decs">CVPR 2021 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2101.06605.pdf">Paper</a>
+                <a href="https://github.com/huangjh-pub/multibody-sync">Code</a>
+                <a href="https://www.youtube.com/watch?v=BuIBXL2UNvI">Video</a>
+                <a
+                  id="multibodysync-a"
+                  href="javascript:hideshow(document.getElementById('multibodysync-a'),document.getElementById('multibodysync'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="multibodysync" style="font-size:14px; display: none">
+              @inproceedings{huang2021multibodysync,
+                title={Multibodysync: Multi-body segmentation and motion estimation via 3d scan synchronization},
+                author={Huang, Jiahui and Wang, He and Birdal, Tolga and Sung, Minhyuk and Arrigoni, Federica and Hu, Shi-Min and Guibas, Leonidas J},
+                booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                pages={7108--7118},
+                year={2021}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/37.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Robust Neural Routing Through Space Partitions for Camera
+                Relocalization in Dynamic Indoor Environments
+              </div>
+              <p>
+                Siyan Dong*, Qingnan Fan*,
+                <b>He Wang<span>&#8224;</span></b
+                >, Ji Shi, Li Yi, Thomas Funkhouser, Baoquan Chen, Leonidas J.
+                Guibas
+              </p>
+              <p class="decs">CVPR 2021 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2010.05272">Paper</a>
+                <a href="https://github.com/siyandong/NeuralRouting">Code</a>
+                <a
+                  id="neuralrouting-a"
+                  href="javascript:hideshow(document.getElementById('neuralrouting-a'),document.getElementById('neuralrouting'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="neuralrouting" style="font-size:14px; display: none">
+              @InProceedings{Dong_2021_CVPR,
+                author = {Dong, Siyan and Fan, Qingnan and Wang, He and Shi, Ji and Yi, Li and Funkhouser, Thomas and Chen, Baoquan and Guibas, Leonidas J.},
+                title = {Robust Neural Routing Through Space Partitions for Camera Relocalization in Dynamic Indoor Environments},
+                booktitle = {Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition (CVPR)},
+                month = {June},
+                year = {2021},
+                pages = {8544-8554}
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/38.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Rethinking Sampling in 3D Point Cloud Generative Adversarial
+                Networks
+              </div>
+              <p>
+                <b>He Wang<span>&#8224;</span></b
+                >, Zetian Jiang*, Li Yi, Kaichun Mo, Hao Su, Leonidas J. Guibas
+              </p>
+              <p class="decs">
+                CVPR 2021 Workshop on
+                <i>Learning to Generate 3D Shapes and Scenes</i>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2006.07029">Paper</a>
+                <a
+                  href="https://drive.google.com/file/d/1RF77Zp6cQgoU0tf33Wjthx0D6tr3IYAJ/view?usp=sharing"
+                  >Poster</a
+                >
+                <a href="https://www.youtube.com/watch?v=Ejzj0hnKW4Y">Video</a>
+                <a
+                  id="rethink-a"
+                  href="javascript:hideshow(document.getElementById('rethink-a'),document.getElementById('rethink'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="rethink" style="font-size:14px; display: none">
+              @article{wang2020rethinking,
+                title={Rethinking Sampling in 3D Point Cloud Generative Adversarial Networks},
+                author={Wang, He and Jiang, Zetian and Yi, Li and Mo, Kaichun and Su, Hao and Guibas, Leonidas J},
+                journal={arXiv preprint arXiv:2006.07029},
+                year={2020}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/39.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                PT2PC: Learning to Generate 3D Point Cloud Shapes from Part Tree
+                Conditions
+              </div>
+              <p>
+                Kaichun Mo,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi, Xinchen Yan and Leonidas J. Guibas
+              </p>
+              <p class="decs">ECCV 2020</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2003.08624">Paper</a>
+                <a href="https://cs.stanford.edu/~kaichun/pt2pc/">Project</a>
+                <a href="https://github.com/daerduoCarey/pt2pc">Code&Data</a>
+                <a
+                  id="pt2pc-a"
+                  href="javascript:hideshow(document.getElementById('pt2pc-a'),document.getElementById('pt2pc'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="pt2pc" style="font-size:14px; display: none">
+              @article{mo2020pt2pc,
+                title={PT2PC: Learning to Generate 3D Point Cloud Shapes from Part Tree Conditions},
+                author={Mo, Kaichun and Wang, He and Yan, Xinchen and Guibas, Leonidas},
+                journal={arXiv preprint arXiv:2003.08624},
+                year={2020}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/40.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">Curriculum DeepSDF</div>
+              <p>
+                Yueqi Duan*, Haidong Zhu*,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi, Ram Nevatia, Leonidas J. Guibas
+              </p>
+              <p class="decs">ECCV 2020</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2003.08593">Paper</a>
+                <a href="https://github.com/haidongz-usc/Curriculum-DeepSDF"
+                  >Code</a
+                >
+                <a
+                  id="csdf-a"
+                  href="javascript:hideshow(document.getElementById('csdf-a'),document.getElementById('csdf'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="csdf" style="font-size:14px; display: none">
+              @misc{duan2020curriculum,
+                title={Curriculum DeepSDF},
+                author={Yueqi Duan and Haidong Zhu and He Wang and Li Yi and Ram Nevatia and Leonidas J. Guibas},
+                year={2020},
+                eprint={2003.08593},
+                archivePrefix={arXiv},
+                primaryClass={cs.CV}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/41.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Category-level Articulated Object Pose Estimation
+              </div>
+              <p>
+                <b>He Wang<span>&#8224;</span></b
+                >, Xiaolong Li*, Li Yi, Leonidas Guibas, A. Lynn Abbott, Shuran
+                Song
+              </p>
+              <p class="decs">CVPR 2020 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/1912.11913">Paper</a>
+                <a href="https://articulated-pose.github.io/">Project</a>
+                <a href="https://github.com/dragonlong/articulated-pose"
+                  >Code&Data</a
+                >
+                <a
+                  id="ancsh-a"
+                  href="javascript:hideshow(document.getElementById('ancsh-a'),document.getElementById('ancsh'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="ancsh" style="font-size:14px; display: none">
+              @article{li2019category,
+                title={Category-Level Articulated Object Pose Estimation},
+                author={Li, Xiaolong and Wang, He and Yi, Li and Guibas, Leonidas and Abbott, A Lynn and Song, Shuran},
+                journal={arXiv preprint arXiv:1912.11913},
+                year={2019}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/42.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                SAPIEN: A SimulAted Part-based Interactive ENvironment
+              </div>
+              <p>
+                Fanbo Xiang, Yuzhe Qin, Kaichun Mo, Yikuan Xia, Hao Zhu,
+                Fangchen Liu, Minghua Liu, Hanxiao Jiang, Yifu Yuan,
+                <b>He Wang<span>&#8224;</span></b
+                >, Li Yi, Angel X.Chang, Leonidas J. Guibas and Hao Su
+              </p>
+              <p class="decs">CVPR 2020 (<b>Oral Presentation</b>)</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2003.08515">Paper</a>
+                <a href="https://sapien.ucsd.edu/">Project</a>
+                <a href="https://github.com/haosulab/SAPIEN-Release"
+                  >Code&Data</a
+                >
+                <a href="https://youtu.be/K2yOeJhJXzM">Demo</a>
+                <a
+                  id="sapien-a"
+                  href="javascript:hideshow(document.getElementById('sapien-a'),document.getElementById('sapien'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="sapien" style="font-size:14px; display: none">
+              @InProceedings{Xiang_2020_SAPIEN,
+                author={Xiang, Fanbo and Qin, Yuzhe and Mo, Kaichun and Xia, Yikuan and Zhu, Hao 
+                  and Liu, Fangchen and Liu, Minghua and Jiang, Hanxiao and Yuan, Yifu 
+                  and Wang, He and Yi, Li and Chang, Angel X. and Guibas, Leonidas J. and Su, Hao},
+                title={SAPIEN: A SimulAted Part-based Interactive ENvironment},
+                booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)},
+                month={June},
+                year={2020}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/43.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Normalized Object Coordinate Space for Category-Level 6D Object
+                Pose and Size Estimation
+              </div>
+              <p>
+                <b>He Wang<span>&#8224;</span></b
+                >, Srinath Sridhar, Jingwei Huang, Julien Valentin, Shuran Song,
+                Leonidas J. Guibas
+              </p>
+              <p class="decs">
+                CVPR 2019 (<b>Oral Presentation</b>),
+                <a href="https://mp.weixin.qq.com/s/LAVMLCsi3-XHWLbklomxkg"
+                  >WAICYOP Award 2022</a
+                >
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/1901.02970">Paper</a>
+                <a href="https://geometry.stanford.edu/projects/NOCS_CVPR2019/"
+                  >Project</a
+                >
+                <a href="https://github.com/hughw19/NOCS_CVPR2019">Code&Data</a>
+                <a
+                  id="posercnn-a"
+                  href="javascript:hideshow(document.getElementById('posercnn-a'),document.getElementById('posercnn'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="posercnn" style="font-size:14px; display: none">
+              @inproceedings{wang2019normalized,
+                title={Normalized object coordinate space for category-level 6d object pose and size estimation},
+                author={Wang, He and Sridhar, Srinath and Huang, Jingwei and Valentin, Julien and Song, Shuran and Guibas, Leonidas J},
+                booktitle={Proceedings of the IEEE/CVF Conference on Computer Vision and Pattern Recognition},
+                pages={2642--2651},
+                year={2019}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/44.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                GSPN: Generative Shape Proposal Network for 3D Instance
+                Segmentation in Point Cloud
+              </div>
+              <p>
+                Li Yi, Wang Zhao,
+                <b>He Wang<span>&#8224;</span></b
+                >, Minhyuk Sung, Leonidas Guibas
+              </p>
+              <p class="decs">CVPR 2019</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/1812.03320">Paper</a>
+                <a href="https://github.com/ericyi/GSPN">Code</a>
+                <a
+                  id="gspn-a"
+                  href="javascript:hideshow(document.getElementById('gspn-a'),document.getElementById('gspn'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="gspn" style="font-size:14px; display: none">
+              @article{yi2018gspn,
+                title={GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud},
+                author={Yi, Li and Zhao, Wang and Wang, He and Sung, Minhyuk and Guibas, Leonidas},
+                journal={arXiv preprint arXiv:1812.03320},
+                year={2018}
+              }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img src="./assets/45.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                Learning a Generative Model for Multi-Step Human-Object
+                Interactions from Videos
+              </div>
+              <p>
+                <b>He Wang<span>&#8224;</span></b
+                >, Soeren Pirk*, Ersin Yumer, Vladimir Kim, Ozan Sener, Srinath
+                Sridhar, Leonidas J. Guibas
+              </p>
+              <p class="decs">
+                Eurographics 2019 (<b>Best Paper Honorable Mention</b>)
+              </p>
+              <div class="button">
+                <a
+                  href="http://www.pirk.info/projects/learning_interactions/index.html"
+                  >Project</a
+                >
+                <a
+                  href="https://oss-cn-beijing.galbot.com/online/activity/19_EG_FnInteract.pdf"
+                  >Paper</a
+                >
+                <a href="https://github.com/hughw19/ActionPlotGeneration.git"
+                  >Code</a
+                >
+                <a href="http://ai.stanford.edu/blog/generate-human-object/"
+                  >Blog</a
+                >
+                <a href="https://www.youtube.com/watch?v=WgpPalA2RzA">Video</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script type="text/javascript">
+      function hideshow(a, which) {
+        console.log(which);
+        if (!document.getElementById) return;
+        if (which.style.display == 'block') {
+          which.style.display = 'none';
+          a.style.background = 'none';
+        } else {
+          which.style.display = 'block';
+          a.style.background = 'rgba(189,220,255,0.30)';
+        }
+      }
+    </script>
+  </body>
+</html>

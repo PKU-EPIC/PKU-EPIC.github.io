@@ -1,6 +1,6 @@
 <html>
   <head>
-    <meta http-equiv="Content-Type" content="text/html; charset=GBK" />
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
     <title>He Wang</title>
     <link rel="stylesheet" type="text/css" href="./css/lab.css" />
   </head>
@@ -9,15 +9,18 @@
       <div class="main-head">
         <div class="name">EPIC</div>
         <div class="list">
-          <div class="list-item"><a href="#videos">Videos</a></div>
           <div class="list-item"><a href="#people">People</a></div>
           <div class="list-item"><a href="#news">News</a></div>
           <div class="list-item"><a href="#publications">Publications</a></div>
         </div>
         <div class="menu">
-          <div class="menu-item"><a href="https://hughw19.github.io/">Home</a></div>
+          <div class="menu-item">
+            <a href="https://hughw19.github.io/">Home</a>
+          </div>
           <span>/</span>
-          <div class="menu-item active"><a href="https://PKU-EPIC.github.io">Lab</a></div>
+          <div class="menu-item active">
+            <a href="https://PKU-EPIC.github.io">Lab</a>
+          </div>
         </div>
       </div>
       <div class="main-content">
@@ -32,38 +35,51 @@
           </p>
         </div>
       </div>
-      <div class="main-content" style="padding-bottom: 38px">
-        <div class="main-swiper" id="videos">
-          <div class="swiper-content">
-            <div class="slide-source">
+      <div class="main-swiper">
+        <div class="swiper-content" id="videos">
+          <div class="slide-source">
+            <a href="https://pku-epic.github.io/ASGrasp/">
               <video
-                class="video-element"
+                autoplay
                 loop
                 muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech1.png"
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.png"
               >
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech1.mp4"
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.mov"
                   type="video/mp4"
                 />
               </video>
-            </div>
-            <div class="slide-source">
+              <div>
+                Material-agnostic generalized grasping technology, capable of
+                handling scenes with completely transparent objects with high
+                success.
+              </div>
+            </a>
+          </div>
+          <div class="slide-source">
+            <a href="  https://pku-epic.github.io/DexGraspNet/">
               <video
-                class="video-element"
+                autoplay
                 loop
                 muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech5.png"
+                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.png"
               >
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech5.mp4"
+                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.mp4"
                   type="video/mp4"
                 />
               </video>
-            </div>
-            <div class="slide-source">
+              <div>
+                《DexGraspNet》ICRA 2023 Best Manipulation Paper
+                Nominee，Million-level dexterous hands Dataset.
+              </div>
+            </a>
+          </div>
+          <div class="slide-source">
+            <a href="https://pku-epic.github.io/Open6DOR/">
               <video
-                class="video-element"
+                autoplay
                 loop
                 muted
                 poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
@@ -73,10 +89,17 @@
                   type="video/mp4"
                 />
               </video>
-            </div>
-            <div class="slide-source">
+              <div>
+                The world's first open command large model system for object
+                pick-and-place, capable of controlling object orientation:
+                Open6DOR.
+              </div>
+            </a>
+          </div>
+          <div class="slide-source">
+            <a href="https://pku-epic.github.io/NaVid/">
               <video
-                class="video-element"
+                autoplay
                 muted
                 loop
                 poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
@@ -86,7 +109,11 @@
                   type="video/mp4"
                 />
               </video>
-            </div>
+              <div>
+                The world's first generalized embodied navigation large model:
+                NaVid.
+              </div>
+            </a>
           </div>
         </div>
       </div>
@@ -371,6 +398,27 @@
           <div class="title">NEWS</div>
           <ul>
             <li>Two papers get accepted to RSS 2024.</li>
+            <li>
+              I accepted an interview from Xinhua News Agency's Economic
+              Information Daily titled "<a
+                href="https://h.xinhuaxmt.com/vh512/share/12055247?d=134d8e5&channel=weixin"
+                >Humanoid Robots Open the Blueprint of Embodied Intelligence</a
+              >."
+            </li>
+            <li>
+              I accepted an interview from 36Kr titled "<a
+                href="https://mp.weixin.qq.com/s/xE6xmcuDRbhrGtIqMCzGpQ"
+                >After the Impact of Large Models on the Humanoid Robot Track, a
+                Trillion-Dollar Market's New Narrative</a
+              >."
+            </li>
+            <li>
+              I was invited to participate in CCTV-2's "Dialogue" program on the
+              theme of "<a
+                href="https://tv.cctv.com/2024/05/25/VIDECvVzKGwoW4y2w3bkgTLD240525.shtml?spm=C22284.P87019257382.EMqe9pBD7J5t.63"
+                >Humanoid Robots: Coexisting with Humans</a
+              >."
+            </li>
             <li>Two papers get accepted to CVPR 2024.</li>
             <li>
               Three papers get accepted to ICRA 2024 and one paper gets accepted
@@ -553,8 +601,7 @@
               </div>
               <p>
                 Yun Liu*, Xiaomeng Xu*, Weihang Chen, Haocheng Yuan,
-                <b>He Wang</b
-                >, Jing Xu, Rui Chen, Li Yi<span>&#8224;</span>
+                <b>He Wang</b>, Jing Xu, Rui Chen, Li Yi<span>&#8224;</span>
               </p>
               <p class="decs">RA-L</p>
               <div class="button">
@@ -939,7 +986,7 @@
                 Semantic Segmentation
               </div>
               <p>
-                Fengyi Shen, Akhil Gurram, Ziyuan Liu, <span>&#8224;</span>,
+                Fengyi Shen, Akhil Gurram, Ziyuan Liu,
                 <b>He Wang<span>&#8224;</span></b
                 >, Alois Knoll<span>&#8224;</span>
               </p>
@@ -1372,8 +1419,7 @@
               <p>
                 Yunze Liu, Yun Liu, Che Jiang, Kangbo Lyu, Weikang Wan, Hao
                 Shen, Boqiang Liang, Zhoujie Fu,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi
+                <b>He Wang</b>, Li Yi
               </p>
               <p class="decs">CVPR 2022</p>
               <div class="button">
@@ -1404,8 +1450,7 @@
               </div>
               <p>
                 Kai Ye*, Siyan Dong*, Qingnan Fan,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi, Fei Xia, Jue Wang, Baoquan Chen
+                <b>He Wang</b>, Li Yi, Fei Xia, Jue Wang, Baoquan Chen
               </p>
               <p class="decs">CVPR 2022</p>
               <div class="button">
@@ -1437,8 +1482,7 @@
               </div>
               <p>
                 Tianchen Zhao, Niansong Zhang, Xuefei Ning,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi, Yu Wang
+                <b>He Wang</b>, Li Yi, Yu Wang
               </p>
               <p class="decs">CVPR 2022</p>
               <div class="button">
@@ -1469,8 +1513,7 @@
               </div>
               <p>
                 Yuefan Shen*, Yanchao Yang*, Mi Yan,
-                <b>He Wang<span>&#8224;</span></b
-                >, Youyi Zheng, Leonidas J. Guibas
+                <b>He Wang</b>, Youyi Zheng, Leonidas J. Guibas
               </p>
               <p class="decs">CVPR 2022</p>
               <div class="button">
@@ -1539,7 +1582,7 @@
               </div>
               <p>
                 Yijia Weng*,
-                <b>He Wang<span>&#8224;</span></b
+                <b>He Wang<span>*&#8224;</span></b
                 >, Qiang Zhou, Yuzhe Qin, Yueqi Duan, Qingnan Fan, Baoquan Chen,
                 Hao Su, Leonidas J. Guibas
               </p>
@@ -1577,8 +1620,7 @@
               </div>
               <p>
                 Mingxian Lin, Jie Yang,
-                <b>He Wang<span>&#8224;</span></b
-                >, Yu-Kun Lai, Rongfei Jia, Binqiang Zhao, Lin Gao
+                <b>He Wang</b>, Yu-Kun Lai, Rongfei Jia, Binqiang Zhao, Lin Gao
               </p>
               <p class="decs">ICCV 2021</p>
               <div class="button">
@@ -1617,7 +1659,7 @@
                 Object Detection
               </div>
               <p>
-                <b>He Wang<span>&#8224;</span></b
+                <b>He Wang<span>*</span></b
                 >, Yezhen Cong*, Or Litany, Yue Gao and Leonidas J. Guibas
               </p>
               <p class="decs">ICCV 2021</p>
@@ -1654,9 +1696,8 @@
               </div>
               <p>
                 Jiahui Huang,
-                <b>He Wang<span>&#8224;</span></b
-                >, Tolga Birdal, Minkyuk Sung, Federica Arrigoni, Shi-Min Hu,
-                and Leonidas J. Guibas
+                <b>He Wang</b>, Tolga Birdal, Minkyuk Sung, Federica Arrigoni,
+                Shi-Min Hu, and Leonidas J. Guibas
               </p>
               <p class="decs">CVPR 2021 (<b>Oral Presentation</b>)</p>
               <div class="button">
@@ -1691,9 +1732,8 @@
               </div>
               <p>
                 Siyan Dong*, Qingnan Fan*,
-                <b>He Wang<span>&#8224;</span></b
-                >, Ji Shi, Li Yi, Thomas Funkhouser, Baoquan Chen, Leonidas J.
-                Guibas
+                <b>He Wang</b>, Ji Shi, Li Yi, Thomas Funkhouser, Baoquan Chen,
+                Leonidas J. Guibas
               </p>
               <p class="decs">CVPR 2021 (<b>Oral Presentation</b>)</p>
               <div class="button">
@@ -1727,8 +1767,8 @@
                 Networks
               </div>
               <p>
-                <b>He Wang<span>&#8224;</span></b
-                >, Zetian Jiang*, Li Yi, Kaichun Mo, Hao Su, Leonidas J. Guibas
+                <b>He Wang*</b>, Zetian Jiang*, Li Yi, Kaichun Mo, Hao Su,
+                Leonidas J. Guibas
               </p>
               <p class="decs">
                 CVPR 2021 Workshop on
@@ -1768,8 +1808,7 @@
               </div>
               <p>
                 Kaichun Mo,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi, Xinchen Yan and Leonidas J. Guibas
+                <b>He Wang</b>, Li Yi, Xinchen Yan and Leonidas J.Guibas
               </p>
               <p class="decs">ECCV 2020</p>
               <div class="button">
@@ -1800,8 +1839,7 @@
               <div class="item-title">Curriculum DeepSDF</div>
               <p>
                 Yueqi Duan*, Haidong Zhu*,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi, Ram Nevatia, Leonidas J. Guibas
+                <b>He Wang</b>, Li Yi, Ram Nevatia, Leonidas J. Guibas
               </p>
               <p class="decs">ECCV 2020</p>
               <div class="button">
@@ -1836,9 +1874,8 @@
                 Category-level Articulated Object Pose Estimation
               </div>
               <p>
-                <b>He Wang<span>&#8224;</span></b
-                >, Xiaolong Li*, Li Yi, Leonidas Guibas, A. Lynn Abbott, Shuran
-                Song
+                <b>He Wang*</b>, Xiaolong Li*, Li Yi, Leonidas Guibas, A. Lynn
+                Abbott, Shuran Song
               </p>
               <p class="decs">CVPR 2020 (<b>Oral Presentation</b>)</p>
               <div class="button">
@@ -1874,8 +1911,8 @@
               <p>
                 Fanbo Xiang, Yuzhe Qin, Kaichun Mo, Yikuan Xia, Hao Zhu,
                 Fangchen Liu, Minghua Liu, Hanxiao Jiang, Yifu Yuan,
-                <b>He Wang<span>&#8224;</span></b
-                >, Li Yi, Angel X.Chang, Leonidas J. Guibas and Hao Su
+                <b>He Wang</b>, Li Yi, Angel X.Chang, Leonidas J. Guibas and Hao
+                Su
               </p>
               <p class="decs">CVPR 2020 (<b>Oral Presentation</b>)</p>
               <div class="button">
@@ -1914,9 +1951,8 @@
                 Pose and Size Estimation
               </div>
               <p>
-                <b>He Wang<span>&#8224;</span></b
-                >, Srinath Sridhar, Jingwei Huang, Julien Valentin, Shuran Song,
-                Leonidas J. Guibas
+                <b>He Wang</b>, Srinath Sridhar, Jingwei Huang, Julien Valentin,
+                Shuran Song, Leonidas J. Guibas
               </p>
               <p class="decs">
                 CVPR 2019 (<b>Oral Presentation</b>),
@@ -1958,8 +1994,7 @@
               </div>
               <p>
                 Li Yi, Wang Zhao,
-                <b>He Wang<span>&#8224;</span></b
-                >, Minhyuk Sung, Leonidas Guibas
+                <b>He Wang</b>, Minhyuk Sung, Leonidas Guibas
               </p>
               <p class="decs">CVPR 2019</p>
               <div class="button">
@@ -1991,7 +2026,7 @@
                 Interactions from Videos
               </div>
               <p>
-                <b>He Wang<span>&#8224;</span></b
+                <b>He Wang<span>*</span></b
                 >, Soeren Pirk*, Ersin Yumer, Vladimir Kim, Ozan Sener, Srinath
                 Sridhar, Leonidas J. Guibas
               </p>

@@ -25,85 +25,89 @@
       </div>
       <div class="main-content">
         <div class="main-epic">
-          <div class="title">EPIC</div>
-          <p>
-            EPIC Lab, founded and led by Dr.He Wang, specializes in 3D visual
-            perception and robotics. The lab focuses on the challenges of
-            perception and interaction for embodied robots in complex 3D
-            environments. Its research aims to develop highly generalizable and
-            scalable robotic vision and control systems.
-          </p>
+          <div>
+            <div class="title">EPIC</div>
+            <p>
+              Embodied Perception and InteraCtion (EPIC) Lab, founded and led by
+              Dr.He Wang, specializes in 3D visual perception and robotics. The
+              lab focuses on the challenges of perception and interaction for
+              embodied robots in complex 3D environments. Its research aims to
+              develop highly generalizable and scalable robotic vision and
+              control systems.
+            </p>
+          </div>
+          <img src="./assets/logo.png" alt="" />
+        </div>
+        <div class="main-img">
+          <img src="./assets/img1.png" alt="" />
         </div>
       </div>
       <div class="main-swiper">
         <div class="swiper-content" id="videos">
           <div class="slide-source">
             <a href="https://pku-epic.github.io/ASGrasp/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.png"
-              >
+              <video id="video1" autoplay loop muted>
                 <source
                   src="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.mov"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p1">
                 Material-agnostic generalized grasping technology, capable of
                 handling scenes with completely transparent objects with high
                 success.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video1');
+            var container = document.getElementById('p1');
+            container.style.width = video.offsetWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="  https://pku-epic.github.io/DexGraspNet/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.png"
-              >
+              <video id="video2" autoplay loop muted>
                 <source
                   src="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p2">
                 《DexGraspNet》ICRA 2023 Best Manipulation Paper
                 Nominee，Million-level dexterous hands Dataset.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video2');
+            var container = document.getElementById('p2');
+            console.log(video.clientWidth, 'video======');
+            container.style.width = video.clientWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="https://pku-epic.github.io/Open6DOR/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
-              >
+              <video id="video3" autoplay loop muted>
                 <source
                   src="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.mov"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p3">
                 The world's first open command large model system for object
                 pick-and-place, capable of controlling object orientation:
                 Open6DOR.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video3');
+            var container = document.getElementById('p3');
+            console.log(video.clientWidth, 'video======');
+            container.style.width = video.clientWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="https://pku-epic.github.io/NaVid/">
-              <video
-                autoplay
-                muted
-                loop
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
-              >
+              <video autoplay muted loop>
                 <source
                   src="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.mp4"
                   type="video/mp4"
@@ -154,241 +158,251 @@
         });
       </script>
       <div class="main-content" style="padding-bottom: 30px">
-        <div class="main-people">
+        <div id="people" class="main-people">
           <div class="title">PEOPLE</div>
           <div class="subtitle">PRINCIPAL INVESTIGATOR</div>
           <div class="people-list">
-            <div>
+            <a href="https://hughw19.github.io">
               <img src="./assets/p1.png" alt="" />
               <div class="list-title">He Wang</div>
               <div class="list-decs">Principal Investigator</div>
-              <a href="https://hughw19.github.io">hughw19.github.io</a>
-            </div>
-            <div>
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en"
+            >
               <img src="./assets/p2.png" alt="" />
               <div class="list-title">Zhizheng Zhang</div>
               <div class="list-decs">Research scientist at Galbot</div>
-              <a
-                href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en"
-                >scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en</a
-              >
-            </div>
+            </a>
           </div>
-          <div class="subtitle">LAB MEMBERS</div>
+          <div class="subtitle">ENGINEERS</div>
           <div class="people-list">
             <div>
               <img src="./assets/p35.png" alt="" />
               <div class="list-title">Xiaomeng Fang</div>
               <div class="list-decs">Master's, ME,SJTU</div>
             </div>
-            <div>
-              <img src="./assets/p36.png" alt="" />
-              <div class="list-title">Jiazhao Zhang</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://jzhzhang.github.io">jzhzhang.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p3.png" alt="" />
-              <div class="list-title">Jiayi Chen</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://jychen18.github.io">jychen18.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p4.png" alt="" />
-              <div class="list-title">Mi Yan</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://miyandoris.github.io">miyandoris.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p5.png" alt="" />
-              <div class="list-title">Songlin Wei</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://songlin.github.io">songlin.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p6.png" alt="" />
-              <div class="list-title">Hao Shen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://shen-hhao.github.io">shen-hhao.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p7.png" alt="" />
-              <div class="list-title">Jiangran Lyu</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://jiangranlv.github.io">jiangranlv.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p8.png" alt="" />
-              <div class="list-title">Wenbo Cui</div>
-              <div class="list-decs">Ph.D.Student,CTCE,CASIA&BAAI</div>
-              <a href="https://cwb0106.github.io">cwb0106.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p9.png" alt="" />
-              <div class="list-title">Yuxing Chen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://chen01yx.github.io">chen01yx.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p10.png" alt="" />
-              <div class="list-title">Weiheng Liu</div>
-              <div class="list-decs">Ph.D.Student,CS,CASIA&BAAI</div>
-              <a href="https://weiheng-liu.github.io">weiheng-liu.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p11.png" alt="" />
-              <div class="list-title">Gireesh Nandiraju</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://user432.github.io">user432.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p12.png" alt="" />
-              <div class="list-title">Shengliang Deng</div>
-              <div class="list-decs">Ph.D.Student,CS,HKU</div>
-              <a href="https://shengliangd.github.io/about/"
-                >shengliangd.github.io</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p13.png" alt="" />
-              <div class="list-title">Yingda Yin</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://yd-yin.github.io/">yd-yin.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p14.png" alt="" />
-              <div class="list-title">Rongtao Xu</div>
-              <div class="list-decs">Ph.D.Student,PRIS,CASIA</div>
-              <a
-                href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op"
-                >scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p15.png" alt="" />
-              <div class="list-title">Fengyi Shen</div>
-              <div class="list-decs">Ph.D.Student,CS,TUM</div>
-              <a href="https://dblp.org/pid/252/9109.html"
-                >dblp.org/pid/252/9109.html</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p16.png" alt="" />
-              <div class="list-title">Qiyu Dai</div>
-              <div class="list-decs">Master's student,CT,PKU</div>
-              <a href="https://daiqy.github.io">daiqy.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p17.png" alt="" />
-              <div class="list-title">Yan Zhu</div>
-              <div class="list-decs">Master's student,EIS,PKU</div>
-              <a href="https://github.com/fzy139">github.com/fzy139</a>
-            </div>
-            <div>
-              <img src="./assets/p18.png" alt="" />
-              <div class="list-title">Xunyong Du</div>
-              <div class="list-decs">Master's student,CS,PKU</div>
-              <a href="https://dotandung.github.io">dotandung.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p19.png" alt="" />
-              <div class="list-title">Javokhirbek Rajabov</div>
-              <div class="list-decs">Master's student,CAT,PKU</div>
-              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
-                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p20.png" alt="" />
-              <div class="list-title">Danshi Li</div>
-              <div class="list-decs">Master's student,CE,NYU</div>
-              <a href="https://danshi-li.github.io/personal-website"
-                >danshi-li.github.io/personal-website</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p21.png" alt="" />
-              <div class="list-title">Chaoyi Xu</div>
-              <div class="list-decs">Master's student,EST,BUPT</div>
-              <a href="https://o1one.github.io">o1one.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p22.png" alt="" />
-              <div class="list-title">Xinqiang Yu</div>
-              <div class="list-decs">Master's student,CAT,UCAS</div>
-            </div>
-            <div>
-              <img src="./assets/p23.png" alt="" />
-              <div class="list-title">Haoran Geng</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://geng-haoran.github.io">geng-haoran.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p24.png" alt="" />
-              <div class="list-title">Jialiang Zhang</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
-                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p25.png" alt="" />
-              <div class="list-title">Yuxuan Kuang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://yxkryptonite.github.io"
-                >yxkryptonite.github.io</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p26.png" alt="" />
-              <div class="list-title">Haoran Liu</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-            </div>
-            <div>
-              <img src="./assets/p27.png" alt="" />
-              <div class="list-title">Weikang Wan</div>
-              <div class="list-decs">B.S,IS,PKU</div>
-              <a href="https://wkwan7.github.io">wkwan7.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p28.png" alt="" />
-              <div class="list-title">Chengyang Zhao</div>
-              <div class="list-decs">B.S,DSBDT,PKU</div>
-              <a href="https://chengyzhao.github.io">chengyzhao.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p29.png" alt="" />
-              <div class="list-title">Wang Yang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://yangwangpku.github.io">yangwangpku.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p30.png" alt="" />
-              <div class="list-title">Yufei Ding</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://selina2023.github.io">selina2023.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p31.png" alt="" />
-              <div class="list-title">Zhiyuan Ma</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://matthewmzy.github.io">matthewmzy.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p32.png" alt="" />
-              <div class="list-title">Hang Lyu</div>
-              <div class="list-decs">B.S,SE,PKU</div>
-            </div>
+            <a href="https://42jaylonw.github.io">
+              <img src="./assets/p34.png" alt="" />
+              <div class="list-title">Jilong Wang</div>
+              <div class="list-decs">B.S,Phy,UCSC</div>
+            </a>
             <div>
               <img src="./assets/p33.png" alt="" />
               <div class="list-title">Yuanxing Duan</div>
               <div class="list-decs">B.S,Phy,PKU</div>
             </div>
+            <a href="https://danshi-li.github.io/personal-website">
+              <img src="./assets/p20.png" alt="" />
+              <div class="list-title">Danshi Li</div>
+              <div class="list-decs">Master's student,CE,NYU</div>
+            </a>
+          </div>
+          <div class="subtitle">STUDENTS</div>
+          <div class="subtitle-child" style="margin-top: 7px;">Ph.D students</div>
+          <div class="people-list">
+            <a href="https://shengliangd.github.io/about/">
+              <img src="./assets/p12.png" alt="" />
+              <div class="list-title">Shengliang Deng</div>
+              <div class="list-decs">Ph.D.Student,CS,HKU</div>
+              <span>September, 2020</span>
+            </a>
+            <a href="https://jzhzhang.github.io">
+              <img src="./assets/p36.png" alt="" />
+              <div class="list-title">Jiazhao Zhang</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://jychen18.github.io">
+              <img src="./assets/p3.png" alt="" />
+              <div class="list-title">Jiayi Chen</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://miyandoris.github.io">
+              <img src="./assets/p4.png" alt="" />
+              <div class="list-title">Mi Yan</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://shen-hhao.github.io">
+              <img src="./assets/p6.png" alt="" />
+              <div class="list-title">Hao Shen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://cwb0106.github.io">
+              <img src="./assets/p8.png" alt="" />
+              <div class="list-title">Wenbo Cui</div>
+              <div class="list-decs">Ph.D.Student,CTCE,CASIA&BAAI</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://jiangranlv.github.io">
+              <img src="./assets/p7.png" alt="" />
+              <div class="list-title">Jiangran Lyu</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://chen01yx.github.io">
+              <img src="./assets/p9.png" alt="" />
+              <div class="list-title">Yuxing Chen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://songlin.github.io">
+              <img src="./assets/p5.png" alt="" />
+              <div class="list-title">Songlin Wei</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://weiheng-liu.github.io">
+              <img src="./assets/p10.png" alt="" />
+              <div class="list-title">Weiheng Liu</div>
+              <div class="list-decs">Ph.D.Student,CS,CASIA&BAAI</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://user432.github.io">
+              <img src="./assets/p11.png" alt="" />
+              <div class="list-title">Gireesh Nandiraju</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+          </div>
+          <div class="subtitle-child">Master's students</div>
+          <div class="people-list">
+            <a
+              href="https://xinqiangyu.github.io/xinqiang-yu.github.io/index.html"
+            >
+              <img src="./assets/p22.png" alt="" />
+              <div class="list-title">Xinqiang Yu</div>
+              <div class="list-decs">Master's student,CAT,UCAS</div>
+              <span>September, 2021</span>
+            </a>
+            <a href="https://dotandung.github.io">
+              <img src="./assets/p18.png" alt="" />
+              <div class="list-title">Xunyong Du</div>
+              <div class="list-decs">Master's student,CS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190">
+              <img src="./assets/p19.png" alt="" />
+              <div class="list-title">Javokhirbek Rajabov</div>
+              <div class="list-decs">Master's student,CAT,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://co1one.github.io">
+              <img src="./assets/p21.png" alt="" />
+              <div class="list-title">Chaoyi Xu</div>
+              <div class="list-decs">Master's student,EST,BUPT</div>
+              <span>September, 2022</span>
+            </a>
+          </div>
+          <div class="subtitle-child">Undergraduate Students</div>
+          <div class="people-list">
+            <a href="https://wkwan7.github.io">
+              <img src="./assets/p27.png" alt="" />
+              <div class="list-title">Weikang Wan</div>
+              <div class="list-decs">B.S,IS,PKU</div>
+              <span>September, 2019</span>
+            </a>
+            <a href="https://chengyzhao.github.io">
+              <img src="./assets/p28.png" alt="" />
+              <div class="list-title">Chengyang Zhao</div>
+              <div class="list-decs">B.S,DSBDT,PKU</div>
+              <span>September, 2019</span>
+            </a>
+            <a href="https://geng-haoran.github.io">
+              <img src="./assets/p23.png" alt="" />
+              <div class="list-title">Haoran Geng</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2020</span>
+            </a>
             <div>
-              <img src="./assets/p34.png" alt="" />
-              <div class="list-title">Jilong Wang</div>
-              <div class="list-decs">B.S,Phy,UCSC</div>
-              <a href="https://42jaylonw.github.io">42jaylonw.github.io</a>
+              <img src="./assets/p24.png" alt="" />
+              <div class="list-title">Jialiang Zhang</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2021</span>
+            </div>
+            <a href="https://yxkryptonite.github.io">
+              <img src="./assets/p25.png" alt="" />
+              <div class="list-title">Yuxuan Kuang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <span>September, 2021</span>
+            </a>
+            <div>
+              <img src="./assets/p26.png" alt="" />
+              <div class="list-title">Haoran Liu</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <span>September, 2021</span>
+            </div>
+            <a href="https://selina2023.github.io">
+              <img src="./assets/p30.png" alt="" />
+              <div class="list-title">Yufei Ding</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://github.com/AvidJoyceXu">
+              <img src="./assets/p37.png" alt="" />
+              <div class="list-title">Lingyun Xu</div>
+              <div class="list-decs">B.S,IST,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <div>
+              <img src="./assets/p32.png" alt="" />
+              <div class="list-title">Hang Lyu</div>
+              <div class="list-decs">B.S,SE,PKU</div>
+              <span>September, 2023</span>
+            </div>
+          </div>
+          <div class="subtitle" style="padding-bottom: 20px;">LAB ALUMNI</div>
+          <div class="people-list alumni">
+            <a href="https://dblp.org/pid/252/9109.html">
+              <!-- <img src="./assets/p15.png" alt="" /> -->
+              <div class="list-title">Fengyi Shen</div>
+              <div class="list-decs">Ph.D.Student,CS,TUM</div>
+            </a>
+            <a href="https://matthewmzy.github.io">
+              <!-- <img src="./assets/p31.png" alt="" /> -->
+              <div class="list-title">Zhiyuan Ma</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+            </a>
+            <a href="https://yangwangpku.github.io">
+              <!-- <img src="./assets/p29.png" alt="" /> -->
+              <div class="list-title">Wang Yang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+            </a>
+            <a href="https://github.com/fzy139">
+              <!-- <img src="./assets/p17.png" alt="" /> -->
+              <div class="list-title">Yan Zhu</div>
+              <div class="list-decs">Master's student,EIS,PKU</div>
+            </a>
+            <a href="https://daiqy.github.io">
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Qiyu Dai</div>
+              <div class="list-decs">Master's student,CT,PKU</div>
+            </a>
+            <a href="https://yd-yin.github.io/">
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yingda Yin</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+            </a>
+            <a
+              href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op=list_works&sortby=pubdate"
+            >
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Rongtao Xu</div>
+            </a>
+            <div>
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Ruihan Sun</div>
+            </div>
+            <div>
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yue Gao</div>
+            </div>
+            <div>
+              <!-- <img src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Dai Liu</div>
             </div>
           </div>
         </div>

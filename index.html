@@ -25,87 +25,95 @@
       </div>
       <div class="main-content">
         <div class="main-epic">
-          <div class="title">EPIC</div>
-          <p>
-            EPIC Lab, founded and led by Dr.He Wang, specializes in 3D visual
-            perception and robotics. The lab focuses on the challenges of
-            perception and interaction for embodied robots in complex 3D
-            environments. Its research aims to develop highly generalizable and
-            scalable robotic vision and control systems.
-          </p>
+          <div>
+            <div class="title">EPIC</div>
+            <p>
+              Embodied Perception and InteraCtion (EPIC) Lab, founded and led by
+              Dr.He Wang, specializes in 3D visual perception and robotics. The
+              lab focuses on the challenges of perception and interaction for
+              embodied robots in complex 3D environments. Its research aims to
+              develop highly generalizable and scalable robotic vision and
+              control systems.
+            </p>
+          </div>
+          <img class="lazy-load" data-src="./assets/logo.png" alt="" />
+        </div>
+        <div class="main-img">
+          <img
+            class="lazy-load"
+            data-src="https://oss-cn-beijing.galbot.com/online/blog/img1.png"
+            alt=""
+          />
         </div>
       </div>
       <div class="main-swiper">
         <div class="swiper-content" id="videos">
           <div class="slide-source">
             <a href="https://pku-epic.github.io/ASGrasp/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.png"
-              >
+              <video id="video1" autoplay loop muted>
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.mov"
+                  src="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p1">
                 Material-agnostic generalized grasping technology, capable of
                 handling scenes with completely transparent objects with high
                 success.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video1');
+            var container = document.getElementById('p1');
+            container.style.width = video.offsetWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="  https://pku-epic.github.io/DexGraspNet/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.png"
-              >
+              <video id="video2" autoplay loop muted>
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.mp4"
+                  src="https://oss-cn-beijing.galbot.com/online/blog/tech7-1.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p2">
                 《DexGraspNet》ICRA 2023 Best Manipulation Paper
                 Nominee，Million-level dexterous hands Dataset.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video2');
+            var container = document.getElementById('p2');
+            console.log(video.clientWidth, 'video======');
+            container.style.width = video.clientWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="https://pku-epic.github.io/Open6DOR/">
-              <video
-                autoplay
-                loop
-                muted
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
-              >
+              <video id="video3" autoplay loop muted>
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.mov"
+                  src="https://oss-cn-beijing.galbot.com/online/blog/tech2-1.mp4"
                   type="video/mp4"
                 />
               </video>
-              <div>
+              <div id="p3">
                 The world's first open command large model system for object
                 pick-and-place, capable of controlling object orientation:
                 Open6DOR.
               </div>
             </a>
           </div>
+          <script>
+            var video = document.getElementById('video3');
+            var container = document.getElementById('p3');
+            console.log(video.clientWidth, 'video======');
+            container.style.width = video.clientWidth - 56 + 'px';
+          </script>
           <div class="slide-source">
             <a href="https://pku-epic.github.io/NaVid/">
-              <video
-                autoplay
-                muted
-                loop
-                poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
-              >
+              <video autoplay muted loop>
                 <source
-                  src="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.mp4"
+                  src="https://oss-cn-beijing.galbot.com/online/blog/tech3-1.mp4"
                   type="video/mp4"
                 />
               </video>
@@ -154,241 +162,253 @@
         });
       </script>
       <div class="main-content" style="padding-bottom: 30px">
-        <div class="main-people">
+        <div id="people" class="main-people">
           <div class="title">PEOPLE</div>
           <div class="subtitle">PRINCIPAL INVESTIGATOR</div>
           <div class="people-list">
-            <div>
-              <img src="./assets/p1.png" alt="" />
+            <a href="https://hughw19.github.io">
+              <img class="lazy-load" data-src="./assets/p1.png" alt="" />
               <div class="list-title">He Wang</div>
               <div class="list-decs">Principal Investigator</div>
-              <a href="https://hughw19.github.io">hughw19.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p2.png" alt="" />
+            </a>
+            <a
+              href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en"
+            >
+              <img class="lazy-load" data-src="./assets/p2.png" alt="" />
               <div class="list-title">Zhizheng Zhang</div>
               <div class="list-decs">Research scientist at Galbot</div>
-              <a
-                href="https://scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en"
-                >scholar.google.com/citations?user=X7M0I8kAAAAJ&hl=en</a
-              >
-            </div>
+            </a>
           </div>
-          <div class="subtitle">LAB MEMBERS</div>
+          <div class="subtitle">ENGINEERS</div>
           <div class="people-list">
             <div>
-              <img src="./assets/p35.png" alt="" />
+              <img class="lazy-load" data-src="./assets/p35.png" alt="" />
               <div class="list-title">Xiaomeng Fang</div>
               <div class="list-decs">Master's, ME,SJTU</div>
             </div>
+            <a href="https://42jaylonw.github.io">
+              <img class="lazy-load" data-src="./assets/p34.png" alt="" />
+              <div class="list-title">Jilong Wang</div>
+              <div class="list-decs">B.S,Phy,UCSC</div>
+            </a>
             <div>
-              <img src="./assets/p36.png" alt="" />
-              <div class="list-title">Jiazhao Zhang</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://jzhzhang.github.io">jzhzhang.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p3.png" alt="" />
-              <div class="list-title">Jiayi Chen</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://jychen18.github.io">jychen18.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p4.png" alt="" />
-              <div class="list-title">Mi Yan</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://miyandoris.github.io">miyandoris.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p5.png" alt="" />
-              <div class="list-title">Songlin Wei</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://songlin.github.io">songlin.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p6.png" alt="" />
-              <div class="list-title">Hao Shen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://shen-hhao.github.io">shen-hhao.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p7.png" alt="" />
-              <div class="list-title">Jiangran Lyu</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://jiangranlv.github.io">jiangranlv.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p8.png" alt="" />
-              <div class="list-title">Wenbo Cui</div>
-              <div class="list-decs">Ph.D.Student,CTCE,CASIA&BAAI</div>
-              <a href="https://cwb0106.github.io">cwb0106.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p9.png" alt="" />
-              <div class="list-title">Yuxing Chen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <a href="https://chen01yx.github.io">chen01yx.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p10.png" alt="" />
-              <div class="list-title">Weiheng Liu</div>
-              <div class="list-decs">Ph.D.Student,CS,CASIA&BAAI</div>
-              <a href="https://weiheng-liu.github.io">weiheng-liu.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p11.png" alt="" />
-              <div class="list-title">Gireesh Nandiraju</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://user432.github.io">user432.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p12.png" alt="" />
-              <div class="list-title">Shengliang Deng</div>
-              <div class="list-decs">Ph.D.Student,CS,HKU</div>
-              <a href="https://shengliangd.github.io/about/"
-                >shengliangd.github.io</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p13.png" alt="" />
-              <div class="list-title">Yingda Yin</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <a href="https://yd-yin.github.io/">yd-yin.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p14.png" alt="" />
-              <div class="list-title">Rongtao Xu</div>
-              <div class="list-decs">Ph.D.Student,PRIS,CASIA</div>
-              <a
-                href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op"
-                >scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p15.png" alt="" />
-              <div class="list-title">Fengyi Shen</div>
-              <div class="list-decs">Ph.D.Student,CS,TUM</div>
-              <a href="https://dblp.org/pid/252/9109.html"
-                >dblp.org/pid/252/9109.html</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p16.png" alt="" />
-              <div class="list-title">Qiyu Dai</div>
-              <div class="list-decs">Master's student,CT,PKU</div>
-              <a href="https://daiqy.github.io">daiqy.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p17.png" alt="" />
-              <div class="list-title">Yan Zhu</div>
-              <div class="list-decs">Master's student,EIS,PKU</div>
-              <a href="https://github.com/fzy139">github.com/fzy139</a>
-            </div>
-            <div>
-              <img src="./assets/p18.png" alt="" />
-              <div class="list-title">Xunyong Du</div>
-              <div class="list-decs">Master's student,CS,PKU</div>
-              <a href="https://dotandung.github.io">dotandung.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p19.png" alt="" />
-              <div class="list-title">Javokhirbek Rajabov</div>
-              <div class="list-decs">Master's student,CAT,PKU</div>
-              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
-                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p20.png" alt="" />
-              <div class="list-title">Danshi Li</div>
-              <div class="list-decs">Master's student,CE,NYU</div>
-              <a href="https://danshi-li.github.io/personal-website"
-                >danshi-li.github.io/personal-website</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p21.png" alt="" />
-              <div class="list-title">Chaoyi Xu</div>
-              <div class="list-decs">Master's student,EST,BUPT</div>
-              <a href="https://o1one.github.io">o1one.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p22.png" alt="" />
-              <div class="list-title">Xinqiang Yu</div>
-              <div class="list-decs">Master's student,CAT,UCAS</div>
-            </div>
-            <div>
-              <img src="./assets/p23.png" alt="" />
-              <div class="list-title">Haoran Geng</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://geng-haoran.github.io">geng-haoran.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p24.png" alt="" />
-              <div class="list-title">Jialiang Zhang</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190"
-                >linkedin.com/in/javokhir-rajabov-58b8a3190</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p25.png" alt="" />
-              <div class="list-title">Yuxuan Kuang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://yxkryptonite.github.io"
-                >yxkryptonite.github.io</a
-              >
-            </div>
-            <div>
-              <img src="./assets/p26.png" alt="" />
-              <div class="list-title">Haoran Liu</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-            </div>
-            <div>
-              <img src="./assets/p27.png" alt="" />
-              <div class="list-title">Weikang Wan</div>
-              <div class="list-decs">B.S,IS,PKU</div>
-              <a href="https://wkwan7.github.io">wkwan7.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p28.png" alt="" />
-              <div class="list-title">Chengyang Zhao</div>
-              <div class="list-decs">B.S,DSBDT,PKU</div>
-              <a href="https://chengyzhao.github.io">chengyzhao.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p29.png" alt="" />
-              <div class="list-title">Wang Yang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://yangwangpku.github.io">yangwangpku.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p30.png" alt="" />
-              <div class="list-title">Yufei Ding</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <a href="https://selina2023.github.io">selina2023.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p31.png" alt="" />
-              <div class="list-title">Zhiyuan Ma</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <a href="https://matthewmzy.github.io">matthewmzy.github.io</a>
-            </div>
-            <div>
-              <img src="./assets/p32.png" alt="" />
-              <div class="list-title">Hang Lyu</div>
-              <div class="list-decs">B.S,SE,PKU</div>
-            </div>
-            <div>
-              <img src="./assets/p33.png" alt="" />
+              <img class="lazy-load" data-src="./assets/p33.png" alt="" />
               <div class="list-title">Yuanxing Duan</div>
               <div class="list-decs">B.S,Phy,PKU</div>
             </div>
+            <a href="https://danshi-li.github.io/personal-website">
+              <img class="lazy-load" data-src="./assets/p20.png" alt="" />
+              <div class="list-title">Danshi Li</div>
+              <div class="list-decs">Master's student,CE,NYU</div>
+            </a>
+          </div>
+          <div class="subtitle">STUDENTS</div>
+          <div class="subtitle-child" style="margin-top: 7px">
+            Ph.D students
+          </div>
+          <div class="people-list">
+            <a href="https://shengliangd.github.io/about/">
+              <img class="lazy-load" data-src="./assets/p12.png" alt="" />
+              <div class="list-title">Shengliang Deng</div>
+              <div class="list-decs">Ph.D.Student,CS,HKU</div>
+              <span>September, 2020</span>
+            </a>
+            <a href="https://jzhzhang.github.io">
+              <img class="lazy-load" data-src="./assets/p36.png" alt="" />
+              <div class="list-title">Jiazhao Zhang</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://jychen18.github.io">
+              <img class="lazy-load" data-src="./assets/p3.png" alt="" />
+              <div class="list-title">Jiayi Chen</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://miyandoris.github.io">
+              <img class="lazy-load" data-src="./assets/p4.png" alt="" />
+              <div class="list-title">Mi Yan</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://shen-hhao.github.io">
+              <img class="lazy-load" data-src="./assets/p6.png" alt="" />
+              <div class="list-title">Hao Shen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://cwb0106.github.io">
+              <img class="lazy-load" data-src="./assets/p8.png" alt="" />
+              <div class="list-title">Wenbo Cui</div>
+              <div class="list-decs">Ph.D.Student,CTCE,CASIA&BAAI</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://jiangranlv.github.io">
+              <img class="lazy-load" data-src="./assets/p7.png" alt="" />
+              <div class="list-title">Jiangran Lyu</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2023</span>
+            </a>
+            <a href="https://chen01yx.github.io">
+              <img class="lazy-load" data-src="./assets/p9.png" alt="" />
+              <div class="list-title">Yuxing Chen</div>
+              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://songlin.github.io">
+              <img class="lazy-load" data-src="./assets/p5.png" alt="" />
+              <div class="list-title">Songlin Wei</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://weiheng-liu.github.io">
+              <img class="lazy-load" data-src="./assets/p10.png" alt="" />
+              <div class="list-title">Weiheng Liu</div>
+              <div class="list-decs">Ph.D.Student,CS,CASIA&BAAI</div>
+              <span>September, 2024</span>
+            </a>
+            <a href="https://user432.github.io">
+              <img class="lazy-load" data-src="./assets/p11.png" alt="" />
+              <div class="list-title">Gireesh Nandiraju</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <span>September, 2024</span>
+            </a>
+          </div>
+          <div class="subtitle-child">Master's students</div>
+          <div class="people-list">
+            <a
+              href="https://xinqiangyu.github.io/xinqiang-yu.github.io/index.html"
+            >
+              <img class="lazy-load" data-src="./assets/p22.png" alt="" />
+              <div class="list-title">Xinqiang Yu</div>
+              <div class="list-decs">Master's student,CAT,UCAS</div>
+              <span>September, 2021</span>
+            </a>
+            <a href="https://dotandung.github.io">
+              <img class="lazy-load" data-src="./assets/p18.png" alt="" />
+              <div class="list-title">Xunyong Du</div>
+              <div class="list-decs">Master's student,CS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190">
+              <img class="lazy-load" data-src="./assets/p19.png" alt="" />
+              <div class="list-title">Javokhirbek Rajabov</div>
+              <div class="list-decs">Master's student,CAT,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://co1one.github.io">
+              <img class="lazy-load" data-src="./assets/p21.png" alt="" />
+              <div class="list-title">Chaoyi Xu</div>
+              <div class="list-decs">Master's student,EST,BUPT</div>
+              <span>September, 2022</span>
+            </a>
+          </div>
+          <div class="subtitle-child">Undergraduate Students</div>
+          <div class="people-list">
+            <a href="https://wkwan7.github.io">
+              <img class="lazy-load" data-src="./assets/p27.png" alt="" />
+              <div class="list-title">Weikang Wan</div>
+              <div class="list-decs">B.S,IS,PKU</div>
+              <span>September, 2019</span>
+            </a>
+            <a href="https://chengyzhao.github.io">
+              <img class="lazy-load" data-src="./assets/p28.png" alt="" />
+              <div class="list-title">Chengyang Zhao</div>
+              <div class="list-decs">B.S,DSBDT,PKU</div>
+              <span>September, 2019</span>
+            </a>
+            <a href="https://geng-haoran.github.io">
+              <img class="lazy-load" data-src="./assets/p23.png" alt="" />
+              <div class="list-title">Haoran Geng</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2020</span>
+            </a>
             <div>
-              <img src="./assets/p34.png" alt="" />
-              <div class="list-title">Jilong Wang</div>
-              <div class="list-decs">B.S,Phy,UCSC</div>
-              <a href="https://42jaylonw.github.io">42jaylonw.github.io</a>
+              <img class="lazy-load" data-src="./assets/p24.png" alt="" />
+              <div class="list-title">Jialiang Zhang</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2021</span>
+            </div>
+            <a href="https://yxkryptonite.github.io">
+              <img class="lazy-load" data-src="./assets/p25.png" alt="" />
+              <div class="list-title">Yuxuan Kuang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <span>September, 2021</span>
+            </a>
+            <a href="https://lhrrhl0419.github.io/">
+              <img class="lazy-load" data-src="./assets/p26.png" alt="" />
+              <div class="list-title">Haoran Liu</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+              <span>September, 2021</span>
+            </a>
+            <a href="https://selina2023.github.io">
+              <img class="lazy-load" data-src="./assets/p30.png" alt="" />
+              <div class="list-title">Yufei Ding</div>
+              <div class="list-decs">B.S,EECS,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <a href="https://github.com/AvidJoyceXu">
+              <img class="lazy-load" data-src="./assets/p37.png" alt="" />
+              <div class="list-title">Lingyun Xu</div>
+              <div class="list-decs">B.S,IST,PKU</div>
+              <span>September, 2022</span>
+            </a>
+            <div>
+              <img class="lazy-load" data-src="./assets/p32.png" alt="" />
+              <div class="list-title">Hang Lyu</div>
+              <div class="list-decs">B.S,SE,PKU</div>
+              <span>September, 2023</span>
+            </div>
+          </div>
+          <div class="subtitle" style="padding-bottom: 20px">LAB ALUMNI</div>
+          <div class="people-list alumni">
+            <a href="https://dblp.org/pid/252/9109.html">
+              <!-- <img class="lazy-load"  src="./assets/p15.png" alt="" /> -->
+              <div class="list-title">Fengyi Shen</div>
+              <div class="list-decs">Ph.D.Student,CS,TUM</div>
+            </a>
+            <a href="https://matthewmzy.github.io">
+              <!-- <img class="lazy-load"  src="./assets/p31.png" alt="" /> -->
+              <div class="list-title">Zhiyuan Ma</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+            </a>
+            <a href="https://yangwangpku.github.io">
+              <!-- <img class="lazy-load"  src="./assets/p29.png" alt="" /> -->
+              <div class="list-title">Wang Yang</div>
+              <div class="list-decs">B.S,CS,PKU</div>
+            </a>
+            <a href="https://github.com/fzy139">
+              <!-- <img class="lazy-load"  src="./assets/p17.png" alt="" /> -->
+              <div class="list-title">Yan Zhu</div>
+              <div class="list-decs">Master's student,EIS,PKU</div>
+            </a>
+            <a href="https://daiqy.github.io">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Qiyu Dai</div>
+              <div class="list-decs">Master's student,CT,PKU</div>
+            </a>
+            <a href="https://yd-yin.github.io/">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yingda Yin</div>
+              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+            </a>
+            <a
+              href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op=list_works&sortby=pubdate"
+            >
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Rongtao Xu</div>
+            </a>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Ruihan Sun</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yue Gao</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Dai Liu</div>
             </div>
           </div>
         </div>
@@ -531,7 +551,7 @@
         <div id="publications" class="main-selected">
           <div class="title">SELECTED PUBLICATIONS</div>
           <div class="selected-item">
-            <img src="./assets/1.png" alt="" />
+            <img class="lazy-load" data-src="./assets/1.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 NaVid: Video-based VLM Plans the Next Step for
@@ -554,7 +574,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/2.png" alt="" />
+            <img class="lazy-load" data-src="./assets/2.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 SAGE: Bridging Semantic and Actionable Parts for Generalizable
@@ -593,7 +613,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/3.png" alt="" />
+            <img class="lazy-load" data-src="./assets/3.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Enhancing Generalizable 6D Pose Tracking of an In-Hand Object
@@ -617,7 +637,7 @@
           <div class="selected-item">
             <a
               href="https://oss-cn-beijing.galbot.com/online/video/maskcluster.mp4"
-              ><img src="./assets/4.png" alt=""
+              ><img class="lazy-load" data-src="./assets/4.png" alt=""
             /></a>
             <div class="item-right">
               <div class="item-title">
@@ -642,7 +662,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/5.png" alt="" />
+            <img class="lazy-load" data-src="./assets/5.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Category-Level Multi-Part Multi-Joint 3D Shape Assembly
@@ -682,7 +702,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/6.png" alt="" />
+            <img class="lazy-load" data-src="./assets/6.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 STOPNet: Multiview-based 6-DoF Suction Detection for Transparent
@@ -705,7 +725,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/7.png" alt="" />
+            <img class="lazy-load" data-src="./assets/7.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning
@@ -746,7 +766,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/8.png" alt="" />
+            <img class="lazy-load" data-src="./assets/8.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 ASGrasp: Generalizable Transparent Object Reconstruction and
@@ -768,7 +788,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/9.png" alt="" />
+            <img class="lazy-load" data-src="./assets/9.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 UniDexGrasp++: Improving Dexterous Grasping Policy Learning via
@@ -806,7 +826,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/10.png" alt="" />
+            <img class="lazy-load" data-src="./assets/10.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 GAPartNet: Cross-Category Domain-Generalizable Object Perception
@@ -842,7 +862,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/11.png" alt="" />
+            <img class="lazy-load" data-src="./assets/11.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 3D-Aware Object Goal Navigation via Simultaneous Exploration and
@@ -878,7 +898,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/12.png" alt="" />
+            <img class="lazy-load" data-src="./assets/12.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 UniDexGrasp: Universal Robotic Dexterous Grasping via Learning
@@ -913,7 +933,7 @@
             </p >
           </pre>
           <div class="selected-item">
-            <img src="./assets/13.png" alt="" />
+            <img class="lazy-load" data-src="./assets/13.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 PartManip: Learning Cross-Category Generalizable Part
@@ -946,7 +966,7 @@
             </p >
           </pre>
           <div class="selected-item">
-            <img src="./assets/14.png" alt="" />
+            <img class="lazy-load" data-src="./assets/14.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Delving into Discrete Normalizing Flows on SO(3) Manifold for
@@ -979,7 +999,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/15.png" alt="" />
+            <img class="lazy-load" data-src="./assets/15.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 DiGA: Distil to Generalize and then Adapt for Domain Adaptive
@@ -1012,7 +1032,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/16.png" alt="" />
+            <img class="lazy-load" data-src="./assets/16.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Adaptive Zone-aware Hierarchical Planner for Vision-Language
@@ -1029,7 +1049,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/17.png" alt="" />
+            <img class="lazy-load" data-src="./assets/17.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for
@@ -1065,7 +1085,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/18.png" alt="" />
+            <img class="lazy-load" data-src="./assets/18.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 GraspNeRF: Multiview-based 6-DoF Grasp Detection for Transparent
@@ -1098,7 +1118,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/19.png" alt="" />
+            <img class="lazy-load" data-src="./assets/19.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 A Laplace-inspired Distribution on SO(3) for Probabilistic
@@ -1133,7 +1153,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/20.png" alt="" />
+            <img class="lazy-load" data-src="./assets/20.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Self-Supervised Category-Level Articulated Object Pose
@@ -1167,7 +1187,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/21.png" alt="" />
+            <img class="lazy-load" data-src="./assets/21.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Tracking and Reconstructing Hand Object Interactions from Point
@@ -1201,7 +1221,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/22.png" alt="" />
+            <img class="lazy-load" data-src="./assets/22.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 ASRO-DIO: Active Subspace Random Optimization Based Depth
@@ -1218,7 +1238,7 @@
             </div>
           </div>
           <div class="selected-item">
-            <img src="./assets/23.png" alt="" />
+            <img class="lazy-load" data-src="./assets/23.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Domain Randomization-Enhanced Depth Simulation and Restoration
@@ -1253,7 +1273,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/24.png" alt="" />
+            <img class="lazy-load" data-src="./assets/24.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Learning Category-Level Generalizable Object Manipulation Policy
@@ -1306,7 +1326,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/25.png" alt="" />
+            <img class="lazy-load" data-src="./assets/25.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 FisherMatch: Semi-Supervised Rotation Regression via
@@ -1342,7 +1362,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/26.png" alt="" />
+            <img class="lazy-load" data-src="./assets/26.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Projective Manifold Gradient Layer for Deep Rotation Regression
@@ -1377,7 +1397,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/27.png" alt="" />
+            <img class="lazy-load" data-src="./assets/27.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 ADeLA: Automatic Dense Labeling with Attention for Viewpoint
@@ -1410,7 +1430,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/28.png" alt="" />
+            <img class="lazy-load" data-src="./assets/28.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 HOI4D: A 4D Egocentric Dataset for Category-Level Human-Object
@@ -1443,7 +1463,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/29.png" alt="" />
+            <img class="lazy-load" data-src="./assets/29.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Multi-Robot Active Mapping via Neural Bipartite Graph Matching
@@ -1474,7 +1494,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/30.png" alt="" />
+            <img class="lazy-load" data-src="./assets/30.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 CodedVTR: Codebook-based Sparse Voxel Transformer with Geometric
@@ -1506,7 +1526,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/31.png" alt="" />
+            <img class="lazy-load" data-src="./assets/31.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Domain Adaptation on Point Clouds via Geometry-Aware Implicits
@@ -1537,7 +1557,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/32.png" alt="" />
+            <img class="lazy-load" data-src="./assets/32.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Leveraging SE(3) Equivariance for Self-supervised Category-Level
@@ -1574,7 +1594,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/33.png" alt="" />
+            <img class="lazy-load" data-src="./assets/33.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 CAPTRA: CAtegory-level Pose Tracking for Rigid and Articulated
@@ -1612,7 +1632,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/34.png" alt="" />
+            <img class="lazy-load" data-src="./assets/34.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Single Image 3D Shape Retrieval via Cross-Modal Instance and
@@ -1652,7 +1672,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/35.png" alt="" />
+            <img class="lazy-load" data-src="./assets/35.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D
@@ -1688,7 +1708,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/36.png" alt="" />
+            <img class="lazy-load" data-src="./assets/36.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 MultiBodySync: Multi-Body Segmentation and Motion Estimation via
@@ -1724,7 +1744,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/37.png" alt="" />
+            <img class="lazy-load" data-src="./assets/37.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Robust Neural Routing Through Space Partitions for Camera
@@ -1760,7 +1780,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/38.png" alt="" />
+            <img class="lazy-load" data-src="./assets/38.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Rethinking Sampling in 3D Point Cloud Generative Adversarial
@@ -1800,7 +1820,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/39.png" alt="" />
+            <img class="lazy-load" data-src="./assets/39.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 PT2PC: Learning to Generate 3D Point Cloud Shapes from Part Tree
@@ -1834,7 +1854,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/40.png" alt="" />
+            <img class="lazy-load" data-src="./assets/40.png" alt="" />
             <div class="item-right">
               <div class="item-title">Curriculum DeepSDF</div>
               <p>
@@ -1868,7 +1888,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/41.png" alt="" />
+            <img class="lazy-load" data-src="./assets/41.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Category-level Articulated Object Pose Estimation
@@ -1903,7 +1923,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/42.png" alt="" />
+            <img class="lazy-load" data-src="./assets/42.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 SAPIEN: A SimulAted Part-based Interactive ENvironment
@@ -1944,7 +1964,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/43.png" alt="" />
+            <img class="lazy-load" data-src="./assets/43.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Normalized Object Coordinate Space for Category-Level 6D Object
@@ -1986,7 +2006,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/44.png" alt="" />
+            <img class="lazy-load" data-src="./assets/44.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 GSPN: Generative Shape Proposal Network for 3D Instance
@@ -2019,7 +2039,7 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img src="./assets/45.png" alt="" />
+            <img class="lazy-load" data-src="./assets/45.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Learning a Generative Model for Multi-Step Human-Object
@@ -2056,6 +2076,22 @@
       </div>
     </div>
     <script type="text/javascript">
+      document.addEventListener('DOMContentLoaded', function () {
+        const observer = new IntersectionObserver((entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              const img = entry.target;
+              img.src = img.getAttribute('data-src');
+              observer.unobserve(img);
+            }
+          });
+        });
+
+        document.querySelectorAll('img.lazy-load').forEach((img) => {
+          observer.observe(img);
+        });
+      });
+
       function hideshow(a, which) {
         console.log(which);
         if (!document.getElementById) return;

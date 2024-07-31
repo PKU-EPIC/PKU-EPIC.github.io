@@ -169,6 +169,7 @@
                   loop
                   muted
                   id="video1"
+                  controlsList="nodownload noPictureInPicture"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.png"
                 >
                   <source
@@ -195,6 +196,7 @@
                   x5-video-player-type="h5-page"
                   loop
                   muted
+                  controlsList="nodownload noPictureInPicture"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.png"
                 >
                   <source
@@ -225,6 +227,7 @@
                   id="video3"
                   loop
                   muted
+                  controlsList="nodownload noPictureInPicture"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
                 >
                   <source
@@ -254,6 +257,7 @@
                 <video
                   muted
                   loop
+                  controlsList="nodownload noPictureInPicture"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
                 >
                   <source
@@ -2266,11 +2270,13 @@
           <img src="./assets/close.svg" alt="" class="close" />
         </div>
         <div class="modal-content">
-          <div class="modal-content-item"><a href="#people">People</a></div>
-          <div class="modal-content-item">
+          <div class="modal-content-item" id="link1">
+            <a href="#people">People</a>
+          </div>
+          <div class="modal-content-item" id="link2">
             <a href="#news">News</a>
           </div>
-          <div class="modal-content-item">
+          <div class="modal-content-item" id="link3">
             <a href="#publications">Publications</a>
           </div>
         </div>
@@ -2290,6 +2296,53 @@
       integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4="
       crossorigin="anonymous"
     ></script>
+    <script>
+      document
+        .getElementById('link1')
+        .addEventListener('click', function (event) {
+          event.preventDefault(); // 阻止默认锚点跳转行为
+          const targetElement = document.getElementById('people');
+          const offset = 70; // 位移量
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = targetPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        });
+      document
+        .getElementById('link2')
+        .addEventListener('click', function (event) {
+          event.preventDefault(); // 阻止默认锚点跳转行为
+          const targetElement = document.getElementById('news');
+          const offset = 70; // 位移量
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = targetPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        });
+      document
+        .getElementById('link3')
+        .addEventListener('click', function (event) {
+          event.preventDefault(); // 阻止默认锚点跳转行为
+          const targetElement = document.getElementById('publications');
+          const offset = 70; // 位移量
+          const targetPosition =
+            targetElement.getBoundingClientRect().top + window.pageYOffset;
+          const offsetPosition = targetPosition - offset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth',
+          });
+        });
+    </script>
     <script type="text/javascript">
       function onresizeFun() {
         if (window.innerWidth <= 768) {

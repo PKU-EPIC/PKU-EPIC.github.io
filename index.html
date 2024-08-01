@@ -62,17 +62,16 @@
               control systems.
             </p>
             <p class="phone-p">
+              <img class="lazy-load" src="./assets/logo.png" alt="" />
               Embodied Perception and InteraCtion (EPIC) Lab, founded and led by
               Dr.He Wang, specializes in 3D visual perception and robotics. The
-              lab focuses on the
+              lab focuses on the challenges of perception and interaction for
+              embodied robots in complex 3D environments. Its research aims to
+              develop highly generalizable and scalable robotic vision and
+              control systems.
             </p>
           </div>
-          <img class="lazy-load" src="./assets/logo.png" alt="" />
-        </div>
-        <div class="p">
-          challenges of perception and interaction for embodied robots in
-          complex 3D environments. Its research aims to develop highly
-          generalizable and scalable robotic vision and control systems.
+          <img class="lazy-load pc-img" src="./assets/logo.png" alt="" />
         </div>
         <div class="main-img">
           <img
@@ -2365,6 +2364,7 @@
           $('.swiper-content-phone').css('display', 'block');
           $('.main-people .people-list .more').css('display', 'flex');
           $('.main-people .is-hidden .up').css('display', 'flex');
+          $('.pc-img').css('display', 'none');
           $('.margin').css('margin-right', '0.205rem');
         } else {
           $('.head-pc').css('display', 'flex');
@@ -2373,6 +2373,7 @@
           $('.swiper-content').css('display', 'block');
           $('.main-people .is-hidden').css('display', 'flex');
           $('.main-people .people-list .is-hidden').css('display', 'flex');
+          $('.pc-img').css('display', 'block');
           $('.phone-p').css('display', 'none');
           $('.p').css('display', 'none');
           $('.swiper-content-phone').css('display', 'none');

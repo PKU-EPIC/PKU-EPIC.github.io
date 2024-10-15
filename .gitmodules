@@ -16,3 +16,6 @@
 [submodule "ScissorBot"]
 	path = ScissorBot
 	url = https://github.com/jiangranlv/ScissorBot_web.git
+[submodule "D3RoMa"]
+	path = D3RoMa
+	url = git@github.com:PKU-EPIC/D3RoMa_webpage.git

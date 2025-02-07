@@ -19,6 +19,6 @@
 [submodule "D3RoMa"]
 	path = D3RoMa
 	url = git@github.com:PKU-EPIC/D3RoMa_webpage.git
-[submodule "DexGraspNet2.0"]
-	path = DexGraspNet2.0
-	url = https://github.com/XinQIangYU/DexGraspNet2.0
+[submodule "BODex"]
+	path = BODex
+	url = https://github.com/JYChen18/BODexWeb

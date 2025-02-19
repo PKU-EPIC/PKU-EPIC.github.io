@@ -25,3 +25,6 @@
 [submodule "BODex"]
 	path = BODex
 	url = https://github.com/JYChen18/BODexWeb
+[submodule "FetchBot"]
+	path = FetchBot
+	url = git@github.com:Yaser-wyx/FetchBot.git

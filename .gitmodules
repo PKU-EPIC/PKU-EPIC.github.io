@@ -28,3 +28,6 @@
 [submodule "FetchBot"]
 	path = FetchBot
 	url = git@github.com:Yaser-wyx/FetchBot.git
+[submodule "GAPartManip"]
+	path = GAPartManip
+	url = git@github.com:PKU-EPIC/GAPartManip-webpage.git

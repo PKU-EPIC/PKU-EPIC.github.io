@@ -22,3 +22,6 @@
 [submodule "DexGraspNet2.0"]
 	path = DexGraspNet2.0
 	url = https://github.com/XinQIangYU/DexGraspNet2.0
+[submodule "DyWA"]
+	path = DyWA
+	url = https://github.com/jiangranlv/DyWA_web.git

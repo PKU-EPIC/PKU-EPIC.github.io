@@ -25,3 +25,4 @@
 [submodule "DyWA"]
 	path = DyWA
 	url = https://github.com/jiangranlv/DyWA_web.git
+	branch = main

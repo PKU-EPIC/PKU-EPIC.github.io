@@ -35,3 +35,6 @@
 [submodule "GAPartManip"]
 	path = GAPartManip
 	url = git@github.com:PKU-EPIC/GAPartManip-webpage.git
+[submodule "Dexonomy"]
+	path = Dexonomy
+	url = https://github.com/JYChen18/DexonomyWeb

@@ -22,9 +22,19 @@
 [submodule "DexGraspNet2.0"]
 	path = DexGraspNet2.0
 	url = https://github.com/XinQIangYU/DexGraspNet2.0
+[submodule "DyWA"]
+	path = DyWA
+	url = https://github.com/jiangranlv/DyWA_web.git
+	branch = main
 [submodule "BODex"]
 	path = BODex
 	url = https://github.com/JYChen18/BODexWeb
 [submodule "FetchBot"]
 	path = FetchBot
 	url = git@github.com:Yaser-wyx/FetchBot.git
+[submodule "GAPartManip"]
+	path = GAPartManip
+	url = git@github.com:PKU-EPIC/GAPartManip-webpage.git
+[submodule "Dexonomy"]
+	path = Dexonomy
+	url = https://github.com/JYChen18/DexonomyWeb

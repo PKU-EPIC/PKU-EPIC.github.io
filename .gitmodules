@@ -38,3 +38,6 @@
 [submodule "Dexonomy"]
 	path = Dexonomy
 	url = https://github.com/JYChen18/DexonomyWeb
+[submodule "NaVid4D"]
+	path = NaVid4D
+	url = https://github.com/lhrrhl0419/NaVid4D

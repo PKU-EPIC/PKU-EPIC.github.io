@@ -21,7 +21,7 @@
 }
 .main-swiper {
   position: relative;
-  height: 450px;
+  height: 430px;
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 0;
@@ -31,7 +31,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 3100px;
+  width: 3200px;
   overflow: hidden;
 }
 .main-swiper .swiper-content-phone {
@@ -62,7 +62,7 @@
   color: #38393c;
   font-weight: 400;
   text-align: left;
-  width: 335px;
+  width: 439px;
   height: auto;
   box-sizing: border-box;
   overflow-wrap: break-word;

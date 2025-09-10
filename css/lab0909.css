@@ -21,7 +21,7 @@
 }
 .main-swiper {
   position: relative;
-  height: 430px;
+  height: 365px;
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 0;
@@ -518,6 +518,19 @@ pre {
 .main-selected .selected-item {
   display: flex;
   margin-top: 40px;
+}
+.main-selected .selected-item a {
+  position: relative;
+}
+
+.main-selected .selected-item .play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 122;
+  width: 44px;
+  height: 44px;
 }
 .main-selected .selected-item img {
   width: 216px;
@@ -1082,6 +1095,7 @@ pre p {
     border-radius: 0.05rem;
     background: none;
   }
+
   ::-webkit-scrollbar {
     width: 0px;
     height: 0px;
@@ -1117,5 +1131,12 @@ pre p {
     font-weight: 400;
     line-height: normal;
     margin-right: 0.06rem;
+  }
+}
+@media screen and (max-width: 768px) {
+  .main-selected .selected-item .play {
+    top: 25%;
+    width: 0.3rem !important;
+    height: 0.3rem !important;
   }
 }

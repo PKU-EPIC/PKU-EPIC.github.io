@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
     />
     <title>He Wang</title>
-    <link rel="stylesheet" type="text/css" href="./css/lab0910.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lab0911.css" />
   </head>
   <body>
     <div class="main">
@@ -86,9 +86,90 @@
           <div class="swiper-content">
             <div class="slide-source">
               <a>
-                <video id="video01" autoplay loop muted>
+                <video
+                  id="video00"
+                  autoplay
+                  loop
+                  muted
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/navfom.jpg"
+                  playsinline
+                  preload="none"
+                >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/navfom.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div id="p01">
+                  NavFoM: The world's first cross-embodiment omnidirectional
+                  panoramic navigation foundation model. Its goal is to enable
+                  robots to autonomously perceive the world and decide where to
+                  go and how to get there entirely on their own in completely
+                  unknown environments
+                </div>
+              </a>
+            </div>
+            <div class="slide-source">
+              <a>
+                <video
+                  id="video00"
+                  autoplay
+                  loop
+                  muted
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/dexndm.jpg"
+                  playsinline
+                  preload="none"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/dexndm.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div id="p01">
+                  DexNDM: A dexterous hand neural dynamics model that, for the
+                  first time, enables a general-purpose dexterous hand to stably
+                  rotate complex objects—whether elongated, miniature, or
+                  irregularly shaped—in any orientation and along any axis.
+                </div>
+              </a>
+            </div>
+            <div class="slide-source">
+              <a>
+                <video
+                  id="video00"
+                  autoplay
+                  loop
+                  muted
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/any2track.jpg"
+                  playsinline
+                  preload="none"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/any2track.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div id="p01">
+                  Any2Track: a two-stage reinforcement learning framework that
+                  enables a single policy to accurately track diverse, complex
+                  motions while maintaining robust online adaptability to
+                  real-world dynamic disturbances.
+                </div>
+              </a>
+            </div>
+            <div class="slide-source">
+              <a>
+                <video
+                  id="video01"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/trackvla.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/trackvla2.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -101,9 +182,17 @@
             </div>
             <div class="slide-source">
               <a>
-                <video id="video02" autoplay loop muted>
+                <video
+                  id="video02"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grasp.jpg"
+                >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4"
+                    src="https://oss-cn-beijing.galbot.com/online/blog/grasp1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -116,9 +205,18 @@
             </div>
             <div class="slide-source">
               <a>
-                <video style="width: 100%" id="video03" autoplay loop muted>
+                <video
+                  style="width: 100%"
+                  id="video03"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
+                >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -130,9 +228,17 @@
             </div>
             <div class="slide-source">
               <a href="https://pku-epic.github.io/ASGrasp/">
-                <video id="video1" autoplay loop muted>
+                <video
+                  id="video1"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.jpg"
+                >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -143,14 +249,9 @@
                 </div>
               </a>
             </div>
-            <script>
-              var video = document.getElementById('video1');
-              var container = document.getElementById('p1');
-              container.style.width = video.offsetWidth - 56 + 'px';
-            </script>
-            <div class="slide-source">
+            <!-- <div class="slide-source">
               <a href="  https://pku-epic.github.io/DexGraspNet/">
-                <video id="video2" autoplay loop muted>
+                <video id="video2" autoplay loop muted preload="none">
                   <source
                     src="https://oss-cn-beijing.galbot.com/online/blog/tech7-1.mp4"
                     type="video/mp4"
@@ -166,10 +267,10 @@
               var video = document.getElementById('video2');
               var container = document.getElementById('p2');
               container.style.width = video.clientWidth - 56 + 'px';
-            </script>
-            <div class="slide-source">
+            </script> -->
+            <!-- <div class="slide-source">
               <a href="https://pku-epic.github.io/Open6DOR/">
-                <video id="video3" autoplay loop muted>
+                <video id="video3" autoplay loop muted preload="none">
                   <source
                     src="https://oss-cn-beijing.galbot.com/online/blog/tech2-1.mp4"
                     type="video/mp4"
@@ -186,10 +287,10 @@
               var video = document.getElementById('video3');
               var container = document.getElementById('p3');
               container.style.width = video.clientWidth - 56 + 'px';
-            </script>
-            <div class="slide-source">
+            </script> -->
+            <!-- <div class="slide-source">
               <a href="https://pku-epic.github.io/NaVid/">
-                <video autoplay muted loop>
+                <video autoplay muted loop preload="none">
                   <source
                     src="https://oss-cn-beijing.galbot.com/online/blog/tech3-1.mp4"
                     type="video/mp4"
@@ -200,9 +301,100 @@
                   NaVid.
                 </div>
               </a>
-            </div>
+            </div> -->
           </div>
-          <div class="swiper-content-phone" id="videos1">
+          <div class="swiper-content-phone" id="videos01">
+            <div class="slide-source">
+              <a
+                href="https://oss-cn-beijing.galbot.com/online/blog/navfom.mp4"
+              >
+                <img src="./assets/play.png" alt="" class="play" />
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  controlsList="nodownload noPictureInPicture"
+                  x5-video-player-type="h5-page"
+                  id="video01"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/NavFoM.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/navfom.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div id="p01">
+                <a
+                  >NavFoM: The world's first cross-embodiment omnidirectional
+                  panoramic navigation foundation model. Its goal is to enable
+                  robots to autonomously perceive the world and decide where to
+                  go and how to get there entirely on their own in completely
+                  unknown environments
+                </a>
+              </div>
+            </div>
+            <div class="slide-source">
+              <a
+                href="https://oss-cn-beijing.galbot.com/online/blog/dexndm.mp4"
+              >
+                <img src="./assets/play.png" alt="" class="play" />
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  controlsList="nodownload noPictureInPicture"
+                  x5-video-player-type="h5-page"
+                  id="video01"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/dexndm.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/dexndm.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div id="p01">
+                <a
+                  >DexNDM: A dexterous hand neural dynamics model that, for the
+                  first time, enables a general-purpose dexterous hand to stably
+                  rotate complex objects—whether elongated, miniature, or
+                  irregularly shaped—in any orientation and along any axis.
+                </a>
+              </div>
+            </div>
+            <div class="slide-source">
+              <a
+                href="https://oss-cn-beijing.galbot.com/online/blog/any2track.mp4"
+              >
+                <img src="./assets/play.png" alt="" class="play" />
+                <video
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  controlsList="nodownload noPictureInPicture"
+                  x5-video-player-type="h5-page"
+                  id="video01"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/any2track.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/any2track.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div id="p01">
+                <a
+                  >DexNDM: A dexterous hand neural dynamics model that, for the
+                  first time, enables a general-purpose dexterous hand to stably
+                  rotate complex objects—whether elongated, miniature, or
+                  irregularly shaped—in any orientation and along any axis.
+                </a>
+              </div>
+            </div>
             <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
@@ -214,10 +406,11 @@
                   controlsList="nodownload noPictureInPicture"
                   x5-video-player-type="h5-page"
                   id="video01"
+                  preload="none"
                   poster="https://oss-cn-beijing.galbot.com/online/blog/trackvla.jpg"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -236,13 +429,14 @@
                 <video
                   loop
                   muted
+                  preload="none"
                   controlsList="nodownload noPictureInPicture"
                   x5-video-player-type="h5-page"
                   id="video02"
                   poster="https://oss-cn-beijing.galbot.com/online/blog/grasp.jpg"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -262,6 +456,7 @@
                 <img src="./assets/play.png" alt="" class="play" />
                 <video
                   loop
+                  preload="none"
                   muted
                   controlsList="nodownload noPictureInPicture"
                   x5-video-player-type="h5-page"
@@ -269,7 +464,7 @@
                   poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -289,12 +484,14 @@
                 <video
                   loop
                   muted
-                  id="video1"
+                  preload="none"
                   controlsList="nodownload noPictureInPicture"
-                  poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6.png"
+                  x5-video-player-type="h5-page"
+                  id="video1"
+                  poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech6-1.jpg"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -317,11 +514,12 @@
                   x5-video-player-type="h5-page"
                   loop
                   muted
+                  preload="none"
                   controlsList="nodownload noPictureInPicture"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech7.png"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/tech7-1.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/tech7-1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -347,12 +545,13 @@
                 <video
                   id="video3"
                   loop
-                  muted
                   controlsList="nodownload noPictureInPicture"
+                  muted
+                  preload="none"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech2.png"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/tech2-1.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/tech2-1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -377,12 +576,13 @@
                 <img src="./assets/play.png" alt="" class="play" />
                 <video
                   muted
-                  loop
                   controlsList="nodownload noPictureInPicture"
+                  loop
+                  preload="none"
                   poster="https://oss-cn-beijing.galbot.com/online/portal/video/tech3.png"
                 >
                   <source
-                    src="https://oss-cn-beijing.galbot.com/online/blog/tech3-1.mp4"
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/tech3-1.mp4"
                     type="video/mp4"
                   />
                 </video>
@@ -420,84 +620,103 @@
             <div>
               <img class="lazy-load" src="./assets/p35.png" alt="" />
               <div class="list-title">Xiaomeng Fang</div>
-              <div class="list-decs">Master's, ME,SJTU</div>
+              <div class="list-decs">M.S, ME, SJTU</div>
             </div>
             <a href="https://42jaylonw.github.io">
               <img class="lazy-load" src="./assets/p34.png" alt="" />
               <div class="list-title">Jilong Wang</div>
-              <div class="list-decs">B.S,Phy,UCSC</div>
+              <div class="list-decs">B.S, Phy, UCSC</div>
             </a>
             <div>
               <img class="lazy-load" src="./assets/p33.png" alt="" />
               <div class="list-title">Yuanxing Duan</div>
-              <div class="list-decs">B.S,Phy,PKU</div>
+              <div class="list-decs">B.S, Phy, PKU</div>
             </div>
             <a href="https://danshi-li.github.io/personal-website">
               <img class="lazy-load" src="./assets/p20.png" alt="" />
               <div class="list-title">Danshi Li</div>
-              <div class="list-decs">Master's student,CE,NYU</div>
+              <div class="list-decs">M.S, CE, NYU</div>
+            </a>
+            <a href="https://lqts.github.io/">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p38.jpg"
+                alt=""
+              />
+              <div class="list-title">Qingtao Liu</div>
+              <div class="list-decs">PhD, CSE, ZJU</div>
             </a>
           </div>
           <div class="subtitle">STUDENTS</div>
           <div class="subtitle-child" style="margin-top: 7px">
-            Ph.D students
+            Ph.D Students
           </div>
           <div class="people-list PhD">
             <a href="https://shengliangd.github.io/about/">
               <img class="lazy-load" src="./assets/p12.png" alt="" />
               <div class="list-title">Shengliang Deng</div>
-              <div class="list-decs">Ph.D.Student,CS,HKU</div>
-              <span>September, 2020</span>
+              <div class="list-decs">Ph.D.Student, CS, HKU</div>
+              <span>September 2020</span>
             </a>
             <a href="https://jzhzhang.github.io">
               <img class="lazy-load" src="./assets/p36.png" alt="" />
               <div class="list-title">Jiazhao Zhang</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <span>September, 2022</span>
+              <div class="list-decs">Ph.D.Student, CFCS, PKU</div>
+              <span>September 2022</span>
             </a>
             <a href="https://jychen18.github.io">
               <img class="lazy-load" src="./assets/p3.png" alt="" />
               <div class="list-title">Jiayi Chen</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <span>September, 2022</span>
+              <div class="list-decs">Ph.D.Student, CS, PKU</div>
+              <span>September 2022</span>
+            </a>
+            <a href="https://jiangranlv.github.io">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p39.png"
+                alt=""
+              />
+              <div class="list-title">Jiangran Lyu</div>
+              <div class="list-decs">Ph.D.Student, CS, PKU</div>
+              <span>September 2023</span>
             </a>
             <a href="https://miyandoris.github.io">
               <img class="lazy-load" src="./assets/p4.png" alt="" />
               <div class="list-title">Mi Yan</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <span>September, 2023</span>
+              <div class="list-decs">Ph.D.Student, CFCS, PKU</div>
+              <span>September 2023</span>
             </a>
             <a href="https://shen-hhao.github.io">
               <img class="lazy-load" src="./assets/p6.png" alt="" />
               <div class="list-title">Hao Shen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <span>September, 2023</span>
+              <div class="list-decs">Ph.D.Student, CFCS, PKU</div>
+              <span>September 2023</span>
             </a>
             <a href="https://cwb0106.github.io">
               <img class="lazy-load" src="./assets/p8.png" alt="" />
               <div class="list-title">Wenbo Cui</div>
-              <div class="list-decs Wenbo">Ph.D.Student,CTCE,CASIA&BAAI</div>
-              <span>September, 2023</span>
-            </a>
-            <a href="https://jiangranlv.github.io">
-              <img class="lazy-load" src="./assets/p7.png" alt="" />
-              <div class="list-title">Jiangran Lyu</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <span>September, 2023</span>
+              <div class="list-decs Wenbo">Ph.D.Student, CTCE, CASIA&BAAI</div>
+              <span>September 2023</span>
             </a>
             <a href="https://chen01yx.github.io">
               <img class="lazy-load" src="./assets/p9.png" alt="" />
               <div class="list-title">Yuxing Chen</div>
-              <div class="list-decs">Ph.D.Student,CFCS,PKU</div>
-              <span>September, 2024</span>
+              <div class="list-decs">Ph.D.Student, CFCS, PKU</div>
+              <span>September 2024</span>
             </a>
-            <a href="https://songlin.github.io">
+            <a href="https://weiheng-liu.github.io">
+              <img class="lazy-load" src="./assets/p10.png" alt="" />
+              <div class="list-title">Weiheng Liu</div>
+              <div class="list-decs Weiheng">Ph.D.Student, CS, CASIA&BAAI</div>
+              <span>September 2024</span>
+            </a>
+            <!-- <a href="https://songlin.github.io">
               <img class="lazy-load" src="./assets/p5.png" alt="" />
               <div class="list-title">Songlin Wei</div>
               <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <span>September, 2024</span>
-            </a>
-            <div class="more">
+              <span>September 2024</span>
+            </a> -->
+            <!-- <div class="more">
               <span>More</span>
               <svg
                 xmlns="http://www.w3.org/2000/svg"
@@ -511,105 +730,242 @@
                   stroke="#38393C"
                 />
               </svg>
-            </div>
-            <a class="is-hidden margin" href="https://weiheng-liu.github.io">
-              <img class="lazy-load" src="./assets/p10.png" alt="" />
-              <div class="list-title">Weiheng Liu</div>
-              <div class="list-decs Weiheng">Ph.D.Student,CS,CASIA&BAAI</div>
-              <span>September, 2024</span>
-            </a>
-            <a class="is-hidden" href="https://user432.github.io">
+            </div> -->
+            <a href="https://user432.github.io">
               <img class="lazy-load" src="./assets/p11.png" alt="" />
               <div class="list-title">Gireesh Nandiraju</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
-              <span>September, 2024</span>
+              <div class="list-decs">Ph.D.Student, CS, PKU</div>
+              <span>September 2024</span>
+            </a>
+            <a href="https://github.com/QiSu77">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p40.jpg"
+                alt=""
+              />
+              <div class="list-title">Qi Su</div>
+              <div class="list-decs">Ph.D. Student, CS, PKU & BAAI</div>
+              <span>September 2024</span>
+            </a>
+            <a href="">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p41.jpg"
+                alt=""
+              />
+              <div class="list-title">Yixin Zheng</div>
+              <div class="list-decs">Ph.D. student, CTCE, CASIA ＆ BAAI</div>
+              <span>September 2025</span>
+            </a>
+            <a href="">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p42.jpg"
+                alt=""
+              />
+              <div class="list-title">Yuxuan Wan</div>
+              <div class="list-decs">Ph.D. Student, CS, PKU</div>
+              <span>September 2025</span>
+            </a>
+            <a href="https://lhrrhl0419.github.io/">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p43.png"
+                alt=""
+              />
+              <div class="list-title">Haoran Liu</div>
+              <div class="list-decs">Ph.D. Student, CS, PKU</div>
+              <span>September 2025</span>
+            </a>
+            <a href="">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p44.jpg"
+                alt=""
+              />
+              <div class="list-title">Chao Chen</div>
+              <div class="list-decs">Ph.D. Student, CS, PKU</div>
+              <span>September 2025</span>
+            </a>
+            <a
+              href="https://xinqiangyu.github.io/xinqiang-yu.github.io/index.html"
+            >
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p45.png"
+                alt=""
+              />
+              <div class="list-title">Xinqiang Yu</div>
+              <div class="list-decs">Ph.D. Student, CS, CASIA & BAAI</div>
+              <span>September 2025</span>
+            </a>
+            <a href="https://github.com/KaiLiu18">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p46.jpg"
+                alt=""
+              />
+              <div class="list-title">Kai Liu</div>
+              <div class="list-decs">Ph.D. Student, PRIS, UCAS & BAAI</div>
+              <span>September 2025</span>
             </a>
           </div>
           <div class="subtitle-child is-hidden">Master's students</div>
           <div class="people-list Masters is-hidden">
-            <a
-              href="https://xinqiangyu.github.io/xinqiang-yu.github.io/index.html"
-            >
-              <img class="lazy-load" src="./assets/p22.png" alt="" />
-              <div class="list-title">Xinqiang Yu</div>
-              <div class="list-decs">Master's student,CAT,UCAS</div>
-              <span>September, 2021</span>
+            <a href="https://khunlounzai.github.io/">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p47.jpg"
+                alt=""
+              />
+              <div class="list-title">Khun Loun Zai</div>
+              <div class="list-decs">M.S. Student, CS, PKU</div>
             </a>
-            <a href="https://dotandung.github.io">
+            <!-- <a href="https://dotandung.github.io">
               <img class="lazy-load" src="./assets/p18.png" alt="" />
               <div class="list-title">Xunyong Du</div>
-              <div class="list-decs">Master's student,CS,PKU</div>
-              <span>September, 2022</span>
-            </a>
-            <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190">
+              <div class="list-decs">Master's student, CS, PKU</div>
+              <span>September 2022</span>
+            </a> -->
+            <!-- <a href="https://linkedin.com/in/javokhir-rajabov-58b8a3190">
               <img class="lazy-load" src="./assets/p19.png" alt="" />
               <div class="list-title">Javokhirbek Rajabov</div>
-              <div class="list-decs">Master's student,CAT,PKU</div>
-              <span>September, 2022</span>
-            </a>
-            <a href="https://co1one.github.io">
+              <div class="list-decs">Master's student, CAT, PKU</div>
+              <span>September 2022</span>
+            </a> -->
+            <!-- <a href="https://co1one.github.io">
               <img class="lazy-load" src="./assets/p21.png" alt="" />
               <div class="list-title">Chaoyi Xu</div>
-              <div class="list-decs">Master's student,EST,BUPT</div>
-              <span>September, 2022</span>
-            </a>
+              <div class="list-decs">Master's student, EST, BUPT</div>
+              <span>September 2022</span>
+            </a> -->
           </div>
           <div class="subtitle-child is-hidden">Undergraduate Students</div>
           <div class="people-list is-hidden">
             <a href="https://wkwan7.github.io">
               <img class="lazy-load" src="./assets/p27.png" alt="" />
               <div class="list-title">Weikang Wan</div>
-              <div class="list-decs">B.S,IS,PKU</div>
-              <span>September, 2019</span>
+              <div class="list-decs">B.S, IS, PKU</div>
+              <span>Septembere 2019</span>
             </a>
             <a href="https://chengyzhao.github.io">
               <img class="lazy-load" src="./assets/p28.png" alt="" />
               <div class="list-title">Chengyang Zhao</div>
-              <div class="list-decs">B.S,DSBDT,PKU</div>
-              <span>September, 2019</span>
+              <div class="list-decs">B.S, DSBDT, PKU</div>
+              <span>September 2019</span>
             </a>
             <a href="https://geng-haoran.github.io">
               <img class="lazy-load" src="./assets/p23.png" alt="" />
               <div class="list-title">Haoran Geng</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <span>September, 2020</span>
+              <div class="list-decs">B.S, EECS, PKU</div>
+              <span>September 2020</span>
             </a>
             <a href="https://mzhmxzh.github.io/">
               <img class="lazy-load" src="./assets/p24.png" alt="" />
               <div class="list-title">Jialiang Zhang</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <span>September, 2021</span>
+              <div class="list-decs">B.S, EECS, PKU</div>
+              <span>September 2021</span>
             </a>
             <a href="https://yxkryptonite.github.io">
               <img class="lazy-load" src="./assets/p25.png" alt="" />
               <div class="list-title">Yuxuan Kuang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <span>September, 2021</span>
+              <div class="list-decs">B.S, CS, PKU</div>
+              <span>September 2021</span>
             </a>
-            <a href="https://lhrrhl0419.github.io/">
+            <!-- <a href="https://lhrrhl0419.github.io/">
               <img class="lazy-load" src="./assets/p26.png" alt="" />
               <div class="list-title">Haoran Liu</div>
-              <div class="list-decs">B.S,CS,PKU</div>
-              <span>September, 2021</span>
-            </a>
+              <div class="list-decs">B.S, CS, PKU</div>
+              <span>September 2021</span>
+            </a> -->
             <a href="https://selina2023.github.io">
               <img class="lazy-load" src="./assets/p30.png" alt="" />
               <div class="list-title">Yufei Ding</div>
-              <div class="list-decs">B.S,EECS,PKU</div>
-              <span>September, 2022</span>
+              <div class="list-decs">B.S, EECS, PKU</div>
+              <span>September 2022</span>
             </a>
             <a href="https://github.com/AvidJoyceXu">
               <img class="lazy-load" src="./assets/p37.png" alt="" />
               <div class="list-title">Lingyun Xu</div>
-              <div class="list-decs">B.S,IST,PKU</div>
-              <span>September, 2022</span>
+              <div class="list-decs">B.S, IST,PKU</div>
+              <span>September 2022</span>
             </a>
-            <div>
+            <a href="https://gfrl.github.io/">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p48.jpg"
+                alt=""
+              />
+              <div class="list-title">Yubin Ke</div>
+              <div class="list-decs">B.S. CS, PKU</div>
+              <span>September 2022</span>
+            </a>
+            <a href="https://github.com/2003jiahang">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p49.png"
+                alt=""
+              />
+              <div class="list-title">刘佳航</div>
+              <div class="list-decs">B.S, CS, HIT(SZ)</div>
+              <span>September 2022</span>
+            </a>
+            <a href="https://zhenrongwang.github.io/">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p50.jpg"
+                alt=""
+              />
+              <div class="list-title">Zhenrong Wang</div>
+              <div class="list-decs">B.S. CS, SZU</div>
+              <span>September 2022</span>
+            </a>
+            <a href="https://shuyumo2003.github.io">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p51.jpg"
+                alt=""
+              />
+              <div class="list-title">Jiayi Su</div>
+              <div class="list-decs">B.S, CS, XMUM</div>
+              <span>September 2022</span>
+            </a>
+            <a href="https://Bowie375.github.io">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p52.jpg"
+                alt=""
+              />
+              <div class="list-title">Bowen Xiao</div>
+              <div class="list-decs">B.S, CS, PKU</div>
+              <span>September 2022</span>
+            </a>
+            <a href="">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p53.png"
+                alt=""
+              />
+              <div class="list-title">Rui Ni</div>
+              <div class="list-decs">B.S. ICS. PKU</div>
+              <span>September 2023</span>
+            </a>
+            <a href="">
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/p54.jpg"
+                alt=""
+              />
+              <div class="list-title">Yaowei Liu</div>
+              <div class="list-decs">B.S. IST. PKU</div>
+              <span>September 2023</span>
+            </a>
+            <!-- <div>
               <img class="lazy-load" src="./assets/p32.png" alt="" />
               <div class="list-title">Hang Lyu</div>
-              <div class="list-decs">B.S,SE,PKU</div>
-              <span>September, 2023</span>
-            </div>
+              <div class="list-decs">B.S, SE, PKU</div>
+              <span>September 2023</span>
+            </div> -->
           </div>
           <div class="subtitle is-hidden" style="padding-bottom: 20px">
             LAB ALUMNI
@@ -618,32 +974,72 @@
             <a href="https://dblp.org/pid/252/9109.html">
               <!-- <img class="lazy-load"  src="./assets/p15.png" alt="" /> -->
               <div class="list-title">Fengyi Shen</div>
-              <div class="list-decs">Ph.D.Student,CS,TUM</div>
+              <div class="list-decs">Ph.D.Student, CS, TUM</div>
             </a>
             <a href="https://matthewmzy.github.io">
               <!-- <img class="lazy-load"  src="./assets/p31.png" alt="" /> -->
               <div class="list-title">Zhiyuan Ma</div>
-              <div class="list-decs">B.S,CS,PKU</div>
+              <div class="list-decs">B.S, CS, PKU</div>
             </a>
             <a href="https://yangwangpku.github.io">
               <!-- <img class="lazy-load"  src="./assets/p29.png" alt="" /> -->
               <div class="list-title">Wang Yang</div>
-              <div class="list-decs">B.S,CS,PKU</div>
+              <div class="list-decs">B.S, CS, PKU</div>
             </a>
             <a href="https://github.com/fzy139">
               <!-- <img class="lazy-load"  src="./assets/p17.png" alt="" /> -->
               <div class="list-title">Yan Zhu</div>
-              <div class="list-decs">Master's student,EIS,PKU</div>
+              <div class="list-decs">Master's student, EIS, PKU</div>
             </a>
             <a href="https://daiqy.github.io">
               <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
               <div class="list-title">Qiyu Dai</div>
-              <div class="list-decs">Master's student,CT,PKU</div>
+              <div class="list-decs">Master's student, CT, PKU</div>
             </a>
             <a href="https://yd-yin.github.io/">
               <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
               <div class="list-title">Yingda Yin</div>
-              <div class="list-decs">Ph.D.Student,CS,PKU</div>
+              <div class="list-decs">Ph.D.Student, CS, PKU</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Weikang Wan</div>
+              <div class="list-decs">Ph.D. Student, CS, ucsd</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Liu Dai</div>
+              <div class="list-decs">Ph.D. Student, CS, ucsd</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Chengyang Zhao</div>
+              <div class="list-decs">M.S. Student, CS, CMU</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Haoran Geng</div>
+              <div class="list-decs">Ph.D. Student, CS, UCB</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Jialiang Zhang</div>
+              <div class="list-decs">Ph.D. Student, CS, MIT</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yuxuan Kuang</div>
+              <div class="list-decs">Ph.D. Student, CS, CMU</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Yufei Ding</div>
+              <div class="list-decs">B.S. CS. PKU</div>
+            </a>
+            <a href="">
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Lingyun Xu</div>
+              <div class="list-decs">B.S. CS. PKU</div>
             </a>
             <a
               href="https://scholar.google.com.hk/citations?hl=zh-CN&user=_IUq7ooAAAAJ&view_op=list_works&sortby=pubdate"
@@ -662,6 +1058,22 @@
             <div>
               <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
               <div class="list-title">Dai Liu</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Javokhirbek Rajabov</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Chaoyi Xu</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">DO TAN DUNG</div>
+            </div>
+            <div>
+              <!-- <img class="lazy-load"  src="./assets/p16.png" alt="" /> -->
+              <div class="list-title">Hang Lyv</div>
             </div>
             <!-- <div class="up">
               <svg
@@ -685,26 +1097,47 @@
           <div class="title">NEWS</div>
           <ul>
             <li>
-              Two papers get accepted to NeurIPS,with one selected as a spotlight.
+              I am invited to be a speaker in
+              <a href="https://humanoidssummit.com/agenda" target="_blank"
+                >Humanoids Summit 2025.</a
+              >
+            </li>
+            <li>
+              Our project, the "Synthetic and real data-driven VLA embodied
+              intelligence large model" was honored with the
+              <a
+                href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm"
+                target="_blank"
+                >2025 World Internet Conference Leading Technology Award.</a
+              >
+            </li>
+            <li>One paper gets accepted to RA-L.</li>
+            <li>
+              I have been selected for Fortune magazine's 2025 "China's 40 Under
+              40 Business Leaders" list.
+            </li>
+            <li>I have been selected for the 9th "Haiying Talent" program.</li>
+            <li>
+              Two papers get accepted to NeurIPS,with one selected as a
+              spotlight.
             </li>
             <li>
               I am invited to be a speaker in
-              <a href="https://iccv.thecvf.com/Conferences/2025/ACWorkshop"
+              <a
+                href="https://iccv.thecvf.com/Conferences/2025/ACWorkshop"
+                target="_blank"
                 >Area Chair Workshop</a
               >
               at ICCV 2025.
             </li>
             <li>
-              I am invited to be a speaker in
-              <a href="https://sites.google.com/view/iccv25tricky"
-                >the 3rd edition of the TRICKY workshop(Transparent & Reflective
-                Objects in the Wild Challenges)</a
-              >
+              I am invited to be a speaker in the 3rd edition of the TRICKY
+              workshop(Transparent & Reflective Objects in the Wild Challenges)
               at ICCV 2025.
             </li>
             <li>
               I am invited to be a speaker in
-              <a href="https://wclop.github.io/"
+              <a href="https://wclop.github.io" target="_blank"
                 >the 1st Workshop and Challenge on Category-Level Object Pose
                 Estimation in the Wild</a
               >
@@ -712,173 +1145,289 @@
             </li>
             <li>
               I am invited to be a speaker in
-              <a href="https://heai-iros25-workshop.github.io/"
+              <a href="https://heai-iros25-workshop.github.io" target="_blank"
                 >the Workshop on Human-aware Embodied AI</a
               >
               at IROS 2025.
             </li>
-            <li>
-              I am invited to be a speaker in
-              <a href="https://www.ai-meets-autonomy.com/"
-                >the 2nd AI Meets Autonomy: Vision, Language, and Autonomous
-                Systems Workshop</a
-              >
-              at IROS 2025.
-            </li>
-            <li>Three papers get accepted to CoRL 2025.</li>
-            <li>
-              One paper gets accepted to SCIENCE CHINA Technological Sciences.
-            </li>
-            <li>
-              Two papers get accepted to ICCV 2025, with one selected as a
-              Highlight.
-            </li>
-            <li>One paper gets accepted to RA-L.</li>
-            <li>Two papers get accepted to RSS 2025.</li>
-            <li>Two papers get accepted to CVPR 2025.</li>
-            <li>Two papers get accepted to RA-L.</li>
-            <li>Five papers get accepted to ICRA 2025.</li>
-            <li>One paper gets accepted to TPAMI.</li>
-            <li>Four papers get accepted to CoRL 2024.</li>
-            <li>
-              SAGE,won the <span>Best Paper Award</span> at RSS 2024 SemRob
-              Workshop.
-            </li>
-            <li>Two papers get accepted to IROS 2024.</li>
-            <li>Two papers get accepted to RSS 2024.</li>
-            <li>
-              I accepted an interview from Xinhua News Agency's Economic
-              Information Daily titled "<a
-                href="https://h.xinhuaxmt.com/vh512/share/12055247?d=134d8e5&channel=weixin"
-                >Humanoid Robots Open the Blueprint of Embodied Intelligence</a
-              >."
-            </li>
-            <li>
-              I accepted an interview from 36Kr titled "<a
-                href="https://mp.weixin.qq.com/s/xE6xmcuDRbhrGtIqMCzGpQ"
-                >After the Impact of Large Models on the Humanoid Robot Track, a
-                Trillion-Dollar Market's New Narrative</a
-              >."
-            </li>
-            <li>
-              I was invited to participate in CCTV-2's "Dialogue" program on the
-              theme of "<a
-                href="https://tv.cctv.com/2024/05/25/VIDECvVzKGwoW4y2w3bkgTLD240525.shtml?spm=C22284.P87019257382.EMqe9pBD7J5t.63"
-                >Humanoid Robots: Coexisting with Humans</a
-              >."
-            </li>
-            <li>Two papers get accepted to CVPR 2024.</li>
-            <li>
-              Three papers get accepted to ICRA 2024 and one paper gets accepted
-              by RAL.
-            </li>
-            <li>
-              Our 3D dexterous grasping policy learning paper, UniDexGrasp++,
-              receives<span> ICCV 2023 best paper finalist</span>.
-            </li>
-            <li>One paper gets accepted to SIGGRAPH Asia 2023.</li>
-            <li>
-              Three papers get accepted to ICCV 2023 with UniDexGrasp++
-              receiving final reviews of <span>all strong accepts</span> (the
-              highest ratings).
-            </li>
-            <li>
-              I am invited to be a speaker in
-              <a href="https://sites.google.com/view/hands2023/home"
-                >HANDS workshop</a
-              >
-              at ICCV 2023.
-            </li>
-            <li>
-              I am invited to be a speaker in
-              <a href="https://generalist-robots.github.io/speakers/"
-                >Towards Generalist Robots: Learning Paradigms for Scalable
-                Skill Acquisition Workshop </a
-              >at CoRL 2023.
-            </li>
-            <li>
-              I am invited to be a speaker in
-              <a href="https://sites.google.com/view/rss23-sym"
-                >Workshop on Symmetries in Robot Learning</a
-              >
-              at RSS 2023.
-            </li>
-            <li>
-              Our dexterous grasping synthesis and dataset paper, DexGraspNet,
-              is selected as a
-              <span
-                >finalist of ICRA 2023 outstanding paper in manipulation</span
-              >
-              (top 1% of submissions).
-            </li>
-            <li>
-              Seven papers get accepted to CVPR 2023 with GAPartNet
-              receiving<span> highlight</span> (top 2.5% of submissions) with
-              final reviews of <span>all accepts</span> (the highest ratings).
-            </li>
-            <li>
-              I am invited to be an associate editor of
-              <a
-                href="https://www.sciencedirect.com/journal/image-and-vision-computing"
-                >Image and Vision Computing</a
-              >, which ranks top 20 in computer vision journals/conferences on
-              Google Scholar Metrics.
-            </li>
-            <li>
-              Two papers get accepted to ICLR 2023 with one as<span>
-                spotlight</span
-              >.
-            </li>
-            <li>Two papers get accepted to ICRA 2023.</li>
-            <li>
-              One paper gets accepted to AAAI 2023 as
-              <span>oral presentation</span>.
-            </li>
-            <li>
-              My first-author CVPR 2019 oral paper,
-              <a
-                href="https://openaccess.thecvf.com/content_CVPR_2019/papers/Wang_Normalized_Object_Coordinate_Space_for_Category-Level_6D_Object_Pose_and_CVPR_2019_paper.pdf"
-                >NOCS</a
-              >, received
-              <a href="https://www.worldaic.com.cn/activity#q1"
-                >2022 World Artificial Intelligence Conference Youth Outstanding
-                Paper Award</a
-              >. Top 10 from 155 papers published in top-tier AI conferences and
-              top journals (Science, Nature Computational Method, etc.) in the
-              past 3 years.
-            </li>
-            <!-- <li>One paper gets accepted to T-RO.</li>
-            <li>One paper gets accepted to ECCV 2022.</li>
-            <li>
-              One paper gets accepted to Robotics and Automation Letters (RA-L)
-              and IROS 2022.
-            </li> -->
-            <li>
-              My students and I won the <span>first place </span>in the no
-              external annotation track of
-              <a href="https://sapien.ucsd.edu/challenges/maniskill2021/"
-                >SAPIEN Manipulation Skill Challenge 2021</a
-              >
-              and will receive $3000 prize and give a winner presentation in
-              <a
-                href="https://ai-workshops.github.io/generalizable-policy-learning-in-the-physical-world/"
-                >ICLR 2022 Generalizable Policy Learning in the Physical World
-                Workshop</a
-              >.
-            </li>
-            <!-- <li>
-              Two papers are selected to <span>oral presentations</span> in CVPR
-              2022.
-            </li>
-            <li>Seven papers get accepted to CVPR 2022.</li> -->
-            <li>...</li>
+            <!-- <li>...</li> -->
           </ul>
         </div>
       </div>
-      <div class="main-content border0">
+      <div class="main-content">
         <div id="publications" class="main-selected">
-          <div class="title">SELECTED PUBLICATIONS</div>
+          <div class="title">Preprint</div>
           <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/74.jpg"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                StereoVLA: Enhancing Vision-Language-Action Models with Stereo
+                Vision
+              </div>
+              <p>
+                Shengliang Deng, Mi Yan, Yixin Zheng, Jiayi Su, WenHao Zhang,
+                Xiaoguang Zhao, Heming Cui, Zhizheng Zhang,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2512.21970">arXiv</a>
+                <a href="https://shengliangd.github.io/StereoVLA-Webpage/"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/75.jpg"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                FoldNet: Learning Generalizable Closed-Loop Policy for Garment
+                Folding via Keypoint-Driven Asset and Demonstration Synthesis
+              </div>
+              <p>
+                Yuxing Chen, Bowen Xiao,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2505.09109">arXiv</a>
+                <a href="https://pku-epic.github.io/FoldNet/">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <a href="https://oss-cn-beijing.galbot.com/online/blog/DexNDM.mp4">
+              <img class="play" src="./assets/play1.png" alt="" />
+              <img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/DexNDM.jpg"
+                alt=""
+              />
+            </a>
+            <div class="item-right">
+              <div class="item-title">
+                DexNDM: Closing the Reality Gap for Dexterous In-Hand Rotation
+                via Joint-Wise Neural Dynamics Model
+              </div>
+              <p>
+                Xueyi Liu, He Wang,
+                <b>Li Yi<span>&#8224;</span></b
+                >,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2510.08556">arXiv</a>
+                <a href="https://meowuu7.github.io/DexNDM/">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/76.jpg"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                Track Any Motions under Any Disturbances
+              </div>
+              <p>
+                Zhikai Zhang, Jun Guo, Chao Chen, Jilong Wang, Chenghuai Lin,
+                Yunrui Lian, HanXue, Zhenrong Wang, Maoqi Liu, Jiangran Lyu,
+                Huaping Liu, He Wang, LiYi
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2509.13833">arXiv</a>
+                <a href="https://zzk273.github.io/Any2Track/">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/navfom.gif"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">Embodied Navigation Foundation Model</div>
+              <p>
+                Jiazhao Zhang*, Anqi Li*, Yunpeng Qi*, Minghan Li*, Jiahang Liu,
+                Shaoan Wang, Haoran Liu, Gengze Zhou, Yuze Wu, Xingxing Li,
+                Yuxin Fan, Wenjun Li, Zhibo Chen, Fei Gao, Qi Wu,
+                <b>Zhizheng Zhang<span>&#8224;</span></b
+                >, <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2509.12129">arXiv</a>
+                <a href="https://pku-epic.github.io/NavFoM-Web">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/trackvla.gif"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                TrackVLA++: Unleashing Reasoning and Memory Capabilities in VLA
+                Models for Embodied Visual Tracking
+              </div>
+              <p>
+                Jiahang Liu*, Yunpeng Qi*, Jiazhao Zhang*, Minghan Li, Shaoan
+                Wang, Kui Wu, Hanjing Ye, Hong Zhang, Zhibo Chen, Fangwei Zhong,
+                <b>Zhizheng Zhang<span>&#8224;</span></b
+                >, <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2510.07134">arXiv</a>
+                <a href="https://pku-epic.github.io/TrackVLA-plus-plus-Web"
+                  >Project</a
+                >
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/urbanvla.gif"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                UrbanVLA: A Vision-Language-Action Model for Urban Micromobility
+              </div>
+              <p>
+                Anqi Li*, Zhiyong Wang*, Jiazhao Zhang*, Minghan Li, Zhibo Chen,
+                <b>Zhizheng Zhang<span>&#8224;</span></b
+                >, <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2510.23576">arXiv</a>
+                <a href="https://pku-epic.github.io/UrbanVLA-Web">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              src="https://oss-cn-beijing.galbot.com/online/blog/mm_nav.gif"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                MM-Nav: Multi-View VLA Model for Robust Visual Navigation via
+                Multi-Expert Learning
+              </div>
+              <p>
+                Tianyu Xu*, Jiawei Chen*, Jiazhao Zhang*, Wenyao Zhang, Zekun
+                Qi, Minghan Li, <b>Zhizheng Zhang<span>&#8224;</span></b
+                >, <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2510.03142">arXiv</a>
+                <a href="https://pku-epic.github.io/MM-Nav-Web">Project</a>
+              </div>
+            </div>
+          </div>
+          <div class="selected-item">
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/73.png"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                Robust Differentiable Collision Detection for General Objects
+              </div>
+              <p>
+                Jiayi Chen, Wei Zhao, Liangwang Ruan, Baoquan Chen,
+                <b>He Wang<span>&#8224;</span></b>
+              </p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/2511.06267">arXiv</a>
+                <a href="https://github.com/JYChen18/DiffCollision">Project</a>
+                <a
+                  id="chen2025robustID"
+                  href="javascript:hideshow(document.getElementById('chen2025robustID'),document.getElementById('chen2025robust'))"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="chen2025robust" style="font-size:14px; display: none">
+                @article{chen2025robust,
+                  title={Robust Differentiable Collision Detection for General Objects},
+                  author={Chen, Jiayi and Zhao, Wei and Ruan, Liangwang and Chen, Baoquan and Wang, He},
+                  journal={arXiv preprint arXiv:2511.06267},
+                  year={2025}
+                }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/72.jpg"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                Unleashing Humanoid Reaching Potential via Real-world-Ready
+                Skill Space
+              </div>
+              <p>
+                Zhikai Zhang*,Chao Chen*, Han Xue*,Jilong Wang*,Sikai Liang*,Yun
+                Liu*,Zongzhang Zhang*, He Wang,<b>Li Yi<span>&#8224;</span></b>
+              </p>
+              <p class="decs">RA-L</p>
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2507.04447">arXiv</a>
+                <a href="https://zzk273.github.io/R2S2">Project</a>
+                <a
+                  id="UnleashingID"
+                  href="javascript:hideshow(document.getElementById('UnleashingID'),document.getElementById('article-Unleashing'))"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="article-Unleashing" style="font-size:14px; display: none">
+            @article{DBLP:journals/corr/abs-2505-10918,
+              author= {Zhikai Zhang and
+                              Chao Chen and
+                              Han Xue and
+                              Jilong Wang and
+                              Sikai Liang and
+                              Yun Liu and
+                              Zongzhang Zhang and
+                              He Wang and
+                              Li Yi},
+              title= {Unleashing Humanoid Reaching Potential via Real-world-Ready Skill
+                              Space},
+              journal= {CoRR},
+              volume= {abs/2505.10918},
+              year= {2025},
+              url= {https://doi.org/10.48550/arXiv.2505.10918},
+              doi= {10.48550/ARXIV.2505.10918},
+              eprinttype= {arXiv},
+              eprint= {2505.10918},
+              timestamp= {Sun, 29 Jun 2025 10:28:00 +0200},
+              biburl= {https://dblp.org/rec/journals/corr/abs-2505-10918.bib},
+              bibsource= {dblp computer science bibliography, https://dblp.org}
+            }
+            </p>
+          </pre>
+        </div>
+      </div>
+      <div class="main-content">
+        <div class="main-selected">
+          <div class="title">SELECTED PUBLICATIONS</div>
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/72.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -896,9 +1445,13 @@
                 <a href="https://zhangwenyao1.github.io/DreamVLA/">Project</a>
               </div>
             </div>
-          </div>
+          </div> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/71.jpg" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/71.jpg"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 SoFar: Language-Grounded Orientation Bridges Spatial Reasoning
@@ -936,15 +1489,19 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/70.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/70.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Advancing general robotic manipulation with multimodal
                 foundation models: Anembodied Al paradigm
               </div>
               <p>
-                Shifeng HUANG , He WANG , Xing ZHOU , Wenkai CHEN , Haibin YANG
-                , Jianwei ZHANG
+                Shifeng HUANG, He WANG, Xing ZHOU, Wenkai CHEN, Haibin YANG,
+                Jianwei ZHANG
               </p>
               <p class="decs">SCIENCE CHINA Technological Sciences</p>
               <div class="button">
@@ -959,7 +1516,7 @@
             <a
               href="https://oss-cn-beijing.galbot.com/online/blog/trackvla1.mp4"
             >
-              <img class="play" src="/assets/play1.png" alt="" />
+              <img class="play" src="./assets/play1.png" alt="" />
               <img
                 class="lazy-load"
                 src="https://oss-cn-beijing.galbot.com/online/blog/trackvla1.png"
@@ -971,9 +1528,9 @@
                 TrackVLA: Embodied Visual Tracking in the Wild
               </div>
               <p>
-                Shaoan Wang∗，Jiazhao Zhang∗, Minghan Li，Jiahang Liu，Anqi
-                Li，Kui Wu， Fangwei Zhong，Junzhi Yu，<b
-                  >Zhizheng Zhang<span>&#8224;</span></b
+                Shaoan Wang∗, Jiazhao Zhang∗, Minghan Li, Jiahang Liu, Anqi Li,
+                Kui Wu, Fangwei Zhong, Junzhi Yu,
+                <b>Zhizheng Zhang<span>&#8224;</span></b
                 >,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
@@ -985,7 +1542,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/69.gif" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/69.gif"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 FetchBot: Learning Generalizable Object Fetching in Cluttered
@@ -1020,7 +1581,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/68.jpg" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/68.jpg"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 GraspVLA: a Grasping Foundation Model Pre-trained on
@@ -1058,17 +1623,21 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/67.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/67.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 DexVLG: Dexterous Vision-Language-Grasp Model at Scale
               </div>
               <p>
-                Jiazhao Zhang, Kunyu Wang, Shaoan Wang, Minghan Li, Haoran Liu,
-                Songlin Wei, Zhongyuan Wang,
-                <b>Zhizheng Zhang<span>&#8224;</span></b
-                >,
-                <b>He Wang<span>&#8224;</span></b>
+                Jiawei He*, Danshi Li*, Xinqiang Yu*, Zekun Qi, Wenyao Zhang,
+                Jiayi Chen, <b>Zhaoxiang Zhang<span>&#8224;</span></b
+                >, <b>Zhizheng Zhang<span>&#8224;</span></b
+                >, <b>Li Yi<span>&#8224;</span></b
+                >, <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">ICCV 2025（<b>highlight</b>）</p>
               <div class="button">
@@ -1097,14 +1666,18 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/66.gif" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/66.gif"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 DyWA: Dynamics-adaptive World Action Model for Generalizable
                 Non-prehensile Manipulation
               </div>
               <p>
-                Jiangran Lyu, Ziming Li, Xuesong Shi , Chaoyi Xu,
+                Jiangran Lyu, Ziming Li, Xuesong Shi, Chaoyi Xu,
                 <b>Yizhou Wang<span>&#8224;</span></b
                 >, <b>He Wang<span>&#8224;</span></b>
               </p>
@@ -1132,7 +1705,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/65.gif" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/65.gif"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 RoboHanger: Learning Generalizable Robotic Hanger Insertion for
@@ -1169,14 +1746,18 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/64.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/64.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Dexonomy: Synthesizing All Dexterous Grasp Types in a Grasp
                 Taxonomy
               </div>
               <p>
-                Jiayi Chen , Yubin Ke , Lin Peng,
+                Jiayi Chen , Yubin Ke, Lin Peng,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">RSS 2025</p>
@@ -1187,16 +1768,21 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/63.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/63.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Uni-NaVid: A Video-based Vision-Language-Action Model for
                 Unifying Embodied Navigation Tasks
               </div>
               <p>
-                Jiazhao Zhang Kunyu Wang Shaoan Wang Minghan Li Haoran Liu
-                Songlin Wei Zhongyuan Wang
-                <b>Zhizheng Zhang<span>&#8224;</span></b>
+                Jiazhao Zhang, Kunyu Wang, Shaoan Wang, Minghan Li, Haoran Liu,
+                Songlin Wei, Zhongyuan Wang,
+                <b>Zhizheng Zhang<span>&#8224;</span></b
+                >,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">RSS 2025</p>
@@ -1207,7 +1793,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/62.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/62.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Make a Donut: Hierarchical EMD-Space Planning for Zero-Shot
@@ -1225,7 +1815,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/61.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/61.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Code-as-Monitor: Constraint-aware Visual Programming for
@@ -1233,8 +1827,9 @@
               </div>
               <p>
                 Enshen Zhou*, Qi Su*,
-                <b>Cheng Chi*<span>&#8224;</span></b> Zhizheng Zhang, Zhongyuan
-                Wang, Tiejun Huang, <b>Lu Sheng<span>&#8224;</span></b
+                <b>Cheng Chi*<span>&#8224;</span></b
+                >, Zhizheng Zhang, Zhongyuan Wang, Tiejun Huang,
+                <b>Lu Sheng<span>&#8224;</span></b
                 >, <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">CVPR 2025</p>
@@ -1245,7 +1840,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/60.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/60.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 MobileH2R: Learning Generalizable Human to Mobile Robot Handover
@@ -1264,7 +1863,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/58.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/58.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 GAPartManip: A Large-scale Part-centric Dataset for
@@ -1285,7 +1888,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/57.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/57.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 BODex: Scalable and Efficient Robotic Dexterous Grasp Synthesis
@@ -1303,7 +1910,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/56.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/56.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 NaVid-4D: Unleashing Spatial Intelligence in Egocentric RGB-D
@@ -1322,7 +1933,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/55.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/55.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 QuadWBG: Generalizable Quadrupedal Whole-Body Grasping
@@ -1341,7 +1956,10 @@
           <div class="selected-item">
             <a
               href="https://oss-cn-beijing.galbot.com/online/video/watchLess.mp4"
-              ><img class="lazy-load" src="./assets/59.jpg" alt=""
+              ><img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/59.jpg"
+                alt=""
             /></a>
             <div class="item-right">
               <div class="item-title">
@@ -1360,7 +1978,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/54.jpg" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/54.jpg"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 W-ControlUDA: Weather-Controllable Diffusion-assisted
@@ -1380,7 +2002,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/53.jpg" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/53.jpg"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Towards Robust Probabilistic Modeling on SO(3) via Rotation
@@ -1399,7 +2025,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/49.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/49.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 D3RoMa: Disparity Diffusion-based Depth Sensing for
@@ -1407,9 +2037,8 @@
               </div>
               <p>
                 Songlin Wei, Haoran Geng, Jiayi Chen, Congyue Deng, Wenbo Cui,
-                Chengyang Zhao, Xiaomeng Fang, Leonidas Guibas,<b
-                  >He Wang<span>&#8224;</span></b
-                >
+                Chengyang Zhao, Xiaomeng Fang, Leonidas Guibas,
+                <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">CoRL 2024</p>
               <div class="button">
@@ -1419,7 +2048,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/50.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/50.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 DexGraspNet 2.0: Learning Generative Dexterous Grasping in
@@ -1437,7 +2070,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/51.jpg" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/51.jpg"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 RAM: Retrieval-Based Affordance Transfer for Generalizable
@@ -1457,7 +2094,10 @@
           <div class="selected-item">
             <a
               href="https://oss-cn-beijing.galbot.com/online/video/scissorbot_1.mp4"
-              ><img class="lazy-load" src="./assets/52.jpg" alt=""
+              ><img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/52.jpg"
+                alt=""
             /></a>
             <div class="item-right">
               <div class="item-title">
@@ -1477,14 +2117,18 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/46.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/46.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Task-Oriented Dexterous Grasp Synthesis via Differentiable Grasp
                 Wrench Boundary Estimator
               </div>
               <p>
-                Jiayi Chen,Yuxing Chen,Jialiang Zhang,
+                Jiayi Chen,Yuxing Chen, Jialiang Zhang,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">IROS 2024</p>
@@ -1501,15 +2145,19 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/47.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/47.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Open6DOR: Benchmarking Open-instruction 6-DoF Object
                 Rearrangement and A VLM-based Approach
               </div>
               <p>
-                Yufei Ding,Haoran Geng , Chaoyi Xu ,Xiaomeng Fang,Jiazhao
-                Zhang,Songlin Wei, Qiyu Dai, Zhizheng Zhang,
+                Yufei Ding, Haoran Geng, Chaoyi Xu, Xiaomeng Fang, Jiazhao
+                Zhang, Songlin Wei, Qiyu Dai, Zhizheng Zhang,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">IROS 2024 (<b>Oral Presentation</b>)</p>
@@ -1521,15 +2169,19 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/1.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/1.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 NaVid: Video-based VLM Plans the Next Step for
                 Vision-and-Language Navigation
               </div>
               <p>
-                Jiazhao Zhang, Kunyu Wang ,Rongtao Xu* ,Gengze Zhou ,Yicong Hong
-                ,Xiaomeng Fang ,Qi Wu ,Zhizheng Zhang<span>&#8224;</span> ,
+                Jiazhao Zhang, Kunyu Wang, Rongtao Xu*, Gengze Zhou, Yicong Hong
+                , Xiaomeng Fang, Qi Wu, Zhizheng Zhang<span>&#8224;</span>,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <p class="decs">RSS 2024</p>
@@ -1544,7 +2196,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/2.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/2.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 SAGE: Bridging Semantic and Actionable Parts for Generalizable
@@ -1583,7 +2239,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/3.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/3.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Enhancing Generalizable 6D Pose Tracking of an In-Hand Object
@@ -1607,7 +2267,10 @@
           <div class="selected-item">
             <a
               href="https://oss-cn-beijing.galbot.com/online/video/maskcluster.mp4"
-              ><img class="lazy-load" src="./assets/4.png" alt=""
+              ><img
+                class="lazy-load"
+                src="https://oss-cn-beijing.galbot.com/online/blog/4.png"
+                alt=""
             /></a>
             <div class="item-right">
               <div class="item-title">
@@ -1631,7 +2294,7 @@
               </div>
             </div>
           </div>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/5.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -1670,9 +2333,13 @@
               year={2020}
             }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/6.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/6.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 STOPNet: Multiview-based 6-DoF Suction Detection for Transparent
@@ -1695,7 +2362,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/7.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/7.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 GAMMA: Graspability-Aware Mobile MAnipulation Policy Learning
@@ -1736,7 +2407,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/8.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/8.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 ASGrasp: Generalizable Transparent Object Reconstruction and
@@ -1758,7 +2433,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/9.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/9.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 UniDexGrasp++: Improving Dexterous Grasping Policy Learning via
@@ -1796,7 +2475,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/10.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/10.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 GAPartNet: Cross-Category Domain-Generalizable Object Perception
@@ -1832,7 +2515,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/11.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/11.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 3D-Aware Object Goal Navigation via Simultaneous Exploration and
@@ -1868,7 +2555,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/12.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/12.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 UniDexGrasp: Universal Robotic Dexterous Grasping via Learning
@@ -1903,7 +2594,11 @@
             </p >
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/13.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/13.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 PartManip: Learning Cross-Category Generalizable Part
@@ -1936,7 +2631,11 @@
             </p >
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/14.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/14.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Delving into Discrete Normalizing Flows on SO(3) Manifold for
@@ -1969,7 +2668,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/15.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/15.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 DiGA: Distil to Generalize and then Adapt for Domain Adaptive
@@ -2002,7 +2705,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/16.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/16.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Adaptive Zone-aware Hierarchical Planner for Vision-Language
@@ -2019,7 +2726,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/17.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/17.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 DexGraspNet: A Large-Scale Robotic Dexterous Grasp Dataset for
@@ -2055,7 +2766,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/18.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/18.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 GraspNeRF: Multiview-based 6-DoF Grasp Detection for Transparent
@@ -2088,7 +2803,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/19.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/19.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 A Laplace-inspired Distribution on SO(3) for Probabilistic
@@ -2122,7 +2841,7 @@
               }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/20.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -2155,9 +2874,13 @@
                 url={https://openreview.net/forum?id=20GtJ6hIaPA}
               }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/21.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/21.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Tracking and Reconstructing Hand Object Interactions from Point
@@ -2191,7 +2914,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/22.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/22.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 ASRO-DIO: Active Subspace Random Optimization Based Depth
@@ -2208,7 +2935,11 @@
             </div>
           </div>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/23.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/23.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Domain Randomization-Enhanced Depth Simulation and Restoration
@@ -2243,7 +2974,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/24.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/24.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Learning Category-Level Generalizable Object Manipulation Policy
@@ -2296,7 +3031,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/25.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/25.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 FisherMatch: Semi-Supervised Rotation Regression via
@@ -2332,7 +3071,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/26.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/26.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Projective Manifold Gradient Layer for Deep Rotation Regression
@@ -2367,7 +3110,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/27.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/27.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 ADeLA: Automatic Dense Labeling with Attention for Viewpoint
@@ -2403,7 +3150,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/28.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/28.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 HOI4D: A 4D Egocentric Dataset for Category-Level Human-Object
@@ -2436,7 +3187,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/29.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/29.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Multi-Robot Active Mapping via Neural Bipartite Graph Matching
@@ -2466,7 +3221,7 @@
               }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/30.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -2497,8 +3252,8 @@
                 year={2022}
               }
             </p>
-          </pre>
-          <div class="selected-item">
+          </pre> -->
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/31.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -2528,9 +3283,13 @@
                 year={2021}
               }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/32.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/32.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Leveraging SE(3) Equivariance for Self-supervised Category-Level
@@ -2567,7 +3326,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/33.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/33.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 CAPTRA: CAtegory-level Pose Tracking for Rigid and Articulated
@@ -2604,8 +3367,8 @@
               }
             </p>
           </pre>
-          <div class="selected-item">
-            <img class="lazy-load" src="./assets/34.png" alt="" />
+          <!-- <div class="selected-item">
+            <img class="lazy-load" src="https://oss-cn-beijing.galbot.com/online/blog/34.png" alt="" />
             <div class="item-right">
               <div class="item-title">
                 Single Image 3D Shape Retrieval via Cross-Modal Instance and
@@ -2643,9 +3406,13 @@
                 year={2021}
               }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/35.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/35.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 3DIoUMatch: Leveraging IoU Prediction for Semi-Supervised 3D
@@ -2681,7 +3448,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/36.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/36.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 MultiBodySync: Multi-Body Segmentation and Motion Estimation via
@@ -2717,7 +3488,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/37.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/37.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Robust Neural Routing Through Space Partitions for Camera
@@ -2752,7 +3527,7 @@
             }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/38.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -2791,8 +3566,8 @@
                 year={2020}
               }
             </p>
-          </pre>
-          <div class="selected-item">
+          </pre> -->
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/39.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -2825,8 +3600,8 @@
                 year={2020}
               }
             </p>
-          </pre>
-          <div class="selected-item">
+          </pre> -->
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/40.png" alt="" />
             <div class="item-right">
               <div class="item-title">Curriculum DeepSDF</div>
@@ -2847,7 +3622,7 @@
                 >
               </div>
             </div>
-          </div>
+          </div> -->
           <pre>
             <p id="csdf" style="font-size:14px; display: none">
               @misc{duan2020curriculum,
@@ -2861,7 +3636,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/41.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/41.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Category-level Articulated Object Pose Estimation
@@ -2896,7 +3675,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/42.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/42.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 SAPIEN: A SimulAted Part-based Interactive ENvironment
@@ -2937,7 +3720,11 @@
             </p>
           </pre>
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/43.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/43.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Normalized Object Coordinate Space for Category-Level 6D Object
@@ -2978,7 +3765,7 @@
               }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/44.png" alt="" />
             <div class="item-right">
               <div class="item-title">
@@ -3010,9 +3797,13 @@
                 year={2018}
               }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
-            <img class="lazy-load" src="./assets/45.png" alt="" />
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/45.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
                 Learning a Generative Model for Multi-Step Human-Object
@@ -3168,11 +3959,44 @@
         }
         $('.main').css('display', 'block');
       }
+      // 视频懒加载 - 加载视频的通用函数
+      window.loadVideo = function (video) {
+        if (video.dataset.loaded === 'true') return; // 已加载则跳过
+        const source = video.querySelector('source[data-src]');
+        if (source && source.dataset.src) {
+          source.src = source.dataset.src;
+          video.load();
+          video.dataset.loaded = 'true'; // 标记已加载
+        }
+      };
+
+      // PC 版视频由 autoPlayVideo 函数控制，这里不处理
+
+      // 手机版视频懒加载（进入视口时加载，但不自动播放）
+      const phoneVideos = document.querySelectorAll(
+        '.swiper-content-phone video',
+      );
+      const phoneObserver = new IntersectionObserver(
+        (entries) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              window.loadVideo(entry.target);
+              phoneObserver.unobserve(entry.target);
+            }
+          });
+        },
+        { rootMargin: '200px' },
+      );
+      phoneVideos.forEach((video) => phoneObserver.observe(video));
 
       // pc 视频自动播放
       function autoPlayVideo() {
         const videosContainer = document.getElementById('videos');
-        const videos = document.querySelectorAll('video');
+        if (!videosContainer) return;
+        // 只选择 PC 版视频
+        const videos = videosContainer.querySelectorAll(
+          '.swiper-content video',
+        );
 
         // 检查视频是否在可见范围内
         function checkVisibility(video) {
@@ -3190,7 +4014,9 @@
         function controlVideoPlayback() {
           videos.forEach((video) => {
             if (checkVisibility(video)) {
-              video.play();
+              // 先加载视频再播放
+              if (window.loadVideo) window.loadVideo(video);
+              video.play().catch(() => {});
             } else {
               video.pause();
             }
@@ -3206,6 +4032,7 @@
       }
 
       onresizeFun();
+      window.addEventListener('resize', onresizeFun);
       // window.addEventListener('resize', onresizeFun);
 
       document.addEventListener('DOMContentLoaded', function () {

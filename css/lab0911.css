@@ -21,7 +21,7 @@
 }
 .main-swiper {
   position: relative;
-  height: 365px;
+  height: 385px;
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 0;
@@ -61,7 +61,7 @@
   font-size: 12px;
   color: #38393c;
   font-weight: 400;
-  text-align: left;
+  text-align: justify;
   width: 439px;
   height: auto;
   box-sizing: border-box;
@@ -331,6 +331,7 @@ pre {
 .p,
 .phone-p {
   display: none;
+  text-align: justify;
 }
 .main-img {
   width: 940px;
@@ -378,6 +379,7 @@ pre {
 .main-people .people-list a img {
   width: 140px;
   height: 140px;
+  object-fit: cover;
   border-radius: 5px;
 }
 .main-people .people-list a .list-title {
@@ -393,6 +395,7 @@ pre {
   color: #38393c;
   font-weight: 400;
   padding-bottom: 7px;
+  text-align: center;
 }
 .main-people .people-list div:nth-child(5n + 5) {
   margin-right: 0;
@@ -627,6 +630,7 @@ pre p {
 .border0:after {
   height: 0px;
 }
+
 @media (max-width: 769px) {
   a {
     font-size: 0.13rem;
@@ -1061,7 +1065,7 @@ pre p {
     font-size: 0.12rem;
     color: #38393c;
     font-weight: 400;
-    text-align: left;
+    text-align: justify;
     width: 2.62rem;
     height: auto;
     box-sizing: border-box;
@@ -1134,9 +1138,24 @@ pre p {
   }
 }
 @media screen and (max-width: 768px) {
+  #people .people-list .marginR {
+    margin-right: 0px !important;
+  }
+  #people .people-list .margin {
+    margin-right: 0px !important;
+  }
+  .main-people .people-list a:nth-child(3n + 3) {
+    margin-right: 0 !important;
+  }
+  .main-content #people .people-list .phone-margin {
+    margin-right: 0.205rem !important;
+  }
   .main-selected .selected-item .play {
     top: 25%;
     width: 0.3rem !important;
     height: 0.3rem !important;
   }
+}
+#people .people-list .marginR {
+  margin-right: 22px;
 }

@@ -21,7 +21,7 @@
 }
 .main-swiper {
   position: relative;
-  height: 385px;
+  height: 425px;
   overflow-y: hidden;
   overflow-x: scroll;
   padding-bottom: 0;
@@ -31,7 +31,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 3200px;
+  width: 2280px;
   overflow: hidden;
 }
 .main-swiper .swiper-content-phone {
@@ -39,7 +39,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 19.6rem;
+  width: 14.3rem;
   overflow: hidden;
 }
 .main-swiper .swiper-content-phone .slide-source {

@@ -6,7 +6,7 @@
       content="width=device-width, initial-scale=1.0, maximum-scale=1, minimum-scale=1"
     />
     <title>He Wang</title>
-    <link rel="stylesheet" type="text/css" href="./css/lab0911.css" />
+    <link rel="stylesheet" type="text/css" href="./css/lab0912.css" />
   </head>
   <body>
     <div class="main">
@@ -83,7 +83,54 @@
       </div>
       <div class="main-content">
         <div class="main-swiper" id="videos">
+          <div class="main-swiper" id="videos">
           <div class="swiper-content">
+            <div class="slide-source">
+              <a>
+                <video
+                  id="video02"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grasp.jpg"
+                >
+                  <source
+                    src="https://oss-cn-beijing.galbot.com/online/blog/grasp1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div id="p02">
+                  GraspVLA is the world's first end-to-end embodied grasping
+                  foundation model. Its pre-training is entirely based on
+                  billion-scale "vision-language-action" synthetic data.
+                </div>
+              </a>
+            </div>
+            <div class="slide-source">
+              <a>
+                <video
+                  style="width: 100%"
+                  id="video03"
+                  autoplay
+                  loop
+                  muted
+                  playsinline
+                  preload="none"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery1.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+                <div id="p03">
+                  GroceryVLA is the world's first end-to-end embodied VLA large
+                  model designed for the retail industry.
+                </div>
+              </a>
+            </div>
             <div class="slide-source">
               <a>
                 <video
@@ -157,7 +204,7 @@
                 </div>
               </a>
             </div>
-            <div class="slide-source">
+            <!-- <div class="slide-source">
               <a>
                 <video
                   id="video01"
@@ -202,31 +249,9 @@
                   billion-scale "vision-language-action" synthetic data.
                 </div>
               </a>
-            </div>
-            <div class="slide-source">
-              <a>
-                <video
-                  style="width: 100%"
-                  id="video03"
-                  autoplay
-                  loop
-                  muted
-                  playsinline
-                  preload="none"
-                  poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
-                >
-                  <source
-                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery1.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-                <div id="p03">
-                  GroceryVLA is the world's first end-to-end embodied VLA large
-                  model designed for the retail industry.
-                </div>
-              </a>
-            </div>
-            <div class="slide-source">
+            </div> -->
+
+            <!-- <div class="slide-source">
               <a href="https://pku-epic.github.io/ASGrasp/">
                 <video
                   id="video1"
@@ -248,7 +273,7 @@
                   success.
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- <div class="slide-source">
               <a href="  https://pku-epic.github.io/DexGraspNet/">
                 <video id="video2" autoplay loop muted preload="none">
@@ -304,6 +329,59 @@
             </div> -->
           </div>
           <div class="swiper-content-phone" id="videos01">
+            <div class="slide-source">
+              <a href="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4">
+                <img src="./assets/play.png" alt="" class="play" />
+                <video
+                  loop
+                  muted
+                  preload="none"
+                  controlsList="nodownload noPictureInPicture"
+                  x5-video-player-type="h5-page"
+                  id="video02"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grasp.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div id="p02">
+                <a
+                  >GraspVLA is the world's first end-to-end embodied grasping
+                  foundation model. Its pre-training is entirely based on
+                  billion-scale "vision-language-action" synthetic data.
+                </a>
+              </div>
+            </div>
+            <div class="slide-source">
+              <a
+                href="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
+              >
+                <img src="./assets/play.png" alt="" class="play" />
+                <video
+                  loop
+                  preload="none"
+                  muted
+                  controlsList="nodownload noPictureInPicture"
+                  x5-video-player-type="h5-page"
+                  id="video03"
+                  poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
+                >
+                  <source
+                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
+                    type="video/mp4"
+                  />
+                </video>
+              </a>
+              <div id="p03">
+                <a
+                  >GroceryVLA is the world's first end-to-end embodied VLA large
+                  model designed for the retail industry.
+                </a>
+              </div>
+            </div>
             <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/navfom.mp4"
@@ -388,14 +466,14 @@
               </a>
               <div id="p01">
                 <a
-                  >DexNDM: A dexterous hand neural dynamics model that, for the
-                  first time, enables a general-purpose dexterous hand to stably
-                  rotate complex objects—whether elongated, miniature, or
-                  irregularly shaped—in any orientation and along any axis.
+                  >Any2Track: a two-stage reinforcement learning framework that
+                  enables a single policy to accurately track diverse, complex
+                  motions while maintaining robust online adaptability to
+                  real-world dynamic disturbances.
                 </a>
               </div>
             </div>
-            <div class="slide-source">
+            <!-- <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
               >
@@ -422,61 +500,9 @@
                   driven by natural language instructions.
                 </a>
               </div>
-            </div>
-            <div class="slide-source">
-              <a href="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4">
-                <img src="./assets/play.png" alt="" class="play" />
-                <video
-                  loop
-                  muted
-                  preload="none"
-                  controlsList="nodownload noPictureInPicture"
-                  x5-video-player-type="h5-page"
-                  id="video02"
-                  poster="https://oss-cn-beijing.galbot.com/online/blog/grasp.jpg"
-                >
-                  <source
-                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grasp.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </a>
-              <div id="p02">
-                <a
-                  >GraspVLA is the world's first end-to-end embodied grasping
-                  foundation model. Its pre-training is entirely based on
-                  billion-scale "vision-language-action" synthetic data.
-                </a>
-              </div>
-            </div>
-            <div class="slide-source">
-              <a
-                href="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
-              >
-                <img src="./assets/play.png" alt="" class="play" />
-                <video
-                  loop
-                  preload="none"
-                  muted
-                  controlsList="nodownload noPictureInPicture"
-                  x5-video-player-type="h5-page"
-                  id="video03"
-                  poster="https://oss-cn-beijing.galbot.com/online/blog/grocery.jpg"
-                >
-                  <source
-                    data-src="https://oss-cn-beijing.galbot.com/online/blog/grocery.mp4"
-                    type="video/mp4"
-                  />
-                </video>
-              </a>
-              <div id="p03">
-                <a
-                  >GroceryVLA is the world's first end-to-end embodied VLA large
-                  model designed for the retail industry.
-                </a>
-              </div>
-            </div>
-            <div class="slide-source">
+            </div> -->
+            
+            <!-- <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/tech6-1.mp4"
               >
@@ -503,7 +529,7 @@
                   success.
                 </a>
               </div>
-            </div>
+            </div> -->
             <!-- <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/tech7-1.mp4"
@@ -596,6 +622,7 @@
             </div> -->
           </div>
         </div>
+        </div>
       </div>
       <div class="main-content" style="padding-bottom: 30px">
         <div id="people" class="main-people">
@@ -615,13 +642,13 @@
               <div class="list-decs zhizheng">Research scientist at Galbot</div>
             </a>
           </div>
-          <div class="subtitle">ENGINEERS</div>
+          <div class="subtitle">Research Associates</div>
           <div class="people-list">
-            <div>
+            <!-- <div>
               <img class="lazy-load" src="https://oss-cn-beijing.galbot.com/online/blog/p35.png" alt="" />
               <div class="list-title">Xiaomeng Fang</div>
               <div class="list-decs">M.S, ME, SJTU</div>
-            </div>
+            </div> -->
             <a href="https://42jaylonw.github.io">
               <img class="lazy-load" src="https://oss-cn-beijing.galbot.com/online/blog/p34.png" alt="" />
               <div class="list-title">Jilong Wang</div>
@@ -637,7 +664,7 @@
               <div class="list-title">Danshi Li</div>
               <div class="list-decs">M.S, CE, NYU</div>
             </a>
-            <a href="https://lqts.github.io/">
+            <!-- <a href="https://lqts.github.io/">
               <img
                 class="lazy-load"
                 src="https://oss-cn-beijing.galbot.com/online/blog/p38.jpg"
@@ -645,7 +672,7 @@
               />
               <div class="list-title">Qingtao Liu</div>
               <div class="list-decs">Ph.D, CSE, ZJU</div>
-            </a>
+            </a> -->
           </div>
           <div class="subtitle">STUDENTS</div>
           <div class="subtitle-child" style="margin-top: 7px">
@@ -810,8 +837,8 @@
               <span>September 2025</span>
             </a>
           </div>
-          <div class="subtitle-child is-hidden">Master's students</div>
-          <div class="people-list Masters is-hidden">
+          <div class="subtitle-child">Master's students</div>
+          <div class="people-list Masters">
             <a href="https://khunlounzai.github.io/">
               <img
                 class="lazy-load"
@@ -840,8 +867,8 @@
               <span>September 2022</span>
             </a> -->
           </div>
-          <div class="subtitle-child is-hidden">Undergraduate Students</div>
-          <div class="people-list is-hidden">
+          <div class="subtitle">Undergraduate Students</div>
+          <div class="people-list">
             <!-- <a href="https://wkwan7.github.io">
               <img class="lazy-load" src="https://oss-cn-beijing.galbot.com/online/blog/p27.png" alt="" />
               <div class="list-title">Weikang Wan</div>
@@ -967,10 +994,10 @@
               <span>September 2023</span>
             </div> -->
           </div>
-          <div class="subtitle is-hidden" style="padding-bottom: 20px">
+          <div class="subtitle" style="padding-bottom: 20px">
             LAB ALUMNI
           </div>
-          <div class="people-list alumni is-hidden">
+          <div class="people-list alumni">
             <a href="https://dblp.org/pid/252/9109.html">
               <!-- <img class="lazy-load"  src="https://oss-cn-beijing.galbot.com/online/blog/p15.png" alt="" /> -->
               <div class="list-title">Fengyi Shen</div>
@@ -1218,7 +1245,7 @@
               <p>
                 Zhikai Zhang*, Jun Guo*, Chao Chen, Jilong Wang, Chenghuai Lin,
                 Yunrui Lian, HanXue, Zhenrong Wang, Maoqi Liu, Jiangran Lyu,
-                Huaping Liu, <b>He Wang</b>, LiYi
+                Huaping Liu, <b>He Wang</b>, Li Yi<span>&#8224;</span>
               </p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2509.13833">arXiv</a>
@@ -1370,7 +1397,7 @@
                 Robust Differentiable Collision Detection for General Objects
               </div>
               <p>
-                Jiayi Chen*, Wei Zhao, Liangwang Ruan, Baoquan Chen,
+                Jiayi Chen, Wei Zhao, Liangwang Ruan, Baoquan Chen,
                 <b>He Wang<span>&#8224;</span></b>
               </p>
               <div class="button">
@@ -1431,7 +1458,8 @@
               </div>
               <p>
                 Mengdi Jia*, Zekun Qi*, Shaochen Zhang, Wenyao Zhang, Xinqiang
-                Yu, Jiawei He, <b>He Wang<span>&#8224;</span></b>
+                Yu, Jiawei He, <b>He Wang<span>&#8224;</span></b
+                >, Li Yi<span>&#8224;</span>
               </p>
               <p class="decs">ICLR 2026</p>
               <div class="button">
@@ -1507,9 +1535,7 @@
                 DexNDM: Closing the Reality Gap for Dexterous In-Hand Rotation
                 via Joint-Wise Neural Dynamics Model
               </div>
-              <p>
-                Xueyi Liu*, <b>He Wang</b>, Li Yi†
-              </p>
+              <p>Xueyi Liu, <b>He Wang</b>, Li Yi†</p>
               <p class="decs">ICLR 2026</p>
 
               <div class="button">
@@ -1543,9 +1569,7 @@
                 FoldNet: Learning Generalizable Closed-Loop Policy for Garment
                 Folding via Keypoint-Driven Asset and Demonstration Synthesis
               </div>
-              <p>
-                Yuxing Chen*, Bowen Xiao*, <b>He Wang†</b>
-              </p>
+              <p>Yuxing Chen*, Bowen Xiao*, <b>He Wang†</b></p>
               <p class="decs">RA-L</p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2505.09109">arXiv</a>
@@ -1587,8 +1611,10 @@
                 Skill Space
               </div>
               <p>
-                Zhikai Zhang*, Chao Chen*, Han Xue*, Jilong Wang*, Sikai Liang*, Yun
-                Liu*, Zongzhang Zhang*, <b>He Wang</b>, Li Yi<span>&#8224;</span>
+                Zhikai Zhang*, Chao Chen*, Han Xue*, Jilong Wang*, Sikai Liang*,
+                Yun Liu*, Zongzhang Zhang*, <b>He Wang</b>, Li Yi<span
+                  >&#8224;</span
+                >
               </p>
               <p class="decs">RA-L</p>
               <div class="button">
@@ -1683,7 +1709,7 @@
                 foundation models: Anembodied Al paradigm
               </div>
               <p>
-                Shifeng Huang*, <b>He Wang</b>, Xing Zhou, Wenkai Chen, Haibin
+                Shifeng Huang, <b>He Wang</b>, Xing Zhou, Wenkai Chen, Haibin
                 Yang, Jianwei Zhang†
               </p>
               <p class="decs">SCIENCE CHINA Technological Sciences</p>
@@ -1892,7 +1918,7 @@
                 Non-prehensile Manipulation
               </div>
               <p>
-                Jiangran Lyu*, Ziming Li, Xuesong Shi, Chaoyi Xu, Yizhou Wang†,
+                Jiangran Lyu, Ziming Li, Xuesong Shi, Chaoyi Xu, Yizhou Wang†,
                 <b>He Wang†</b>
               </p>
               <p class="decs">ICCV 2025</p>
@@ -1930,7 +1956,7 @@
                 Diverse Garments
               </div>
               <p>
-                Yuxing Chen*, Songlin Wei, Bowen Xiao, Jiangran Lyu, Jiayi Chen,
+                Yuxing Chen, Songlin Wei, Bowen Xiao, Jiangran Lyu, Jiayi Chen,
                 Feng Zhu, <b>He Wang†</b>
               </p>
               <p class="decs">RA-L</p>
@@ -2006,7 +2032,7 @@
                 Unifying Embodied Navigation Tasks
               </div>
               <p>
-                Jiazhao Zhang*, Kunyu Wang, Shaoan Wang, Minghan Li, Haoran Liu,
+                Jiazhao Zhang, Kunyu Wang, Shaoan Wang, Minghan Li, Haoran Liu,
                 Songlin Wei, Zhongyuan Wang, Zhizheng Zhang†, <b>He Wang†</b>
               </p>
               <p class="decs">RSS 2025</p>
@@ -2044,7 +2070,7 @@
                 Deformable Manipulation with Tools
               </div>
               <p>
-                Yang You*, Bokui Shen, Congyue Deng, Haoran Geng, Songlin Wei,
+                Yang You, Bokui Shen, Congyue Deng, Haoran Geng, Songlin Wei,
                 <b>He Wang</b>, Leonidas Guibas†
               </p>
               <p class="decs">RA-L 2025</p>
@@ -2238,8 +2264,8 @@
                 Videos for Vision-and-Language Navigation
               </div>
               <p>
-                Haoran Liu*, Weikang Wan*, Xiqian Yu*, Minghan Li*, Jiazhao Zhang,
-                Bo Zhao, Zhibo Chen, Zhongyuan Wang, Zhizheng Zhang†,
+                Haoran Liu*, Weikang Wan*, Xiqian Yu*, Minghan Li*, Jiazhao
+                Zhang, Bo Zhao, Zhibo Chen, Zhongyuan Wang, Zhizheng Zhang†,
                 <b> He Wang†</b>
               </p>
               <p class="decs">ICRA 2025</p>
@@ -2279,13 +2305,14 @@
                 QuadWBG: Generalizable Quadrupedal Whole-Body Grasping
               </div>
               <p>
-                Jilong Wang*, Javokhirbek Rajabov*, Chaoyi Xu, Yiming Zheng, <b>He Wang†</b>
+                Jilong Wang*, Javokhirbek Rajabov*, Chaoyi Xu, Yiming Zheng,
+                <b>He Wang†</b>
               </p>
               <p class="decs">ICRA 2025</p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2411.06782">arXiv</a>
                 <a href="https://quadwbg.github.io/">Project</a>
-              <a
+                <a
                   id="QuadWBGID"
                   href="javascript:hideshow(document.getElementById('QuadWBGID'),document.getElementById('QuadWBGbibtex'))"
                   class="bibtex"
@@ -2317,7 +2344,7 @@
                 Object Manipulation with Motion Adaptation and Impedance Control
               </div>
               <p>
-                Tan-Dzung Do*, Gireesh Nandiraju, Jilong Wang, <b>He Wang†</b>
+                Tan-Dzung Do, Gireesh Nandiraju, Jilong Wang, <b>He Wang†</b>
               </p>
               <p class="decs">ICRA 2025</p>
               <div class="button">
@@ -2354,7 +2381,7 @@
                 Unsupervised Domain Adaptation for Semantic Segmentation
               </div>
               <p>
-                Fengyi Shen*, Li Zhou, Kagan Kucukaytekin, George Eskandar,
+                Fengyi Shen, Li Zhou, Kagan Kucukaytekin, George Eskandar,
                 Ziyuan Liu, <b>He Wang†</b>, Alois Knoll†
               </p>
               <p class="decs">RA-L</p>
@@ -2435,11 +2462,11 @@
             />
             <div class="item-right">
               <div class="item-title">
-               D<sup>3</sup>RoMa: Disparity Diffusion-based Depth Sensing for
+                D<sup>3</sup>RoMa: Disparity Diffusion-based Depth Sensing for
                 Material-Agnostic Robotic Manipulation
               </div>
               <p>
-                Songlin Wei*, Haoran Geng, Jiayi Chen, Congyue Deng, Wenbo Cui,
+                Songlin Wei, Haoran Geng, Jiayi Chen, Congyue Deng, Wenbo Cui,
                 Chengyang Zhao, Xiaomeng Fang, Leonidas Guibas, <b>He Wang†</b>
               </p>
               <p class="decs">CoRL 2024</p>
@@ -2556,7 +2583,7 @@
                 Cutting via Simulation, Imitation, and Sim2Real
               </div>
               <p>
-                Jiangran Lyu*, Yuxing Chen, Tao Du, Feng Zhu, Huiquan Liu,
+                Jiangran Lyu, Yuxing Chen, Tao Du, Feng Zhu, Huiquan Liu,
                 Yizhou Wang†, <b>He Wang†</b>
               </p>
               <p class="decs">CoRL 2024</p>
@@ -2592,7 +2619,7 @@
                 Task-Oriented Dexterous Grasp Synthesis via Differentiable Grasp
                 Wrench Boundary Estimator
               </div>
-              <p>Jiayi Chen*, Yuxing Chen, Jialiang Zhang, <b>He Wang†</b></p>
+              <p>Jiayi Chen, Yuxing Chen, Jialiang Zhang, <b>He Wang†</b></p>
               <p class="decs">IROS 2024</p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2309.13586" class="arXiv"
@@ -2634,14 +2661,15 @@
                 Rearrangement and A VLM-based Approach
               </div>
               <p>
-                Yufei Ding*, Haoran Geng,* Chaoyi Xu, Xiaomeng Fang, Jiazhao Zhang, Songlin Wei, Qiyu Dai, Zhizheng Zhang, <b>He Wang†</b>
+                Yufei Ding*, Haoran Geng,* Chaoyi Xu, Xiaomeng Fang, Jiazhao
+                Zhang, Songlin Wei, Qiyu Dai, Zhizheng Zhang, <b>He Wang†</b>
               </p>
               <p class="decs">IROS 2024 (<b>Oral Presentation</b>)</p>
               <div class="button">
                 <a href="https://pku-epic.github.io/Open6DOR/" class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="Open6DORID"
                   href="javascript:hideshow(document.getElementById('Open6DORID'),document.getElementById('Open6DORBibtex'))"
                   class="bibtex"
@@ -2677,7 +2705,8 @@
                 Vision-and-Language Navigation
               </div>
               <p>
-                Jiazhao Zhang*, Kunyu Wang*, Rongtao Xu*, Gengze Zhou, Yicong Hong, Xiaomeng Fang, Qi Wu, Zhizheng Zhang†, <b>He Wang†</b>
+                Jiazhao Zhang*, Kunyu Wang*, Rongtao Xu*, Gengze Zhou, Yicong
+                Hong, Xiaomeng Fang, Qi Wu, Zhizheng Zhang†, <b>He Wang†</b>
               </p>
               <p class="decs">RSS 2024</p>
               <div class="button">
@@ -2687,7 +2716,7 @@
                 <a href="https://pku-epic.github.io/NaVid/" class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="NaVidID"
                   href="javascript:hideshow(document.getElementById('NaVidID'),document.getElementById('NaVidBibtex'))"
                   class="bibtex"
@@ -2772,7 +2801,7 @@
                 <a href="https://github.com/leolyliu/TEG-Track" class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="EnhancingID"
                   href="javascript:hideshow(document.getElementById('EnhancingID'),document.getElementById('EnhancingBibtex'))"
                   class="bibtex"
@@ -2809,9 +2838,7 @@
                 MaskClustering: View Consensus based Mask Graph Clustering for
                 Open-Vocabulary 3D Instance Segmentation
               </div>
-              <p>
-               Mi Yan*, Jiazhao Zhang, Yan Zhu, <b>He Wang†</b>
-              </p>
+              <p>Mi Yan, Jiazhao Zhang, Yan Zhu, <b>He Wang†</b></p>
               <p class="decs">CVPR 2024</p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2401.07745" class="arXiv"
@@ -2822,7 +2849,7 @@
                   class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="MaskClusteringID"
                   href="javascript:hideshow(document.getElementById('MaskClusteringID'),document.getElementById('MaskClusteringBibtex'))"
                   class="bibtex"
@@ -2910,7 +2937,7 @@
                 <a href="https://pku-epic.github.io/STOPNet/" class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="STOPNetID"
                   href="javascript:hideshow(document.getElementById('STOPNetID'),document.getElementById('STOPNetBibtex'))"
                   class="bibtex"
@@ -2987,7 +3014,8 @@
                 6-DoF Grasp Detection from RGB-D Active Stereo Camera
               </div>
               <p>
-                Jun Shi*, Yong A, Yixiang Jin, Dingzhe Li, Haoyu Niu, Zhezhu Jin, <b>He Wang†</b>
+                Jun Shi, Yong A, Yixiang Jin, Dingzhe Li, Haoyu Niu, Zhezhu
+                Jin, <b>He Wang†</b>
               </p>
               <p class="decs">ICRA 2024</p>
               <div class="button">
@@ -2997,7 +3025,7 @@
                 <a href="https://pku-epic.github.io/ASGrasp/" class="project"
                   >Project</a
                 >
-              <a
+                <a
                   id="ASGraspID"
                   href="javascript:hideshow(document.getElementById('ASGraspID'),document.getElementById('ASGraspbibtex'))"
                   class="bibtex"

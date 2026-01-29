@@ -918,6 +918,7 @@ pre p {
     font-size: 0.1rem;
   }
   .main-selected .selected-item .button {
+    display: flex;
     position: relative;
     display: flex;
     flex-wrap: wrap;

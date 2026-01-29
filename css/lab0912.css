@@ -504,7 +504,7 @@ pre {
   border-radius: 40px;
 }
 .main-news ul li:last-child:before {
-  width: 0;
+  /* width: 0; */
 }
 .main-news ul li span {
   font-family: Verdana-Bold;

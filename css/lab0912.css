@@ -769,6 +769,9 @@ pre p {
     margin-right: 0.205rem;
     margin-bottom: 0.34rem;
   }
+  .main-people .people-list a .liujiahang {
+    width: 0.8rem !important
+  }
   .main-people .people-list div img,
   .main-people .people-list a img {
     width: 1.15rem;

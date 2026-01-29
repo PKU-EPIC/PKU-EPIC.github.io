@@ -802,18 +802,37 @@ pre p {
   }
   .main-people .PhD div .list-decs,
   .main-people .PhD a .list-decs {
-    max-width: 0.63rem;
+    /* max-width: 0.63rem; */
   }
   .main-people .zhizheng,
   .main-people .PhD div .Wenbo,
   .main-people .PhD a .Wenbo {
-    max-width: 0.96rem !important;
+    /* max-width: 0.96rem !important; */
   }
   .main-people .PhD .Weiheng {
     max-width: 0.86rem !important;
   }
   .main-people .PhD a .list-decs {
-    max-width: 0.63rem;
+    /* max-width: 0.63rem; */
+  }
+  .main-people .PhD a:nth-child(2) .list-decs{
+    max-width: 0.7rem;
+  }
+  .main-people .PhD a:nth-child(5) .list-decs{
+    max-width: 0.7rem;
+  }
+  .main-people .PhD a:nth-child(6) .list-decs{
+    max-width: 0.7rem;
+  }
+  /* .main-people .PhD a:nth-child(7) .list-decs{
+    max-width: 0.7rem;
+  }
+  .main-people .PhD a:nth-child(8) .list-decs{
+    max-width: 0.7rem;
+  } */
+  .main-people .Masters a .list-decs,
+  .main-people .Masters div .list-decs {
+    max-width: 0.8rem;
   }
   .main-people .Masters a .list-decs,
   .main-people .Masters div .list-decs {

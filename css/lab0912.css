@@ -772,6 +772,9 @@ pre p {
   .main-people .people-list a .liujiahang {
     width: 0.8rem !important
   }
+  .main-people .people-list a .yuxing {
+    width: 0.7rem !important
+  }
   .main-people .people-list div img,
   .main-people .people-list a img {
     width: 1.15rem;
@@ -835,11 +838,7 @@ pre p {
   } */
   .main-people .Masters a .list-decs,
   .main-people .Masters div .list-decs {
-    max-width: 0.8rem;
-  }
-  .main-people .Masters a .list-decs,
-  .main-people .Masters div .list-decs {
-    max-width: 0.8rem;
+    /* max-width: 0.8rem; */
   }
   .main-people .people-list a .list-title {
     font-size: 0.11rem;

@@ -31,7 +31,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 2280px;
+  width: 2750px;
   overflow: hidden;
 }
 .main-swiper .swiper-content-phone {
@@ -39,7 +39,7 @@
   position: relative;
   top: 0;
   left: 0;
-  width: 14.3rem;
+  width: 17rem;
   overflow: hidden;
 }
 .main-swiper .swiper-content-phone .slide-source {
@@ -74,6 +74,15 @@
 .main-swiper .slide-source video {
   height: 243px;
   object-fit: cover;
+  border-radius: 5px;
+  background: #d8d8d8;
+}
+.main-swiper .slide-source .slide-img {
+  display: block;
+  height: 243px;
+  width: 432px;
+  object-fit: cover;
+  margin: 0 auto;
   border-radius: 5px;
   background: #d8d8d8;
 }
@@ -770,10 +779,10 @@ pre p {
     margin-bottom: 0.34rem;
   }
   .main-people .people-list a .liujiahang {
-    width: 0.8rem !important
+    width: 0.8rem !important;
   }
   .main-people .people-list a .yuxing {
-    width: 0.7rem !important
+    width: 0.7rem !important;
   }
   .main-people .people-list div img,
   .main-people .people-list a img {
@@ -821,13 +830,13 @@ pre p {
   .main-people .PhD a .list-decs {
     /* max-width: 0.63rem; */
   }
-  .main-people .PhD a:nth-child(2) .list-decs{
+  .main-people .PhD a:nth-child(2) .list-decs {
     max-width: 0.7rem;
   }
-  .main-people .PhD a:nth-child(5) .list-decs{
+  .main-people .PhD a:nth-child(5) .list-decs {
     max-width: 0.7rem;
   }
-  .main-people .PhD a:nth-child(6) .list-decs{
+  .main-people .PhD a:nth-child(6) .list-decs {
     max-width: 0.7rem;
   }
   /* .main-people .PhD a:nth-child(7) .list-decs{
@@ -1121,7 +1130,11 @@ pre p {
     border-radius: 0.05rem;
     background: none;
   }
-
+  .main-swiper .swiper-content-phone .slide-img {
+    width: 2.62rem;
+    height: 1.8rem;
+    border-radius: 0.05rem;
+  }
   ::-webkit-scrollbar {
     width: 0px;
     height: 0px;

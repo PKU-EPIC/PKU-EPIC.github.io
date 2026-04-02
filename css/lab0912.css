@@ -124,6 +124,10 @@ pre {
   color: #000;
   font-weight: 700;
 }
+.title span {
+  font-family: Verdana;
+  font-weight: 200 !important;
+}
 .subtitle {
   font-family: Helvetica-Bold;
   font-size: 28px;

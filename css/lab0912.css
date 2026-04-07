@@ -926,6 +926,19 @@ pre p {
     height: 0.05rem;
     border-radius: 0.5rem;
   }
+  .main-people .alumni{
+    padding-left: 0.2rem;
+  }
+  .main-people .alumni ul li {
+    font-size: 0.13rem;
+  }
+  .main-people .alumni ul li:before {
+    left: -0.12rem;
+    top: 0.085rem;
+    width: 0.05rem;
+    height: 0.05rem;
+    border-radius: 0.5rem;
+  }
   .main-selected {
     margin-top: 0.35rem;
     padding-bottom: 0.35rem;

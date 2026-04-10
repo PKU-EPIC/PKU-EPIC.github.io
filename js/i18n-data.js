@@ -168,7 +168,7 @@ var I18N_LANG_DATA = {
       alumDung: '杜迅勇',
     },
     news: {
-      title: '新闻动态',
+      title: '动态',
       item1: '3篇工作被 CVPR 2026 收录。',
       item2:
         '被邀请在 CEAI 2026 <a href="https://mp.weixin.qq.com/s/QXKddqa3ccwsWYbtXXTkrw" target="_blank">具身大模型与强化学习论坛</a>报告。',
@@ -241,7 +241,7 @@ var I18N_LANG_DATA = {
       ra: 'Research Associates',
       students: 'STUDENTS',
       phd: 'Ph.D. Students',
-      masters: "M.S. Students",
+      masters: "M.S. Student",
       undergrad: 'Undergraduate Students',
       alumni: 'LAB ALUMNI',
       piName: 'He Wang',

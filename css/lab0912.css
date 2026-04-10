@@ -462,6 +462,12 @@ pre {
   position: relative;
   display: flex;
   margin: 2px 0px;
+  font-family: Verdana;
+  color: #38393c;
+  line-height: 20px;
+  font-weight: 400;
+  list-style-type: none;
+  font-size: 13px;
 }
 .main-people .alumni ul li::before {
   content: '';
@@ -476,7 +482,6 @@ pre {
 .main-people .alumni ul li a {
   color: #0055aa;
   text-decoration: none;
-  font-size: 16px;
 }
 .main-people .alumni ul li list-decs {
   color: #000;
@@ -927,7 +932,7 @@ pre p {
     height: 0.05rem;
     border-radius: 0.5rem;
   }
-  .main-people .alumni{
+  .main-people .alumni {
     padding-left: 0.2rem;
   }
   .main-people .alumni ul li {
@@ -1253,7 +1258,6 @@ pre p {
   margin-right: 22px;
 }
 
-
 @keyframes slideDown {
   from {
     opacity: 0;
@@ -1308,7 +1312,7 @@ details.publications-toggle[open] > summary {
 }
 
 details.publications-toggle[open] > summary::after {
-  content: "Show Less";
+  content: 'Show Less';
   font-size: 13px;
 }
 
@@ -1317,7 +1321,7 @@ details.publications-toggle > summary:hover {
   color: #2967ac;
 }
 
-#opportunities[data-lang="en"] b {
+#opportunities[data-lang='en'] b {
   font-weight: 400;
 }
 

@@ -241,7 +241,7 @@ var I18N_LANG_DATA = {
       ra: 'Research Associates',
       students: 'STUDENTS',
       phd: 'Ph.D. Students',
-      masters: "Master's. students",
+      masters: "M.S. Students",
       undergrad: 'Undergraduate Students',
       alumni: 'LAB ALUMNI',
       piName: 'He Wang',

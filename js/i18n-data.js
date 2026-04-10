@@ -172,7 +172,7 @@ var I18N_LANG_DATA = {
       item1: '3篇工作被 CVPR 2026 收录。',
       item2:
         '被邀请在 CEAI 2026 <a href="https://mp.weixin.qq.com/s/QXKddqa3ccwsWYbtXXTkrw" target="_blank">具身大模型与强化学习论坛</a>报告。',
-      item3: '入选国家海外高层次人才计划。',
+      // item3: '入选国家海外高层次人才计划。',
       item4:
         '2026年2月9日，习近平总书记在北京调研察看代表性科技创新成果，与王鹤教授及其他科技创新代表进行了亲切交流，Galbot G1 展示了其进展。',
       item5: '6篇工作被 ICRA 2026 收录。',
@@ -359,8 +359,8 @@ var I18N_LANG_DATA = {
       item1: 'Three papers get accepted to CVPR 2026.',
       item2:
         'I am invited to to be a speaker in the Forum on Embodied Large Models and Reinforcement Learning at CEAI 2026.',
-      item3:
-        'I am selected for the National Overseas High-Level Talent Program.',
+      // item3:
+      //   'I am selected for the National Overseas High-Level Talent Program.',
       item4:
         'On February 9, 2026, President Xi Jinping conducted an inspection of the Galbot G1 robot in Beijing and met with Prof. He Wang, together with other leaders in technology innovation.',
       item5: 'Six papers get accepted to ICRA 2026.',

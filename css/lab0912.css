@@ -179,6 +179,7 @@ pre {
   display: none;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 .main-head .head-phone {
   padding: 0 0.22rem;
@@ -1118,6 +1119,17 @@ pre p {
     font-weight: 700;
     text-decoration: none;
   }
+  .modal-lang-switch {
+    position: absolute;
+    bottom: 0.85rem;
+    display: flex;
+    align-items: center;
+    gap: 0.12rem;
+  }
+  .modal-lang-switch .lang-btn {
+    width: 0.3rem;
+    height: 0.3rem;
+  }
   .main-swiper {
     box-sizing: border-box;
     height: auto;
@@ -1315,4 +1327,25 @@ details.publications-toggle > summary:hover {
 
 details.publications-toggle[open] .hidden-publications {
   animation: slideDown 0.4s ease-out forwards;
+}
+
+/* Language switch */
+.lang-switch {
+  position: absolute;
+  right: -100px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.lang-btn {
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  border-radius: 2px;
+  transition: opacity 0.2s;
+}
+.lang-btn:hover {
+  opacity: 0.7;
 }

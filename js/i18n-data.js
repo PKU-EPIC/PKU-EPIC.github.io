@@ -312,6 +312,8 @@ var I18N_LANG_DATA = {
       phdKaiDate: 'September 2025',
       phdTianpengju: 'Pengju Tian',
       phdTianpengjuSchool: 'RUC',
+      phdTianpengjuDate: 'September 2025',
+
       // Master's Students
       mastersKhun: 'Khun Loun Zai',
       mastersKhunSchool: 'PKU',

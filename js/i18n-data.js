@@ -179,7 +179,7 @@ var I18N_LANG_DATA = {
       item6: '3篇工作被 ICLR 2026 收录。',
       item7: '1篇工作被RA-L收录。',
       item8:
-        '作为讲者在<a href="https://humanoidssummit.com/agenda" target="_blank">Humanoids Summit 2025</a>报告。',
+        '作为讲者在Humanoids Summit 2025报告。',
       item9:
         '我和团队的工作“合成数据和真实数据驱动的VLA具身智能大模型”获评<a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025年世界互联网大会领先科技奖</a>',
       item10: '1篇工作被RA-L收录。',
@@ -369,7 +369,7 @@ var I18N_LANG_DATA = {
       item6: 'Three papers get accepted to ICLR 2026.',
       item7: 'One paper gets accepted to RA-L.',
       item8:
-        'I am invited to be a speaker in <a href="https://humanoidssummit.com/agenda" target="_blank">Humanoids Summit 2025.</a>',
+        'I am invited to be a speaker in Humanoids Summit 2025.',
       item9:
         'Our project, the "Synthetic and real data-driven VLA embodied intelligence large model" was honored with the <a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025 World Internet Conference Leading Technology Award.</a>',
       item10: 'One paper gets accepted to RA-L.',

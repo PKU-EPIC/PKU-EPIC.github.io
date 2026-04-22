@@ -361,6 +361,65 @@ pre {
   max-width: 940px;
   margin: 70px auto 0;
 }
+.main-people .robots-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
+  margin-bottom: 60px;
+}
+.main-people .robots-list .robots-list-item {
+  flex: 0 0 calc(30% - 16px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 15px;
+  color: #38393c;
+  font-weight: 700;
+  text-align: center;
+  background-color: white;
+  padding: 15px;
+  border-radius: 8px;
+  min-height: 100px;
+}
+.main-people .robots-list .robots-list-item img {
+  max-height: 300px;
+  width: 100%;
+  object-fit: contain;
+  aspect-ratio: 1;
+}
+
+/* 移动端适配 */
+@media (max-width: 768px) {
+  .main-people .robots-list {
+    gap: 15px;
+    margin-bottom: 40px;
+  }
+  .main-people .robots-list .robots-list-item {
+    flex: 0 0 calc(50% - 8px);
+    padding: 12px;
+    min-height: 80px;
+  }
+  .main-people .robots-list .robots-list-item img {
+    max-height: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .main-people .robots-list {
+    gap: 12px;
+    margin-bottom: 30px;
+  }
+  .main-people .robots-list .robots-list-item {
+    flex: 0 0 100%;
+    padding: 10px;
+    min-height: 60px;
+  }
+  .main-people .robots-list .robots-list-item img {
+    max-height: 150px;
+  }
+}
+
 .main-people .people-list {
   position: relative;
   left: -11px;

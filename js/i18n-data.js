@@ -56,6 +56,13 @@ var I18N_LANG_DATA = {
       masters: '硕士生',
       undergrad: '本科生',
       alumni: '往届成员',
+      robotsG1: 'Galbot G1',
+      robotsS1: 'Galbot S1',
+      robotsArm: '主从臂',
+      robotsHand: '灵巧手',
+      robotsThreeHand: '重型三指灵巧手',
+      robotsGripper: '二指夹爪',
+      robots: '机器人',
       piName: '王鹤',
       // Research Associates
       raZhizheng: '张直政',
@@ -178,8 +185,7 @@ var I18N_LANG_DATA = {
       item5: '6篇工作被 ICRA 2026 收录。',
       item6: '3篇工作被 ICLR 2026 收录。',
       item7: '1篇工作被RA-L收录。',
-      item8:
-        '作为讲者在Humanoids Summit 2025报告。',
+      item8: '作为讲者在Humanoids Summit 2025报告。',
       item9:
         '我和团队的工作“合成数据和真实数据驱动的VLA具身智能大模型”获评<a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025年世界互联网大会领先科技奖</a>',
       item10: '1篇工作被RA-L收录。',
@@ -241,9 +247,16 @@ var I18N_LANG_DATA = {
       ra: 'Research Associates',
       students: 'STUDENTS',
       phd: 'Ph.D. Students',
-      masters: "M.S. Student",
+      masters: 'M.S. Student',
       undergrad: 'Undergraduate Students',
       alumni: 'LAB ALUMNI',
+      robots: 'ROBOTS',
+      robotsG1: 'Galbot G1',
+      robotsS1: 'Galbot S1',
+      robotsArm: 'Master-slave manipulator',
+      robotsHand: 'Dexterous hand',
+      robotsThreeHand: 'Heavy-duty three-fingered dexterous hand',
+      robotsGripper: 'Two-finger gripper',
       piName: 'He Wang',
       // Research Associates
       raZhizheng: 'Zhizheng Zhang',
@@ -368,8 +381,7 @@ var I18N_LANG_DATA = {
       item5: 'Six papers get accepted to ICRA 2026.',
       item6: 'Three papers get accepted to ICLR 2026.',
       item7: 'One paper gets accepted to RA-L.',
-      item8:
-        'I am invited to be a speaker in Humanoids Summit 2025.',
+      item8: 'I am invited to be a speaker in Humanoids Summit 2025.',
       item9:
         'Our project, the "Synthetic and real data-driven VLA embodied intelligence large model" was honored with the <a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025 World Internet Conference Leading Technology Award.</a>',
       item10: 'One paper gets accepted to RA-L.',

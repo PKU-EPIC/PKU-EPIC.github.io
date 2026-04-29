@@ -29,6 +29,8 @@ var I18N_LANG_DATA = {
         'DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。',
       slide8:
         'Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。',
+      slide9:
+        'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
     },
     swiperPhone: {
       slide1:
@@ -46,6 +48,8 @@ var I18N_LANG_DATA = {
         '<a>DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。</a>',
       slide8:
         '<a>Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。</a>',
+      slide9:
+        'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
     },
     people: {
       title: '团队',
@@ -189,6 +193,8 @@ var I18N_LANG_DATA = {
       item9:
         '我和团队的工作“合成数据和真实数据驱动的VLA具身智能大模型”获评<a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025年世界互联网大会领先科技奖</a>',
       item10: '1篇工作被RA-L收录。',
+      item11: '荣获第三十六届北京青年五四奖章。',
+      item12: '3篇工作被 RSS 2026 收录。',
     },
   },
   en: {
@@ -222,6 +228,8 @@ var I18N_LANG_DATA = {
         'DexNDM: A dexterous hand neural dynamics model that, for the first time, enables a general-purpose dexterous hand to stably rotate complex objects\u2014whether elongated, miniature, or irregularly shaped\u2014in any orientation and along any axis.',
       slide8:
         'Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.',
+      slide9:
+        'LDA-1B: A 1.6B-parameter, cross-ontology Latent World-Action Foundation Model. It is the first model to achieve effective, unified learning from data that is: 1) virtual-real hybrid, 2) human-robot mixed, 3) quality-heterogeneous, and 4) variably action-labeled.',
     },
     swiperPhone: {
       slide1:
@@ -240,6 +248,8 @@ var I18N_LANG_DATA = {
         '<a>DexNDM: A dexterous hand neural dynamics model that, for the first time, enables a general-purpose dexterous hand to stably rotate complex objects\u2014whether elongated, miniature, or irregularly shaped\u2014in any orientation and along any axis.</a>',
       slide8:
         '<a>Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.</a>',
+      slide9:
+        '<a>LDA-1B: A 1.6B-parameter, cross-ontology Latent World-Action Foundation Model. It is the first model to achieve effective, unified learning from data that is: 1) virtual-real hybrid, 2) human-robot mixed, 3) quality-heterogeneous, and 4) variably action-labeled.</a>',
     },
     people: {
       title: 'PEOPLE',
@@ -385,6 +395,8 @@ var I18N_LANG_DATA = {
       item9:
         'Our project, the "Synthetic and real data-driven VLA embodied intelligence large model" was honored with the <a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025 World Internet Conference Leading Technology Award.</a>',
       item10: 'One paper gets accepted to RA-L.',
+      item11: 'I have been awarded the 36th Beijing Youth May Fourth Medal.',
+      item12: 'Three papers get accepted to RSS 2026.',
     },
   },
 };

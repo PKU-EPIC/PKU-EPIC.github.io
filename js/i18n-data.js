@@ -195,6 +195,7 @@ var I18N_LANG_DATA = {
       item10: '1篇工作被RA-L收录。',
       item11: '荣获第三十六届北京青年五四奖章。',
       item12: '3篇工作被 RSS 2026 收录。',
+      item13: '3篇工作被 ICML 2026 收录。',
     },
   },
   en: {
@@ -397,6 +398,7 @@ var I18N_LANG_DATA = {
       item10: 'One paper gets accepted to RA-L.',
       item11: 'I have been awarded the 36th Beijing Youth May Fourth Medal.',
       item12: 'Three papers get accepted to RSS 2026.',
+      item13: 'Three papers get accepted to ICML 2026.',
     },
   },
 };

@@ -298,7 +298,7 @@
                 </div>
               </a>
             </div>
-            <div class="slide-source">
+            <!-- <div class="slide-source">
               <a>
                 <video
                   id="video00"
@@ -321,7 +321,7 @@
                   real-world dynamic disturbances.
                 </div>
               </a>
-            </div>
+            </div> -->
             <!-- <div class="slide-source">
               <a>
                 <video
@@ -678,7 +678,7 @@
                 </a>
               </div>
             </div>
-            <div class="slide-source">
+            <!-- <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/any2track.mp4"
               >
@@ -706,7 +706,7 @@
                   real-world dynamic disturbances.
                 </a>
               </div>
-            </div>
+            </div> -->
             <!-- <div class="slide-source">
               <a
                 href="https://oss-cn-beijing.galbot.com/online/blog/trackvla.mp4"
@@ -1486,6 +1486,9 @@
         <div id="news" class="main-news">
           <div class="title" data-i18n="news.title">NEWS</div>
           <ul>
+            <li data-i18n="news.item16">
+              Three papers get accepted to IROS 2026.
+            </li>
             <li data-i18n="news.item14">
               I am Invited to present an
               <a
@@ -1510,10 +1513,10 @@
             <li data-i18n="news.item1">
               Three papers get accepted to CVPR 2026.
             </li>
-            <li data-i18n="news.item2">
+            <!-- <li data-i18n="news.item2">
               I am invited to to be a speaker in the Forum on Embodied Large
               Models and Reinforcement Learning at CEAI 2026.
-            </li>
+            </li> -->
             <!-- <li data-i18n="news.item3">
               I am selected for the National Overseas High-Level Talent Program.
             </li> -->
@@ -1676,32 +1679,102 @@
       <div class="main-content">
         <div class="main-selected">
           <div class="title">
-            SELECTED PUBLICATIONS
+            <span data-i18n="publications.title">SELECTED PUBLICATIONS</span>
             <br />
-            <span style="font-size: 11px; color: #38393c; padding-left: 5px"
+            <span
+              style="font-size: 11px; color: #38393c; padding-left: 5px"
+              data-i18n="publications.subtitle"
               >*Equal contribution <span>&#8224;</span>Corresponding
               author</span
             >
           </div>
-          <!-- <div class="selected-item">
-            <img class="lazy-load" src="./assets/72.png" alt="" />
+          <div class="selected-item">
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/89.png"
+              alt=""
+            />
             <div class="item-right">
               <div class="item-title">
-                DreamVLA: A Vision-Language-Action Model Dreamed with
-                Comprehensive World Knowledge
+                GraspADMM: Improving Dexterous Grasp Synthesis via ADMM
+                Optimization
               </div>
               <p>
-                Wenyao Zhang*, Hongsi Liu*, Zekun Qi*, Yunnan Wang*, XinQiang
-                Yu, Jiazhao Zhang, Runpei Dong, Jiawei He, He Wang, Zhizheng
-                Zhang, Li Yi, Wenjun Zeng, <b>Xin Jin<span>&#8224;</span></b>
+                Liangwang Ruan*, Jiayi Chen*, <b>He Wang†</b>, Chen Baoquan†
               </p>
-              <p class="decs">NeurIPS 2025</p>
+              <p class="decs">IROS 2026</p>
+
               <div class="button">
-                <a href="https://arxiv.org/abs/2507.04447">arXiv</a>
-                <a href="https://zhangwenyao1.github.io/DreamVLA/">Project</a>
+                <a href="https://arxiv.org/pdf/2603.13832">arXiv</a>
+                <a
+                  href="https://github.com/JYChen18/Dexonomy/blob/main/getting_started/3_ADMM.md"
+                  >Project</a
+                >
+                <a
+                  id="GraspADMMID"
+                  href="javascript:hideshow(document.getElementById('GraspADMMID'),document.getElementById('GraspADMMbibtex'));"
+                  class="bibtex"
+                  >bibtex</a
+                >
               </div>
             </div>
-          </div> -->
+          </div>
+          <pre>
+            <p id="GraspADMMbibtex" style="font-size:14px; display: none">
+              @misc{ruan2026graspadmmimprovingdexterousgrasp,
+                  title={GraspADMM: Improving Dexterous Grasp Synthesis via ADMM Optimization}, 
+                  author={Liangwang Ruan and Jiayi Chen and He Wang and Baoquan Chen},
+                  year={2026},
+                  eprint={2603.13832},
+                  archivePrefix={arXiv},
+                  primaryClass={cs.RO},
+                  url={https://arxiv.org/abs/2603.13832}, 
+            }
+            </p>
+          </pre>
+          <div class="selected-item">
+            <img
+              class="lazy-load"
+              src="https://oss-cn-beijing.galbot.com/online/blog/88.jpg"
+              alt=""
+            />
+            <div class="item-right">
+              <div class="item-title">
+                Learning Athletic Humanoid Tennis Skills from Imperfect Human
+                Motion Data
+              </div>
+              <p>
+                Zhikai Zhang*, Haofei Lu*, Yunrui Lian*, Ziqing Chen, Yun Liu,
+                Han Lin, Chenghuai Xue, Zicheng Zeng, Zekun Qi, Shaolin Zheng,
+                Qing Luan, Junliang Wang, Jingbo, Xing, <b>He Wang†</b>, Li Yi†
+              </p>
+              <p class="decs">IROS 2026</p>
+
+              <div class="button">
+                <a href="https://arxiv.org/pdf/2603.12686">arXiv</a>
+                <a href="https://zzk273.github.io/LATENT/">Project</a>
+                <a
+                  id="zhang2026learningathletichumanoidtennisID"
+                  href="javascript:hideshow(document.getElementById('zhang2026learningathletichumanoidtennisID'),document.getElementById('zhang2026learningathletichumanoidtennisbibtex'));"
+                  class="bibtex"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="zhang2026learningathletichumanoidtennisbibtex" style="font-size:14px; display: none">
+              @misc{zhang2026learningathletichumanoidtennis,
+                title={Learning Athletic Humanoid Tennis Skills from Imperfect Human Motion Data}, 
+                author={Zhikai Zhang and Haofei Lu and Yunrui Lian and Ziqing Chen and Yun Liu and Chenghuai Lin and Han Xue and Zicheng Zeng and Zekun Qi and Shaolin Zheng and Qing Luan and Jingbo Wang and Junliang Xing and He Wang and Li Yi},
+                year={2026},
+                eprint={2603.12686},
+                archivePrefix={arXiv},
+                primaryClass={cs.RO},
+                url={https://arxiv.org/abs/2603.12686}, 
+              }
+            </p>
+          </pre>
           <div class="selected-item">
             <a
               href="https://oss-cn-beijing.galbot.com/online/blog/hdflow_teaser.mp4"
@@ -1787,7 +1860,7 @@
                 }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img
               src="https://oss-cn-beijing.galbot.com/online/blog/87.png"
               alt=""
@@ -1825,7 +1898,7 @@
                   year={2026}
                 }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
             <img
               src="https://oss-cn-beijing.galbot.com/online/blog/80.jpg"
@@ -1986,7 +2059,7 @@
                 }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img
               class="lazy-load"
               src="https://oss-cn-beijing.galbot.com/online/blog/83.png"
@@ -2025,7 +2098,7 @@
                       url={https://arxiv.org/abs/2506.09839}, 
                 }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
             <img
               class="lazy-load"
@@ -2074,9 +2147,8 @@
             />
             <div class="item-right">
               <div class="item-title">
-                CLAR: Learning 3D Representations for Robotic Manipulation by
-                Fusing Masked Reconstruction with Multi-Level Contrastive
-                Alignment
+                CL3R: 3D Reconstruction and Contrastive Learning for Enhanced
+                Robotic Manipulation Representations
               </div>
               <p class="decs">
                 Wenbo Cui*, Chengyang Zhao*, Yuhui Chen, Haoran Li, Zhizheng
@@ -2086,7 +2158,7 @@
               <p class="decs">ICRA 2026</p>
               <div class="button">
                 <a href="https://arxiv.org/pdf/2507.08262">arXiv</a>
-                <!-- <a href="https://github.com/JYChen18/DiffCollision">Project</a> -->
+                <a href="https://cwb0106.github.io/CLAR/">Project</a>
                 <a
                   id="CLARID"
                   href="javascript:hideshow(document.getElementById('CLARID'),document.getElementById('CLARIDBibtex'))"
@@ -2263,7 +2335,7 @@
             }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <img
               src="https://oss-cn-beijing.galbot.com/online/blog/76.jpg"
               alt=""
@@ -2303,7 +2375,7 @@
               url={https://arxiv.org/abs/2509.13833}, 
             }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
             <img
               src="https://oss-cn-beijing.galbot.com/online/blog/omni_spatial.jpg"
@@ -2379,7 +2451,7 @@
             }
             </p>
           </pre>
-          <div class="selected-item">
+          <!-- <div class="selected-item">
             <a href="https://oss-cn-beijing.galbot.com/online/blog/DexNDM.mp4">
               <img class="play" src="./assets/play1.png" alt="" />
               <img
@@ -2416,7 +2488,7 @@
               year={2025},
             }
             </p>
-          </pre>
+          </pre> -->
           <div class="selected-item">
             <img
               src="https://oss-cn-beijing.galbot.com/online/blog/75.jpg"
@@ -2428,7 +2500,7 @@
                 Folding via Keypoint-Driven Asset and Demonstration Synthesis
               </div>
               <p>Yuxing Chen*, Bowen Xiao*, <b>He Wang†</b></p>
-              <p class="decs">RA-L</p>
+              <p class="decs">RA-L & IROS 2026</p>
               <div class="button">
                 <a href="https://arxiv.org/abs/2505.09109">arXiv</a>
                 <a href="https://pku-epic.github.io/FoldNet/">Project</a>
@@ -2460,7 +2532,7 @@
           <details class="publications-toggle">
             <summary>Show More</summary>
             <div class="hidden-publications">
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/72.jpg"
@@ -2516,7 +2588,7 @@
               bibsource= {dblp computer science bibliography, https://dblp.org}
             }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -2559,7 +2631,7 @@
             }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/70.png"
@@ -2600,7 +2672,7 @@
             year={2025},
           }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <a
                   href="https://oss-cn-beijing.galbot.com/online/blog/trackvla1.mp4"
@@ -2930,7 +3002,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/62.png"
@@ -2970,7 +3042,7 @@
                 year={2023}
               }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -3013,7 +3085,7 @@
             }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/60.png"
@@ -3056,7 +3128,7 @@
                   url={https://arxiv.org/abs/2501.04595}, 
             }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -3422,7 +3494,7 @@
             }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/51.jpg"
@@ -3459,7 +3531,7 @@
               year={2024}
             }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <a
                   href="https://oss-cn-beijing.galbot.com/online/video/scissorbot_1.mp4"
@@ -3675,7 +3747,7 @@
             }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/3.png"
@@ -3723,7 +3795,7 @@
               doi={10.1109/LRA.2023.3337690}
             }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <a
                   href="https://oss-cn-beijing.galbot.com/online/video/maskcluster.mp4"
@@ -4226,7 +4298,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/16.png"
@@ -4250,7 +4322,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -4445,7 +4517,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/22.png"
@@ -4467,7 +4539,7 @@
                     >
                   </div>
                 </div>
-              </div>
+              </div> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -4647,7 +4719,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/27.png"
@@ -4659,8 +4731,6 @@
                     Adaptation in Semantic Segmentation
                   </div>
                   <p>
-                    <!-- Jiayi Chen, Yingda Yin, Tolga Birdal, Baoquan Chen, Leonidas
-                Guibas, -->
                     Yanchao Yang<span>*&#8224;</span>, Hanxiang Ren*,
                     <b>He Wang</b>, Bokui Shen, Qingnan Fan, Youyi
                     Zheng<span>&#8224;</span>, C Karen Liu, Leonidas J. Guibas
@@ -4685,8 +4755,8 @@
                 year={2021}
               }
             </p>
-          </pre>
-              <div class="selected-item">
+          </pre> -->
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/28.png"
@@ -4723,8 +4793,8 @@
                 year={2022}
               }
             </p>
-          </pre>
-              <div class="selected-item">
+          </pre> -->
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/29.png"
@@ -4759,7 +4829,7 @@
                 year={2022}
               }
             </p>
-          </pre>
+          </pre> -->
               <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/30.png" alt="" />
             <div class="item-right">
@@ -4990,7 +5060,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/36.png"
@@ -5033,8 +5103,8 @@
                 year={2021}
               }
             </p>
-          </pre>
-              <div class="selected-item">
+          </pre> -->
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/37.png"
@@ -5075,7 +5145,7 @@
                 pages = {8544-8554}
             }
             </p>
-          </pre>
+          </pre> -->
               <!-- <div class="selected-item">
             <img class="lazy-load" src="./assets/38.png" alt="" />
             <div class="item-right">
@@ -5223,7 +5293,7 @@
               }
             </p>
           </pre>
-              <div class="selected-item">
+              <!-- <div class="selected-item">
                 <img
                   class="lazy-load"
                   src="https://oss-cn-beijing.galbot.com/online/blog/42.png"
@@ -5267,7 +5337,7 @@
                 year={2020}
               }
             </p>
-          </pre>
+          </pre> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -5317,6 +5387,39 @@
               }
             </p>
           </pre>
+              <!-- <div class="selected-item">
+            <img class="lazy-load" src="./assets/44.png" alt="" />
+            <div class="item-right">
+              <div class="item-title">
+                GSPN: Generative Shape Proposal Network for 3D Instance
+                Segmentation in Point Cloud
+              </div>
+              <p>
+                Li Yi, Wang Zhao,
+                <b>He Wang</b>, Minhyuk Sung, Leonidas J. Guibas
+              </p>
+              <p class="decs">CVPR 2019</p>
+              <div class="button">
+                <a href="https://arxiv.org/abs/1812.03320">Paper</a>
+                <a href="https://github.com/ericyi/GSPN">Code</a>
+                <a
+                  id="gspn-a"
+                  href="javascript:hideshow(document.getElementById('gspn-a'),document.getElementById('gspn'))"
+                  >bibtex</a
+                >
+              </div>
+            </div>
+          </div>
+          <pre>
+            <p id="gspn" style="font-size:14px; display: none">
+              @article{yi2018gspn,
+                title={GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud},
+                author={Yi, Li and Zhao, Wang and Wang, He and Sung, Minhyuk and Guibas, Leonidas},
+                journal={arXiv preprint arXiv:1812.03320},
+                year={2018}
+              }
+            </p>
+          </pre> -->
               <div class="selected-item">
                 <img
                   class="lazy-load"
@@ -5360,39 +5463,6 @@
               </div>
             </div>
           </details>
-          <!-- <div class="selected-item">
-            <img class="lazy-load" src="./assets/44.png" alt="" />
-            <div class="item-right">
-              <div class="item-title">
-                GSPN: Generative Shape Proposal Network for 3D Instance
-                Segmentation in Point Cloud
-              </div>
-              <p>
-                Li Yi, Wang Zhao,
-                <b>He Wang</b>, Minhyuk Sung, Leonidas J. Guibas
-              </p>
-              <p class="decs">CVPR 2019</p>
-              <div class="button">
-                <a href="https://arxiv.org/abs/1812.03320">Paper</a>
-                <a href="https://github.com/ericyi/GSPN">Code</a>
-                <a
-                  id="gspn-a"
-                  href="javascript:hideshow(document.getElementById('gspn-a'),document.getElementById('gspn'))"
-                  >bibtex</a
-                >
-              </div>
-            </div>
-          </div>
-          <pre>
-            <p id="gspn" style="font-size:14px; display: none">
-              @article{yi2018gspn,
-                title={GSPN: Generative Shape Proposal Network for 3D Instance Segmentation in Point Cloud},
-                author={Yi, Li and Zhao, Wang and Wang, He and Sung, Minhyuk and Guibas, Leonidas},
-                journal={arXiv preprint arXiv:1812.03320},
-                year={2018}
-              }
-            </p>
-          </pre> -->
         </div>
       </div>
       <div class="modal">

@@ -181,8 +181,8 @@ var I18N_LANG_DATA = {
     news: {
       title: '动态',
       item1: '3篇工作被 CVPR 2026 收录。',
-      item2:
-        '被邀请在 CEAI 2026 <a href="https://mp.weixin.qq.com/s/QXKddqa3ccwsWYbtXXTkrw" target="_blank">具身大模型与强化学习论坛</a>报告。',
+      // item2:
+      //   '被邀请在 CEAI 2026 <a href="https://mp.weixin.qq.com/s/QXKddqa3ccwsWYbtXXTkrw" target="_blank">具身大模型与强化学习论坛</a>报告。',
       // item3: '入选国家海外高层次人才计划。',
       item4:
         '2026年2月9日，习近平总书记在北京调研察看代表性科技创新成果，与王鹤教授及其他科技创新代表进行了亲切交流，Galbot G1 展示了其进展。',
@@ -199,6 +199,7 @@ var I18N_LANG_DATA = {
       item14:
         '受邀在 <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026发表行业主题演讲</a>，主题为“Towards the AlphaGo and ChatGPT Moments of Embodied AI”。',
       item15: '受邀担任 CoRL 2026 领域主席。',
+      item16: '3篇工作被 IROS 2026 收录。',
     },
   },
   en: {
@@ -386,8 +387,8 @@ var I18N_LANG_DATA = {
     news: {
       title: 'NEWS',
       item1: 'Three papers get accepted to CVPR 2026.',
-      item2:
-        'I am invited to to be a speaker in the Forum on Embodied Large Models and Reinforcement Learning at CEAI 2026.',
+      // item2:
+      //   'I am invited to to be a speaker in the Forum on Embodied Large Models and Reinforcement Learning at CEAI 2026.',
       // item3:
       //   'I am selected for the National Overseas High-Level Talent Program.',
       item4:
@@ -405,6 +406,7 @@ var I18N_LANG_DATA = {
       item14:
         'I am Invited to present an <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">industry keynote at ICRA 2026</a>, titled "Towards the AlphaGo and ChatGPT Moments of Embodied AI."',
       item15: 'I am Invited to serve as an Area Chair for CoRL 2026.',
+      item16: 'Three papers get accepted to IROS 2026.',
     },
   },
 };

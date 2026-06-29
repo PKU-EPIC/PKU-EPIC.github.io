@@ -128,7 +128,7 @@ var I18N_LANG_DATA = {
       yichenzengSchool: '武汉大学 & 中关村学院',
       yichenzengDate: '2024年9月',
       phdXinyu: '郭新宇',
-      phdXinyuSchool: '中科院自动化所 & 北京中关村学院',
+      phdXinyuSchool: '中科院自动化所 & 中关村学院',
       phdXinyuDate: '2024年9月',
       phdChao: '陈超',
       phdChaoSchool: '北京大学',

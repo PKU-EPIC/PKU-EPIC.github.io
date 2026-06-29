@@ -143,7 +143,7 @@ var I18N_LANG_DATA = {
       phdTianpengjuSchool: '中国人民大学',
       phdTianpengjuDate: '2025年9月',
       phdXiaoqian: '程筱茜',
-      phdXiaoqianSchool: '中国科技大学 & 中关村学院',
+      phdXiaoqianSchool: '中国科学技术大学 & 中关村学院',
       phdXiaoqianDate: '2026年9月',
       // Master's Students
       mastersKhun: 'Khun Loun Zai',

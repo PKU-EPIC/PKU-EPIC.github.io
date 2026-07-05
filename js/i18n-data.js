@@ -96,7 +96,7 @@ var I18N_LANG_DATA = {
       phdShengliangDate: '2020年9月',
       phdJiazhao: '张嘉曌',
       phdJiazhaoSchool: '北京大学',
-      alumphdJiazhaoDesc: ', 千问算法工程师',
+      alumphdJiazhaoDesc: '&nbsp;千问算法工程师',
       phdJiazhaoDate: '2022年9月',
       phdJiayi: '陈嘉毅',
       phdJiayiSchool: '北京大学',

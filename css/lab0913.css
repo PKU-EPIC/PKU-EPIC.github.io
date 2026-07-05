@@ -388,6 +388,9 @@ pre {
   object-fit: contain;
   aspect-ratio: 1;
 }
+.main-people .robots-list .robots-list-item img.is-scaled-down {
+  transform: scale(0.8);
+}
 
 /* 移动端适配 */
 @media (max-width: 768px) {

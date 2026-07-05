@@ -9,7 +9,7 @@ var I18N_LANG_DATA = {
     },
     epic: {
       title: '具身感知与交互实验室',
-      desc: '具身感知与交互实验室由王鹤博士创立并领导，专注于三维视觉感知与机器人技术研究。实验室聚焦于具身机器人在复杂三维环境中的感知与交互难题，致力于开发具有高度泛化能力与可扩展性的机器人视觉与控制系统。',
+      desc: '具身感知与交互实验室由王鹤博士创立并领导，致力于研发面向通用人形机器人的具身大模型，研究问题覆盖具身基础模型、人形机器人移动操作、灵巧手操作、导航及多模态感知与推理等，与具身智能头部企业银河通用建立了具身智能联合实验室，并被授予具身智能大模型北京市重点实验室。',
       descPhone:
         '<img class="lazy-load" src="./assets/logo.png" alt="" />具身感知与交互实验室由王鹤博士创立并领导，专注于三维视觉感知与机器人技术研究。实验室聚焦于具身机器人在复杂三维环境中的感知与交互难题，致力于开发具有高度泛化能力与可扩展性的机器人视觉与控制系统。',
     },
@@ -222,7 +222,7 @@ var I18N_LANG_DATA = {
     },
     epic: {
       title: 'EPIC Lab',
-      desc: 'Embodied Perception and InteraCtion (EPIC) Lab, founded and led by Dr. He Wang, specializes in 3D visual perception and robotics. The lab focuses on the challenges of perception and interaction for embodied robots in complex 3D environments. Its research aims to develop highly generalizable and scalable robotic vision and control systems.',
+      desc: 'The Embodied Perception and Interaction (EPIC) Lab, founded and led by Dr. He Wang, is dedicated to developing embodied foundation models for generalist humanoid robots. Its research covers embodied foundation models, mobile manipulation for humanoid robots, dexterous hand manipulation, navigation, and multimodal perception and reasoning. The lab has established a joint laboratory on embodied intelligence with Galbot, a leading company in the embodied AI industry, and has been designated as the Beijing Key Laboratory of Embodied Intelligence Foundation Models.',
       descPhone:
         '<img class="lazy-load" src="./assets/logo.png" alt="" />Embodied Perception and InteraCtion (EPIC) Lab, founded and led by Dr  He Wang, specializes in 3D visual perception and robotics. The lab focuses on the challenges of perception and interaction for embodied robots in complex 3D environments. Its research aims to develop highly generalizable and scalable robotic vision and control systems.',
     },

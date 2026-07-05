@@ -51,6 +51,7 @@ function updateCrossSiteLinks(lang) {
 function setLang(lang) {
   currentLang = lang;
   localStorage.setItem('lang', lang);
+  document.documentElement.setAttribute('data-lang', lang);
   updateLangUI(lang);
   renderI18n(getLangData(lang));
   updateCrossSiteLinks(lang);
@@ -58,6 +59,7 @@ function setLang(lang) {
 
 // 初始化
 document.addEventListener('DOMContentLoaded', function () {
+  document.documentElement.setAttribute('data-lang', currentLang);
   updateLangUI(currentLang);
   renderI18n(getLangData(currentLang));
   updateCrossSiteLinks(currentLang);

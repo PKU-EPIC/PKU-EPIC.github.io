@@ -57,8 +57,8 @@
 }
 .main-swiper .slide-source div {
   opacity: 0.8;
-  font-family: Verdana;
-  font-size: 12px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
   color: #38393c;
   font-weight: 400;
   text-align: justify;
@@ -92,10 +92,10 @@
 }
 html,
 body {
-  background: #f7f7f7;
+  background: #fff;
 }
 a {
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   color: #2967ac;
   font-weight: 400;
@@ -105,7 +105,7 @@ a:hover {
   text-decoration: underline;
 }
 i {
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   color: #38393c;
   line-height: 24px;
@@ -119,26 +119,26 @@ pre {
   border: 0.5px solid rgba(135, 135, 135, 1) !important;
 }
 .title {
-  font-family: Helvetica-Bold;
-  font-size: 38px;
+  font-family: 'Lato';
+  font-size: 24px;
   color: #000;
   font-weight: 700;
 }
 .title span {
-  font-family: Verdana;
-  font-weight: 200 !important;
+  font-family: 'Lato', sans-serif;
+  font-weight: 700;
 }
 .subtitle {
-  font-family: Helvetica-Bold;
-  font-size: 28px;
+  font-family: 'Lato', sans-serif;
+  font-size: 21px;
   color: #000;
   font-weight: 700;
   padding: 30px 0;
 }
 .subtitle-child {
   opacity: 0.6;
-  font-family: Helvetica-Bold;
-  font-size: 26px;
+  font-family: 'Lato', sans-serif;
+  font-size: 20px;
   color: #000;
   font-weight: 700;
   margin-bottom: 37px;
@@ -199,7 +199,7 @@ pre {
   line-height: 59px;
   float: left;
   opacity: 1;
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: #000;
   font-weight: 700;
@@ -224,7 +224,7 @@ pre {
   display: flex;
   justify-content: center;
   align-items: center;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: #000;
   font-weight: 400;
@@ -242,7 +242,7 @@ pre {
 }
 .main-head .menu span {
   opacity: 0.8;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 16px;
   color: #000;
   font-weight: 400;
@@ -255,11 +255,11 @@ pre {
 .main-head .menu .menu-item a {
   font-size: 15px;
   color: #000c;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   text-decoration: none;
 }
 .main-head .menu .active a {
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 .main-content {
@@ -270,7 +270,7 @@ pre {
 .main-head .head-phone .name {
   height: auto;
   color: #000;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 0.22rem;
   font-style: normal;
   font-weight: 700;
@@ -333,8 +333,8 @@ pre {
 }
 .main-epic p,
 .p {
-  font-family: Verdana;
-  font-size: 13px;
+  font-family: 'Lato', sans-serif;
+  font-size: 16px;
   color: #38393c;
   line-height: 24px;
   font-weight: 400;
@@ -457,14 +457,14 @@ pre {
   border-radius: 5px;
 }
 .main-people .people-list a .list-title {
-  font-family: Helvetica-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: #38393c;
   font-weight: 700;
   padding: 17px 0;
 }
 .main-people .people-list a .list-decs {
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #38393c;
   font-weight: 400;
@@ -483,14 +483,14 @@ pre {
   border-radius: 5px;
 }
 .main-people .people-list div .list-title {
-  font-family: Helvetica-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 15px;
   color: #38393c;
   font-weight: 700;
   padding: 17px 0;
 }
 .main-people .people-list div .list-decs {
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #38393c;
   font-weight: 400;
@@ -499,7 +499,7 @@ pre {
 .main-people .people-list a span,
 .main-people .people-list div span {
   opacity: 0.6;
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #38393c;
   text-align: center;
@@ -522,7 +522,7 @@ pre {
   position: relative;
   display: flex;
   margin: 2px 0px;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   color: #38393c;
   line-height: 20px;
   font-weight: 400;
@@ -550,7 +550,7 @@ pre {
 .main-people .alumni a .list-title,
 .main-people .alumni div .list-title {
   opacity: 0.85;
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   font-size: 20px;
   color: #38393c;
   font-weight: 400;
@@ -562,7 +562,7 @@ pre {
 }
 .main-people .alumni a .list-decs {
   opacity: 0.7;
-  font-family: Helvetica;
+  font-family: 'Lato', sans-serif;
   font-size: 12px;
   color: #38393c;
   font-weight: 400;
@@ -575,7 +575,7 @@ pre {
   box-sizing: border-box;
 }
 .main-news {
-  max-width: 940px;
+  max-width: 948px;
   margin: 49px auto 0;
 }
 .main-news ul {
@@ -586,7 +586,7 @@ pre {
 }
 .main-news ul li {
   position: relative;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   list-style-type: none;
   font-size: 13px;
   color: #38393c;
@@ -594,7 +594,7 @@ pre {
   font-weight: 400;
 }
 .main-news p {
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   color: #38393c;
   line-height: 23px;
@@ -615,7 +615,7 @@ pre {
   /* width: 0; */
 }
 .main-news ul li span {
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   color: #38393c;
   line-height: 25px;
@@ -656,42 +656,41 @@ pre {
   height: 145px;
 }
 .main-selected .selected-item .item-title {
-  font-family: Helvetica-Bold;
-  font-size: 16px;
+  font-family: 'Lato';
+  font-size: 17px;
   color: #171718;
-  line-height: 20px;
+  line-height: 22px;
   font-weight: 700;
 }
 .main-selected .selected-item .decs {
-  font-family: Verdana;
-  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
   color: #38393c;
   font-weight: 400;
-  margin-bottom: 14px;
 }
 .main-selected .selected-item p {
   opacity: 0.8;
-  font-family: Verdana;
-  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
   color: #38393c;
   font-weight: 400;
-  margin-top: 8px;
+  margin-top: 3px;
 }
 .main-selected .selected-item p b {
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-weight: 700;
 }
 .main-selected .selected-item p i {
   opacity: 0.8;
-  font-family: Verdana;
-  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  font-size: 13px;
   color: #38393c;
   line-height: 13px;
   font-weight: 400;
 }
 .main-selected .selected-item .bold {
   opacity: 1;
-  font-family: Verdana-Bold;
+  font-family: 'Lato', sans-serif;
   font-size: 11px;
   color: #38393c;
   line-height: 13px;
@@ -704,18 +703,32 @@ pre {
 }
 .main-selected .selected-item .button a {
   display: inline-block;
-  padding: 0 9px;
   height: 26px;
   line-height: 26px;
-  font-family: Verdana;
-  font-size: 11px;
+  font-family: 'Lato', sans-serif;
+  font-size: 14px;
   color: #2967ac;
   font-weight: 400;
-  background: #ffffffb3;
-  border: 0.5px solid rgba(41, 103, 172, 1);
+  /* background: #ffffffb3; */
+  /* border: 0.5px solid rgba(41, 103, 172, 1); */
   border-radius: 2px;
   margin-right: 8px;
   box-sizing: border-box;
+}
+.main-selected .selected-item .button a::after {
+  content: '|';
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  top: 0;
+ color: #000;
+  right: -5px;
+  border-radius: 2px;
+
+}
+.main-selected .selected-item .button a:last-child::after {
+  content: '';
+  width: 0 !important;
 }
 .main-selected .selected-item .button a:hover {
   background: #bddcff4d;
@@ -798,7 +811,7 @@ pre p {
   .main-head .head-phone .name {
     height: auto;
     color: #000;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 0.22rem;
     font-style: normal;
     font-weight: 700;
@@ -831,7 +844,7 @@ pre p {
   }
   .p {
     color: #000;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     width: 100%;
     font-size: 0.12rem;
     line-height: 0.23rem;
@@ -1016,7 +1029,7 @@ pre p {
   }
   .main-selected .selected-item .item-title {
     color: #171718;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 0.12rem;
     font-style: normal;
     font-weight: 700;
@@ -1111,7 +1124,7 @@ pre p {
   .modal-content-item a {
     color: #000;
     opacity: 0.5;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 0.22rem;
     font-style: normal;
     font-weight: 400;
@@ -1137,7 +1150,7 @@ pre p {
   .modal-footer {
     position: absolute;
     bottom: 0.4rem;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     height: 0.22rem;
     align-items: center;
     color: #fff;
@@ -1150,7 +1163,7 @@ pre p {
     opacity: 0.9;
     margin: 0 0.16rem;
     color: #000;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 0.24rem;
     font-style: normal;
     font-weight: 300;
@@ -1160,7 +1173,7 @@ pre p {
     margin: 0;
     opacity: 0.9;
     color: #000;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 0.25rem;
     font-style: normal;
     font-weight: 300;
@@ -1215,7 +1228,7 @@ pre p {
   .main-swiper .swiper-content-phone .slide-source div {
     position: relative;
     opacity: 0.8;
-    font-family: Verdana;
+    font-family: 'Lato', sans-serif;
     font-size: 0.12rem;
     color: #38393c;
     font-weight: 400;
@@ -1287,7 +1300,7 @@ pre p {
   .main-people .people-list .more span {
     opacity: 1;
     color: #38393c;
-    font-family: Helvetica;
+    font-family: 'Lato', sans-serif;
     font-size: 0.14rem;
     font-style: normal;
     font-weight: 400;
@@ -1354,7 +1367,7 @@ details.publications-toggle > summary {
   cursor: pointer;
   display: block;
   text-align: right;
-  font-family: Verdana;
+  font-family: 'Lato', sans-serif;
   font-size: 13px;
   color: #2967ac;
   font-weight: 400;
@@ -1412,4 +1425,18 @@ details.publications-toggle[open] .hidden-publications {
 }
 .lang-btn:hover {
   opacity: 0.7;
+}
+
+/* 英文放大：新闻正文 + Lab Alumni 名单（中文保持原样） */
+html[data-lang='en'] .main-news ul li,
+html[data-lang='en'] .main-news ul li a,
+html[data-lang='en'] .main-news p,
+html[data-lang='en'] .main-news ul li span {
+  font-size: 16px;
+}
+html[data-lang='en'] .main-people .alumni ul li {
+  font-size: 16px;
+}
+html[data-lang='en'] .main-people .alumni ul li a{
+  font-size: 16px;
 }

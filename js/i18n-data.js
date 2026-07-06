@@ -238,43 +238,41 @@ var I18N_LANG_DATA = {
     },
     swiper: {
       slide1:
-        'On February 9, 2026, President Xi Jinping conducted an inspection of the Galbot G1 robot in Beijing and met with Prof. He Wang, together with other leaders in technology innovation.',
+        '2026年2月9日，习近平总书记在北京调研接见银河通用创始人王鹤，Galbot G1 展示进展。',
       slide2:
-        'Galbot G1 took the stage at the 2026 CCTV Spring Festival Gala as the "Designated Embodied Large Model Robot." Alongside renowned actors Shen Teng and Ma Li, it demonstrated complex skills in real time through fully autonomous actions, including hand-rolling walnuts, folding clothes, and skewering sausages.',
+        'Galbot G1登上2026年央视春晚，作为“指定具身大模型机器人”与知名演员沈腾、马丽同台完成了盘核桃、叠衣服、串烤肠等复杂技能的实时自主展示。',
       slide3:
-        "LATENT is the world's first whole-body, real-time intelligent planning and control algorithm developed for humanoid robots in complex tennis match play. It enables humanoid robots to execute sustained, dynamic rallies.",
+        'LATENT：全球首个面向复杂网球对抗的人形机器人全身实时智能规控算法，让人形机器人具备长程动态打网球的能力。',
       slide4:
-        'GraspVLA is the world\'s first end-to-end embodied grasping foundation model. Its pre-training is entirely based on billion-scale "vision-language-action" synthetic data.',
-      slide5:
-        "GroceryVLA is the world's first end-to-end embodied VLA large model designed for the retail industry.",
+        'GraspVLA：全球首个端到端具身抓取基础大模型，其预训练完全基于十亿帧视觉-语言-动作合成数据。',
+      slide5: 'GroceryVLA：全球首个面向零售场景的端到端具身大模型。',
       slide6:
-        "NavFoM: The world's first cross-embodiment omnidirectional panoramic navigation foundation model. Its goal is to enable robots to autonomously perceive the world and decide where to go and how to get there entirely on their own in completely unknown environments.",
+        'NavFoM：全球首个跨本体全域环视导航基座大模型，目标是让机器人能够自主感知世界，在完全未知的环境中自己决定去哪、怎么走。',
       slide7:
-        'DexNDM: A dexterous hand neural dynamics model that, for the first time, enables a general-purpose dexterous hand to stably rotate complex objects\u2014whether elongated, miniature, or irregularly shaped\u2014in any orientation and along any axis.',
+        'DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。',
       slide8:
-        'Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.',
+        'Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。',
       slide9:
-        'LDA-1B: A 1.6B-parameter, cross-ontology Latent World-Action Foundation Model. It is the first model to achieve effective, unified learning from data that is: 1) virtual-real hybrid, 2) human-robot mixed, 3) quality-heterogeneous, and 4) variably action-labeled.',
+        'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
     },
     swiperPhone: {
       slide1:
-        '<a href="https://mp.weixin.qq.com/s/rUBVh4CJnax_vmlMP1Pegg">On February 9, 2026, President Xi Jinping conducted an inspection of the Galbot G1 robot in Beijing and met with Prof. He Wang, together with other leaders in technology innovation.</a>',
+        '<a href="https://mp.weixin.qq.com/s/rUBVh4CJnax_vmlMP1Pegg">2026年2月9日，习近平总书记在北京调研接见银河通用创始人王鹤，Galbot G1 展示进展。</a>',
       slide2:
-        "<a>LATENT is the world's first whole-body, real-time intelligent planning and control algorithm developed for humanoid robots in complex tennis match play. It enables humanoid robots to execute sustained, dynamic rallies.</a>",
+        '<a>Galbot G1登上2026年央视春晚，作为“指定具身大模型机器人”与知名演员沈腾、马丽同台完成了盘核桃、叠衣服、串烤肠等复杂技能的实时自主展示。</a>',
       slide3:
-        "<a>LATENT is the world's first whole-body, real-time intelligent planning and control algorithm developed for humanoid robots in complex tennis match play. It enables humanoid robots to execute sustained, dynamic rallies.</a>",
+        '<a>LATENT：全球首个面向复杂网球对抗的人形机器人全身实时智能规控算法，让人形机器人具备长程动态打网球的能力。</a>',
       slide4:
-        '<a>GraspVLA is the world\'s first end-to-end embodied grasping foundation model. Its pre-training is entirely based on billion-scale "vision-language-action" synthetic data.</a>',
-      slide5:
-        "<a>GroceryVLA is the world's first end-to-end embodied VLA large model designed for the retail industry.</a>",
+        '<a>GraspVLA：全球首个端到端具身抓取基础大模型，其预训练完全基于十亿帧视觉-语言-动作合成数据。</a>',
+      slide5: '<a>GroceryVLA：全球首个面向零售场景的端到端具身大模型。</a>',
       slide6:
-        "<a>NavFoM: The world's first cross-embodiment omnidirectional panoramic navigation foundation model. Its goal is to enable robots to autonomously perceive the world and decide where to go and how to get there entirely on their own in completely unknown environments.</a>",
+        '<a>NavFoM：全球首个跨本体全域环视导航基座大模型，目标是让机器人能够自主感知世界，在完全未知的环境中自己决定去哪、怎么走。</a>',
       slide7:
-        '<a>DexNDM: A dexterous hand neural dynamics model that, for the first time, enables a general-purpose dexterous hand to stably rotate complex objects\u2014whether elongated, miniature, or irregularly shaped\u2014in any orientation and along any axis.</a>',
+        '<a>DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。</a>',
       slide8:
-        '<a>Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.</a>',
+        '<a>Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。</a>',
       slide9:
-        '<a>LDA-1B: A 1.6B-parameter, cross-ontology Latent World-Action Foundation Model. It is the first model to achieve effective, unified learning from data that is: 1) virtual-real hybrid, 2) human-robot mixed, 3) quality-heterogeneous, and 4) variably action-labeled.</a>',
+        '<a>LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。</a>',
     },
     people: {
       title: 'People',
@@ -423,30 +421,30 @@ var I18N_LANG_DATA = {
       alumJavokhir: 'Javokhirbek Rajabov',
       alumDung: 'DO TAN DUNG',
     },
-    news: {
-      title: 'News',
-      item1: 'Three papers get accepted to CVPR 2026.',
+        news: {
+      title: 'News & Updates',
+      item1: '3 papers accepted to CVPR 2026',
       // item2:
       //   'I am invited to to be a speaker in the Forum on Embodied Large Models and Reinforcement Learning at CEAI 2026.',
       // item3:
       //   'I am selected for the National Overseas High-Level Talent Program.',
       item4:
         'On February 9, 2026, President Xi Jinping conducted an inspection of the Galbot G1 robot in Beijing and met with Prof. He Wang, together with other leaders in technology innovation.',
-      item5: 'Six papers get accepted to ICRA 2026.',
-      item6: 'Three papers get accepted to ICLR 2026.',
+      item5: '3 papers accepted to ICLR 2026',
+      item6: '6 papers accepted to ICRA 2026',
       // item7: 'One paper gets accepted to RA-L.',
       // item8: 'I am invited to be a speaker in Humanoids Summit 2025.',
       item9:
         'Our project, the "Synthetic and real data-driven VLA embodied intelligence large model" was honored with the <a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025 World Internet Conference Leading Technology Award.</a>',
       item10: 'One paper gets accepted to RA-L.',
-      item11: 'I have been awarded the 36th Beijing Youth May Fourth Medal.',
-      item12: 'Three papers get accepted to RSS 2026.',
-      item13: 'Three papers get accepted to ICML 2026.',
+      item11: 'Recipient of the 36th Beijing May 4th Youth Medal',
+      item12: '3 papers accepted to RSS 2026',
+      item13: '3 papers accepted to ICML 2026',
       item14:
-        'I am invited to present an <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">industry keynote at ICRA 2026</a>, titled "Towards the AlphaGo and ChatGPT Moments of Embodied AI."',
-      item15: 'I am invited to serve as an Area Chair for CoRL 2026.',
-      item16: 'Three papers get accepted to IROS 2026.',
-      item17: 'Four papers get accepted to ECCV 2026.',
+        'Invited keynote speaker at <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026</a>, "Towards the AlphaGo and ChatGPT Moments of Embodied AI"',
+      item15: 'Invited Area Chair for CoRL 2026',
+      item16: '3 papers accepted to IROS 2026',
+      item17: '4 papers accepted to ECCV 2026',
     },
   },
 };

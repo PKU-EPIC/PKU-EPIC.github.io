@@ -220,6 +220,8 @@ var I18N_LANG_DATA = {
       item15: '受邀担任 CoRL 2026 领域主席。',
       item16: '3篇工作被 IROS 2026 收录。',
       item17: '4篇工作被 ECCV 2026 收录。',
+      item18: '当选中国科协第十一届全国委员会委员。',
+      item19: '荣获RSS 2026 Best Paper Award (Finalist)。',
     },
   },
   en: {
@@ -421,7 +423,7 @@ var I18N_LANG_DATA = {
       alumJavokhir: 'Javokhirbek Rajabov',
       alumDung: 'DO TAN DUNG',
     },
-        news: {
+    news: {
       title: 'News & Updates',
       item1: '3 papers accepted to CVPR 2026',
       // item2:
@@ -445,6 +447,9 @@ var I18N_LANG_DATA = {
       item15: 'Invited Area Chair for CoRL 2026',
       item16: '3 papers accepted to IROS 2026',
       item17: '4 papers accepted to ECCV 2026',
+      item18:
+        'Elected Member of the 11th National Committee of the China Association for Science and Technology',
+      item19: 'Recipient of the RSS 2026 Best Paper Award (Finalist)',
     },
   },
 };

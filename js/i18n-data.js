@@ -31,6 +31,8 @@ var I18N_LANG_DATA = {
         'Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。',
       slide9:
         'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
+      slide10:
+        '<a>LWAM-TTT: 全球首个面向具身智能大模型的测试时后训练框架。让机器人在完成技能学习并进入真实部署场景后，能够在无需大量机器人轨迹数据、无需人类动作标注的前提下，仅需少量人类数据，即可快速完成对当前环境的部署适用。',
     },
     swiperPhone: {
       slide1:
@@ -50,6 +52,8 @@ var I18N_LANG_DATA = {
         '<a>Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。</a>',
       slide9:
         'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
+      slide10:
+        '<a>LWAM-TTT: 全球首个面向具身智能大模型的测试时后训练框架。让机器人在完成技能学习并进入真实部署场景后，能够在无需大量机器人轨迹数据、无需人类动作标注的前提下，仅需少量人类数据，即可快速完成对当前环境的部署适用。',
     },
     people: {
       title: '团队',
@@ -240,41 +244,47 @@ var I18N_LANG_DATA = {
     },
     swiper: {
       slide1:
-        '2026年2月9日，习近平总书记在北京调研接见银河通用创始人王鹤，Galbot G1 展示进展。',
+        'On February 9, 2026, President Xi Jinping visited Beijing and met with Prof. He Wang, where Galbot G1 demonstrated its latest progress.',
       slide2:
-        'Galbot G1登上2026年央视春晚，作为“指定具身大模型机器人”与知名演员沈腾、马丽同台完成了盘核桃、叠衣服、串烤肠等复杂技能的实时自主展示。',
+        'Galbot G1 appeared on the 2026 CCTV Spring Festival Gala as the "designated embodied AI robot," performing real-time autonomous tasks such as rolling walnut, folding clothing, and skewering sausage',
       slide3:
-        'LATENT：全球首个面向复杂网球对抗的人形机器人全身实时智能规控算法，让人形机器人具备长程动态打网球的能力。',
+        "LATENT: The world's first whole-body real-time intelligent planning and control algorithm for humanoid robots in complex tennis rallies, enabling long-horizon dynamic tennis playing.",
       slide4:
-        'GraspVLA：全球首个端到端具身抓取基础大模型，其预训练完全基于十亿帧视觉-语言-动作合成数据。',
-      slide5: 'GroceryVLA：全球首个面向零售场景的端到端具身大模型。',
+        "GraspVLA: The world's first end-to-end embodied grasping foundation model, pre-trained entirely on 1 billion frames of synthetic vision-language-action data.",
+      slide5:
+        "GroceryVLA: The world's first end-to-end embodied foundation model designed for retail environments.",
       slide6:
-        'NavFoM：全球首个跨本体全域环视导航基座大模型，目标是让机器人能够自主感知世界，在完全未知的环境中自己决定去哪、怎么走。',
+        'NavFoM: The world’s first cross-embodiment, omnidirectional navigation foundation model, enabling robots to perceive and navigate unknown environments autonomously.',
       slide7:
-        'DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。',
+        'DexNDM: A neural dynamics model that enables dexterous hands to achieve stable rotation of complex objects (slender, tiny, or irregular) under arbitrary poses and orientations.',
       slide8:
-        'Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。',
+        'Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.',
       slide9:
-        'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
+        'LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.',
+      slide10:
+        'WAM-TTT: The world’s first test-time training framework for large embodied AI models. It enables robots to rapidly adapt to new environments post-deployment using only minimal human demonstrations—eliminating the need for massive robot trajectory datasets or explicit action annotations.',
     },
     swiperPhone: {
       slide1:
-        '<a href="https://mp.weixin.qq.com/s/rUBVh4CJnax_vmlMP1Pegg">2026年2月9日，习近平总书记在北京调研接见银河通用创始人王鹤，Galbot G1 展示进展。</a>',
+        '<a href="https://mp.weixin.qq.com/s/rUBVh4CJnax_vmlMP1Pegg">On February 9, 2026, President Xi Jinping visited Beijing and met with Prof. He Wang, where Galbot G1 demonstrated its latest progress.</a>',
       slide2:
-        '<a>Galbot G1登上2026年央视春晚，作为“指定具身大模型机器人”与知名演员沈腾、马丽同台完成了盘核桃、叠衣服、串烤肠等复杂技能的实时自主展示。</a>',
+        '<a>Galbot G1 appeared on the 2026 CCTV Spring Festival Gala as the "designated embodied AI robot," performing real-time autonomous tasks such as rolling walnut, folding clothing, and skewering sausage</a>',
       slide3:
-        '<a>LATENT：全球首个面向复杂网球对抗的人形机器人全身实时智能规控算法，让人形机器人具备长程动态打网球的能力。</a>',
+        "<a>LATENT: The world's first whole-body real-time intelligent planning and control algorithm for humanoid robots in complex tennis rallies, enabling long-horizon dynamic tennis playing.</a>",
       slide4:
-        '<a>GraspVLA：全球首个端到端具身抓取基础大模型，其预训练完全基于十亿帧视觉-语言-动作合成数据。</a>',
-      slide5: '<a>GroceryVLA：全球首个面向零售场景的端到端具身大模型。</a>',
+        "<a>GraspVLA: The world's  first end-to-end embodied grasping foundation model, pre-trained entirely on 1 billion frames of synthetic vision-language-action data.</a>",
+      slide5:
+        "<a>GroceryVLA: The world's first end-to-end embodied foundation model designed for retail environments.</a>",
       slide6:
-        '<a>NavFoM：全球首个跨本体全域环视导航基座大模型，目标是让机器人能够自主感知世界，在完全未知的环境中自己决定去哪、怎么走。</a>',
+        '<a>NavFoM: The world’s first cross-embodiment, omnidirectional navigation foundation model, enabling robots to perceive and navigate unknown environments autonomously.</a>',
       slide7:
-        '<a>DexNDM：灵巧手神经动力学模型，让通用灵巧手首次能在任意姿态、任意轴向下稳定旋转复杂物体（细长、微小或不规则）。</a>',
+        '<a>DexNDM: A neural dynamics model that enables dexterous hands to achieve stable rotation of complex objects (slender, tiny, or irregular) under arbitrary poses and orientations.</a>',
       slide8:
-        '<a>Any2Track：史上最强抗干扰全身动作追踪系统，能够在复杂干扰环境下稳健平衡、精准实现运动控制，实现 “应对任意干扰、追踪任意运动”。</a>',
+        '<a>Any2Track: a two-stage reinforcement learning framework that enables a single policy to accurately track diverse, complex motions while maintaining robust online adaptability to real-world dynamic disturbances.</a>',
       slide9:
-        '<a>LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。</a>',
+        '<a>LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.</a>',
+      slide10:
+        '<a>WAM-TTT: The world’s first test-time training framework for large embodied AI models. It enables robots to rapidly adapt to new environments post-deployment using only minimal human demonstrations—eliminating the need for massive robot trajectory datasets or explicit action annotations.</a>',
     },
     people: {
       title: 'People',

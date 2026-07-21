@@ -262,7 +262,7 @@ var I18N_LANG_DATA = {
       slide9:
         'LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.',
       slide10:
-        'WAM-TTT: The world’s first test-time training framework for large embodied AI models. It enables robots to rapidly adapt to new environments post-deployment using only minimal human demonstrations—eliminating the need for massive robot trajectory datasets or explicit action annotations.',
+        'WAM-TTT: The world’s first test-time training framework for embodied foundation models. It enables robots to rapidly adapt to new environments during deployment using only minimal human video demonstrations — eliminating the need for large-scale robot trajectory data or explicit action annotations.',
     },
     swiperPhone: {
       slide1:
@@ -284,7 +284,7 @@ var I18N_LANG_DATA = {
       slide9:
         '<a>LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.</a>',
       slide10:
-        '<a>WAM-TTT: The world’s first test-time training framework for large embodied AI models. It enables robots to rapidly adapt to new environments post-deployment using only minimal human demonstrations—eliminating the need for massive robot trajectory datasets or explicit action annotations.</a>',
+        '<a>WAM-TTT: The world’s first test-time training framework for embodied foundation models. It enables robots to rapidly adapt to new environments during deployment using only minimal human video demonstrations — eliminating the need for large-scale robot trajectory data or explicit action annotations.</a>',
     },
     people: {
       title: 'People',

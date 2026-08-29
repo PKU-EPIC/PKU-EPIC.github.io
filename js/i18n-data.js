@@ -33,6 +33,10 @@ var I18N_LANG_DATA = {
         'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
       slide10:
         '<a>LWAM-TTT: 全球首个面向具身智能大模型的测试时后训练框架。让机器人在完成技能学习并进入真实部署场景后，能够在无需大量机器人轨迹数据、无需人类动作标注的前提下，仅需少量人类数据，即可快速完成对当前环境的部署适用。',
+      slide11:
+        '世界首次人机网球混双对打，现场直播连续100回合对拉，零失误。在开放动态物理环境中成功实现了感知、决策与全身运动控制的毫秒级实时闭环，验证了端到端大模型在复杂多智能体博弈场景下的高鲁棒性与泛化能力。',
+      slide12:
+        '全球首个具备自主学习能力的人形机器人Galbot ET1 ，搭载银河通用自研的物理世界原生智能体AstraBrain-Agent，可实时观察周围环境、理解语言指令，并动态规划自身行为和动作序列。',
     },
     swiperPhone: {
       slide1:
@@ -54,6 +58,10 @@ var I18N_LANG_DATA = {
         'LDA-1B：1.6B参数的跨本体“隐式世界-动作基础模型“，首次在数据层面实现虚实共融、人机混合、质量参差、有无动作标签的数据统一有效利用。',
       slide10:
         '<a>LWAM-TTT: 全球首个面向具身智能大模型的测试时后训练框架。让机器人在完成技能学习并进入真实部署场景后，能够在无需大量机器人轨迹数据、无需人类动作标注的前提下，仅需少量人类数据，即可快速完成对当前环境的部署适用。',
+      slide11:
+        '<a>世界首次人机网球混双对打，现场直播连续100回合对拉，零失误。在开放动态物理环境中成功实现了感知、决策与全身运动控制的毫秒级实时闭环，验证了端到端大模型在复杂多智能体博弈场景下的高鲁棒性与泛化能力。</a>',
+      slide12:
+        '<a>全球首个具备自主学习能力的人形机器人Galbot ET1 ，搭载银河通用自研的物理世界原生智能体AstraBrain-Agent，可实时观察周围环境、理解语言指令，并动态规划自身行为和动作序列。</a>',
     },
     people: {
       title: '团队',
@@ -159,11 +167,6 @@ var I18N_LANG_DATA = {
       phdXiaoqian: '程筱茜',
       phdXiaoqianSchool: '中国科学技术大学 & 中关村学院',
       phdXiaoqianDate: '2026年9月',
-      // Master's Students
-      mastersKhun: 'Khun Loun Zai',
-      mastersKhunSchool: '北京大学',
-      mastersKhunDate: '2025年9月',
-      // Undergraduate Students
       ugYubin: '柯宇斌',
       ugYubinSchool: '北京大学',
       ugYubinDate: '2022年9月',
@@ -179,6 +182,26 @@ var I18N_LANG_DATA = {
       ugBowen: '肖博文',
       ugBowenSchool: '北京大学',
       ugBowenDate: '2022年9月',
+      // Master's Students
+      mastersKhun: 'Khun Loun Zai',
+      mastersKhunSchool: '北京大学',
+      mastersKhunDate: '2025年9月',
+      // Undergraduate Students
+      ugYuansenHuang: '黄源森',
+      ugYuansenHuangSchool: '北京大学',
+      ugYuansenHuangDate: '2023年9月',
+      ugTianyuXu: '徐天宇',
+      ugTianyuXuSchool: '北京大学',
+      ugTianyuXuDate: '2023年9月',
+      ugDairuLiu: '刘大儒',
+      ugDairuLiuSchool: '南开大学',
+      ugDairuLiuDate: '2023年9月',
+      ugHaozheJia: '贾浩哲',
+      ugHaozheJiaSchool: '山东大学',
+      ugHaozheJiaDate: '2023年9月',
+      ugWenxuanLei: '雷文轩',
+      ugWenxuanLeiSchool: '上海大学',
+      ugWenxuanLeiDate: '2023年9月',
       // Alumni
       alumFengyi: '沈枫易',
       alumFengyiDesc: '&nbsp;华为慕尼黑研究中心高级研究员',
@@ -226,6 +249,12 @@ var I18N_LANG_DATA = {
       item17: '4篇工作被 ECCV 2026 收录。',
       item18: '当选中国科协第十一届全国委员会委员。',
       item19: '荣获RSS 2026 Best Paper Award (Finalist)。',
+      item20:
+        '受邀在中国国际大数据产业博览会开幕式作报告，主题：“推动具身智能世界级核心突破”。',
+      item21:
+        '团队在第二届世界人形机器人运动会中包揽家庭/餐饮/商超三金，全自主胜率100%',
+      item22:
+        '受邀在2026世界机器人大会作主论坛报告，主题：“<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">推动具身智能与人形机器人的核心突破时刻</a>”。',
     },
   },
   en: {
@@ -263,6 +292,10 @@ var I18N_LANG_DATA = {
         'LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.',
       slide10:
         'WAM-TTT: The world’s first test-time training framework for embodied foundation models. It enables robots to rapidly adapt to new environments during deployment using only minimal human video demonstrations — eliminating the need for large-scale robot trajectory data or explicit action annotations.',
+      slide11:
+        'The world’s first human-machine mixed doubles tennis match was broadcast live, achieving 100 consecutive rally exchanges with zero errors. In an open dynamic physical environment, it realized millisecond-level real-time closed-loop control of perception, decision-making, and full-body motion, validating the high robustness and generalization capabilities of end-to-end large models in complex multi-agent game scenarios.',
+      slide12:
+        'Galbot ET1, the world’s first self-learning humanoid robot, is equipped with Galbot’s self-developed physical-world-native intelligent agent, AstraBrain-Agent, enabling it to perceive its environment in real time, comprehend verbal commands, and dynamically plan behaviors and action sequences.',
     },
     swiperPhone: {
       slide1:
@@ -285,6 +318,10 @@ var I18N_LANG_DATA = {
         '<a>LDA-1B: A 1.6B-parameter cross-embodiment "Latent World-Action Foundation Model", which for the first time enables unified and effective utilization of heterogeneous data—including real and simulated data, human-robot mixed data, labeled and unlabeled action data.</a>',
       slide10:
         '<a>WAM-TTT: The world’s first test-time training framework for embodied foundation models. It enables robots to rapidly adapt to new environments during deployment using only minimal human video demonstrations — eliminating the need for large-scale robot trajectory data or explicit action annotations.</a>',
+      slide11:
+        '<a>The world’s first human-machine mixed doubles tennis match was broadcast live, achieving 100 consecutive rally exchanges with zero errors. In an open dynamic physical environment, it realized millisecond-level real-time closed-loop control of perception, decision-making, and full-body motion, validating the high robustness and generalization capabilities of end-to-end large models in complex multi-agent game scenarios.</a>',
+      slide12:
+        '<a>Galbot ET1, the world’s first self-learning humanoid robot, is equipped with Galbot’s self-developed physical-world-native intelligent agent, AstraBrain-Agent, enabling it to perceive its environment in real time, comprehend verbal commands, and dynamically plan behaviors and action sequences.</a>',
     },
     people: {
       title: 'People',
@@ -411,6 +448,21 @@ var I18N_LANG_DATA = {
       ugBowen: 'Bowen Xiao',
       ugBowenSchool: 'PKU',
       ugBowenDate: 'September 2022',
+      ugYuansenHuang: 'Yuansen Huang',
+      ugYuansenHuangSchool: 'PKU',
+      ugYuansenHuangDate: 'September 2023',
+      ugTianyuXu: 'Tianyu Xu',
+      ugTianyuXuSchool: 'PKU',
+      ugTianyuXuDate: 'September 2023',
+      ugDairuLiu: 'Dairu Liu',
+      ugDairuLiuSchool: 'NKU',
+      ugDairuLiuDate: 'September 2023',
+      ugHaozheJia: 'Haozhe Jia',
+      ugHaozheJiaSchool: 'SDU',
+      ugHaozheJiaDate: 'September 2023',
+      ugWenxuanLei: 'Wenxuan Lei',
+      ugWenxuanLeiSchool: 'SHU',
+      ugWenxuanLeiDate: 'September 2023',
       // Alumni
       alumFengyi: 'Fengyi Shen',
       alumFengyiDesc: ', Senior Researcher at Huawei Munich Research Center',
@@ -460,6 +512,12 @@ var I18N_LANG_DATA = {
       item18:
         'Elected Member of the 11th National Committee of the China Association for Science and Technology',
       item19: 'Recipient of the RSS 2026 Best Paper Award (Finalist)',
+      item20:
+        'Keynote at CIIDIE opening ceremony: “Driving World-Class Breakthroughs in Embodied Intelligence.”',
+      item21:
+        'Our team swept all gold medals in 3 "hell-mode" scenarios (Household, Catering, Retail) at the 2nd World Humanoid Robot Games — 100% autonomous win rate.',
+      item22:
+        'Main forum talk at WRC 2026: “<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">Driving the Defining Breakthrough Moment for Embodied Intelligence and Humanoid Robots.</a>”',
     },
   },
 };

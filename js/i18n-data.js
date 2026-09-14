@@ -234,22 +234,7 @@ var I18N_LANG_DATA = {
     },
     news: {
       title: '动态',
-      item1: '3篇工作被 CVPR 2026 收录。',
-      // item2:
-      //   '被邀请在 CEAI 2026 <a href="https://mp.weixin.qq.com/s/QXKddqa3ccwsWYbtXXTkrw" target="_blank">具身大模型与强化学习论坛</a>报告。',
-      // item3: '入选国家海外高层次人才计划。',
-      item4:
-        '2026年2月9日，习近平总书记在北京调研察看代表性科技创新成果，与王鹤教授及其他科技创新代表进行了亲切交流，Galbot G1 展示了其进展。',
-      item5: '6篇工作被 ICRA 2026 收录。',
-      item6: '3篇工作被 ICLR 2026 收录。',
-      // item7: '1篇工作被RA-L收录。',
-      // item8: '作为讲者在Humanoids Summit 2025报告。',
-      item9:
-        '我和团队的工作“合成数据和真实数据驱动的VLA具身智能大模型”获评<a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025年世界互联网大会领先科技奖</a>',
-      item10: '1篇工作被RA-L收录。',
-      item11: '荣获第三十六届北京青年五四奖章。',
-      item12: '3篇工作被 RSS 2026 收录。',
-      item13: '3篇工作被 ICML 2026 收录。',
+      item13: '9篇工作被 CoRL 2026 收录。',
       item14:
         '受邀在 <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026发表行业主题演讲</a>，主题为“Towards the AlphaGo and ChatGPT Moments of Embodied AI”。',
       item15: '受邀担任 CoRL 2026 领域主席。',
@@ -502,23 +487,7 @@ var I18N_LANG_DATA = {
     },
     news: {
       title: 'News & Updates',
-      item1: '3 papers accepted to CVPR 2026',
-      // item2:
-      //   'I am invited to to be a speaker in the Forum on Embodied Large Models and Reinforcement Learning at CEAI 2026.',
-      // item3:
-      //   'I am selected for the National Overseas High-Level Talent Program.',
-      item4:
-        'On February 9, 2026, President Xi Jinping conducted an inspection of the Galbot G1 robot in Beijing and met with Prof. He Wang, together with other leaders in technology innovation.',
-      item5: '3 papers accepted to ICLR 2026',
-      item6: '6 papers accepted to ICRA 2026',
-      // item7: 'One paper gets accepted to RA-L.',
-      // item8: 'I am invited to be a speaker in Humanoids Summit 2025.',
-      item9:
-        'Our project, the "Synthetic and real data-driven VLA embodied intelligence large model" was honored with the <a href="https://www.cac.gov.cn/2025-11/06/c_1764156715189004.htm" target="_blank">2025 World Internet Conference Leading Technology Award.</a>',
-      item10: 'One paper gets accepted to RA-L.',
-      item11: 'Recipient of the 36th Beijing May 4th Youth Medal',
-      item12: '3 papers accepted to RSS 2026',
-      item13: '3 papers accepted to ICML 2026',
+      item13: '9 papers accepted to CoRL 2026',
       item14:
         'Invited keynote speaker at <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026</a>, "Towards the AlphaGo and ChatGPT Moments of Embodied AI"',
       item15: 'Invited Area Chair for CoRL 2026',

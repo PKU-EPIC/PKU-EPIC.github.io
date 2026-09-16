@@ -220,7 +220,7 @@ var I18N_LANG_DATA = {
       alumWeikang: '万维康',
       alumWeikangDesc: '&nbsp;加州大学圣迭戈分校博士生',
       alumChengyang: '赵橙阳',
-      alumChengyangDesc: '&nbsp;卡内基·梅隆大学硕士生',
+      alumChengyangDesc: '&nbsp;卡内基梅隆大学硕士生',
       alumHaoran: '耿浩然',
       alumHaoranDesc: '&nbsp;加州大学伯克利分校博士生',
       alumJialiang: '张家梁',
@@ -242,12 +242,13 @@ var I18N_LANG_DATA = {
       item17: '4篇工作被 ECCV 2026 收录。',
       item18: '当选中国科协第十一届全国委员会委员。',
       item19: '荣获RSS 2026 Best Paper Award (Finalist)。',
-      item20:
-        '受邀在中国国际大数据产业博览会开幕式作报告，主题：“推动具身智能世界级核心突破”。',
+      // item20:
+      //   '受邀在中国国际大数据产业博览会开幕式作报告，主题：“推动具身智能世界级核心突破”。',
       item21:
-        '团队在第二届世界人形机器人运动会中包揽家庭/餐饮/商超三金，全自主胜率100%',
+        '团队在第二届世界人形机器人运动会中包揽家庭/餐饮/商超三金，全自主胜率100%。',
       item22:
         '受邀在2026世界机器人大会作主论坛报告，主题：“<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">推动具身智能与人形机器人的核心突破时刻</a>”。',
+      item23: '入选央视《2026中国·AI盛典》“年度AI人物”。',
     },
   },
   en: {
@@ -487,21 +488,23 @@ var I18N_LANG_DATA = {
     },
     news: {
       title: 'News & Updates',
-      item13: '9 papers accepted to CoRL 2026',
+      item13: '9 papers accepted to CoRL 2026.',
       item14:
-        'Invited keynote speaker at <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026</a>, "Towards the AlphaGo and ChatGPT Moments of Embodied AI"',
-      item15: 'Invited Area Chair for CoRL 2026',
-      item16: '3 papers accepted to IROS 2026',
-      item17: '4 papers accepted to ECCV 2026',
+        'Invited keynote speaker at <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026</a>, "Towards the AlphaGo and ChatGPT Moments of Embodied AI".',
+      item15: 'Invited Area Chair for CoRL 2026.',
+      item16: '3 papers accepted to IROS 2026.',
+      item17: '4 papers accepted to ECCV 2026.',
       item18:
-        'Elected Member of the 11th National Committee of the China Association for Science and Technology',
-      item19: 'Recipient of the RSS 2026 Best Paper Award (Finalist)',
+        'Elected Member of the 11th National Committee of the China Association for Science and Technology.',
+      item19: 'Recipient of the RSS 2026 Best Paper Award (Finalist).',
       item20:
-        'Keynote at CIIDIE opening ceremony: “Driving World-Class Breakthroughs in Embodied Intelligence.”',
+        'Invited to speak at the Opening Ceremony of the China International Big Data Industry Expo, with a talk titled “Driving World-Class Breakthroughs in Embodied Intelligence.”',
       item21:
-        'Our team swept all gold medals in 3 "hell-mode" scenarios (Household, Catering, Retail) at the 2nd World Humanoid Robot Games — 100% autonomous win rate.',
+        'Our team swept all three gold medals in Home, Catering, and Retail scenarios at World Robot Contest 2026, achieving a 100% win rate with fully autonomous performance.',
       item22:
-        'Main forum talk at WRC 2026: “<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">Driving the Defining Breakthrough Moment for Embodied Intelligence and Humanoid Robots.</a>”',
+        'Invited to speak at the Main Forum of the 2026 World Robot Conference, with a talk titled “<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">Towards Breakthrough Moments in Embodied Intelligence and Humanoid Robotics</a>.”',
+      item23:
+        'Selected as an “AI Figure of the Year” at CCTV’s 2026 China AI Gala.',
     },
   },
 };

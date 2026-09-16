@@ -535,7 +535,7 @@ pre {
   content: '';
   position: absolute;
   left: -25px;
-  top: 10px;
+  top: 8px;
   width: 5px;
   height: 5px;
   background-color: #38393c;
@@ -614,7 +614,7 @@ pre {
   border-radius: 40px;
 }
 .main-news ul li:last-child:before {
-  /* width: 0; */
+  width: 0;
 }
 .main-news ul li span {
   font-family: 'Lato', sans-serif;
@@ -649,6 +649,7 @@ pre {
   width: 216px;
   height: 145px;
   margin-right: 24px;
+  object-fit: contain;
 }
 .main-selected .selected-item .item-right {
   flex: 1;
@@ -677,6 +678,9 @@ pre {
   color: #38393c;
   font-weight: 400;
   margin-top: 3px;
+}
+.main-selected .selected-item p.red {
+  color: #ff0000;
 }
 .main-selected .selected-item p b {
   font-family: 'Lato', sans-serif;
@@ -1027,6 +1031,7 @@ pre p {
     width: 1.23rem;
     height: 0.75rem;
     margin-right: 0.14rem;
+    object-fit: contain;
   }
   .main-selected .selected-item .item-title {
     color: #171718;
@@ -1042,6 +1047,9 @@ pre p {
   .main-selected .selected-item p {
     font-size: 0.09rem;
     line-height: normal;
+  }
+  .main-selected .selected-item p.red {
+    color: #ff0000;
   }
   .main-selected .selected-item .decs {
     font-size: 0.1rem;
@@ -1446,6 +1454,6 @@ html[data-lang='en'] .main-epic p,
   font-size: 16px;
 }
 
-html[data-lang='en'] .main-epic img{
+html[data-lang='en'] .main-epic img {
   margin-top: 48px;
 }

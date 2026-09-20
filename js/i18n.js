@@ -1,3 +1,4 @@
+// 代码推送测试
 // 读取 URL 参数中的语言，优先于 localStorage
 function getUrlLang() {
   var params = new URLSearchParams(window.location.search);

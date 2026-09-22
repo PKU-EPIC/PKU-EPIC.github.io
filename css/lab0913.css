@@ -1457,3 +1457,22 @@ html[data-lang='en'] .main-epic p,
 html[data-lang='en'] .main-epic img {
   margin-top: 48px;
 }
+
+/* Selected Publications 视频：PC 端自动播放，移动端显示封面、点击跳转 */
+.main-selected .selected-item .pub-video {
+  width: 216px;
+  height: 145px;
+  margin-right: 24px;
+  object-fit: contain;
+}
+@media (min-width: 769px) {
+  .main-selected .pub-video-link .play,
+  .main-selected .pub-video-link img.lazy-load {
+    display: none;
+  }
+}
+@media (max-width: 768px) {
+  .main-selected .pub-video-link .pub-video {
+    display: none;
+  }
+}

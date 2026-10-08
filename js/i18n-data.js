@@ -104,8 +104,8 @@ var I18N_LANG_DATA = {
       raHeming: '崔鹤鸣',
       raHemingDesc: '香港大学计算机科学系副教授',
       // Ph.D Students
-      phdShengliang: '邓胜亮',
-      phdShengliangSchool: '香港大学',
+      phdShengliang: '邓胜亮 ',
+      phdShengliangSchool: '&nbsp;香港大学博士生',
       phdShengliangDate: '2020年9月',
       phdJiazhao: '张嘉曌',
       phdJiazhaoSchool: '北京大学',
@@ -358,8 +358,8 @@ var I18N_LANG_DATA = {
       zhaoxiangZhang: 'Zhaoxiang Zhang',
       zhaoxiangZhangDesc: 'CASIA',
       // Ph.D Students
-      phdShengliang: 'Shengliang Deng',
-      phdShengliangSchool: 'HKU',
+      phdShengliang: 'Shengliang Deng,',
+      phdShengliangSchool: '&nbsp;Ph.D. Student at HKU',
       phdShengliangDate: 'September 2020',
       phdJiazhao: 'Jiazhao Zhang',
       phdJiazhaoSchool: 'PKU',

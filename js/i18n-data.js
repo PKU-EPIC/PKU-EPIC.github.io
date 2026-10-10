@@ -188,6 +188,12 @@ var I18N_LANG_DATA = {
       mastersKhunSchool: '北京大学',
       mastersKhunDate: '2025年9月',
       // Undergraduate Students
+      ugYoucheng: '樊宥成',
+      ugYouchengSchool: '山东大学',
+      ugYouchengDate: '2023年9月',
+      ugJiaweiChen: '陈佳伟',
+      ugJiaweiChenSchool: '北京大学',
+      ugJiaweiChenDate: '2023年9月',
       ugYuansenHuang: '黄源森',
       ugYuansenHuangSchool: '北京大学',
       ugYuansenHuangDate: '2023年9月',
@@ -249,6 +255,7 @@ var I18N_LANG_DATA = {
       item22:
         '受邀在2026世界机器人大会作主论坛报告，主题：“<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">推动具身智能与人形机器人的核心突破时刻</a>”。',
       item23: '入选央视《2026中国·AI盛典》“年度AI人物”。',
+      item24: '荣获IROS 2026 Best Entertainment and Amusement Paper Award。',
     },
   },
   en: {
@@ -428,6 +435,12 @@ var I18N_LANG_DATA = {
       mastersKhunSchool: 'PKU',
       mastersKhunDate: 'September 2025',
       // Undergraduate Students
+      ugYoucheng: 'Youcheng Fan',
+      ugYouchengSchool: 'SDU',
+      ugYouchengDate: 'September 2023',
+      ugJiaweiChen: 'Jiawei Chen',
+      ugJiaweiChenSchool: 'PKU',
+      ugJiaweiChenDate: 'September 2023',
       ugYubin: 'Yubin Ke',
       ugYubinSchool: 'PKU',
       ugYubinDate: 'September 2026',
@@ -505,6 +518,8 @@ var I18N_LANG_DATA = {
         'Invited to speak at the Main Forum of the 2026 World Robot Conference, with a talk titled “<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">Towards Breakthrough Moments in Embodied Intelligence and Humanoid Robotics</a>.”',
       item23:
         'Selected as an “AI Figure of the Year” at CCTV’s 2026 China AI Gala.',
+      item24:
+        'Recipient of the IROS 2026 Best Entertainment and Amusement Paper Award.',
     },
   },
 };

@@ -240,7 +240,7 @@ var I18N_LANG_DATA = {
     },
     news: {
       title: '动态',
-      item13: '9篇工作被 CoRL 2026 收录。',
+      item13: '9篇工作被 CoRL 2026 收录，其中3篇入选Spotlight。',
       item14:
         '受邀在 <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026发表行业主题演讲</a>，主题为“Towards the AlphaGo and ChatGPT Moments of Embodied AI”。',
       item15: '受邀担任 CoRL 2026 领域主席。',
@@ -501,7 +501,7 @@ var I18N_LANG_DATA = {
     },
     news: {
       title: 'News & Updates',
-      item13: '9 papers accepted to CoRL 2026.',
+      item13: '9 papers accepted at CoRL 2026, 3 selected as spotlights.',
       item14:
         'Invited keynote speaker at <a href="https://2026.ieee-icra.org/program/industry-keynotes/" target="_blank">ICRA 2026</a>, "Towards the AlphaGo and ChatGPT Moments of Embodied AI".',
       item15: 'Invited Area Chair for CoRL 2026.',
@@ -513,7 +513,7 @@ var I18N_LANG_DATA = {
       item20:
         'Invited to speak at the Opening Ceremony of the China International Big Data Industry Expo, with a talk titled “Driving World-Class Breakthroughs in Embodied Intelligence.”',
       item21:
-        'Our team swept all three gold medals in Home, Catering, and Retail scenarios at World Robot Contest 2026, achieving a 100% win rate with fully autonomous performance.',
+        'Our team swept all three gold medals in Home, Catering, and Retail scenarios at the 2nd World Humanoid Robot Games, achieving a 100% win rate with fully autonomous performance.',
       item22:
         'Invited to speak at the Main Forum of the 2026 World Robot Conference, with a talk titled “<a href="https://www.worldrobotconference.com/mainforum/" target="_blank">Towards Breakthrough Moments in Embodied Intelligence and Humanoid Robotics</a>.”',
       item23:

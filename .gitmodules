@@ -41,3 +41,7 @@
 [submodule "NaVid4D"]
 	path = NaVid4D
 	url = https://github.com/lhrrhl0419/NaVid4D
+[submodule "HumanoidNDM"]
+	path = HumanoidNDM
+	url = https://github.com/shenbiachao/HumanoidNDM_Website.git
+	branch = main
